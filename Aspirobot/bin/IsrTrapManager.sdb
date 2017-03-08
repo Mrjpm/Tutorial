@@ -1,0 +1,9147 @@
+[p SPACEOPT PIC30 ]
+"22 C:\Microchip\Dev\Aspirobot\FreeRTOS\include\dspic30f6010a.h
+[v _WREG0 `Vui  1 s 2 @0 ]
+"25
+[v _WREG1 `Vui  1 s 2 @2 ]
+"28
+[v _WREG2 `Vui  1 s 2 @4 ]
+"31
+[v _WREG3 `Vui  1 s 2 @6 ]
+"34
+[v _WREG4 `Vui  1 s 2 @8 ]
+"37
+[v _WREG5 `Vui  1 s 2 @10 ]
+"40
+[v _WREG6 `Vui  1 s 2 @12 ]
+"43
+[v _WREG7 `Vui  1 s 2 @14 ]
+"46
+[v _WREG8 `Vui  1 s 2 @16 ]
+"49
+[v _WREG9 `Vui  1 s 2 @18 ]
+"52
+[v _WREG10 `Vui  1 s 2 @20 ]
+"55
+[v _WREG11 `Vui  1 s 2 @22 ]
+"58
+[v _WREG12 `Vui  1 s 2 @24 ]
+"61
+[v _WREG13 `Vui  1 s 2 @26 ]
+"64
+[v _WREG14 `Vui  1 s 2 @28 ]
+"67
+[v _WREG15 `Vui  1 s 2 @30 ]
+"70
+[v _SPLIM `Vui  1 s 2 @32 ]
+"73
+[v _ACCAL `Vui  1 s 2 @34 ]
+"76
+[v _ACCAH `Vui  1 s 2 @36 ]
+"79
+[v _ACCAU `Vui  1 s 2 @38 ]
+"85
+[s S2 . 2 `Vui  1 SIGNEXT 2 0 :8:8 
+`Vui  1 ACCAU 2 0 :8:0 
+]
+"86
+[u S1 . 2 `S2  1 . 2 0 
+]
+[v _ACCAUbits `VS1  1 s 2 @38 ]
+"89
+[v _ACCBL `Vui  1 s 2 @40 ]
+"92
+[v _ACCBH `Vui  1 s 2 @42 ]
+"95
+[v _ACCBU `Vui  1 s 2 @44 ]
+"101
+[s S4 . 2 `Vui  1 SIGNEXT 2 0 :8:8 
+`Vui  1 ACCBU 2 0 :8:0 
+]
+"102
+[u S3 . 2 `S4  1 . 2 0 
+]
+[v _ACCBUbits `VS3  1 s 2 @44 ]
+"105
+[v _PCL `Vui  1 s 2 @46 ]
+"108
+[v _PCH `Vui  1 s 2 @48 ]
+"114
+[s S6 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 PCH 2 0 :7:0 
+]
+"115
+[u S5 . 2 `S6  1 . 2 0 
+]
+[v _PCHbits `VS5  1 s 2 @48 ]
+"118
+[v _TBLPAG `Vui  1 s 2 @50 ]
+"124
+[s S8 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 TBLPAG 2 0 :8:0 
+]
+"125
+[u S7 . 2 `S8  1 . 2 0 
+]
+[v _TBLPAGbits `VS7  1 s 2 @50 ]
+"128
+[v _PSVPAG `Vui  1 s 2 @52 ]
+"134
+[s S10 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 PSVPAG 2 0 :8:0 
+]
+"135
+[u S9 . 2 `S10  1 . 2 0 
+]
+[v _PSVPAGbits `VS9  1 s 2 @52 ]
+"138
+[v _RCOUNT `Vui  1 s 2 @54 ]
+"144
+[s S12 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 RCOUNT 2 0 :14:0 
+]
+"145
+[u S11 . 2 `S12  1 . 2 0 
+]
+[v _RCOUNTbits `VS11  1 s 2 @54 ]
+"148
+[v _DCOUNT `Vui  1 s 2 @56 ]
+"154
+[s S14 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 DCOUNT 2 0 :14:0 
+]
+"155
+[u S13 . 2 `S14  1 . 2 0 
+]
+[v _DCOUNTbits `VS13  1 s 2 @56 ]
+"158
+[v _DOSTARTL `Vui  1 s 2 @58 ]
+"161
+[v _DOSTARTH `Vui  1 s 2 @60 ]
+"167
+[s S16 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DOSTARTH 2 0 :7:0 
+]
+"168
+[u S15 . 2 `S16  1 . 2 0 
+]
+[v _DOSTARTHbits `VS15  1 s 2 @60 ]
+"171
+[v _DOENDL `Vui  1 s 2 @62 ]
+"174
+[v _DOENDH `Vui  1 s 2 @64 ]
+"180
+[s S18 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DOENDH 2 0 :7:0 
+]
+"181
+[u S17 . 2 `S18  1 . 2 0 
+]
+[v _DOENDHbits `VS17  1 s 2 @64 ]
+"184
+[v _SR `Vui  1 s 2 @66 ]
+"202
+[s S20 . 2 `Vui  1 OA 2 0 :1:15 
+`Vui  1 OB 2 0 :1:14 
+`Vui  1 SA 2 0 :1:13 
+`Vui  1 SB 2 0 :1:12 
+`Vui  1 OAB 2 0 :1:11 
+`Vui  1 SAB 2 0 :1:10 
+`Vui  1 DA 2 0 :1:9 
+`Vui  1 DC 2 0 :1:8 
+`Vui  1 IPL 2 0 :3:5 
+`Vui  1 RA 2 0 :1:4 
+`Vui  1 N 2 0 :1:3 
+`Vui  1 OV 2 0 :1:2 
+`Vui  1 Z 2 0 :1:1 
+`Vui  1 C 2 0 :1:0 
+]
+"209
+[s S21 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 IPL2 2 0 :1:7 
+`Vui  1 IPL1 2 0 :1:6 
+`Vui  1 IPL0 2 0 :1:5 
+`Vui  1 . 2 0 :5:0 
+]
+"210
+[u S19 . 2 `S20  1 . 2 0 
+`S21  1 . 2 0 
+]
+[v _SRbits `VS19  1 s 2 @66 ]
+"212
+[v _C `Vb  1 s 0 @528 ]
+"213
+[v _Z `Vb  1 s 0 @529 ]
+"214
+[v _OV `Vb  1 s 0 @530 ]
+"215
+[v _N `Vb  1 s 0 @531 ]
+"216
+[v _RA `Vb  1 s 0 @532 ]
+"217
+[v _DC `Vb  1 s 0 @536 ]
+"218
+[v _DA `Vb  1 s 0 @537 ]
+"219
+[v _SAB `Vb  1 s 0 @538 ]
+"220
+[v _OAB `Vb  1 s 0 @539 ]
+"221
+[v _SB `Vb  1 s 0 @540 ]
+"222
+[v _SA `Vb  1 s 0 @541 ]
+"223
+[v _OB `Vb  1 s 0 @542 ]
+"224
+[v _OA `Vb  1 s 0 @543 ]
+"225
+[v _IPL0 `Vb  1 s 0 @533 ]
+"226
+[v _IPL1 `Vb  1 s 0 @534 ]
+"227
+[v _IPL2 `Vb  1 s 0 @535 ]
+"230
+[v _CORCON `Vui  1 s 2 @68 ]
+"246
+[s S23 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 US 2 0 :1:12 
+`Vui  1 EDT 2 0 :1:11 
+`Vui  1 DL 2 0 :3:8 
+`Vui  1 SATA 2 0 :1:7 
+`Vui  1 SATB 2 0 :1:6 
+`Vui  1 SATDW 2 0 :1:5 
+`Vui  1 ACCSAT 2 0 :1:4 
+`Vui  1 IPL3 2 0 :1:3 
+`Vui  1 PSV 2 0 :1:2 
+`Vui  1 RND 2 0 :1:1 
+`Vui  1 IF 2 0 :1:0 
+]
+"253
+[s S24 . 2 `Vui  1 . 2 0 :5:11 
+`Vui  1 DL2 2 0 :1:10 
+`Vui  1 DL1 2 0 :1:9 
+`Vui  1 DL0 2 0 :1:8 
+`Vui  1 . 2 0 :8:0 
+]
+"254
+[u S22 . 2 `S23  1 . 2 0 
+`S24  1 . 2 0 
+]
+[v _CORCONbits `VS22  1 s 2 @68 ]
+"256
+[v _IF `Vb  1 s 0 @544 ]
+"257
+[v _RND `Vb  1 s 0 @545 ]
+"258
+[v _PSV `Vb  1 s 0 @546 ]
+"259
+[v _IPL3 `Vb  1 s 0 @547 ]
+"260
+[v _ACCSAT `Vb  1 s 0 @548 ]
+"261
+[v _SATDW `Vb  1 s 0 @549 ]
+"262
+[v _SATB `Vb  1 s 0 @550 ]
+"263
+[v _SATA `Vb  1 s 0 @551 ]
+"264
+[v _EDT `Vb  1 s 0 @555 ]
+"265
+[v _US `Vb  1 s 0 @556 ]
+"266
+[v _DL0 `Vb  1 s 0 @552 ]
+"267
+[v _DL1 `Vb  1 s 0 @553 ]
+"268
+[v _DL2 `Vb  1 s 0 @554 ]
+"271
+[v _MODCON `Vui  1 s 2 @70 ]
+"281
+[s S26 . 2 `Vui  1 XMODEN 2 0 :1:15 
+`Vui  1 YMODEN 2 0 :1:14 
+`Vui  1 . 2 0 :2:12 
+`Vui  1 BWM 2 0 :4:8 
+`Vui  1 YWM 2 0 :4:4 
+`Vui  1 XWM 2 0 :4:0 
+]
+"296
+[s S27 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 BWM3 2 0 :1:11 
+`Vui  1 BWM2 2 0 :1:10 
+`Vui  1 BWM1 2 0 :1:9 
+`Vui  1 BWM0 2 0 :1:8 
+`Vui  1 YWM3 2 0 :1:7 
+`Vui  1 YWM2 2 0 :1:6 
+`Vui  1 YWM1 2 0 :1:5 
+`Vui  1 YWM0 2 0 :1:4 
+`Vui  1 XWM3 2 0 :1:3 
+`Vui  1 XWM2 2 0 :1:2 
+`Vui  1 XWM1 2 0 :1:1 
+`Vui  1 XWM0 2 0 :1:0 
+]
+"297
+[u S25 . 2 `S26  1 . 2 0 
+`S27  1 . 2 0 
+]
+[v _MODCONbits `VS25  1 s 2 @70 ]
+"299
+[v _YMODEN `Vb  1 s 0 @574 ]
+"300
+[v _XMODEN `Vb  1 s 0 @575 ]
+"301
+[v _XWM0 `Vb  1 s 0 @560 ]
+"302
+[v _XWM1 `Vb  1 s 0 @561 ]
+"303
+[v _XWM2 `Vb  1 s 0 @562 ]
+"304
+[v _XWM3 `Vb  1 s 0 @563 ]
+"305
+[v _YWM0 `Vb  1 s 0 @564 ]
+"306
+[v _YWM1 `Vb  1 s 0 @565 ]
+"307
+[v _YWM2 `Vb  1 s 0 @566 ]
+"308
+[v _YWM3 `Vb  1 s 0 @567 ]
+"309
+[v _BWM0 `Vb  1 s 0 @568 ]
+"310
+[v _BWM1 `Vb  1 s 0 @569 ]
+"311
+[v _BWM2 `Vb  1 s 0 @570 ]
+"312
+[v _BWM3 `Vb  1 s 0 @571 ]
+"315
+[v _XMODSRT `Vui  1 s 2 @72 ]
+"318
+[v _XMODEND `Vui  1 s 2 @74 ]
+"321
+[v _YMODSRT `Vui  1 s 2 @76 ]
+"324
+[v _YMODEND `Vui  1 s 2 @78 ]
+"327
+[v _XBREV `Vui  1 s 2 @80 ]
+"333
+[s S29 . 2 `Vui  1 BREN 2 0 :1:15 
+`Vui  1 XB 2 0 :15:0 
+]
+"351
+[s S30 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 XB14 2 0 :1:14 
+`Vui  1 XB13 2 0 :1:13 
+`Vui  1 XB12 2 0 :1:12 
+`Vui  1 XB11 2 0 :1:11 
+`Vui  1 XB10 2 0 :1:10 
+`Vui  1 XB9 2 0 :1:9 
+`Vui  1 XB8 2 0 :1:8 
+`Vui  1 XB7 2 0 :1:7 
+`Vui  1 XB6 2 0 :1:6 
+`Vui  1 XB5 2 0 :1:5 
+`Vui  1 XB4 2 0 :1:4 
+`Vui  1 XB3 2 0 :1:3 
+`Vui  1 XB2 2 0 :1:2 
+`Vui  1 XB1 2 0 :1:1 
+`Vui  1 XB0 2 0 :1:0 
+]
+"352
+[u S28 . 2 `S29  1 . 2 0 
+`S30  1 . 2 0 
+]
+[v _XBREVbits `VS28  1 s 2 @80 ]
+"354
+[v _BREN `Vb  1 s 0 @655 ]
+"355
+[v _XB0 `Vb  1 s 0 @640 ]
+"356
+[v _XB1 `Vb  1 s 0 @641 ]
+"357
+[v _XB2 `Vb  1 s 0 @642 ]
+"358
+[v _XB3 `Vb  1 s 0 @643 ]
+"359
+[v _XB4 `Vb  1 s 0 @644 ]
+"360
+[v _XB5 `Vb  1 s 0 @645 ]
+"361
+[v _XB6 `Vb  1 s 0 @646 ]
+"362
+[v _XB7 `Vb  1 s 0 @647 ]
+"363
+[v _XB8 `Vb  1 s 0 @648 ]
+"364
+[v _XB9 `Vb  1 s 0 @649 ]
+"365
+[v _XB10 `Vb  1 s 0 @650 ]
+"366
+[v _XB11 `Vb  1 s 0 @651 ]
+"367
+[v _XB12 `Vb  1 s 0 @652 ]
+"368
+[v _XB13 `Vb  1 s 0 @653 ]
+"369
+[v _XB14 `Vb  1 s 0 @654 ]
+"372
+[v _DISICNT `Vui  1 s 2 @82 ]
+"378
+[s S32 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 DISICNT 2 0 :14:0 
+]
+"379
+[u S31 . 2 `S32  1 . 2 0 
+]
+[v _DISICNTbits `VS31  1 s 2 @82 ]
+"382
+[v _INTCON1 `Vui  1 s 2 @128 ]
+"397
+[s S34 . 2 `Vui  1 NSTDIS 2 0 :1:15 
+`Vui  1 . 2 0 :4:11 
+`Vui  1 OVATE 2 0 :1:10 
+`Vui  1 OVBTE 2 0 :1:9 
+`Vui  1 COVTE 2 0 :1:8 
+`Vui  1 . 2 0 :3:5 
+`Vui  1 MATHERR 2 0 :1:4 
+`Vui  1 ADDRERR 2 0 :1:3 
+`Vui  1 STKERR 2 0 :1:2 
+`Vui  1 OSCFAIL 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"398
+[u S33 . 2 `S34  1 . 2 0 
+]
+[v _INTCON1bits `VS33  1 s 2 @128 ]
+"400
+[v _OSCFAIL `Vb  1 s 0 @1025 ]
+"401
+[v _STKERR `Vb  1 s 0 @1026 ]
+"402
+[v _ADDRERR `Vb  1 s 0 @1027 ]
+"403
+[v _MATHERR `Vb  1 s 0 @1028 ]
+"404
+[v _COVTE `Vb  1 s 0 @1032 ]
+"405
+[v _OVBTE `Vb  1 s 0 @1033 ]
+"406
+[v _OVATE `Vb  1 s 0 @1034 ]
+"407
+[v _NSTDIS `Vb  1 s 0 @1039 ]
+"410
+[v _INTCON2 `Vui  1 s 2 @130 ]
+"422
+[s S36 . 2 `Vui  1 ALTIVT 2 0 :1:15 
+`Vui  1 DISI 2 0 :1:14 
+`Vui  1 . 2 0 :9:5 
+`Vui  1 INT4EP 2 0 :1:4 
+`Vui  1 INT3EP 2 0 :1:3 
+`Vui  1 INT2EP 2 0 :1:2 
+`Vui  1 INT1EP 2 0 :1:1 
+`Vui  1 INT0EP 2 0 :1:0 
+]
+"423
+[u S35 . 2 `S36  1 . 2 0 
+]
+[v _INTCON2bits `VS35  1 s 2 @130 ]
+"425
+[v _INT0EP `Vb  1 s 0 @1040 ]
+"426
+[v _INT1EP `Vb  1 s 0 @1041 ]
+"427
+[v _INT2EP `Vb  1 s 0 @1042 ]
+"428
+[v _INT3EP `Vb  1 s 0 @1043 ]
+"429
+[v _INT4EP `Vb  1 s 0 @1044 ]
+"430
+[v _DISI `Vb  1 s 0 @1054 ]
+"431
+[v _ALTIVT `Vb  1 s 0 @1055 ]
+"434
+[v _IFS0 `Vui  1 s 2 @132 ]
+"454
+[s S38 . 2 `Vui  1 CNIF 2 0 :1:15 
+`Vui  1 MI2CIF 2 0 :1:14 
+`Vui  1 SI2CIF 2 0 :1:13 
+`Vui  1 NVMIF 2 0 :1:12 
+`Vui  1 ADIF 2 0 :1:11 
+`Vui  1 U1TXIF 2 0 :1:10 
+`Vui  1 U1RXIF 2 0 :1:9 
+`Vui  1 SPI1IF 2 0 :1:8 
+`Vui  1 T3IF 2 0 :1:7 
+`Vui  1 T2IF 2 0 :1:6 
+`Vui  1 OC2IF 2 0 :1:5 
+`Vui  1 IC2IF 2 0 :1:4 
+`Vui  1 T1IF 2 0 :1:3 
+`Vui  1 OC1IF 2 0 :1:2 
+`Vui  1 IC1IF 2 0 :1:1 
+`Vui  1 INT0IF 2 0 :1:0 
+]
+"455
+[u S37 . 2 `S38  1 . 2 0 
+]
+[v _IFS0bits `VS37  1 s 2 @132 ]
+"457
+[v _INT0IF `Vb  1 s 0 @1056 ]
+"458
+[v _IC1IF `Vb  1 s 0 @1057 ]
+"459
+[v _OC1IF `Vb  1 s 0 @1058 ]
+"460
+[v _T1IF `Vb  1 s 0 @1059 ]
+"461
+[v _IC2IF `Vb  1 s 0 @1060 ]
+"462
+[v _OC2IF `Vb  1 s 0 @1061 ]
+"463
+[v _T2IF `Vb  1 s 0 @1062 ]
+"464
+[v _T3IF `Vb  1 s 0 @1063 ]
+"465
+[v _SPI1IF `Vb  1 s 0 @1064 ]
+"466
+[v _U1RXIF `Vb  1 s 0 @1065 ]
+"467
+[v _U1TXIF `Vb  1 s 0 @1066 ]
+"468
+[v _ADIF `Vb  1 s 0 @1067 ]
+"469
+[v _NVMIF `Vb  1 s 0 @1068 ]
+"470
+[v _SI2CIF `Vb  1 s 0 @1069 ]
+"471
+[v _MI2CIF `Vb  1 s 0 @1070 ]
+"472
+[v _CNIF `Vb  1 s 0 @1071 ]
+"475
+[v _IFS1 `Vui  1 s 2 @134 ]
+"495
+[s S40 . 2 `Vui  1 IC6IF 2 0 :1:15 
+`Vui  1 IC5IF 2 0 :1:14 
+`Vui  1 IC4IF 2 0 :1:13 
+`Vui  1 IC3IF 2 0 :1:12 
+`Vui  1 C1IF 2 0 :1:11 
+`Vui  1 SPI2IF 2 0 :1:10 
+`Vui  1 U2TXIF 2 0 :1:9 
+`Vui  1 U2RXIF 2 0 :1:8 
+`Vui  1 INT2IF 2 0 :1:7 
+`Vui  1 T5IF 2 0 :1:6 
+`Vui  1 T4IF 2 0 :1:5 
+`Vui  1 OC4IF 2 0 :1:4 
+`Vui  1 OC3IF 2 0 :1:3 
+`Vui  1 IC8IF 2 0 :1:2 
+`Vui  1 IC7IF 2 0 :1:1 
+`Vui  1 INT1IF 2 0 :1:0 
+]
+"496
+[u S39 . 2 `S40  1 . 2 0 
+]
+[v _IFS1bits `VS39  1 s 2 @134 ]
+"498
+[v _INT1IF `Vb  1 s 0 @1072 ]
+"499
+[v _IC7IF `Vb  1 s 0 @1073 ]
+"500
+[v _IC8IF `Vb  1 s 0 @1074 ]
+"501
+[v _OC3IF `Vb  1 s 0 @1075 ]
+"502
+[v _OC4IF `Vb  1 s 0 @1076 ]
+"503
+[v _T4IF `Vb  1 s 0 @1077 ]
+"504
+[v _T5IF `Vb  1 s 0 @1078 ]
+"505
+[v _INT2IF `Vb  1 s 0 @1079 ]
+"506
+[v _U2RXIF `Vb  1 s 0 @1080 ]
+"507
+[v _U2TXIF `Vb  1 s 0 @1081 ]
+"508
+[v _SPI2IF `Vb  1 s 0 @1082 ]
+"509
+[v _C1IF `Vb  1 s 0 @1083 ]
+"510
+[v _IC3IF `Vb  1 s 0 @1084 ]
+"511
+[v _IC4IF `Vb  1 s 0 @1085 ]
+"512
+[v _IC5IF `Vb  1 s 0 @1086 ]
+"513
+[v _IC6IF `Vb  1 s 0 @1087 ]
+"516
+[v _IFS2 `Vui  1 s 2 @136 ]
+"533
+[s S42 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 FLTBIF 2 0 :1:12 
+`Vui  1 FLTAIF 2 0 :1:11 
+`Vui  1 . 2 0 :2:9 
+`Vui  1 QEIIF 2 0 :1:8 
+`Vui  1 PWMIF 2 0 :1:7 
+`Vui  1 C2IF 2 0 :1:6 
+`Vui  1 INT4IF 2 0 :1:5 
+`Vui  1 INT3IF 2 0 :1:4 
+`Vui  1 OC8IF 2 0 :1:3 
+`Vui  1 OC7IF 2 0 :1:2 
+`Vui  1 OC6IF 2 0 :1:1 
+`Vui  1 OC5IF 2 0 :1:0 
+]
+"534
+[u S41 . 2 `S42  1 . 2 0 
+]
+[v _IFS2bits `VS41  1 s 2 @136 ]
+"536
+[v _OC5IF `Vb  1 s 0 @1088 ]
+"537
+[v _OC6IF `Vb  1 s 0 @1089 ]
+"538
+[v _OC7IF `Vb  1 s 0 @1090 ]
+"539
+[v _OC8IF `Vb  1 s 0 @1091 ]
+"540
+[v _INT3IF `Vb  1 s 0 @1092 ]
+"541
+[v _INT4IF `Vb  1 s 0 @1093 ]
+"542
+[v _C2IF `Vb  1 s 0 @1094 ]
+"543
+[v _PWMIF `Vb  1 s 0 @1095 ]
+"544
+[v _QEIIF `Vb  1 s 0 @1096 ]
+"545
+[v _FLTAIF `Vb  1 s 0 @1099 ]
+"546
+[v _FLTBIF `Vb  1 s 0 @1100 ]
+"549
+[v _IEC0 `Vui  1 s 2 @140 ]
+"569
+[s S44 . 2 `Vui  1 CNIE 2 0 :1:15 
+`Vui  1 MI2CIE 2 0 :1:14 
+`Vui  1 SI2CIE 2 0 :1:13 
+`Vui  1 NVMIE 2 0 :1:12 
+`Vui  1 ADIE 2 0 :1:11 
+`Vui  1 U1TXIE 2 0 :1:10 
+`Vui  1 U1RXIE 2 0 :1:9 
+`Vui  1 SPI1IE 2 0 :1:8 
+`Vui  1 T3IE 2 0 :1:7 
+`Vui  1 T2IE 2 0 :1:6 
+`Vui  1 OC2IE 2 0 :1:5 
+`Vui  1 IC2IE 2 0 :1:4 
+`Vui  1 T1IE 2 0 :1:3 
+`Vui  1 OC1IE 2 0 :1:2 
+`Vui  1 IC1IE 2 0 :1:1 
+`Vui  1 INT0IE 2 0 :1:0 
+]
+"570
+[u S43 . 2 `S44  1 . 2 0 
+]
+[v _IEC0bits `VS43  1 s 2 @140 ]
+"572
+[v _INT0IE `Vb  1 s 0 @1120 ]
+"573
+[v _IC1IE `Vb  1 s 0 @1121 ]
+"574
+[v _OC1IE `Vb  1 s 0 @1122 ]
+"575
+[v _T1IE `Vb  1 s 0 @1123 ]
+"576
+[v _IC2IE `Vb  1 s 0 @1124 ]
+"577
+[v _OC2IE `Vb  1 s 0 @1125 ]
+"578
+[v _T2IE `Vb  1 s 0 @1126 ]
+"579
+[v _T3IE `Vb  1 s 0 @1127 ]
+"580
+[v _SPI1IE `Vb  1 s 0 @1128 ]
+"581
+[v _U1RXIE `Vb  1 s 0 @1129 ]
+"582
+[v _U1TXIE `Vb  1 s 0 @1130 ]
+"583
+[v _ADIE `Vb  1 s 0 @1131 ]
+"584
+[v _NVMIE `Vb  1 s 0 @1132 ]
+"585
+[v _SI2CIE `Vb  1 s 0 @1133 ]
+"586
+[v _MI2CIE `Vb  1 s 0 @1134 ]
+"587
+[v _CNIE `Vb  1 s 0 @1135 ]
+"590
+[v _IEC1 `Vui  1 s 2 @142 ]
+"610
+[s S46 . 2 `Vui  1 IC6IE 2 0 :1:15 
+`Vui  1 IC5IE 2 0 :1:14 
+`Vui  1 IC4IE 2 0 :1:13 
+`Vui  1 IC3IE 2 0 :1:12 
+`Vui  1 C1IE 2 0 :1:11 
+`Vui  1 SPI2IE 2 0 :1:10 
+`Vui  1 U2TXIE 2 0 :1:9 
+`Vui  1 U2RXIE 2 0 :1:8 
+`Vui  1 INT2IE 2 0 :1:7 
+`Vui  1 T5IE 2 0 :1:6 
+`Vui  1 T4IE 2 0 :1:5 
+`Vui  1 OC4IE 2 0 :1:4 
+`Vui  1 OC3IE 2 0 :1:3 
+`Vui  1 IC8IE 2 0 :1:2 
+`Vui  1 IC7IE 2 0 :1:1 
+`Vui  1 INT1IE 2 0 :1:0 
+]
+"611
+[u S45 . 2 `S46  1 . 2 0 
+]
+[v _IEC1bits `VS45  1 s 2 @142 ]
+"613
+[v _INT1IE `Vb  1 s 0 @1136 ]
+"614
+[v _IC7IE `Vb  1 s 0 @1137 ]
+"615
+[v _IC8IE `Vb  1 s 0 @1138 ]
+"616
+[v _OC3IE `Vb  1 s 0 @1139 ]
+"617
+[v _OC4IE `Vb  1 s 0 @1140 ]
+"618
+[v _T4IE `Vb  1 s 0 @1141 ]
+"619
+[v _T5IE `Vb  1 s 0 @1142 ]
+"620
+[v _INT2IE `Vb  1 s 0 @1143 ]
+"621
+[v _U2RXIE `Vb  1 s 0 @1144 ]
+"622
+[v _U2TXIE `Vb  1 s 0 @1145 ]
+"623
+[v _SPI2IE `Vb  1 s 0 @1146 ]
+"624
+[v _C1IE `Vb  1 s 0 @1147 ]
+"625
+[v _IC3IE `Vb  1 s 0 @1148 ]
+"626
+[v _IC4IE `Vb  1 s 0 @1149 ]
+"627
+[v _IC5IE `Vb  1 s 0 @1150 ]
+"628
+[v _IC6IE `Vb  1 s 0 @1151 ]
+"631
+[v _IEC2 `Vui  1 s 2 @144 ]
+"648
+[s S48 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 FLTBIE 2 0 :1:12 
+`Vui  1 FLTAIE 2 0 :1:11 
+`Vui  1 . 2 0 :2:9 
+`Vui  1 QEIIE 2 0 :1:8 
+`Vui  1 PWMIE 2 0 :1:7 
+`Vui  1 C2IE 2 0 :1:6 
+`Vui  1 INT4IE 2 0 :1:5 
+`Vui  1 INT3IE 2 0 :1:4 
+`Vui  1 OC8IE 2 0 :1:3 
+`Vui  1 OC7IE 2 0 :1:2 
+`Vui  1 OC6IE 2 0 :1:1 
+`Vui  1 OC5IE 2 0 :1:0 
+]
+"649
+[u S47 . 2 `S48  1 . 2 0 
+]
+[v _IEC2bits `VS47  1 s 2 @144 ]
+"651
+[v _OC5IE `Vb  1 s 0 @1152 ]
+"652
+[v _OC6IE `Vb  1 s 0 @1153 ]
+"653
+[v _OC7IE `Vb  1 s 0 @1154 ]
+"654
+[v _OC8IE `Vb  1 s 0 @1155 ]
+"655
+[v _INT3IE `Vb  1 s 0 @1156 ]
+"656
+[v _INT4IE `Vb  1 s 0 @1157 ]
+"657
+[v _C2IE `Vb  1 s 0 @1158 ]
+"658
+[v _PWMIE `Vb  1 s 0 @1159 ]
+"659
+[v _QEIIE `Vb  1 s 0 @1160 ]
+"660
+[v _FLTAIE `Vb  1 s 0 @1163 ]
+"661
+[v _FLTBIE `Vb  1 s 0 @1164 ]
+"664
+[v _IPC0 `Vui  1 s 2 @148 ]
+"676
+[s S50 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 T1IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 OC1IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 IC1IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 INT0IP 2 0 :3:0 
+]
+"694
+[s S51 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 T1IP2 2 0 :1:14 
+`Vui  1 T1IP1 2 0 :1:13 
+`Vui  1 T1IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 OC1IP2 2 0 :1:10 
+`Vui  1 OC1IP1 2 0 :1:9 
+`Vui  1 OC1IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 IC1IP2 2 0 :1:6 
+`Vui  1 IC1IP1 2 0 :1:5 
+`Vui  1 IC1IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 INT0IP2 2 0 :1:2 
+`Vui  1 INT0IP1 2 0 :1:1 
+`Vui  1 INT0IP0 2 0 :1:0 
+]
+"695
+[u S49 . 2 `S50  1 . 2 0 
+`S51  1 . 2 0 
+]
+[v _IPC0bits `VS49  1 s 2 @148 ]
+"697
+[v _INT0IP0 `Vb  1 s 0 @1184 ]
+"698
+[v _INT0IP1 `Vb  1 s 0 @1185 ]
+"699
+[v _INT0IP2 `Vb  1 s 0 @1186 ]
+"700
+[v _IC1IP0 `Vb  1 s 0 @1188 ]
+"701
+[v _IC1IP1 `Vb  1 s 0 @1189 ]
+"702
+[v _IC1IP2 `Vb  1 s 0 @1190 ]
+"703
+[v _OC1IP0 `Vb  1 s 0 @1192 ]
+"704
+[v _OC1IP1 `Vb  1 s 0 @1193 ]
+"705
+[v _OC1IP2 `Vb  1 s 0 @1194 ]
+"706
+[v _T1IP0 `Vb  1 s 0 @1196 ]
+"707
+[v _T1IP1 `Vb  1 s 0 @1197 ]
+"708
+[v _T1IP2 `Vb  1 s 0 @1198 ]
+"711
+[v _IPC1 `Vui  1 s 2 @150 ]
+"723
+[s S53 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 T3IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 T2IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 OC2IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 IC2IP 2 0 :3:0 
+]
+"741
+[s S54 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 T3IP2 2 0 :1:14 
+`Vui  1 T3IP1 2 0 :1:13 
+`Vui  1 T3IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 T2IP2 2 0 :1:10 
+`Vui  1 T2IP1 2 0 :1:9 
+`Vui  1 T2IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 OC2IP2 2 0 :1:6 
+`Vui  1 OC2IP1 2 0 :1:5 
+`Vui  1 OC2IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 IC2IP2 2 0 :1:2 
+`Vui  1 IC2IP1 2 0 :1:1 
+`Vui  1 IC2IP0 2 0 :1:0 
+]
+"742
+[u S52 . 2 `S53  1 . 2 0 
+`S54  1 . 2 0 
+]
+[v _IPC1bits `VS52  1 s 2 @150 ]
+"744
+[v _IC2IP0 `Vb  1 s 0 @1200 ]
+"745
+[v _IC2IP1 `Vb  1 s 0 @1201 ]
+"746
+[v _IC2IP2 `Vb  1 s 0 @1202 ]
+"747
+[v _OC2IP0 `Vb  1 s 0 @1204 ]
+"748
+[v _OC2IP1 `Vb  1 s 0 @1205 ]
+"749
+[v _OC2IP2 `Vb  1 s 0 @1206 ]
+"750
+[v _T2IP0 `Vb  1 s 0 @1208 ]
+"751
+[v _T2IP1 `Vb  1 s 0 @1209 ]
+"752
+[v _T2IP2 `Vb  1 s 0 @1210 ]
+"753
+[v _T3IP0 `Vb  1 s 0 @1212 ]
+"754
+[v _T3IP1 `Vb  1 s 0 @1213 ]
+"755
+[v _T3IP2 `Vb  1 s 0 @1214 ]
+"758
+[v _IPC2 `Vui  1 s 2 @152 ]
+"770
+[s S56 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 ADIP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 U1TXIP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 U1RXIP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 SPI1IP 2 0 :3:0 
+]
+"788
+[s S57 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 ADIP2 2 0 :1:14 
+`Vui  1 ADIP1 2 0 :1:13 
+`Vui  1 ADIP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 U1TXIP2 2 0 :1:10 
+`Vui  1 U1TXIP1 2 0 :1:9 
+`Vui  1 U1TXIP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 U1RXIP2 2 0 :1:6 
+`Vui  1 U1RXIP1 2 0 :1:5 
+`Vui  1 U1RXIP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 SPI1IP2 2 0 :1:2 
+`Vui  1 SPI1IP1 2 0 :1:1 
+`Vui  1 SPI1IP0 2 0 :1:0 
+]
+"789
+[u S55 . 2 `S56  1 . 2 0 
+`S57  1 . 2 0 
+]
+[v _IPC2bits `VS55  1 s 2 @152 ]
+"791
+[v _SPI1IP0 `Vb  1 s 0 @1216 ]
+"792
+[v _SPI1IP1 `Vb  1 s 0 @1217 ]
+"793
+[v _SPI1IP2 `Vb  1 s 0 @1218 ]
+"794
+[v _U1RXIP0 `Vb  1 s 0 @1220 ]
+"795
+[v _U1RXIP1 `Vb  1 s 0 @1221 ]
+"796
+[v _U1RXIP2 `Vb  1 s 0 @1222 ]
+"797
+[v _U1TXIP0 `Vb  1 s 0 @1224 ]
+"798
+[v _U1TXIP1 `Vb  1 s 0 @1225 ]
+"799
+[v _U1TXIP2 `Vb  1 s 0 @1226 ]
+"800
+[v _ADIP0 `Vb  1 s 0 @1228 ]
+"801
+[v _ADIP1 `Vb  1 s 0 @1229 ]
+"802
+[v _ADIP2 `Vb  1 s 0 @1230 ]
+"805
+[v _IPC3 `Vui  1 s 2 @154 ]
+"817
+[s S59 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 CNIP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 MI2CIP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 SI2CIP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 NVMIP 2 0 :3:0 
+]
+"835
+[s S60 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 CNIP2 2 0 :1:14 
+`Vui  1 CNIP1 2 0 :1:13 
+`Vui  1 CNIP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 MI2CIP2 2 0 :1:10 
+`Vui  1 MI2CIP1 2 0 :1:9 
+`Vui  1 MI2CIP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 SI2CIP2 2 0 :1:6 
+`Vui  1 SI2CIP1 2 0 :1:5 
+`Vui  1 SI2CIP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 NVMIP2 2 0 :1:2 
+`Vui  1 NVMIP1 2 0 :1:1 
+`Vui  1 NVMIP0 2 0 :1:0 
+]
+"836
+[u S58 . 2 `S59  1 . 2 0 
+`S60  1 . 2 0 
+]
+[v _IPC3bits `VS58  1 s 2 @154 ]
+"838
+[v _NVMIP0 `Vb  1 s 0 @1232 ]
+"839
+[v _NVMIP1 `Vb  1 s 0 @1233 ]
+"840
+[v _NVMIP2 `Vb  1 s 0 @1234 ]
+"841
+[v _SI2CIP0 `Vb  1 s 0 @1236 ]
+"842
+[v _SI2CIP1 `Vb  1 s 0 @1237 ]
+"843
+[v _SI2CIP2 `Vb  1 s 0 @1238 ]
+"844
+[v _MI2CIP0 `Vb  1 s 0 @1240 ]
+"845
+[v _MI2CIP1 `Vb  1 s 0 @1241 ]
+"846
+[v _MI2CIP2 `Vb  1 s 0 @1242 ]
+"847
+[v _CNIP0 `Vb  1 s 0 @1244 ]
+"848
+[v _CNIP1 `Vb  1 s 0 @1245 ]
+"849
+[v _CNIP2 `Vb  1 s 0 @1246 ]
+"852
+[v _IPC4 `Vui  1 s 2 @156 ]
+"864
+[s S62 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 OC3IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 IC8IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 IC7IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 INT1IP 2 0 :3:0 
+]
+"882
+[s S63 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 OC3IP2 2 0 :1:14 
+`Vui  1 OC3IP1 2 0 :1:13 
+`Vui  1 OC3IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 IC8IP2 2 0 :1:10 
+`Vui  1 IC8IP1 2 0 :1:9 
+`Vui  1 IC8IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 IC7IP2 2 0 :1:6 
+`Vui  1 IC7IP1 2 0 :1:5 
+`Vui  1 IC7IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 INT1IP2 2 0 :1:2 
+`Vui  1 INT1IP1 2 0 :1:1 
+`Vui  1 INT1IP0 2 0 :1:0 
+]
+"883
+[u S61 . 2 `S62  1 . 2 0 
+`S63  1 . 2 0 
+]
+[v _IPC4bits `VS61  1 s 2 @156 ]
+"885
+[v _INT1IP0 `Vb  1 s 0 @1248 ]
+"886
+[v _INT1IP1 `Vb  1 s 0 @1249 ]
+"887
+[v _INT1IP2 `Vb  1 s 0 @1250 ]
+"888
+[v _IC7IP0 `Vb  1 s 0 @1252 ]
+"889
+[v _IC7IP1 `Vb  1 s 0 @1253 ]
+"890
+[v _IC7IP2 `Vb  1 s 0 @1254 ]
+"891
+[v _IC8IP0 `Vb  1 s 0 @1256 ]
+"892
+[v _IC8IP1 `Vb  1 s 0 @1257 ]
+"893
+[v _IC8IP2 `Vb  1 s 0 @1258 ]
+"894
+[v _OC3IP0 `Vb  1 s 0 @1260 ]
+"895
+[v _OC3IP1 `Vb  1 s 0 @1261 ]
+"896
+[v _OC3IP2 `Vb  1 s 0 @1262 ]
+"899
+[v _IPC5 `Vui  1 s 2 @158 ]
+"911
+[s S65 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 INT2IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 T5IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 T4IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 OC4IP 2 0 :3:0 
+]
+"929
+[s S66 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 INT2IP2 2 0 :1:14 
+`Vui  1 INT2IP1 2 0 :1:13 
+`Vui  1 INT2IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 T5IP2 2 0 :1:10 
+`Vui  1 T5IP1 2 0 :1:9 
+`Vui  1 T5IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 T4IP2 2 0 :1:6 
+`Vui  1 T4IP1 2 0 :1:5 
+`Vui  1 T4IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 OC4IP2 2 0 :1:2 
+`Vui  1 OC4IP1 2 0 :1:1 
+`Vui  1 OC4IP0 2 0 :1:0 
+]
+"930
+[u S64 . 2 `S65  1 . 2 0 
+`S66  1 . 2 0 
+]
+[v _IPC5bits `VS64  1 s 2 @158 ]
+"932
+[v _OC4IP0 `Vb  1 s 0 @1264 ]
+"933
+[v _OC4IP1 `Vb  1 s 0 @1265 ]
+"934
+[v _OC4IP2 `Vb  1 s 0 @1266 ]
+"935
+[v _T4IP0 `Vb  1 s 0 @1268 ]
+"936
+[v _T4IP1 `Vb  1 s 0 @1269 ]
+"937
+[v _T4IP2 `Vb  1 s 0 @1270 ]
+"938
+[v _T5IP0 `Vb  1 s 0 @1272 ]
+"939
+[v _T5IP1 `Vb  1 s 0 @1273 ]
+"940
+[v _T5IP2 `Vb  1 s 0 @1274 ]
+"941
+[v _INT2IP0 `Vb  1 s 0 @1276 ]
+"942
+[v _INT2IP1 `Vb  1 s 0 @1277 ]
+"943
+[v _INT2IP2 `Vb  1 s 0 @1278 ]
+"946
+[v _IPC6 `Vui  1 s 2 @160 ]
+"958
+[s S68 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 C1IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 SPI2IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 U2TXIP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 U2RXIP 2 0 :3:0 
+]
+"976
+[s S69 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 C1IP2 2 0 :1:14 
+`Vui  1 C1IP1 2 0 :1:13 
+`Vui  1 C1IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 SPI2IP2 2 0 :1:10 
+`Vui  1 SPI2IP1 2 0 :1:9 
+`Vui  1 SPI2IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 U2TXIP2 2 0 :1:6 
+`Vui  1 U2TXIP1 2 0 :1:5 
+`Vui  1 U2TXIP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 U2RXIP2 2 0 :1:2 
+`Vui  1 U2RXIP1 2 0 :1:1 
+`Vui  1 U2RXIP0 2 0 :1:0 
+]
+"977
+[u S67 . 2 `S68  1 . 2 0 
+`S69  1 . 2 0 
+]
+[v _IPC6bits `VS67  1 s 2 @160 ]
+"979
+[v _U2RXIP0 `Vb  1 s 0 @1280 ]
+"980
+[v _U2RXIP1 `Vb  1 s 0 @1281 ]
+"981
+[v _U2RXIP2 `Vb  1 s 0 @1282 ]
+"982
+[v _U2TXIP0 `Vb  1 s 0 @1284 ]
+"983
+[v _U2TXIP1 `Vb  1 s 0 @1285 ]
+"984
+[v _U2TXIP2 `Vb  1 s 0 @1286 ]
+"985
+[v _SPI2IP0 `Vb  1 s 0 @1288 ]
+"986
+[v _SPI2IP1 `Vb  1 s 0 @1289 ]
+"987
+[v _SPI2IP2 `Vb  1 s 0 @1290 ]
+"988
+[v _C1IP0 `Vb  1 s 0 @1292 ]
+"989
+[v _C1IP1 `Vb  1 s 0 @1293 ]
+"990
+[v _C1IP2 `Vb  1 s 0 @1294 ]
+"993
+[v _IPC7 `Vui  1 s 2 @162 ]
+"1005
+[s S71 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 IC6IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 IC5IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 IC4IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 IC3IP 2 0 :3:0 
+]
+"1023
+[s S72 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 IC6IP2 2 0 :1:14 
+`Vui  1 IC6IP1 2 0 :1:13 
+`Vui  1 IC6IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 IC5IP2 2 0 :1:10 
+`Vui  1 IC5IP1 2 0 :1:9 
+`Vui  1 IC5IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 IC4IP2 2 0 :1:6 
+`Vui  1 IC4IP1 2 0 :1:5 
+`Vui  1 IC4IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 IC3IP2 2 0 :1:2 
+`Vui  1 IC3IP1 2 0 :1:1 
+`Vui  1 IC3IP0 2 0 :1:0 
+]
+"1024
+[u S70 . 2 `S71  1 . 2 0 
+`S72  1 . 2 0 
+]
+[v _IPC7bits `VS70  1 s 2 @162 ]
+"1026
+[v _IC3IP0 `Vb  1 s 0 @1296 ]
+"1027
+[v _IC3IP1 `Vb  1 s 0 @1297 ]
+"1028
+[v _IC3IP2 `Vb  1 s 0 @1298 ]
+"1029
+[v _IC4IP0 `Vb  1 s 0 @1300 ]
+"1030
+[v _IC4IP1 `Vb  1 s 0 @1301 ]
+"1031
+[v _IC4IP2 `Vb  1 s 0 @1302 ]
+"1032
+[v _IC5IP0 `Vb  1 s 0 @1304 ]
+"1033
+[v _IC5IP1 `Vb  1 s 0 @1305 ]
+"1034
+[v _IC5IP2 `Vb  1 s 0 @1306 ]
+"1035
+[v _IC6IP0 `Vb  1 s 0 @1308 ]
+"1036
+[v _IC6IP1 `Vb  1 s 0 @1309 ]
+"1037
+[v _IC6IP2 `Vb  1 s 0 @1310 ]
+"1040
+[v _IPC8 `Vui  1 s 2 @164 ]
+"1052
+[s S74 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 OC8IP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 OC7IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 OC6IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 OC5IP 2 0 :3:0 
+]
+"1070
+[s S75 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 OC8IP2 2 0 :1:14 
+`Vui  1 OC8IP1 2 0 :1:13 
+`Vui  1 OC8IP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 OC7IP2 2 0 :1:10 
+`Vui  1 OC7IP1 2 0 :1:9 
+`Vui  1 OC7IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 OC6IP2 2 0 :1:6 
+`Vui  1 OC6IP1 2 0 :1:5 
+`Vui  1 OC6IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 OC5IP2 2 0 :1:2 
+`Vui  1 OC5IP1 2 0 :1:1 
+`Vui  1 OC5IP0 2 0 :1:0 
+]
+"1071
+[u S73 . 2 `S74  1 . 2 0 
+`S75  1 . 2 0 
+]
+[v _IPC8bits `VS73  1 s 2 @164 ]
+"1073
+[v _OC5IP0 `Vb  1 s 0 @1312 ]
+"1074
+[v _OC5IP1 `Vb  1 s 0 @1313 ]
+"1075
+[v _OC5IP2 `Vb  1 s 0 @1314 ]
+"1076
+[v _OC6IP0 `Vb  1 s 0 @1316 ]
+"1077
+[v _OC6IP1 `Vb  1 s 0 @1317 ]
+"1078
+[v _OC6IP2 `Vb  1 s 0 @1318 ]
+"1079
+[v _OC7IP0 `Vb  1 s 0 @1320 ]
+"1080
+[v _OC7IP1 `Vb  1 s 0 @1321 ]
+"1081
+[v _OC7IP2 `Vb  1 s 0 @1322 ]
+"1082
+[v _OC8IP0 `Vb  1 s 0 @1324 ]
+"1083
+[v _OC8IP1 `Vb  1 s 0 @1325 ]
+"1084
+[v _OC8IP2 `Vb  1 s 0 @1326 ]
+"1087
+[v _IPC9 `Vui  1 s 2 @166 ]
+"1099
+[s S77 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 PWMIP 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 C2IP 2 0 :3:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 INT4IP 2 0 :3:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 INT3IP 2 0 :3:0 
+]
+"1117
+[s S78 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 PWMIP2 2 0 :1:14 
+`Vui  1 PWMIP1 2 0 :1:13 
+`Vui  1 PWMIP0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 C2IP2 2 0 :1:10 
+`Vui  1 C2IP1 2 0 :1:9 
+`Vui  1 C2IP0 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 INT4IP2 2 0 :1:6 
+`Vui  1 INT4IP1 2 0 :1:5 
+`Vui  1 INT4IP0 2 0 :1:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 INT3IP2 2 0 :1:2 
+`Vui  1 INT3IP1 2 0 :1:1 
+`Vui  1 INT3IP0 2 0 :1:0 
+]
+"1118
+[u S76 . 2 `S77  1 . 2 0 
+`S78  1 . 2 0 
+]
+[v _IPC9bits `VS76  1 s 2 @166 ]
+"1120
+[v _INT3IP0 `Vb  1 s 0 @1328 ]
+"1121
+[v _INT3IP1 `Vb  1 s 0 @1329 ]
+"1122
+[v _INT3IP2 `Vb  1 s 0 @1330 ]
+"1123
+[v _INT4IP0 `Vb  1 s 0 @1332 ]
+"1124
+[v _INT4IP1 `Vb  1 s 0 @1333 ]
+"1125
+[v _INT4IP2 `Vb  1 s 0 @1334 ]
+"1126
+[v _C2IP0 `Vb  1 s 0 @1336 ]
+"1127
+[v _C2IP1 `Vb  1 s 0 @1337 ]
+"1128
+[v _C2IP2 `Vb  1 s 0 @1338 ]
+"1129
+[v _PWMIP0 `Vb  1 s 0 @1340 ]
+"1130
+[v _PWMIP1 `Vb  1 s 0 @1341 ]
+"1131
+[v _PWMIP2 `Vb  1 s 0 @1342 ]
+"1134
+[v _IPC10 `Vui  1 s 2 @168 ]
+"1142
+[s S80 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 FLTAIP 2 0 :3:12 
+`Vui  1 . 2 0 :9:3 
+`Vui  1 QEIIP 2 0 :3:0 
+]
+"1152
+[s S81 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 FLTAIP2 2 0 :1:14 
+`Vui  1 FLTAIP1 2 0 :1:13 
+`Vui  1 FLTAIP0 2 0 :1:12 
+`Vui  1 . 2 0 :9:3 
+`Vui  1 QEIIP2 2 0 :1:2 
+`Vui  1 QEIIP1 2 0 :1:1 
+`Vui  1 QEIIP0 2 0 :1:0 
+]
+"1153
+[u S79 . 2 `S80  1 . 2 0 
+`S81  1 . 2 0 
+]
+[v _IPC10bits `VS79  1 s 2 @168 ]
+"1155
+[v _QEIIP0 `Vb  1 s 0 @1344 ]
+"1156
+[v _QEIIP1 `Vb  1 s 0 @1345 ]
+"1157
+[v _QEIIP2 `Vb  1 s 0 @1346 ]
+"1158
+[v _FLTAIP0 `Vb  1 s 0 @1356 ]
+"1159
+[v _FLTAIP1 `Vb  1 s 0 @1357 ]
+"1160
+[v _FLTAIP2 `Vb  1 s 0 @1358 ]
+"1163
+[v _IPC11 `Vui  1 s 2 @170 ]
+"1169
+[s S83 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 FLTBIP 2 0 :3:0 
+]
+"1175
+[s S84 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 FLTBIP2 2 0 :1:2 
+`Vui  1 FLTBIP1 2 0 :1:1 
+`Vui  1 FLTBIP0 2 0 :1:0 
+]
+"1176
+[u S82 . 2 `S83  1 . 2 0 
+`S84  1 . 2 0 
+]
+[v _IPC11bits `VS82  1 s 2 @170 ]
+"1178
+[v _FLTBIP0 `Vb  1 s 0 @1360 ]
+"1179
+[v _FLTBIP1 `Vb  1 s 0 @1361 ]
+"1180
+[v _FLTBIP2 `Vb  1 s 0 @1362 ]
+"1183
+[v _INTTREG `Vui  1 s 2 @176 ]
+"1194
+[s S86 . 2 `Vui  1 IRQtoCPU 2 0 :1:15 
+`Vui  1 TMODE 2 0 :1:14 
+`Vui  1 VHOLD 2 0 :1:13 
+`Vui  1 . 2 0 :1:12 
+`Vui  1 ILR 2 0 :4:8 
+`Vui  1 . 2 0 :2:6 
+`Vui  1 VECNUM 2 0 :6:0 
+]
+"1208
+[s S87 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 ILR3 2 0 :1:11 
+`Vui  1 ILR2 2 0 :1:10 
+`Vui  1 ILR1 2 0 :1:9 
+`Vui  1 ILR0 2 0 :1:8 
+`Vui  1 . 2 0 :2:6 
+`Vui  1 VECNUM5 2 0 :1:5 
+`Vui  1 VECNUM4 2 0 :1:4 
+`Vui  1 VECNUM3 2 0 :1:3 
+`Vui  1 VECNUM2 2 0 :1:2 
+`Vui  1 VECNUM1 2 0 :1:1 
+`Vui  1 VECNUM0 2 0 :1:0 
+]
+"1209
+[u S85 . 2 `S86  1 . 2 0 
+`S87  1 . 2 0 
+]
+[v _INTTREGbits `VS85  1 s 2 @176 ]
+"1211
+[v _VHOLD `Vb  1 s 0 @1421 ]
+"1212
+[v _TMODE `Vb  1 s 0 @1422 ]
+"1213
+[v _IRQtoCPU `Vb  1 s 0 @1423 ]
+"1214
+[v _VECNUM0 `Vb  1 s 0 @1408 ]
+"1215
+[v _VECNUM1 `Vb  1 s 0 @1409 ]
+"1216
+[v _VECNUM2 `Vb  1 s 0 @1410 ]
+"1217
+[v _VECNUM3 `Vb  1 s 0 @1411 ]
+"1218
+[v _VECNUM4 `Vb  1 s 0 @1412 ]
+"1219
+[v _VECNUM5 `Vb  1 s 0 @1413 ]
+"1220
+[v _ILR0 `Vb  1 s 0 @1416 ]
+"1221
+[v _ILR1 `Vb  1 s 0 @1417 ]
+"1222
+[v _ILR2 `Vb  1 s 0 @1418 ]
+"1223
+[v _ILR3 `Vb  1 s 0 @1419 ]
+"1226
+[v _CNEN1 `Vui  1 s 2 @192 ]
+"1246
+[s S89 . 2 `Vui  1 CN15IE 2 0 :1:15 
+`Vui  1 CN14IE 2 0 :1:14 
+`Vui  1 CN13IE 2 0 :1:13 
+`Vui  1 CN12IE 2 0 :1:12 
+`Vui  1 CN11IE 2 0 :1:11 
+`Vui  1 CN10IE 2 0 :1:10 
+`Vui  1 CN9IE 2 0 :1:9 
+`Vui  1 CN8IE 2 0 :1:8 
+`Vui  1 CN7IE 2 0 :1:7 
+`Vui  1 CN6IE 2 0 :1:6 
+`Vui  1 CN5IE 2 0 :1:5 
+`Vui  1 CN4IE 2 0 :1:4 
+`Vui  1 CN3IE 2 0 :1:3 
+`Vui  1 CN2IE 2 0 :1:2 
+`Vui  1 CN1IE 2 0 :1:1 
+`Vui  1 CN0IE 2 0 :1:0 
+]
+"1247
+[u S88 . 2 `S89  1 . 2 0 
+]
+[v _CNEN1bits `VS88  1 s 2 @192 ]
+"1249
+[v _CN0IE `Vb  1 s 0 @1536 ]
+"1250
+[v _CN1IE `Vb  1 s 0 @1537 ]
+"1251
+[v _CN2IE `Vb  1 s 0 @1538 ]
+"1252
+[v _CN3IE `Vb  1 s 0 @1539 ]
+"1253
+[v _CN4IE `Vb  1 s 0 @1540 ]
+"1254
+[v _CN5IE `Vb  1 s 0 @1541 ]
+"1255
+[v _CN6IE `Vb  1 s 0 @1542 ]
+"1256
+[v _CN7IE `Vb  1 s 0 @1543 ]
+"1257
+[v _CN8IE `Vb  1 s 0 @1544 ]
+"1258
+[v _CN9IE `Vb  1 s 0 @1545 ]
+"1259
+[v _CN10IE `Vb  1 s 0 @1546 ]
+"1260
+[v _CN11IE `Vb  1 s 0 @1547 ]
+"1261
+[v _CN12IE `Vb  1 s 0 @1548 ]
+"1262
+[v _CN13IE `Vb  1 s 0 @1549 ]
+"1263
+[v _CN14IE `Vb  1 s 0 @1550 ]
+"1264
+[v _CN15IE `Vb  1 s 0 @1551 ]
+"1267
+[v _CNEN2 `Vui  1 s 2 @194 ]
+"1278
+[s S91 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 CN21IE 2 0 :1:5 
+`Vui  1 CN20IE 2 0 :1:4 
+`Vui  1 CN19IE 2 0 :1:3 
+`Vui  1 CN18IE 2 0 :1:2 
+`Vui  1 CN17IE 2 0 :1:1 
+`Vui  1 CN16IE 2 0 :1:0 
+]
+"1279
+[u S90 . 2 `S91  1 . 2 0 
+]
+[v _CNEN2bits `VS90  1 s 2 @194 ]
+"1281
+[v _CN16IE `Vb  1 s 0 @1552 ]
+"1282
+[v _CN17IE `Vb  1 s 0 @1553 ]
+"1283
+[v _CN18IE `Vb  1 s 0 @1554 ]
+"1284
+[v _CN19IE `Vb  1 s 0 @1555 ]
+"1285
+[v _CN20IE `Vb  1 s 0 @1556 ]
+"1286
+[v _CN21IE `Vb  1 s 0 @1557 ]
+"1289
+[v _CNPU1 `Vui  1 s 2 @196 ]
+"1309
+[s S93 . 2 `Vui  1 CN15PUE 2 0 :1:15 
+`Vui  1 CN14PUE 2 0 :1:14 
+`Vui  1 CN13PUE 2 0 :1:13 
+`Vui  1 CN12PUE 2 0 :1:12 
+`Vui  1 CN11PUE 2 0 :1:11 
+`Vui  1 CN10PUE 2 0 :1:10 
+`Vui  1 CN9PUE 2 0 :1:9 
+`Vui  1 CN8PUE 2 0 :1:8 
+`Vui  1 CN7PUE 2 0 :1:7 
+`Vui  1 CN6PUE 2 0 :1:6 
+`Vui  1 CN5PUE 2 0 :1:5 
+`Vui  1 CN4PUE 2 0 :1:4 
+`Vui  1 CN3PUE 2 0 :1:3 
+`Vui  1 CN2PUE 2 0 :1:2 
+`Vui  1 CN1PUE 2 0 :1:1 
+`Vui  1 CN0PUE 2 0 :1:0 
+]
+"1310
+[u S92 . 2 `S93  1 . 2 0 
+]
+[v _CNPU1bits `VS92  1 s 2 @196 ]
+"1312
+[v _CN0PUE `Vb  1 s 0 @1568 ]
+"1313
+[v _CN1PUE `Vb  1 s 0 @1569 ]
+"1314
+[v _CN2PUE `Vb  1 s 0 @1570 ]
+"1315
+[v _CN3PUE `Vb  1 s 0 @1571 ]
+"1316
+[v _CN4PUE `Vb  1 s 0 @1572 ]
+"1317
+[v _CN5PUE `Vb  1 s 0 @1573 ]
+"1318
+[v _CN6PUE `Vb  1 s 0 @1574 ]
+"1319
+[v _CN7PUE `Vb  1 s 0 @1575 ]
+"1320
+[v _CN8PUE `Vb  1 s 0 @1576 ]
+"1321
+[v _CN9PUE `Vb  1 s 0 @1577 ]
+"1322
+[v _CN10PUE `Vb  1 s 0 @1578 ]
+"1323
+[v _CN11PUE `Vb  1 s 0 @1579 ]
+"1324
+[v _CN12PUE `Vb  1 s 0 @1580 ]
+"1325
+[v _CN13PUE `Vb  1 s 0 @1581 ]
+"1326
+[v _CN14PUE `Vb  1 s 0 @1582 ]
+"1327
+[v _CN15PUE `Vb  1 s 0 @1583 ]
+"1330
+[v _CNPU2 `Vui  1 s 2 @198 ]
+"1341
+[s S95 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 CN21PUE 2 0 :1:5 
+`Vui  1 CN20PUE 2 0 :1:4 
+`Vui  1 CN19PUE 2 0 :1:3 
+`Vui  1 CN18PUE 2 0 :1:2 
+`Vui  1 CN17PUE 2 0 :1:1 
+`Vui  1 CN16PUE 2 0 :1:0 
+]
+"1342
+[u S94 . 2 `S95  1 . 2 0 
+]
+[v _CNPU2bits `VS94  1 s 2 @198 ]
+"1344
+[v _CN16PUE `Vb  1 s 0 @1584 ]
+"1345
+[v _CN17PUE `Vb  1 s 0 @1585 ]
+"1346
+[v _CN18PUE `Vb  1 s 0 @1586 ]
+"1347
+[v _CN19PUE `Vb  1 s 0 @1587 ]
+"1348
+[v _CN20PUE `Vb  1 s 0 @1588 ]
+"1349
+[v _CN21PUE `Vb  1 s 0 @1589 ]
+"1352
+[v _TMR1 `Vui  1 s 2 @256 ]
+"1355
+[v _PR1 `Vui  1 s 2 @258 ]
+"1358
+[v _T1CON `Vui  1 s 2 @260 ]
+"1372
+[s S97 . 2 `Vui  1 TON 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 TSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 TGATE 2 0 :1:6 
+`Vui  1 TCKPS 2 0 :2:4 
+`Vui  1 . 2 0 :1:3 
+`Vui  1 TSYNC 2 0 :1:2 
+`Vui  1 TCS 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"1378
+[s S98 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TCKPS1 2 0 :1:5 
+`Vui  1 TCKPS0 2 0 :1:4 
+`Vui  1 . 2 0 :4:0 
+]
+"1379
+[u S96 . 2 `S97  1 . 2 0 
+`S98  1 . 2 0 
+]
+[v _T1CONbits `VS96  1 s 2 @260 ]
+"1381
+[v _TCS `Vb  1 s 0 @2081 ]
+"1382
+[v _TSYNC `Vb  1 s 0 @2082 ]
+"1383
+[v _TGATE `Vb  1 s 0 @2086 ]
+"1384
+[v _TSIDL `Vb  1 s 0 @2093 ]
+"1385
+[v _TON `Vb  1 s 0 @2095 ]
+"1386
+[v _TCKPS0 `Vb  1 s 0 @2084 ]
+"1387
+[v _TCKPS1 `Vb  1 s 0 @2085 ]
+"1390
+[v _TMR2 `Vui  1 s 2 @262 ]
+"1393
+[v _TMR3HLD `Vui  1 s 2 @264 ]
+"1396
+[v _TMR3 `Vui  1 s 2 @266 ]
+"1399
+[v _PR2 `Vui  1 s 2 @268 ]
+"1402
+[v _PR3 `Vui  1 s 2 @270 ]
+"1405
+[v _T2CON `Vui  1 s 2 @272 ]
+"1419
+[s S100 . 2 `Vui  1 TON 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 TSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 TGATE 2 0 :1:6 
+`Vui  1 TCKPS 2 0 :2:4 
+`Vui  1 T32 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TCS 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"1425
+[s S101 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TCKPS1 2 0 :1:5 
+`Vui  1 TCKPS0 2 0 :1:4 
+`Vui  1 . 2 0 :4:0 
+]
+"1426
+[u S99 . 2 `S100  1 . 2 0 
+`S101  1 . 2 0 
+]
+[v _T2CONbits `VS99  1 s 2 @272 ]
+"1430
+[v _T32 `Vb  1 s 0 @2179 ]
+"1443
+[v _T3CON `Vui  1 s 2 @274 ]
+"1456
+[s S103 . 2 `Vui  1 TON 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 TSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 TGATE 2 0 :1:6 
+`Vui  1 TCKPS 2 0 :2:4 
+`Vui  1 . 2 0 :2:2 
+`Vui  1 TCS 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"1462
+[s S104 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TCKPS1 2 0 :1:5 
+`Vui  1 TCKPS0 2 0 :1:4 
+`Vui  1 . 2 0 :4:0 
+]
+"1463
+[u S102 . 2 `S103  1 . 2 0 
+`S104  1 . 2 0 
+]
+[v _T3CONbits `VS102  1 s 2 @274 ]
+"1479
+[v _TMR4 `Vui  1 s 2 @276 ]
+"1482
+[v _TMR5HLD `Vui  1 s 2 @278 ]
+"1485
+[v _TMR5 `Vui  1 s 2 @280 ]
+"1488
+[v _PR4 `Vui  1 s 2 @282 ]
+"1491
+[v _PR5 `Vui  1 s 2 @284 ]
+"1494
+[v _T4CON `Vui  1 s 2 @286 ]
+"1508
+[s S106 . 2 `Vui  1 TON 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 TSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 TGATE 2 0 :1:6 
+`Vui  1 TCKPS 2 0 :2:4 
+`Vui  1 T32 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TCS 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"1514
+[s S107 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TCKPS1 2 0 :1:5 
+`Vui  1 TCKPS0 2 0 :1:4 
+`Vui  1 . 2 0 :4:0 
+]
+"1515
+[u S105 . 2 `S106  1 . 2 0 
+`S107  1 . 2 0 
+]
+[v _T4CONbits `VS105  1 s 2 @286 ]
+"1533
+[v _T5CON `Vui  1 s 2 @288 ]
+"1546
+[s S109 . 2 `Vui  1 TON 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 TSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 TGATE 2 0 :1:6 
+`Vui  1 TCKPS 2 0 :2:4 
+`Vui  1 . 2 0 :2:2 
+`Vui  1 TCS 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"1552
+[s S110 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TCKPS1 2 0 :1:5 
+`Vui  1 TCKPS0 2 0 :1:4 
+`Vui  1 . 2 0 :4:0 
+]
+"1553
+[u S108 . 2 `S109  1 . 2 0 
+`S110  1 . 2 0 
+]
+[v _T5CONbits `VS108  1 s 2 @288 ]
+"1569
+[v _QEICON `Vui  1 s 2 @290 ]
+"1589
+[s S112 . 2 `Vui  1 CNTERR 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 QEISIDL 2 0 :1:13 
+`Vui  1 INDX 2 0 :1:12 
+`Vui  1 UPDN 2 0 :1:11 
+`Vui  1 QEIM2 2 0 :1:10 
+`Vui  1 QEIM1 2 0 :1:9 
+`Vui  1 QEIM0 2 0 :1:8 
+`Vui  1 SWPAB 2 0 :1:7 
+`Vui  1 PCDOUT 2 0 :1:6 
+`Vui  1 TQGATE 2 0 :1:5 
+`Vui  1 TQCKPS1 2 0 :1:4 
+`Vui  1 TQCKPS0 2 0 :1:3 
+`Vui  1 POSRES 2 0 :1:2 
+`Vui  1 TQCS 2 0 :1:1 
+`Vui  1 UPDN_SRC 2 0 :1:0 
+]
+"1590
+[u S111 . 2 `S112  1 . 2 0 
+]
+[v _QEICONbits `VS111  1 s 2 @290 ]
+"1592
+[v _UPDN_SRC `Vb  1 s 0 @2320 ]
+"1593
+[v _TQCS `Vb  1 s 0 @2321 ]
+"1594
+[v _POSRES `Vb  1 s 0 @2322 ]
+"1595
+[v _TQCKPS0 `Vb  1 s 0 @2323 ]
+"1596
+[v _TQCKPS1 `Vb  1 s 0 @2324 ]
+"1597
+[v _TQGATE `Vb  1 s 0 @2325 ]
+"1598
+[v _PCDOUT `Vb  1 s 0 @2326 ]
+"1599
+[v _SWPAB `Vb  1 s 0 @2327 ]
+"1600
+[v _QEIM0 `Vb  1 s 0 @2328 ]
+"1601
+[v _QEIM1 `Vb  1 s 0 @2329 ]
+"1602
+[v _QEIM2 `Vb  1 s 0 @2330 ]
+"1603
+[v _UPDN `Vb  1 s 0 @2331 ]
+"1604
+[v _INDX `Vb  1 s 0 @2332 ]
+"1605
+[v _QEISIDL `Vb  1 s 0 @2333 ]
+"1606
+[v _CNTERR `Vb  1 s 0 @2335 ]
+"1609
+[v _DFLTCON `Vui  1 s 2 @292 ]
+"1625
+[s S114 . 2 `Vui  1 . 2 0 :5:11 
+`Vui  1 IMV1 2 0 :1:10 
+`Vui  1 IMV0 2 0 :1:9 
+`Vui  1 CEID 2 0 :1:8 
+`Vui  1 QEOUT 2 0 :1:7 
+`Vui  1 QECK2 2 0 :1:6 
+`Vui  1 QECK1 2 0 :1:5 
+`Vui  1 QECK0 2 0 :1:4 
+`Vui  1 INDOUT 2 0 :1:3 
+`Vui  1 INDCK2 2 0 :1:2 
+`Vui  1 INDCK1 2 0 :1:1 
+`Vui  1 INDCK0 2 0 :1:0 
+]
+"1626
+[u S113 . 2 `S114  1 . 2 0 
+]
+[v _DFLTCONbits `VS113  1 s 2 @292 ]
+"1628
+[v _INDCK0 `Vb  1 s 0 @2336 ]
+"1629
+[v _INDCK1 `Vb  1 s 0 @2337 ]
+"1630
+[v _INDCK2 `Vb  1 s 0 @2338 ]
+"1631
+[v _INDOUT `Vb  1 s 0 @2339 ]
+"1632
+[v _QECK0 `Vb  1 s 0 @2340 ]
+"1633
+[v _QECK1 `Vb  1 s 0 @2341 ]
+"1634
+[v _QECK2 `Vb  1 s 0 @2342 ]
+"1635
+[v _QEOUT `Vb  1 s 0 @2343 ]
+"1636
+[v _CEID `Vb  1 s 0 @2344 ]
+"1637
+[v _IMV0 `Vb  1 s 0 @2345 ]
+"1638
+[v _IMV1 `Vb  1 s 0 @2346 ]
+"1641
+[v _POSCNT `Vui  1 s 2 @294 ]
+"1644
+[v _MAXCNT `Vui  1 s 2 @296 ]
+"1647
+[v _IC1BUF `Vui  1 s 2 @320 ]
+"1650
+[v _IC1CON `Vui  1 s 2 @322 ]
+"1662
+[s S116 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1671
+[s S117 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1672
+[u S115 . 2 `S116  1 . 2 0 
+`S117  1 . 2 0 
+]
+[v _IC1CONbits `VS115  1 s 2 @322 ]
+"1674
+[v _ICBNE `Vb  1 s 0 @2579 ]
+"1675
+[v _ICOV `Vb  1 s 0 @2580 ]
+"1676
+[v _ICTMR `Vb  1 s 0 @2583 ]
+"1677
+[v _ICSIDL `Vb  1 s 0 @2589 ]
+"1678
+[v _ICM0 `Vb  1 s 0 @2576 ]
+"1679
+[v _ICM1 `Vb  1 s 0 @2577 ]
+"1680
+[v _ICM2 `Vb  1 s 0 @2578 ]
+"1681
+[v _ICI0 `Vb  1 s 0 @2581 ]
+"1682
+[v _ICI1 `Vb  1 s 0 @2582 ]
+"1685
+[v _IC2BUF `Vui  1 s 2 @324 ]
+"1688
+[v _IC2CON `Vui  1 s 2 @326 ]
+"1700
+[s S119 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1709
+[s S120 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1710
+[u S118 . 2 `S119  1 . 2 0 
+`S120  1 . 2 0 
+]
+[v _IC2CONbits `VS118  1 s 2 @326 ]
+"1732
+[v _IC3BUF `Vui  1 s 2 @328 ]
+"1735
+[v _IC3CON `Vui  1 s 2 @330 ]
+"1747
+[s S122 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1756
+[s S123 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1757
+[u S121 . 2 `S122  1 . 2 0 
+`S123  1 . 2 0 
+]
+[v _IC3CONbits `VS121  1 s 2 @330 ]
+"1779
+[v _IC4BUF `Vui  1 s 2 @332 ]
+"1782
+[v _IC4CON `Vui  1 s 2 @334 ]
+"1794
+[s S125 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1803
+[s S126 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1804
+[u S124 . 2 `S125  1 . 2 0 
+`S126  1 . 2 0 
+]
+[v _IC4CONbits `VS124  1 s 2 @334 ]
+"1826
+[v _IC5BUF `Vui  1 s 2 @336 ]
+"1829
+[v _IC5CON `Vui  1 s 2 @338 ]
+"1841
+[s S128 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1850
+[s S129 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1851
+[u S127 . 2 `S128  1 . 2 0 
+`S129  1 . 2 0 
+]
+[v _IC5CONbits `VS127  1 s 2 @338 ]
+"1873
+[v _IC6BUF `Vui  1 s 2 @340 ]
+"1876
+[v _IC6CON `Vui  1 s 2 @342 ]
+"1888
+[s S131 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1897
+[s S132 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1898
+[u S130 . 2 `S131  1 . 2 0 
+`S132  1 . 2 0 
+]
+[v _IC6CONbits `VS130  1 s 2 @342 ]
+"1920
+[v _IC7BUF `Vui  1 s 2 @344 ]
+"1923
+[v _IC7CON `Vui  1 s 2 @346 ]
+"1935
+[s S134 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1944
+[s S135 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1945
+[u S133 . 2 `S134  1 . 2 0 
+`S135  1 . 2 0 
+]
+[v _IC7CONbits `VS133  1 s 2 @346 ]
+"1967
+[v _IC8BUF `Vui  1 s 2 @348 ]
+"1970
+[v _IC8CON `Vui  1 s 2 @350 ]
+"1982
+[s S137 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 ICSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 ICTMR 2 0 :1:7 
+`Vui  1 ICI 2 0 :2:5 
+`Vui  1 ICOV 2 0 :1:4 
+`Vui  1 ICBNE 2 0 :1:3 
+`Vui  1 ICM 2 0 :3:0 
+]
+"1991
+[s S138 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 ICI1 2 0 :1:6 
+`Vui  1 ICI0 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 ICM2 2 0 :1:2 
+`Vui  1 ICM1 2 0 :1:1 
+`Vui  1 ICM0 2 0 :1:0 
+]
+"1992
+[u S136 . 2 `S137  1 . 2 0 
+`S138  1 . 2 0 
+]
+[v _IC8CONbits `VS136  1 s 2 @350 ]
+"2014
+[v _OC1RS `Vui  1 s 2 @384 ]
+"2017
+[v _OC1R `Vui  1 s 2 @386 ]
+"2020
+[v _OC1CON `Vui  1 s 2 @388 ]
+"2030
+[s S140 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2036
+[s S141 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2037
+[u S139 . 2 `S140  1 . 2 0 
+`S141  1 . 2 0 
+]
+[v _OC1CONbits `VS139  1 s 2 @388 ]
+"2039
+[v _OCTSEL `Vb  1 s 0 @3107 ]
+"2040
+[v _OCFLT `Vb  1 s 0 @3108 ]
+"2041
+[v _OCSIDL `Vb  1 s 0 @3117 ]
+"2042
+[v _OCM0 `Vb  1 s 0 @3104 ]
+"2043
+[v _OCM1 `Vb  1 s 0 @3105 ]
+"2044
+[v _OCM2 `Vb  1 s 0 @3106 ]
+"2047
+[v _OC2RS `Vui  1 s 2 @390 ]
+"2050
+[v _OC2R `Vui  1 s 2 @392 ]
+"2053
+[v _OC2CON `Vui  1 s 2 @394 ]
+"2063
+[s S143 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2069
+[s S144 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2070
+[u S142 . 2 `S143  1 . 2 0 
+`S144  1 . 2 0 
+]
+[v _OC2CONbits `VS142  1 s 2 @394 ]
+"2086
+[v _OC3RS `Vui  1 s 2 @396 ]
+"2089
+[v _OC3R `Vui  1 s 2 @398 ]
+"2092
+[v _OC3CON `Vui  1 s 2 @400 ]
+"2102
+[s S146 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2108
+[s S147 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2109
+[u S145 . 2 `S146  1 . 2 0 
+`S147  1 . 2 0 
+]
+[v _OC3CONbits `VS145  1 s 2 @400 ]
+"2125
+[v _OC4RS `Vui  1 s 2 @402 ]
+"2128
+[v _OC4R `Vui  1 s 2 @404 ]
+"2131
+[v _OC4CON `Vui  1 s 2 @406 ]
+"2141
+[s S149 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2147
+[s S150 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2148
+[u S148 . 2 `S149  1 . 2 0 
+`S150  1 . 2 0 
+]
+[v _OC4CONbits `VS148  1 s 2 @406 ]
+"2164
+[v _OC5RS `Vui  1 s 2 @408 ]
+"2167
+[v _OC5R `Vui  1 s 2 @410 ]
+"2170
+[v _OC5CON `Vui  1 s 2 @412 ]
+"2180
+[s S152 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2186
+[s S153 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2187
+[u S151 . 2 `S152  1 . 2 0 
+`S153  1 . 2 0 
+]
+[v _OC5CONbits `VS151  1 s 2 @412 ]
+"2203
+[v _OC6RS `Vui  1 s 2 @414 ]
+"2206
+[v _OC6R `Vui  1 s 2 @416 ]
+"2209
+[v _OC6CON `Vui  1 s 2 @418 ]
+"2219
+[s S155 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2225
+[s S156 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2226
+[u S154 . 2 `S155  1 . 2 0 
+`S156  1 . 2 0 
+]
+[v _OC6CONbits `VS154  1 s 2 @418 ]
+"2242
+[v _OC7RS `Vui  1 s 2 @420 ]
+"2245
+[v _OC7R `Vui  1 s 2 @422 ]
+"2248
+[v _OC7CON `Vui  1 s 2 @424 ]
+"2258
+[s S158 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2264
+[s S159 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2265
+[u S157 . 2 `S158  1 . 2 0 
+`S159  1 . 2 0 
+]
+[v _OC7CONbits `VS157  1 s 2 @424 ]
+"2281
+[v _OC8RS `Vui  1 s 2 @426 ]
+"2284
+[v _OC8R `Vui  1 s 2 @428 ]
+"2287
+[v _OC8CON `Vui  1 s 2 @430 ]
+"2297
+[s S161 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 OCSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :8:5 
+`Vui  1 OCFLT 2 0 :1:4 
+`Vui  1 OCTSEL 2 0 :1:3 
+`Vui  1 OCM 2 0 :3:0 
+]
+"2303
+[s S162 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 OCM2 2 0 :1:2 
+`Vui  1 OCM1 2 0 :1:1 
+`Vui  1 OCM0 2 0 :1:0 
+]
+"2304
+[u S160 . 2 `S161  1 . 2 0 
+`S162  1 . 2 0 
+]
+[v _OC8CONbits `VS160  1 s 2 @430 ]
+"2320
+[v _PTCON `Vui  1 s 2 @448 ]
+"2331
+[s S164 . 2 `Vui  1 PTEN 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 PTSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 PTOPS 2 0 :4:4 
+`Vui  1 PTCKPS 2 0 :2:2 
+`Vui  1 PTMOD 2 0 :2:0 
+]
+"2342
+[s S165 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 PTOPS3 2 0 :1:7 
+`Vui  1 PTOPS2 2 0 :1:6 
+`Vui  1 PTOPS1 2 0 :1:5 
+`Vui  1 PTOPS0 2 0 :1:4 
+`Vui  1 PTCKPS1 2 0 :1:3 
+`Vui  1 PTCKPS0 2 0 :1:2 
+`Vui  1 PTMOD1 2 0 :1:1 
+`Vui  1 PTMOD0 2 0 :1:0 
+]
+"2343
+[u S163 . 2 `S164  1 . 2 0 
+`S165  1 . 2 0 
+]
+[v _PTCONbits `VS163  1 s 2 @448 ]
+"2345
+[v _PTSIDL `Vb  1 s 0 @3597 ]
+"2346
+[v _PTEN `Vb  1 s 0 @3599 ]
+"2347
+[v _PTMOD0 `Vb  1 s 0 @3584 ]
+"2348
+[v _PTMOD1 `Vb  1 s 0 @3585 ]
+"2349
+[v _PTCKPS0 `Vb  1 s 0 @3586 ]
+"2350
+[v _PTCKPS1 `Vb  1 s 0 @3587 ]
+"2351
+[v _PTOPS0 `Vb  1 s 0 @3588 ]
+"2352
+[v _PTOPS1 `Vb  1 s 0 @3589 ]
+"2353
+[v _PTOPS2 `Vb  1 s 0 @3590 ]
+"2354
+[v _PTOPS3 `Vb  1 s 0 @3591 ]
+"2357
+[v _PTMR `Vui  1 s 2 @450 ]
+"2363
+[s S167 . 2 `Vui  1 PTDIR 2 0 :1:15 
+`Vui  1 PTMR 2 0 :15:0 
+]
+"2381
+[s S168 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 PTMR14 2 0 :1:14 
+`Vui  1 PTMR13 2 0 :1:13 
+`Vui  1 PTMR12 2 0 :1:12 
+`Vui  1 PTMR11 2 0 :1:11 
+`Vui  1 PTMR10 2 0 :1:10 
+`Vui  1 PTMR9 2 0 :1:9 
+`Vui  1 PTMR8 2 0 :1:8 
+`Vui  1 PTMR7 2 0 :1:7 
+`Vui  1 PTMR6 2 0 :1:6 
+`Vui  1 PTMR5 2 0 :1:5 
+`Vui  1 PTMR4 2 0 :1:4 
+`Vui  1 PTMR3 2 0 :1:3 
+`Vui  1 PTMR2 2 0 :1:2 
+`Vui  1 PTMR1 2 0 :1:1 
+`Vui  1 PTMR0 2 0 :1:0 
+]
+"2382
+[u S166 . 2 `S167  1 . 2 0 
+`S168  1 . 2 0 
+]
+[v _PTMRbits `VS166  1 s 2 @450 ]
+"2384
+[v _PTDIR `Vb  1 s 0 @3615 ]
+"2385
+[v _PTMR0 `Vb  1 s 0 @3600 ]
+"2386
+[v _PTMR1 `Vb  1 s 0 @3601 ]
+"2387
+[v _PTMR2 `Vb  1 s 0 @3602 ]
+"2388
+[v _PTMR3 `Vb  1 s 0 @3603 ]
+"2389
+[v _PTMR4 `Vb  1 s 0 @3604 ]
+"2390
+[v _PTMR5 `Vb  1 s 0 @3605 ]
+"2391
+[v _PTMR6 `Vb  1 s 0 @3606 ]
+"2392
+[v _PTMR7 `Vb  1 s 0 @3607 ]
+"2393
+[v _PTMR8 `Vb  1 s 0 @3608 ]
+"2394
+[v _PTMR9 `Vb  1 s 0 @3609 ]
+"2395
+[v _PTMR10 `Vb  1 s 0 @3610 ]
+"2396
+[v _PTMR11 `Vb  1 s 0 @3611 ]
+"2397
+[v _PTMR12 `Vb  1 s 0 @3612 ]
+"2398
+[v _PTMR13 `Vb  1 s 0 @3613 ]
+"2399
+[v _PTMR14 `Vb  1 s 0 @3614 ]
+"2402
+[v _PTPER `Vui  1 s 2 @452 ]
+"2408
+[s S170 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 PTPER 2 0 :15:0 
+]
+"2409
+[u S169 . 2 `S170  1 . 2 0 
+]
+[v _PTPERbits `VS169  1 s 2 @452 ]
+"2412
+[v _SEVTCMP `Vui  1 s 2 @454 ]
+"2418
+[s S172 . 2 `Vui  1 SEVTDIR 2 0 :1:15 
+`Vui  1 SEVTCMP 2 0 :15:0 
+]
+"2436
+[s S173 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 SEVTCMP14 2 0 :1:14 
+`Vui  1 SEVTCMP13 2 0 :1:13 
+`Vui  1 SEVTCMP12 2 0 :1:12 
+`Vui  1 SEVTCMP11 2 0 :1:11 
+`Vui  1 SEVTCMP10 2 0 :1:10 
+`Vui  1 SEVTCMP9 2 0 :1:9 
+`Vui  1 SEVTCMP8 2 0 :1:8 
+`Vui  1 SEVTCMP7 2 0 :1:7 
+`Vui  1 SEVTCMP6 2 0 :1:6 
+`Vui  1 SEVTCMP5 2 0 :1:5 
+`Vui  1 SEVTCMP4 2 0 :1:4 
+`Vui  1 SEVTCMP3 2 0 :1:3 
+`Vui  1 SEVTCMP2 2 0 :1:2 
+`Vui  1 SEVTCMP1 2 0 :1:1 
+`Vui  1 SEVTCMP0 2 0 :1:0 
+]
+"2437
+[u S171 . 2 `S172  1 . 2 0 
+`S173  1 . 2 0 
+]
+[v _SEVTCMPbits `VS171  1 s 2 @454 ]
+"2439
+[v _SEVTDIR `Vb  1 s 0 @3647 ]
+"2440
+[v _SEVTCMP0 `Vb  1 s 0 @3632 ]
+"2441
+[v _SEVTCMP1 `Vb  1 s 0 @3633 ]
+"2442
+[v _SEVTCMP2 `Vb  1 s 0 @3634 ]
+"2443
+[v _SEVTCMP3 `Vb  1 s 0 @3635 ]
+"2444
+[v _SEVTCMP4 `Vb  1 s 0 @3636 ]
+"2445
+[v _SEVTCMP5 `Vb  1 s 0 @3637 ]
+"2446
+[v _SEVTCMP6 `Vb  1 s 0 @3638 ]
+"2447
+[v _SEVTCMP7 `Vb  1 s 0 @3639 ]
+"2448
+[v _SEVTCMP8 `Vb  1 s 0 @3640 ]
+"2449
+[v _SEVTCMP9 `Vb  1 s 0 @3641 ]
+"2450
+[v _SEVTCMP10 `Vb  1 s 0 @3642 ]
+"2451
+[v _SEVTCMP11 `Vb  1 s 0 @3643 ]
+"2452
+[v _SEVTCMP12 `Vb  1 s 0 @3644 ]
+"2453
+[v _SEVTCMP13 `Vb  1 s 0 @3645 ]
+"2454
+[v _SEVTCMP14 `Vb  1 s 0 @3646 ]
+"2457
+[v _PWMCON1 `Vui  1 s 2 @456 ]
+"2474
+[s S175 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 PTMOD4 2 0 :1:11 
+`Vui  1 PTMOD3 2 0 :1:10 
+`Vui  1 PTMOD2 2 0 :1:9 
+`Vui  1 PTMOD1 2 0 :1:8 
+`Vui  1 PEN4H 2 0 :1:7 
+`Vui  1 PEN3H 2 0 :1:6 
+`Vui  1 PEN2H 2 0 :1:5 
+`Vui  1 PEN1H 2 0 :1:4 
+`Vui  1 PEN4L 2 0 :1:3 
+`Vui  1 PEN3L 2 0 :1:2 
+`Vui  1 PEN2L 2 0 :1:1 
+`Vui  1 PEN1L 2 0 :1:0 
+]
+"2475
+[u S174 . 2 `S175  1 . 2 0 
+]
+[v _PWMCON1bits `VS174  1 s 2 @456 ]
+"2477
+[v _PEN1L `Vb  1 s 0 @3648 ]
+"2478
+[v _PEN2L `Vb  1 s 0 @3649 ]
+"2479
+[v _PEN3L `Vb  1 s 0 @3650 ]
+"2480
+[v _PEN4L `Vb  1 s 0 @3651 ]
+"2481
+[v _PEN1H `Vb  1 s 0 @3652 ]
+"2482
+[v _PEN2H `Vb  1 s 0 @3653 ]
+"2483
+[v _PEN3H `Vb  1 s 0 @3654 ]
+"2484
+[v _PEN4H `Vb  1 s 0 @3655 ]
+"2487
+[v _PTMOD2 `Vb  1 s 0 @3657 ]
+"2488
+[v _PTMOD3 `Vb  1 s 0 @3658 ]
+"2489
+[v _PTMOD4 `Vb  1 s 0 @3659 ]
+"2492
+[v _PWMCON2 `Vui  1 s 2 @458 ]
+"2502
+[s S177 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 SEVOPS 2 0 :4:8 
+`Vui  1 . 2 0 :5:3 
+`Vui  1 IUE 2 0 :1:2 
+`Vui  1 OSYNC 2 0 :1:1 
+`Vui  1 UDIS 2 0 :1:0 
+]
+"2510
+[s S178 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 SEVOPS3 2 0 :1:11 
+`Vui  1 SEVOPS2 2 0 :1:10 
+`Vui  1 SEVOPS1 2 0 :1:9 
+`Vui  1 SEVOPS0 2 0 :1:8 
+`Vui  1 . 2 0 :8:0 
+]
+"2511
+[u S176 . 2 `S177  1 . 2 0 
+`S178  1 . 2 0 
+]
+[v _PWMCON2bits `VS176  1 s 2 @458 ]
+"2513
+[v _UDIS `Vb  1 s 0 @3664 ]
+"2514
+[v _OSYNC `Vb  1 s 0 @3665 ]
+"2515
+[v _IUE `Vb  1 s 0 @3666 ]
+"2516
+[v _SEVOPS0 `Vb  1 s 0 @3672 ]
+"2517
+[v _SEVOPS1 `Vb  1 s 0 @3673 ]
+"2518
+[v _SEVOPS2 `Vb  1 s 0 @3674 ]
+"2519
+[v _SEVOPS3 `Vb  1 s 0 @3675 ]
+"2522
+[v _DTCON1 `Vui  1 s 2 @460 ]
+"2530
+[s S180 . 2 `Vui  1 DTBPS 2 0 :2:14 
+`Vui  1 DTB 2 0 :6:8 
+`Vui  1 DTAPS 2 0 :2:6 
+`Vui  1 DTA 2 0 :6:0 
+]
+"2548
+[s S181 . 2 `Vui  1 DTBPS1 2 0 :1:15 
+`Vui  1 DTBPS0 2 0 :1:14 
+`Vui  1 DTB5 2 0 :1:13 
+`Vui  1 DTB4 2 0 :1:12 
+`Vui  1 DTB3 2 0 :1:11 
+`Vui  1 DTB2 2 0 :1:10 
+`Vui  1 DTB1 2 0 :1:9 
+`Vui  1 DTB0 2 0 :1:8 
+`Vui  1 DTAPS1 2 0 :1:7 
+`Vui  1 DTAPS0 2 0 :1:6 
+`Vui  1 DTA5 2 0 :1:5 
+`Vui  1 DTA4 2 0 :1:4 
+`Vui  1 DTA3 2 0 :1:3 
+`Vui  1 DTA2 2 0 :1:2 
+`Vui  1 DTA1 2 0 :1:1 
+`Vui  1 DTA0 2 0 :1:0 
+]
+"2549
+[u S179 . 2 `S180  1 . 2 0 
+`S181  1 . 2 0 
+]
+[v _DTCON1bits `VS179  1 s 2 @460 ]
+"2551
+[v _DTA0 `Vb  1 s 0 @3680 ]
+"2552
+[v _DTA1 `Vb  1 s 0 @3681 ]
+"2553
+[v _DTA2 `Vb  1 s 0 @3682 ]
+"2554
+[v _DTA3 `Vb  1 s 0 @3683 ]
+"2555
+[v _DTA4 `Vb  1 s 0 @3684 ]
+"2556
+[v _DTA5 `Vb  1 s 0 @3685 ]
+"2557
+[v _DTAPS0 `Vb  1 s 0 @3686 ]
+"2558
+[v _DTAPS1 `Vb  1 s 0 @3687 ]
+"2559
+[v _DTB0 `Vb  1 s 0 @3688 ]
+"2560
+[v _DTB1 `Vb  1 s 0 @3689 ]
+"2561
+[v _DTB2 `Vb  1 s 0 @3690 ]
+"2562
+[v _DTB3 `Vb  1 s 0 @3691 ]
+"2563
+[v _DTB4 `Vb  1 s 0 @3692 ]
+"2564
+[v _DTB5 `Vb  1 s 0 @3693 ]
+"2565
+[v _DTBPS0 `Vb  1 s 0 @3694 ]
+"2566
+[v _DTBPS1 `Vb  1 s 0 @3695 ]
+"2569
+[v _DTCON2 `Vui  1 s 2 @462 ]
+"2582
+[s S183 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 DTS4A 2 0 :1:7 
+`Vui  1 DTS4I 2 0 :1:6 
+`Vui  1 DTS3A 2 0 :1:5 
+`Vui  1 DTS3I 2 0 :1:4 
+`Vui  1 DTS2A 2 0 :1:3 
+`Vui  1 DTS2I 2 0 :1:2 
+`Vui  1 DTS1A 2 0 :1:1 
+`Vui  1 DTS1I 2 0 :1:0 
+]
+"2583
+[u S182 . 2 `S183  1 . 2 0 
+]
+[v _DTCON2bits `VS182  1 s 2 @462 ]
+"2585
+[v _DTS1I `Vb  1 s 0 @3696 ]
+"2586
+[v _DTS1A `Vb  1 s 0 @3697 ]
+"2587
+[v _DTS2I `Vb  1 s 0 @3698 ]
+"2588
+[v _DTS2A `Vb  1 s 0 @3699 ]
+"2589
+[v _DTS3I `Vb  1 s 0 @3700 ]
+"2590
+[v _DTS3A `Vb  1 s 0 @3701 ]
+"2591
+[v _DTS4I `Vb  1 s 0 @3702 ]
+"2592
+[v _DTS4A `Vb  1 s 0 @3703 ]
+"2595
+[v _FLTACON `Vui  1 s 2 @464 ]
+"2613
+[s S185 . 2 `Vui  1 FAOV4H 2 0 :1:15 
+`Vui  1 FAOV4L 2 0 :1:14 
+`Vui  1 FAOV3H 2 0 :1:13 
+`Vui  1 FAOV3L 2 0 :1:12 
+`Vui  1 FAOV2H 2 0 :1:11 
+`Vui  1 FAOV2L 2 0 :1:10 
+`Vui  1 FAOV1H 2 0 :1:9 
+`Vui  1 FAOV1L 2 0 :1:8 
+`Vui  1 FLTAM 2 0 :1:7 
+`Vui  1 . 2 0 :3:4 
+`Vui  1 FAEN4 2 0 :1:3 
+`Vui  1 FAEN3 2 0 :1:2 
+`Vui  1 FAEN2 2 0 :1:1 
+`Vui  1 FAEN1 2 0 :1:0 
+]
+"2614
+[u S184 . 2 `S185  1 . 2 0 
+]
+[v _FLTACONbits `VS184  1 s 2 @464 ]
+"2616
+[v _FAEN1 `Vb  1 s 0 @3712 ]
+"2617
+[v _FAEN2 `Vb  1 s 0 @3713 ]
+"2618
+[v _FAEN3 `Vb  1 s 0 @3714 ]
+"2619
+[v _FAEN4 `Vb  1 s 0 @3715 ]
+"2620
+[v _FLTAM `Vb  1 s 0 @3719 ]
+"2621
+[v _FAOV1L `Vb  1 s 0 @3720 ]
+"2622
+[v _FAOV1H `Vb  1 s 0 @3721 ]
+"2623
+[v _FAOV2L `Vb  1 s 0 @3722 ]
+"2624
+[v _FAOV2H `Vb  1 s 0 @3723 ]
+"2625
+[v _FAOV3L `Vb  1 s 0 @3724 ]
+"2626
+[v _FAOV3H `Vb  1 s 0 @3725 ]
+"2627
+[v _FAOV4L `Vb  1 s 0 @3726 ]
+"2628
+[v _FAOV4H `Vb  1 s 0 @3727 ]
+"2631
+[v _FLTBCON `Vui  1 s 2 @466 ]
+"2649
+[s S187 . 2 `Vui  1 FBOV4H 2 0 :1:15 
+`Vui  1 FBOV4L 2 0 :1:14 
+`Vui  1 FBOV3H 2 0 :1:13 
+`Vui  1 FBOV3L 2 0 :1:12 
+`Vui  1 FBOV2H 2 0 :1:11 
+`Vui  1 FBOV2L 2 0 :1:10 
+`Vui  1 FBOV1H 2 0 :1:9 
+`Vui  1 FBOV1L 2 0 :1:8 
+`Vui  1 FLTBM 2 0 :1:7 
+`Vui  1 . 2 0 :3:4 
+`Vui  1 FBEN4 2 0 :1:3 
+`Vui  1 FBEN3 2 0 :1:2 
+`Vui  1 FBEN2 2 0 :1:1 
+`Vui  1 FBEN1 2 0 :1:0 
+]
+"2650
+[u S186 . 2 `S187  1 . 2 0 
+]
+[v _FLTBCONbits `VS186  1 s 2 @466 ]
+"2652
+[v _FBEN1 `Vb  1 s 0 @3728 ]
+"2653
+[v _FBEN2 `Vb  1 s 0 @3729 ]
+"2654
+[v _FBEN3 `Vb  1 s 0 @3730 ]
+"2655
+[v _FBEN4 `Vb  1 s 0 @3731 ]
+"2656
+[v _FLTBM `Vb  1 s 0 @3735 ]
+"2657
+[v _FBOV1L `Vb  1 s 0 @3736 ]
+"2658
+[v _FBOV1H `Vb  1 s 0 @3737 ]
+"2659
+[v _FBOV2L `Vb  1 s 0 @3738 ]
+"2660
+[v _FBOV2H `Vb  1 s 0 @3739 ]
+"2661
+[v _FBOV3L `Vb  1 s 0 @3740 ]
+"2662
+[v _FBOV3H `Vb  1 s 0 @3741 ]
+"2663
+[v _FBOV4L `Vb  1 s 0 @3742 ]
+"2664
+[v _FBOV4H `Vb  1 s 0 @3743 ]
+"2667
+[v _OVDCON `Vui  1 s 2 @468 ]
+"2687
+[s S189 . 2 `Vui  1 POVD4H 2 0 :1:15 
+`Vui  1 POVD4L 2 0 :1:14 
+`Vui  1 POVD3H 2 0 :1:13 
+`Vui  1 POVD3L 2 0 :1:12 
+`Vui  1 POVD2H 2 0 :1:11 
+`Vui  1 POVD2L 2 0 :1:10 
+`Vui  1 POVD1H 2 0 :1:9 
+`Vui  1 POVD1L 2 0 :1:8 
+`Vui  1 POUT4H 2 0 :1:7 
+`Vui  1 POUT4L 2 0 :1:6 
+`Vui  1 POUT3H 2 0 :1:5 
+`Vui  1 POUT3L 2 0 :1:4 
+`Vui  1 POUT2H 2 0 :1:3 
+`Vui  1 POUT2L 2 0 :1:2 
+`Vui  1 POUT1H 2 0 :1:1 
+`Vui  1 POUT1L 2 0 :1:0 
+]
+"2688
+[u S188 . 2 `S189  1 . 2 0 
+]
+[v _OVDCONbits `VS188  1 s 2 @468 ]
+"2690
+[v _POUT1L `Vb  1 s 0 @3744 ]
+"2691
+[v _POUT1H `Vb  1 s 0 @3745 ]
+"2692
+[v _POUT2L `Vb  1 s 0 @3746 ]
+"2693
+[v _POUT2H `Vb  1 s 0 @3747 ]
+"2694
+[v _POUT3L `Vb  1 s 0 @3748 ]
+"2695
+[v _POUT3H `Vb  1 s 0 @3749 ]
+"2696
+[v _POUT4L `Vb  1 s 0 @3750 ]
+"2697
+[v _POUT4H `Vb  1 s 0 @3751 ]
+"2698
+[v _POVD1L `Vb  1 s 0 @3752 ]
+"2699
+[v _POVD1H `Vb  1 s 0 @3753 ]
+"2700
+[v _POVD2L `Vb  1 s 0 @3754 ]
+"2701
+[v _POVD2H `Vb  1 s 0 @3755 ]
+"2702
+[v _POVD3L `Vb  1 s 0 @3756 ]
+"2703
+[v _POVD3H `Vb  1 s 0 @3757 ]
+"2704
+[v _POVD4L `Vb  1 s 0 @3758 ]
+"2705
+[v _POVD4H `Vb  1 s 0 @3759 ]
+"2708
+[v _PDC1 `Vui  1 s 2 @470 ]
+"2711
+[v _PDC2 `Vui  1 s 2 @472 ]
+"2714
+[v _PDC3 `Vui  1 s 2 @474 ]
+"2717
+[v _PDC4 `Vui  1 s 2 @476 ]
+"2720
+[v _I2CRCV `Vui  1 s 2 @512 ]
+"2726
+[s S191 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 I2CRCV 2 0 :8:0 
+]
+"2727
+[u S190 . 2 `S191  1 . 2 0 
+]
+[v _I2CRCVbits `VS190  1 s 2 @512 ]
+"2730
+[v _I2CTRN `Vui  1 s 2 @514 ]
+"2736
+[s S193 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 I2CTRN 2 0 :8:0 
+]
+"2737
+[u S192 . 2 `S193  1 . 2 0 
+]
+[v _I2CTRNbits `VS192  1 s 2 @514 ]
+"2740
+[v _I2CBRG `Vui  1 s 2 @516 ]
+"2746
+[s S195 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 I2CBRG 2 0 :9:0 
+]
+"2747
+[u S194 . 2 `S195  1 . 2 0 
+]
+[v _I2CBRGbits `VS194  1 s 2 @516 ]
+"2750
+[v _I2CCON `Vui  1 s 2 @518 ]
+"2770
+[s S197 . 2 `Vui  1 I2CEN 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 I2CSIDL 2 0 :1:13 
+`Vui  1 SCLREL 2 0 :1:12 
+`Vui  1 IPMIEN 2 0 :1:11 
+`Vui  1 A10M 2 0 :1:10 
+`Vui  1 DISSLW 2 0 :1:9 
+`Vui  1 SMEN 2 0 :1:8 
+`Vui  1 GCEN 2 0 :1:7 
+`Vui  1 STREN 2 0 :1:6 
+`Vui  1 ACKDT 2 0 :1:5 
+`Vui  1 ACKEN 2 0 :1:4 
+`Vui  1 RCEN 2 0 :1:3 
+`Vui  1 PEN 2 0 :1:2 
+`Vui  1 RSEN 2 0 :1:1 
+`Vui  1 SEN 2 0 :1:0 
+]
+"2771
+[u S196 . 2 `S197  1 . 2 0 
+]
+[v _I2CCONbits `VS196  1 s 2 @518 ]
+"2773
+[v _SEN `Vb  1 s 0 @4144 ]
+"2774
+[v _RSEN `Vb  1 s 0 @4145 ]
+"2775
+[v _PEN `Vb  1 s 0 @4146 ]
+"2776
+[v _RCEN `Vb  1 s 0 @4147 ]
+"2777
+[v _ACKEN `Vb  1 s 0 @4148 ]
+"2778
+[v _ACKDT `Vb  1 s 0 @4149 ]
+"2779
+[v _STREN `Vb  1 s 0 @4150 ]
+"2780
+[v _GCEN `Vb  1 s 0 @4151 ]
+"2781
+[v _SMEN `Vb  1 s 0 @4152 ]
+"2782
+[v _DISSLW `Vb  1 s 0 @4153 ]
+"2783
+[v _A10M `Vb  1 s 0 @4154 ]
+"2784
+[v _IPMIEN `Vb  1 s 0 @4155 ]
+"2785
+[v _SCLREL `Vb  1 s 0 @4156 ]
+"2786
+[v _I2CSIDL `Vb  1 s 0 @4157 ]
+"2787
+[v _I2CEN `Vb  1 s 0 @4159 ]
+"2790
+[v _I2CSTAT `Vui  1 s 2 @520 ]
+"2808
+[s S199 . 2 `Vui  1 ACKSTAT 2 0 :1:15 
+`Vui  1 TRSTAT 2 0 :1:14 
+`Vui  1 . 2 0 :3:11 
+`Vui  1 BCL 2 0 :1:10 
+`Vui  1 GCSTAT 2 0 :1:9 
+`Vui  1 ADD10 2 0 :1:8 
+`Vui  1 IWCOL 2 0 :1:7 
+`Vui  1 I2COV 2 0 :1:6 
+`Vui  1 D_A 2 0 :1:5 
+`Vui  1 P 2 0 :1:4 
+`Vui  1 S 2 0 :1:3 
+`Vui  1 R_W 2 0 :1:2 
+`Vui  1 RBF 2 0 :1:1 
+`Vui  1 TBF 2 0 :1:0 
+]
+"2815
+[s S200 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 D_nA 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 R_nW 2 0 :1:2 
+`Vui  1 . 2 0 :2:0 
+]
+"2816
+[u S198 . 2 `S199  1 . 2 0 
+`S200  1 . 2 0 
+]
+[v _I2CSTATbits `VS198  1 s 2 @520 ]
+"2818
+[v _TBF `Vb  1 s 0 @4160 ]
+"2819
+[v _RBF `Vb  1 s 0 @4161 ]
+"2820
+[v _R_W `Vb  1 s 0 @4162 ]
+"2821
+[v _S `Vb  1 s 0 @4163 ]
+"2822
+[v _P `Vb  1 s 0 @4164 ]
+"2823
+[v _D_A `Vb  1 s 0 @4165 ]
+"2824
+[v _I2COV `Vb  1 s 0 @4166 ]
+"2825
+[v _IWCOL `Vb  1 s 0 @4167 ]
+"2826
+[v _ADD10 `Vb  1 s 0 @4168 ]
+"2827
+[v _GCSTAT `Vb  1 s 0 @4169 ]
+"2828
+[v _BCL `Vb  1 s 0 @4170 ]
+"2829
+[v _TRSTAT `Vb  1 s 0 @4174 ]
+"2830
+[v _ACKSTAT `Vb  1 s 0 @4175 ]
+"2831
+[v _R_nW `Vb  1 s 0 @4162 ]
+"2832
+[v _D_nA `Vb  1 s 0 @4165 ]
+"2835
+[v _I2CADD `Vui  1 s 2 @522 ]
+"2841
+[s S202 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 I2CADD 2 0 :10:0 
+]
+"2842
+[u S201 . 2 `S202  1 . 2 0 
+]
+[v _I2CADDbits `VS201  1 s 2 @522 ]
+"2845
+[v _U1MODE `Vui  1 s 2 @524 ]
+"2861
+[s S204 . 2 `Vui  1 UARTEN 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 USIDL 2 0 :1:13 
+`Vui  1 . 2 0 :2:11 
+`Vui  1 ALTIO 2 0 :1:10 
+`Vui  1 . 2 0 :2:8 
+`Vui  1 WAKE 2 0 :1:7 
+`Vui  1 LPBACK 2 0 :1:6 
+`Vui  1 ABAUD 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 PDSEL 2 0 :2:1 
+`Vui  1 STSEL 2 0 :1:0 
+]
+"2867
+[s S205 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 PDSEL1 2 0 :1:2 
+`Vui  1 PDSEL0 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"2868
+[u S203 . 2 `S204  1 . 2 0 
+`S205  1 . 2 0 
+]
+[v _U1MODEbits `VS203  1 s 2 @524 ]
+"2870
+[v _STSEL `Vb  1 s 0 @4192 ]
+"2871
+[v _ABAUD `Vb  1 s 0 @4197 ]
+"2872
+[v _LPBACK `Vb  1 s 0 @4198 ]
+"2873
+[v _WAKE `Vb  1 s 0 @4199 ]
+"2874
+[v _ALTIO `Vb  1 s 0 @4202 ]
+"2875
+[v _USIDL `Vb  1 s 0 @4205 ]
+"2876
+[v _UARTEN `Vb  1 s 0 @4207 ]
+"2877
+[v _PDSEL0 `Vb  1 s 0 @4193 ]
+"2878
+[v _PDSEL1 `Vb  1 s 0 @4194 ]
+"2881
+[v _U1STA `Vui  1 s 2 @526 ]
+"2898
+[s S207 . 2 `Vui  1 UTXISEL 2 0 :1:15 
+`Vui  1 . 2 0 :3:12 
+`Vui  1 UTXBRK 2 0 :1:11 
+`Vui  1 UTXEN 2 0 :1:10 
+`Vui  1 UTXBF 2 0 :1:9 
+`Vui  1 TRMT 2 0 :1:8 
+`Vui  1 URXISEL 2 0 :2:6 
+`Vui  1 ADDEN 2 0 :1:5 
+`Vui  1 RIDLE 2 0 :1:4 
+`Vui  1 PERR 2 0 :1:3 
+`Vui  1 FERR 2 0 :1:2 
+`Vui  1 OERR 2 0 :1:1 
+`Vui  1 URXDA 2 0 :1:0 
+]
+"2904
+[s S208 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 URXISEL1 2 0 :1:7 
+`Vui  1 URXISEL0 2 0 :1:6 
+`Vui  1 . 2 0 :6:0 
+]
+"2905
+[u S206 . 2 `S207  1 . 2 0 
+`S208  1 . 2 0 
+]
+[v _U1STAbits `VS206  1 s 2 @526 ]
+"2907
+[v _URXDA `Vb  1 s 0 @4208 ]
+"2908
+[v _OERR `Vb  1 s 0 @4209 ]
+"2909
+[v _FERR `Vb  1 s 0 @4210 ]
+"2910
+[v _PERR `Vb  1 s 0 @4211 ]
+"2911
+[v _RIDLE `Vb  1 s 0 @4212 ]
+"2912
+[v _ADDEN `Vb  1 s 0 @4213 ]
+"2913
+[v _TRMT `Vb  1 s 0 @4216 ]
+"2914
+[v _UTXBF `Vb  1 s 0 @4217 ]
+"2915
+[v _UTXEN `Vb  1 s 0 @4218 ]
+"2916
+[v _UTXBRK `Vb  1 s 0 @4219 ]
+"2917
+[v _UTXISEL `Vb  1 s 0 @4223 ]
+"2918
+[v _URXISEL0 `Vb  1 s 0 @4214 ]
+"2919
+[v _URXISEL1 `Vb  1 s 0 @4215 ]
+"2922
+[v _U1TXREG `Vui  1 s 2 @528 ]
+"2928
+[s S210 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 U1TXREG 2 0 :9:0 
+]
+"2940
+[s S211 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 UTXREG8 2 0 :1:8 
+`Vui  1 UTXREG7 2 0 :1:7 
+`Vui  1 UTXREG6 2 0 :1:6 
+`Vui  1 UTXREG5 2 0 :1:5 
+`Vui  1 UTXREG4 2 0 :1:4 
+`Vui  1 UTXREG3 2 0 :1:3 
+`Vui  1 UTXREG2 2 0 :1:2 
+`Vui  1 UTXREG1 2 0 :1:1 
+`Vui  1 UTXREG0 2 0 :1:0 
+]
+"2941
+[u S209 . 2 `S210  1 . 2 0 
+`S211  1 . 2 0 
+]
+[v _U1TXREGbits `VS209  1 s 2 @528 ]
+"2943
+[v _UTXREG0 `Vb  1 s 0 @4224 ]
+"2944
+[v _UTXREG1 `Vb  1 s 0 @4225 ]
+"2945
+[v _UTXREG2 `Vb  1 s 0 @4226 ]
+"2946
+[v _UTXREG3 `Vb  1 s 0 @4227 ]
+"2947
+[v _UTXREG4 `Vb  1 s 0 @4228 ]
+"2948
+[v _UTXREG5 `Vb  1 s 0 @4229 ]
+"2949
+[v _UTXREG6 `Vb  1 s 0 @4230 ]
+"2950
+[v _UTXREG7 `Vb  1 s 0 @4231 ]
+"2951
+[v _UTXREG8 `Vb  1 s 0 @4232 ]
+"2954
+[v _U1RXREG `Vui  1 s 2 @530 ]
+"2960
+[s S213 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 U1RXREG 2 0 :9:0 
+]
+"2972
+[s S214 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 URXREG8 2 0 :1:8 
+`Vui  1 URXREG7 2 0 :1:7 
+`Vui  1 URXREG6 2 0 :1:6 
+`Vui  1 URXREG5 2 0 :1:5 
+`Vui  1 URXREG4 2 0 :1:4 
+`Vui  1 URXREG3 2 0 :1:3 
+`Vui  1 URXREG2 2 0 :1:2 
+`Vui  1 URXREG1 2 0 :1:1 
+`Vui  1 URXREG0 2 0 :1:0 
+]
+"2973
+[u S212 . 2 `S213  1 . 2 0 
+`S214  1 . 2 0 
+]
+[v _U1RXREGbits `VS212  1 s 2 @530 ]
+"2975
+[v _URXREG0 `Vb  1 s 0 @4240 ]
+"2976
+[v _URXREG1 `Vb  1 s 0 @4241 ]
+"2977
+[v _URXREG2 `Vb  1 s 0 @4242 ]
+"2978
+[v _URXREG3 `Vb  1 s 0 @4243 ]
+"2979
+[v _URXREG4 `Vb  1 s 0 @4244 ]
+"2980
+[v _URXREG5 `Vb  1 s 0 @4245 ]
+"2981
+[v _URXREG6 `Vb  1 s 0 @4246 ]
+"2982
+[v _URXREG7 `Vb  1 s 0 @4247 ]
+"2983
+[v _URXREG8 `Vb  1 s 0 @4248 ]
+"2986
+[v _U1BRG `Vui  1 s 2 @532 ]
+"2989
+[v _U2MODE `Vui  1 s 2 @534 ]
+"3003
+[s S216 . 2 `Vui  1 UARTEN 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 USIDL 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 WAKE 2 0 :1:7 
+`Vui  1 LPBACK 2 0 :1:6 
+`Vui  1 ABAUD 2 0 :1:5 
+`Vui  1 . 2 0 :2:3 
+`Vui  1 PDSEL 2 0 :2:1 
+`Vui  1 STSEL 2 0 :1:0 
+]
+"3009
+[s S217 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 PDSEL1 2 0 :1:2 
+`Vui  1 PDSEL0 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"3010
+[u S215 . 2 `S216  1 . 2 0 
+`S217  1 . 2 0 
+]
+[v _U2MODEbits `VS215  1 s 2 @534 ]
+"3030
+[v _U2STA `Vui  1 s 2 @536 ]
+"3047
+[s S219 . 2 `Vui  1 UTXISEL 2 0 :1:15 
+`Vui  1 . 2 0 :3:12 
+`Vui  1 UTXBRK 2 0 :1:11 
+`Vui  1 UTXEN 2 0 :1:10 
+`Vui  1 UTXBF 2 0 :1:9 
+`Vui  1 TRMT 2 0 :1:8 
+`Vui  1 URXISEL 2 0 :2:6 
+`Vui  1 ADDEN 2 0 :1:5 
+`Vui  1 RIDLE 2 0 :1:4 
+`Vui  1 PERR 2 0 :1:3 
+`Vui  1 FERR 2 0 :1:2 
+`Vui  1 OERR 2 0 :1:1 
+`Vui  1 URXDA 2 0 :1:0 
+]
+"3053
+[s S220 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 URXISEL1 2 0 :1:7 
+`Vui  1 URXISEL0 2 0 :1:6 
+`Vui  1 . 2 0 :6:0 
+]
+"3054
+[u S218 . 2 `S219  1 . 2 0 
+`S220  1 . 2 0 
+]
+[v _U2STAbits `VS218  1 s 2 @536 ]
+"3084
+[v _U2TXREG `Vui  1 s 2 @538 ]
+"3090
+[s S222 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 U2TXREG 2 0 :9:0 
+]
+"3102
+[s S223 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 UTXREG8 2 0 :1:8 
+`Vui  1 UTXREG7 2 0 :1:7 
+`Vui  1 UTXREG6 2 0 :1:6 
+`Vui  1 UTXREG5 2 0 :1:5 
+`Vui  1 UTXREG4 2 0 :1:4 
+`Vui  1 UTXREG3 2 0 :1:3 
+`Vui  1 UTXREG2 2 0 :1:2 
+`Vui  1 UTXREG1 2 0 :1:1 
+`Vui  1 UTXREG0 2 0 :1:0 
+]
+"3103
+[u S221 . 2 `S222  1 . 2 0 
+`S223  1 . 2 0 
+]
+[v _U2TXREGbits `VS221  1 s 2 @538 ]
+"3125
+[v _U2RXREG `Vui  1 s 2 @540 ]
+"3131
+[s S225 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 U2RXREG 2 0 :9:0 
+]
+"3143
+[s S226 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 URXREG8 2 0 :1:8 
+`Vui  1 URXREG7 2 0 :1:7 
+`Vui  1 URXREG6 2 0 :1:6 
+`Vui  1 URXREG5 2 0 :1:5 
+`Vui  1 URXREG4 2 0 :1:4 
+`Vui  1 URXREG3 2 0 :1:3 
+`Vui  1 URXREG2 2 0 :1:2 
+`Vui  1 URXREG1 2 0 :1:1 
+`Vui  1 URXREG0 2 0 :1:0 
+]
+"3144
+[u S224 . 2 `S225  1 . 2 0 
+`S226  1 . 2 0 
+]
+[v _U2RXREGbits `VS224  1 s 2 @540 ]
+"3166
+[v _U2BRG `Vui  1 s 2 @542 ]
+"3169
+[v _SPI1STAT `Vui  1 s 2 @544 ]
+"3181
+[s S228 . 2 `Vui  1 SPIEN 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 SPISIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 SPIROV 2 0 :1:6 
+`Vui  1 . 2 0 :4:2 
+`Vui  1 SPITBF 2 0 :1:1 
+`Vui  1 SPIRBF 2 0 :1:0 
+]
+"3182
+[u S227 . 2 `S228  1 . 2 0 
+]
+[v _SPI1STATbits `VS227  1 s 2 @544 ]
+"3184
+[v _SPIRBF `Vb  1 s 0 @4352 ]
+"3185
+[v _SPITBF `Vb  1 s 0 @4353 ]
+"3186
+[v _SPIROV `Vb  1 s 0 @4358 ]
+"3187
+[v _SPISIDL `Vb  1 s 0 @4365 ]
+"3188
+[v _SPIEN `Vb  1 s 0 @4367 ]
+"3191
+[v _SPI1CON `Vui  1 s 2 @546 ]
+"3211
+[s S230 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 FRMEN 2 0 :1:14 
+`Vui  1 SPIFSD 2 0 :1:13 
+`Vui  1 . 2 0 :1:12 
+`Vui  1 DISSDO 2 0 :1:11 
+`Vui  1 MODE16 2 0 :1:10 
+`Vui  1 SMP 2 0 :1:9 
+`Vui  1 CKE 2 0 :1:8 
+`Vui  1 SSEN 2 0 :1:7 
+`Vui  1 CKP 2 0 :1:6 
+`Vui  1 MSTEN 2 0 :1:5 
+`Vui  1 SPRE2 2 0 :1:4 
+`Vui  1 SPRE1 2 0 :1:3 
+`Vui  1 SPRE0 2 0 :1:2 
+`Vui  1 PPRE1 2 0 :1:1 
+`Vui  1 PPRE0 2 0 :1:0 
+]
+"3212
+[u S229 . 2 `S230  1 . 2 0 
+]
+[v _SPI1CONbits `VS229  1 s 2 @546 ]
+"3214
+[v _PPRE0 `Vb  1 s 0 @4368 ]
+"3215
+[v _PPRE1 `Vb  1 s 0 @4369 ]
+"3216
+[v _SPRE0 `Vb  1 s 0 @4370 ]
+"3217
+[v _SPRE1 `Vb  1 s 0 @4371 ]
+"3218
+[v _SPRE2 `Vb  1 s 0 @4372 ]
+"3219
+[v _MSTEN `Vb  1 s 0 @4373 ]
+"3220
+[v _CKP `Vb  1 s 0 @4374 ]
+"3221
+[v _SSEN `Vb  1 s 0 @4375 ]
+"3222
+[v _CKE `Vb  1 s 0 @4376 ]
+"3223
+[v _SMP `Vb  1 s 0 @4377 ]
+"3224
+[v _MODE16 `Vb  1 s 0 @4378 ]
+"3225
+[v _DISSDO `Vb  1 s 0 @4379 ]
+"3226
+[v _SPIFSD `Vb  1 s 0 @4381 ]
+"3227
+[v _FRMEN `Vb  1 s 0 @4382 ]
+"3230
+[v _SPI1BUF `Vui  1 s 2 @548 ]
+"3233
+[v _SPI2STAT `Vui  1 s 2 @550 ]
+"3245
+[s S232 . 2 `Vui  1 SPIEN 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 SPISIDL 2 0 :1:13 
+`Vui  1 . 2 0 :6:7 
+`Vui  1 SPIROV 2 0 :1:6 
+`Vui  1 . 2 0 :4:2 
+`Vui  1 SPITBF 2 0 :1:1 
+`Vui  1 SPIRBF 2 0 :1:0 
+]
+"3246
+[u S231 . 2 `S232  1 . 2 0 
+]
+[v _SPI2STATbits `VS231  1 s 2 @550 ]
+"3260
+[v _SPI2CON `Vui  1 s 2 @552 ]
+"3280
+[s S234 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 FRMEN 2 0 :1:14 
+`Vui  1 SPIFSD 2 0 :1:13 
+`Vui  1 . 2 0 :1:12 
+`Vui  1 DISSDO 2 0 :1:11 
+`Vui  1 MODE16 2 0 :1:10 
+`Vui  1 SMP 2 0 :1:9 
+`Vui  1 CKE 2 0 :1:8 
+`Vui  1 SSEN 2 0 :1:7 
+`Vui  1 CKP 2 0 :1:6 
+`Vui  1 MSTEN 2 0 :1:5 
+`Vui  1 SPRE2 2 0 :1:4 
+`Vui  1 SPRE1 2 0 :1:3 
+`Vui  1 SPRE0 2 0 :1:2 
+`Vui  1 PPRE1 2 0 :1:1 
+`Vui  1 PPRE0 2 0 :1:0 
+]
+"3281
+[u S233 . 2 `S234  1 . 2 0 
+]
+[v _SPI2CONbits `VS233  1 s 2 @552 ]
+"3313
+[v _SPI2BUF `Vui  1 s 2 @554 ]
+"3316
+[v _ADCBUF0 `Vui  1 s 2 @640 ]
+"3322
+[s S236 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF0 2 0 :10:0 
+]
+"3323
+[u S235 . 2 `S236  1 . 2 0 
+]
+[v _ADCBUF0bits `VS235  1 s 2 @640 ]
+"3326
+[v _ADCBUF1 `Vui  1 s 2 @642 ]
+"3332
+[s S238 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF1 2 0 :10:0 
+]
+"3333
+[u S237 . 2 `S238  1 . 2 0 
+]
+[v _ADCBUF1bits `VS237  1 s 2 @642 ]
+"3336
+[v _ADCBUF2 `Vui  1 s 2 @644 ]
+"3342
+[s S240 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF2 2 0 :10:0 
+]
+"3343
+[u S239 . 2 `S240  1 . 2 0 
+]
+[v _ADCBUF2bits `VS239  1 s 2 @644 ]
+"3346
+[v _ADCBUF3 `Vui  1 s 2 @646 ]
+"3352
+[s S242 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF3 2 0 :10:0 
+]
+"3353
+[u S241 . 2 `S242  1 . 2 0 
+]
+[v _ADCBUF3bits `VS241  1 s 2 @646 ]
+"3356
+[v _ADCBUF4 `Vui  1 s 2 @648 ]
+"3362
+[s S244 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF4 2 0 :10:0 
+]
+"3363
+[u S243 . 2 `S244  1 . 2 0 
+]
+[v _ADCBUF4bits `VS243  1 s 2 @648 ]
+"3366
+[v _ADCBUF5 `Vui  1 s 2 @650 ]
+"3372
+[s S246 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF5 2 0 :10:0 
+]
+"3373
+[u S245 . 2 `S246  1 . 2 0 
+]
+[v _ADCBUF5bits `VS245  1 s 2 @650 ]
+"3376
+[v _ADCBUF6 `Vui  1 s 2 @652 ]
+"3382
+[s S248 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF6 2 0 :10:0 
+]
+"3383
+[u S247 . 2 `S248  1 . 2 0 
+]
+[v _ADCBUF6bits `VS247  1 s 2 @652 ]
+"3386
+[v _ADCBUF7 `Vui  1 s 2 @654 ]
+"3392
+[s S250 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF7 2 0 :10:0 
+]
+"3393
+[u S249 . 2 `S250  1 . 2 0 
+]
+[v _ADCBUF7bits `VS249  1 s 2 @654 ]
+"3396
+[v _ADCBUF8 `Vui  1 s 2 @656 ]
+"3402
+[s S252 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF8 2 0 :10:0 
+]
+"3403
+[u S251 . 2 `S252  1 . 2 0 
+]
+[v _ADCBUF8bits `VS251  1 s 2 @656 ]
+"3406
+[v _ADCBUF9 `Vui  1 s 2 @658 ]
+"3412
+[s S254 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUF9 2 0 :10:0 
+]
+"3413
+[u S253 . 2 `S254  1 . 2 0 
+]
+[v _ADCBUF9bits `VS253  1 s 2 @658 ]
+"3416
+[v _ADCBUFA `Vui  1 s 2 @660 ]
+"3422
+[s S256 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUFA 2 0 :10:0 
+]
+"3423
+[u S255 . 2 `S256  1 . 2 0 
+]
+[v _ADCBUFAbits `VS255  1 s 2 @660 ]
+"3426
+[v _ADCBUFB `Vui  1 s 2 @662 ]
+"3432
+[s S258 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUFB 2 0 :10:0 
+]
+"3433
+[u S257 . 2 `S258  1 . 2 0 
+]
+[v _ADCBUFBbits `VS257  1 s 2 @662 ]
+"3436
+[v _ADCBUFC `Vui  1 s 2 @664 ]
+"3442
+[s S260 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUFC 2 0 :10:0 
+]
+"3443
+[u S259 . 2 `S260  1 . 2 0 
+]
+[v _ADCBUFCbits `VS259  1 s 2 @664 ]
+"3446
+[v _ADCBUFD `Vui  1 s 2 @666 ]
+"3452
+[s S262 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUFD 2 0 :10:0 
+]
+"3453
+[u S261 . 2 `S262  1 . 2 0 
+]
+[v _ADCBUFDbits `VS261  1 s 2 @666 ]
+"3456
+[v _ADCBUFE `Vui  1 s 2 @668 ]
+"3462
+[s S264 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUFE 2 0 :10:0 
+]
+"3463
+[u S263 . 2 `S264  1 . 2 0 
+]
+[v _ADCBUFEbits `VS263  1 s 2 @668 ]
+"3466
+[v _ADCBUFF `Vui  1 s 2 @670 ]
+"3472
+[s S266 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 ADCBUFF 2 0 :10:0 
+]
+"3473
+[u S265 . 2 `S266  1 . 2 0 
+]
+[v _ADCBUFFbits `VS265  1 s 2 @670 ]
+"3476
+[v _ADCON1 `Vui  1 s 2 @672 ]
+"3491
+[s S268 . 2 `Vui  1 ADON 2 0 :1:15 
+`Vui  1 . 2 0 :1:14 
+`Vui  1 ADSIDL 2 0 :1:13 
+`Vui  1 . 2 0 :3:10 
+`Vui  1 FORM 2 0 :2:8 
+`Vui  1 SSRC 2 0 :3:5 
+`Vui  1 . 2 0 :1:4 
+`Vui  1 SIMSAM 2 0 :1:3 
+`Vui  1 ASAM 2 0 :1:2 
+`Vui  1 SAMP 2 0 :1:1 
+`Vui  1 DONE 2 0 :1:0 
+]
+"3500
+[s S269 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 FORM1 2 0 :1:9 
+`Vui  1 FORM0 2 0 :1:8 
+`Vui  1 SSRC2 2 0 :1:7 
+`Vui  1 SSRC1 2 0 :1:6 
+`Vui  1 SSRC0 2 0 :1:5 
+`Vui  1 . 2 0 :5:0 
+]
+"3501
+[u S267 . 2 `S268  1 . 2 0 
+`S269  1 . 2 0 
+]
+[v _ADCON1bits `VS267  1 s 2 @672 ]
+"3503
+[v _DONE `Vb  1 s 0 @5376 ]
+"3504
+[v _SAMP `Vb  1 s 0 @5377 ]
+"3505
+[v _ASAM `Vb  1 s 0 @5378 ]
+"3506
+[v _SIMSAM `Vb  1 s 0 @5379 ]
+"3507
+[v _ADSIDL `Vb  1 s 0 @5389 ]
+"3508
+[v _ADON `Vb  1 s 0 @5391 ]
+"3509
+[v _SSRC0 `Vb  1 s 0 @5381 ]
+"3510
+[v _SSRC1 `Vb  1 s 0 @5382 ]
+"3511
+[v _SSRC2 `Vb  1 s 0 @5383 ]
+"3512
+[v _FORM0 `Vb  1 s 0 @5384 ]
+"3513
+[v _FORM1 `Vb  1 s 0 @5385 ]
+"3516
+[v _ADCON2 `Vui  1 s 2 @674 ]
+"3530
+[s S271 . 2 `Vui  1 VCFG 2 0 :3:13 
+`Vui  1 OFFCAL 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 CSCNA 2 0 :1:10 
+`Vui  1 CHPS 2 0 :2:8 
+`Vui  1 BUFS 2 0 :1:7 
+`Vui  1 . 2 0 :1:6 
+`Vui  1 SMPI 2 0 :4:2 
+`Vui  1 BUFM 2 0 :1:1 
+`Vui  1 ALTS 2 0 :1:0 
+]
+"3544
+[s S272 . 2 `Vui  1 VCFG2 2 0 :1:15 
+`Vui  1 VCFG1 2 0 :1:14 
+`Vui  1 VCFG0 2 0 :1:13 
+`Vui  1 . 2 0 :3:10 
+`Vui  1 CHPS1 2 0 :1:9 
+`Vui  1 CHPS0 2 0 :1:8 
+`Vui  1 . 2 0 :2:6 
+`Vui  1 SMPI3 2 0 :1:5 
+`Vui  1 SMPI2 2 0 :1:4 
+`Vui  1 SMPI1 2 0 :1:3 
+`Vui  1 SMPI0 2 0 :1:2 
+`Vui  1 . 2 0 :2:0 
+]
+"3545
+[u S270 . 2 `S271  1 . 2 0 
+`S272  1 . 2 0 
+]
+[v _ADCON2bits `VS270  1 s 2 @674 ]
+"3547
+[v _ALTS `Vb  1 s 0 @5392 ]
+"3548
+[v _BUFM `Vb  1 s 0 @5393 ]
+"3549
+[v _BUFS `Vb  1 s 0 @5399 ]
+"3550
+[v _CSCNA `Vb  1 s 0 @5402 ]
+"3551
+[v _OFFCAL `Vb  1 s 0 @5404 ]
+"3552
+[v _SMPI0 `Vb  1 s 0 @5394 ]
+"3553
+[v _SMPI1 `Vb  1 s 0 @5395 ]
+"3554
+[v _SMPI2 `Vb  1 s 0 @5396 ]
+"3555
+[v _SMPI3 `Vb  1 s 0 @5397 ]
+"3556
+[v _CHPS0 `Vb  1 s 0 @5400 ]
+"3557
+[v _CHPS1 `Vb  1 s 0 @5401 ]
+"3558
+[v _VCFG0 `Vb  1 s 0 @5405 ]
+"3559
+[v _VCFG1 `Vb  1 s 0 @5406 ]
+"3560
+[v _VCFG2 `Vb  1 s 0 @5407 ]
+"3563
+[v _ADCON3 `Vui  1 s 2 @676 ]
+"3572
+[s S274 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SAMC 2 0 :5:8 
+`Vui  1 ADRC 2 0 :1:7 
+`Vui  1 . 2 0 :1:6 
+`Vui  1 ADCS 2 0 :6:0 
+]
+"3588
+[s S275 . 2 `Vui  1 . 2 0 :2:14 
+`Vui  1 . 2 0 :1:13 
+`Vui  1 SAMC4 2 0 :1:12 
+`Vui  1 SAMC3 2 0 :1:11 
+`Vui  1 SAMC2 2 0 :1:10 
+`Vui  1 SAMC1 2 0 :1:9 
+`Vui  1 SAMC0 2 0 :1:8 
+`Vui  1 . 2 0 :2:6 
+`Vui  1 ADCS5 2 0 :1:5 
+`Vui  1 ADCS4 2 0 :1:4 
+`Vui  1 ADCS3 2 0 :1:3 
+`Vui  1 ADCS2 2 0 :1:2 
+`Vui  1 ADCS1 2 0 :1:1 
+`Vui  1 ADCS0 2 0 :1:0 
+]
+"3589
+[u S273 . 2 `S274  1 . 2 0 
+`S275  1 . 2 0 
+]
+[v _ADCON3bits `VS273  1 s 2 @676 ]
+"3591
+[v _ADRC `Vb  1 s 0 @5415 ]
+"3592
+[v _ADCS0 `Vb  1 s 0 @5408 ]
+"3593
+[v _ADCS1 `Vb  1 s 0 @5409 ]
+"3594
+[v _ADCS2 `Vb  1 s 0 @5410 ]
+"3595
+[v _ADCS3 `Vb  1 s 0 @5411 ]
+"3596
+[v _ADCS4 `Vb  1 s 0 @5412 ]
+"3597
+[v _ADCS5 `Vb  1 s 0 @5413 ]
+"3598
+[v _SAMC0 `Vb  1 s 0 @5416 ]
+"3599
+[v _SAMC1 `Vb  1 s 0 @5417 ]
+"3600
+[v _SAMC2 `Vb  1 s 0 @5418 ]
+"3601
+[v _SAMC3 `Vb  1 s 0 @5419 ]
+"3602
+[v _SAMC4 `Vb  1 s 0 @5420 ]
+"3605
+[v _ADCHS `Vui  1 s 2 @678 ]
+"3617
+[s S277 . 2 `Vui  1 CH123NB 2 0 :2:14 
+`Vui  1 CH123SB 2 0 :1:13 
+`Vui  1 CH0NB 2 0 :1:12 
+`Vui  1 CH0SB 2 0 :4:8 
+`Vui  1 CH123NA 2 0 :2:6 
+`Vui  1 CH123SA 2 0 :1:5 
+`Vui  1 CH0NA 2 0 :1:4 
+`Vui  1 CH0SA 2 0 :4:0 
+]
+"3633
+[s S278 . 2 `Vui  1 CH123NB1 2 0 :1:15 
+`Vui  1 CH123NB0 2 0 :1:14 
+`Vui  1 . 2 0 :2:12 
+`Vui  1 CH0SB3 2 0 :1:11 
+`Vui  1 CH0SB2 2 0 :1:10 
+`Vui  1 CH0SB1 2 0 :1:9 
+`Vui  1 CH0SB0 2 0 :1:8 
+`Vui  1 CH123NA1 2 0 :1:7 
+`Vui  1 CH123NA0 2 0 :1:6 
+`Vui  1 . 2 0 :2:4 
+`Vui  1 CH0SA3 2 0 :1:3 
+`Vui  1 CH0SA2 2 0 :1:2 
+`Vui  1 CH0SA1 2 0 :1:1 
+`Vui  1 CH0SA0 2 0 :1:0 
+]
+"3634
+[u S276 . 2 `S277  1 . 2 0 
+`S278  1 . 2 0 
+]
+[v _ADCHSbits `VS276  1 s 2 @678 ]
+"3636
+[v _CH0NA `Vb  1 s 0 @5428 ]
+"3637
+[v _CH123SA `Vb  1 s 0 @5429 ]
+"3638
+[v _CH0NB `Vb  1 s 0 @5436 ]
+"3639
+[v _CH123SB `Vb  1 s 0 @5437 ]
+"3640
+[v _CH0SA0 `Vb  1 s 0 @5424 ]
+"3641
+[v _CH0SA1 `Vb  1 s 0 @5425 ]
+"3642
+[v _CH0SA2 `Vb  1 s 0 @5426 ]
+"3643
+[v _CH0SA3 `Vb  1 s 0 @5427 ]
+"3644
+[v _CH123NA0 `Vb  1 s 0 @5430 ]
+"3645
+[v _CH123NA1 `Vb  1 s 0 @5431 ]
+"3646
+[v _CH0SB0 `Vb  1 s 0 @5432 ]
+"3647
+[v _CH0SB1 `Vb  1 s 0 @5433 ]
+"3648
+[v _CH0SB2 `Vb  1 s 0 @5434 ]
+"3649
+[v _CH0SB3 `Vb  1 s 0 @5435 ]
+"3650
+[v _CH123NB0 `Vb  1 s 0 @5438 ]
+"3651
+[v _CH123NB1 `Vb  1 s 0 @5439 ]
+"3654
+[v _ADPCFG `Vui  1 s 2 @680 ]
+"3674
+[s S280 . 2 `Vui  1 PCFG15 2 0 :1:15 
+`Vui  1 PCFG14 2 0 :1:14 
+`Vui  1 PCFG13 2 0 :1:13 
+`Vui  1 PCFG12 2 0 :1:12 
+`Vui  1 PCFG11 2 0 :1:11 
+`Vui  1 PCFG10 2 0 :1:10 
+`Vui  1 PCFG9 2 0 :1:9 
+`Vui  1 PCFG8 2 0 :1:8 
+`Vui  1 PCFG7 2 0 :1:7 
+`Vui  1 PCFG6 2 0 :1:6 
+`Vui  1 PCFG5 2 0 :1:5 
+`Vui  1 PCFG4 2 0 :1:4 
+`Vui  1 PCFG3 2 0 :1:3 
+`Vui  1 PCFG2 2 0 :1:2 
+`Vui  1 PCFG1 2 0 :1:1 
+`Vui  1 PCFG0 2 0 :1:0 
+]
+"3675
+[u S279 . 2 `S280  1 . 2 0 
+]
+[v _ADPCFGbits `VS279  1 s 2 @680 ]
+"3677
+[v _PCFG0 `Vb  1 s 0 @5440 ]
+"3678
+[v _PCFG1 `Vb  1 s 0 @5441 ]
+"3679
+[v _PCFG2 `Vb  1 s 0 @5442 ]
+"3680
+[v _PCFG3 `Vb  1 s 0 @5443 ]
+"3681
+[v _PCFG4 `Vb  1 s 0 @5444 ]
+"3682
+[v _PCFG5 `Vb  1 s 0 @5445 ]
+"3683
+[v _PCFG6 `Vb  1 s 0 @5446 ]
+"3684
+[v _PCFG7 `Vb  1 s 0 @5447 ]
+"3685
+[v _PCFG8 `Vb  1 s 0 @5448 ]
+"3686
+[v _PCFG9 `Vb  1 s 0 @5449 ]
+"3687
+[v _PCFG10 `Vb  1 s 0 @5450 ]
+"3688
+[v _PCFG11 `Vb  1 s 0 @5451 ]
+"3689
+[v _PCFG12 `Vb  1 s 0 @5452 ]
+"3690
+[v _PCFG13 `Vb  1 s 0 @5453 ]
+"3691
+[v _PCFG14 `Vb  1 s 0 @5454 ]
+"3692
+[v _PCFG15 `Vb  1 s 0 @5455 ]
+"3695
+[v _ADCSSL `Vui  1 s 2 @682 ]
+"3715
+[s S282 . 2 `Vui  1 CSSL15 2 0 :1:15 
+`Vui  1 CSSL14 2 0 :1:14 
+`Vui  1 CSSL13 2 0 :1:13 
+`Vui  1 CSSL12 2 0 :1:12 
+`Vui  1 CSSL11 2 0 :1:11 
+`Vui  1 CSSL10 2 0 :1:10 
+`Vui  1 CSSL9 2 0 :1:9 
+`Vui  1 CSSL8 2 0 :1:8 
+`Vui  1 CSSL7 2 0 :1:7 
+`Vui  1 CSSL6 2 0 :1:6 
+`Vui  1 CSSL5 2 0 :1:5 
+`Vui  1 CSSL4 2 0 :1:4 
+`Vui  1 CSSL3 2 0 :1:3 
+`Vui  1 CSSL2 2 0 :1:2 
+`Vui  1 CSSL1 2 0 :1:1 
+`Vui  1 CSSL0 2 0 :1:0 
+]
+"3716
+[u S281 . 2 `S282  1 . 2 0 
+]
+[v _ADCSSLbits `VS281  1 s 2 @682 ]
+"3718
+[v _CSSL0 `Vb  1 s 0 @5456 ]
+"3719
+[v _CSSL1 `Vb  1 s 0 @5457 ]
+"3720
+[v _CSSL2 `Vb  1 s 0 @5458 ]
+"3721
+[v _CSSL3 `Vb  1 s 0 @5459 ]
+"3722
+[v _CSSL4 `Vb  1 s 0 @5460 ]
+"3723
+[v _CSSL5 `Vb  1 s 0 @5461 ]
+"3724
+[v _CSSL6 `Vb  1 s 0 @5462 ]
+"3725
+[v _CSSL7 `Vb  1 s 0 @5463 ]
+"3726
+[v _CSSL8 `Vb  1 s 0 @5464 ]
+"3727
+[v _CSSL9 `Vb  1 s 0 @5465 ]
+"3728
+[v _CSSL10 `Vb  1 s 0 @5466 ]
+"3729
+[v _CSSL11 `Vb  1 s 0 @5467 ]
+"3730
+[v _CSSL12 `Vb  1 s 0 @5468 ]
+"3731
+[v _CSSL13 `Vb  1 s 0 @5469 ]
+"3732
+[v _CSSL14 `Vb  1 s 0 @5470 ]
+"3733
+[v _CSSL15 `Vb  1 s 0 @5471 ]
+"3736
+[v _TRISA `Vui  1 s 2 @704 ]
+"3746
+[s S284 . 2 `Vui  1 TRISA15 2 0 :1:15 
+`Vui  1 TRISA14 2 0 :1:14 
+`Vui  1 . 2 0 :3:11 
+`Vui  1 TRISA10 2 0 :1:10 
+`Vui  1 TRISA9 2 0 :1:9 
+`Vui  1 . 2 0 :9:0 
+]
+"3747
+[u S283 . 2 `S284  1 . 2 0 
+]
+[v _TRISAbits `VS283  1 s 2 @704 ]
+"3749
+[v _TRISA9 `Vb  1 s 0 @5641 ]
+"3750
+[v _TRISA10 `Vb  1 s 0 @5642 ]
+"3751
+[v _TRISA14 `Vb  1 s 0 @5646 ]
+"3752
+[v _TRISA15 `Vb  1 s 0 @5647 ]
+"3755
+[v _PORTA `Vui  1 s 2 @706 ]
+"3765
+[s S286 . 2 `Vui  1 RA15 2 0 :1:15 
+`Vui  1 RA14 2 0 :1:14 
+`Vui  1 . 2 0 :3:11 
+`Vui  1 RA10 2 0 :1:10 
+`Vui  1 RA9 2 0 :1:9 
+`Vui  1 . 2 0 :9:0 
+]
+"3766
+[u S285 . 2 `S286  1 . 2 0 
+]
+[v _PORTAbits `VS285  1 s 2 @706 ]
+"3768
+[v _RA9 `Vb  1 s 0 @5657 ]
+"3769
+[v _RA10 `Vb  1 s 0 @5658 ]
+"3770
+[v _RA14 `Vb  1 s 0 @5662 ]
+"3771
+[v _RA15 `Vb  1 s 0 @5663 ]
+"3774
+[v _LATA `Vui  1 s 2 @708 ]
+"3784
+[s S288 . 2 `Vui  1 LATA15 2 0 :1:15 
+`Vui  1 LATA14 2 0 :1:14 
+`Vui  1 . 2 0 :3:11 
+`Vui  1 LATA10 2 0 :1:10 
+`Vui  1 LATA9 2 0 :1:9 
+`Vui  1 . 2 0 :9:0 
+]
+"3785
+[u S287 . 2 `S288  1 . 2 0 
+]
+[v _LATAbits `VS287  1 s 2 @708 ]
+"3787
+[v _LATA9 `Vb  1 s 0 @5673 ]
+"3788
+[v _LATA10 `Vb  1 s 0 @5674 ]
+"3789
+[v _LATA14 `Vb  1 s 0 @5678 ]
+"3790
+[v _LATA15 `Vb  1 s 0 @5679 ]
+"3793
+[v _TRISB `Vui  1 s 2 @710 ]
+"3813
+[s S290 . 2 `Vui  1 TRISB15 2 0 :1:15 
+`Vui  1 TRISB14 2 0 :1:14 
+`Vui  1 TRISB13 2 0 :1:13 
+`Vui  1 TRISB12 2 0 :1:12 
+`Vui  1 TRISB11 2 0 :1:11 
+`Vui  1 TRISB10 2 0 :1:10 
+`Vui  1 TRISB9 2 0 :1:9 
+`Vui  1 TRISB8 2 0 :1:8 
+`Vui  1 TRISB7 2 0 :1:7 
+`Vui  1 TRISB6 2 0 :1:6 
+`Vui  1 TRISB5 2 0 :1:5 
+`Vui  1 TRISB4 2 0 :1:4 
+`Vui  1 TRISB3 2 0 :1:3 
+`Vui  1 TRISB2 2 0 :1:2 
+`Vui  1 TRISB1 2 0 :1:1 
+`Vui  1 TRISB0 2 0 :1:0 
+]
+"3814
+[u S289 . 2 `S290  1 . 2 0 
+]
+[v _TRISBbits `VS289  1 s 2 @710 ]
+"3816
+[v _TRISB0 `Vb  1 s 0 @5680 ]
+"3817
+[v _TRISB1 `Vb  1 s 0 @5681 ]
+"3818
+[v _TRISB2 `Vb  1 s 0 @5682 ]
+"3819
+[v _TRISB3 `Vb  1 s 0 @5683 ]
+"3820
+[v _TRISB4 `Vb  1 s 0 @5684 ]
+"3821
+[v _TRISB5 `Vb  1 s 0 @5685 ]
+"3822
+[v _TRISB6 `Vb  1 s 0 @5686 ]
+"3823
+[v _TRISB7 `Vb  1 s 0 @5687 ]
+"3824
+[v _TRISB8 `Vb  1 s 0 @5688 ]
+"3825
+[v _TRISB9 `Vb  1 s 0 @5689 ]
+"3826
+[v _TRISB10 `Vb  1 s 0 @5690 ]
+"3827
+[v _TRISB11 `Vb  1 s 0 @5691 ]
+"3828
+[v _TRISB12 `Vb  1 s 0 @5692 ]
+"3829
+[v _TRISB13 `Vb  1 s 0 @5693 ]
+"3830
+[v _TRISB14 `Vb  1 s 0 @5694 ]
+"3831
+[v _TRISB15 `Vb  1 s 0 @5695 ]
+"3834
+[v _PORTB `Vui  1 s 2 @712 ]
+"3854
+[s S292 . 2 `Vui  1 RB15 2 0 :1:15 
+`Vui  1 RB14 2 0 :1:14 
+`Vui  1 RB13 2 0 :1:13 
+`Vui  1 RB12 2 0 :1:12 
+`Vui  1 RB11 2 0 :1:11 
+`Vui  1 RB10 2 0 :1:10 
+`Vui  1 RB9 2 0 :1:9 
+`Vui  1 RB8 2 0 :1:8 
+`Vui  1 RB7 2 0 :1:7 
+`Vui  1 RB6 2 0 :1:6 
+`Vui  1 RB5 2 0 :1:5 
+`Vui  1 RB4 2 0 :1:4 
+`Vui  1 RB3 2 0 :1:3 
+`Vui  1 RB2 2 0 :1:2 
+`Vui  1 RB1 2 0 :1:1 
+`Vui  1 RB0 2 0 :1:0 
+]
+"3855
+[u S291 . 2 `S292  1 . 2 0 
+]
+[v _PORTBbits `VS291  1 s 2 @712 ]
+"3857
+[v _RB0 `Vb  1 s 0 @5696 ]
+"3858
+[v _RB1 `Vb  1 s 0 @5697 ]
+"3859
+[v _RB2 `Vb  1 s 0 @5698 ]
+"3860
+[v _RB3 `Vb  1 s 0 @5699 ]
+"3861
+[v _RB4 `Vb  1 s 0 @5700 ]
+"3862
+[v _RB5 `Vb  1 s 0 @5701 ]
+"3863
+[v _RB6 `Vb  1 s 0 @5702 ]
+"3864
+[v _RB7 `Vb  1 s 0 @5703 ]
+"3865
+[v _RB8 `Vb  1 s 0 @5704 ]
+"3866
+[v _RB9 `Vb  1 s 0 @5705 ]
+"3867
+[v _RB10 `Vb  1 s 0 @5706 ]
+"3868
+[v _RB11 `Vb  1 s 0 @5707 ]
+"3869
+[v _RB12 `Vb  1 s 0 @5708 ]
+"3870
+[v _RB13 `Vb  1 s 0 @5709 ]
+"3871
+[v _RB14 `Vb  1 s 0 @5710 ]
+"3872
+[v _RB15 `Vb  1 s 0 @5711 ]
+"3875
+[v _LATB `Vui  1 s 2 @714 ]
+"3895
+[s S294 . 2 `Vui  1 LATB15 2 0 :1:15 
+`Vui  1 LATB14 2 0 :1:14 
+`Vui  1 LATB13 2 0 :1:13 
+`Vui  1 LATB12 2 0 :1:12 
+`Vui  1 LATB11 2 0 :1:11 
+`Vui  1 LATB10 2 0 :1:10 
+`Vui  1 LATB9 2 0 :1:9 
+`Vui  1 LATB8 2 0 :1:8 
+`Vui  1 LATB7 2 0 :1:7 
+`Vui  1 LATB6 2 0 :1:6 
+`Vui  1 LATB5 2 0 :1:5 
+`Vui  1 LATB4 2 0 :1:4 
+`Vui  1 LATB3 2 0 :1:3 
+`Vui  1 LATB2 2 0 :1:2 
+`Vui  1 LATB1 2 0 :1:1 
+`Vui  1 LATB0 2 0 :1:0 
+]
+"3896
+[u S293 . 2 `S294  1 . 2 0 
+]
+[v _LATBbits `VS293  1 s 2 @714 ]
+"3898
+[v _LATB0 `Vb  1 s 0 @5712 ]
+"3899
+[v _LATB1 `Vb  1 s 0 @5713 ]
+"3900
+[v _LATB2 `Vb  1 s 0 @5714 ]
+"3901
+[v _LATB3 `Vb  1 s 0 @5715 ]
+"3902
+[v _LATB4 `Vb  1 s 0 @5716 ]
+"3903
+[v _LATB5 `Vb  1 s 0 @5717 ]
+"3904
+[v _LATB6 `Vb  1 s 0 @5718 ]
+"3905
+[v _LATB7 `Vb  1 s 0 @5719 ]
+"3906
+[v _LATB8 `Vb  1 s 0 @5720 ]
+"3907
+[v _LATB9 `Vb  1 s 0 @5721 ]
+"3908
+[v _LATB10 `Vb  1 s 0 @5722 ]
+"3909
+[v _LATB11 `Vb  1 s 0 @5723 ]
+"3910
+[v _LATB12 `Vb  1 s 0 @5724 ]
+"3911
+[v _LATB13 `Vb  1 s 0 @5725 ]
+"3912
+[v _LATB14 `Vb  1 s 0 @5726 ]
+"3913
+[v _LATB15 `Vb  1 s 0 @5727 ]
+"3916
+[v _TRISC `Vui  1 s 2 @716 ]
+"3928
+[s S296 . 2 `Vui  1 TRISC15 2 0 :1:15 
+`Vui  1 TRISC14 2 0 :1:14 
+`Vui  1 TRISC13 2 0 :1:13 
+`Vui  1 . 2 0 :9:4 
+`Vui  1 TRISC3 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TRISC1 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"3929
+[u S295 . 2 `S296  1 . 2 0 
+]
+[v _TRISCbits `VS295  1 s 2 @716 ]
+"3931
+[v _TRISC1 `Vb  1 s 0 @5729 ]
+"3932
+[v _TRISC3 `Vb  1 s 0 @5731 ]
+"3933
+[v _TRISC13 `Vb  1 s 0 @5741 ]
+"3934
+[v _TRISC14 `Vb  1 s 0 @5742 ]
+"3935
+[v _TRISC15 `Vb  1 s 0 @5743 ]
+"3938
+[v _PORTC `Vui  1 s 2 @718 ]
+"3950
+[s S298 . 2 `Vui  1 RC15 2 0 :1:15 
+`Vui  1 RC14 2 0 :1:14 
+`Vui  1 RC13 2 0 :1:13 
+`Vui  1 . 2 0 :9:4 
+`Vui  1 RC3 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 RC1 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"3951
+[u S297 . 2 `S298  1 . 2 0 
+]
+[v _PORTCbits `VS297  1 s 2 @718 ]
+"3953
+[v _RC1 `Vb  1 s 0 @5745 ]
+"3954
+[v _RC3 `Vb  1 s 0 @5747 ]
+"3955
+[v _RC13 `Vb  1 s 0 @5757 ]
+"3956
+[v _RC14 `Vb  1 s 0 @5758 ]
+"3957
+[v _RC15 `Vb  1 s 0 @5759 ]
+"3960
+[v _LATC `Vui  1 s 2 @720 ]
+"3972
+[s S300 . 2 `Vui  1 LATC15 2 0 :1:15 
+`Vui  1 LATC14 2 0 :1:14 
+`Vui  1 LATC13 2 0 :1:13 
+`Vui  1 . 2 0 :9:4 
+`Vui  1 LATC3 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 LATC1 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"3973
+[u S299 . 2 `S300  1 . 2 0 
+]
+[v _LATCbits `VS299  1 s 2 @720 ]
+"3975
+[v _LATC1 `Vb  1 s 0 @5761 ]
+"3976
+[v _LATC3 `Vb  1 s 0 @5763 ]
+"3977
+[v _LATC13 `Vb  1 s 0 @5773 ]
+"3978
+[v _LATC14 `Vb  1 s 0 @5774 ]
+"3979
+[v _LATC15 `Vb  1 s 0 @5775 ]
+"3982
+[v _TRISD `Vui  1 s 2 @722 ]
+"4002
+[s S302 . 2 `Vui  1 TRISD15 2 0 :1:15 
+`Vui  1 TRISD14 2 0 :1:14 
+`Vui  1 TRISD13 2 0 :1:13 
+`Vui  1 TRISD12 2 0 :1:12 
+`Vui  1 TRISD11 2 0 :1:11 
+`Vui  1 TRISD10 2 0 :1:10 
+`Vui  1 TRISD9 2 0 :1:9 
+`Vui  1 TRISD8 2 0 :1:8 
+`Vui  1 TRISD7 2 0 :1:7 
+`Vui  1 TRISD6 2 0 :1:6 
+`Vui  1 TRISD5 2 0 :1:5 
+`Vui  1 TRISD4 2 0 :1:4 
+`Vui  1 TRISD3 2 0 :1:3 
+`Vui  1 TRISD2 2 0 :1:2 
+`Vui  1 TRISD1 2 0 :1:1 
+`Vui  1 TRISD0 2 0 :1:0 
+]
+"4003
+[u S301 . 2 `S302  1 . 2 0 
+]
+[v _TRISDbits `VS301  1 s 2 @722 ]
+"4005
+[v _TRISD0 `Vb  1 s 0 @5776 ]
+"4006
+[v _TRISD1 `Vb  1 s 0 @5777 ]
+"4007
+[v _TRISD2 `Vb  1 s 0 @5778 ]
+"4008
+[v _TRISD3 `Vb  1 s 0 @5779 ]
+"4009
+[v _TRISD4 `Vb  1 s 0 @5780 ]
+"4010
+[v _TRISD5 `Vb  1 s 0 @5781 ]
+"4011
+[v _TRISD6 `Vb  1 s 0 @5782 ]
+"4012
+[v _TRISD7 `Vb  1 s 0 @5783 ]
+"4013
+[v _TRISD8 `Vb  1 s 0 @5784 ]
+"4014
+[v _TRISD9 `Vb  1 s 0 @5785 ]
+"4015
+[v _TRISD10 `Vb  1 s 0 @5786 ]
+"4016
+[v _TRISD11 `Vb  1 s 0 @5787 ]
+"4017
+[v _TRISD12 `Vb  1 s 0 @5788 ]
+"4018
+[v _TRISD13 `Vb  1 s 0 @5789 ]
+"4019
+[v _TRISD14 `Vb  1 s 0 @5790 ]
+"4020
+[v _TRISD15 `Vb  1 s 0 @5791 ]
+"4023
+[v _PORTD `Vui  1 s 2 @724 ]
+"4043
+[s S304 . 2 `Vui  1 RD15 2 0 :1:15 
+`Vui  1 RD14 2 0 :1:14 
+`Vui  1 RD13 2 0 :1:13 
+`Vui  1 RD12 2 0 :1:12 
+`Vui  1 RD11 2 0 :1:11 
+`Vui  1 RD10 2 0 :1:10 
+`Vui  1 RD9 2 0 :1:9 
+`Vui  1 RD8 2 0 :1:8 
+`Vui  1 RD7 2 0 :1:7 
+`Vui  1 RD6 2 0 :1:6 
+`Vui  1 RD5 2 0 :1:5 
+`Vui  1 RD4 2 0 :1:4 
+`Vui  1 RD3 2 0 :1:3 
+`Vui  1 RD2 2 0 :1:2 
+`Vui  1 RD1 2 0 :1:1 
+`Vui  1 RD0 2 0 :1:0 
+]
+"4044
+[u S303 . 2 `S304  1 . 2 0 
+]
+[v _PORTDbits `VS303  1 s 2 @724 ]
+"4046
+[v _RD0 `Vb  1 s 0 @5792 ]
+"4047
+[v _RD1 `Vb  1 s 0 @5793 ]
+"4048
+[v _RD2 `Vb  1 s 0 @5794 ]
+"4049
+[v _RD3 `Vb  1 s 0 @5795 ]
+"4050
+[v _RD4 `Vb  1 s 0 @5796 ]
+"4051
+[v _RD5 `Vb  1 s 0 @5797 ]
+"4052
+[v _RD6 `Vb  1 s 0 @5798 ]
+"4053
+[v _RD7 `Vb  1 s 0 @5799 ]
+"4054
+[v _RD8 `Vb  1 s 0 @5800 ]
+"4055
+[v _RD9 `Vb  1 s 0 @5801 ]
+"4056
+[v _RD10 `Vb  1 s 0 @5802 ]
+"4057
+[v _RD11 `Vb  1 s 0 @5803 ]
+"4058
+[v _RD12 `Vb  1 s 0 @5804 ]
+"4059
+[v _RD13 `Vb  1 s 0 @5805 ]
+"4060
+[v _RD14 `Vb  1 s 0 @5806 ]
+"4061
+[v _RD15 `Vb  1 s 0 @5807 ]
+"4064
+[v _LATD `Vui  1 s 2 @726 ]
+"4084
+[s S306 . 2 `Vui  1 LATD15 2 0 :1:15 
+`Vui  1 LATD14 2 0 :1:14 
+`Vui  1 LATD13 2 0 :1:13 
+`Vui  1 LATD12 2 0 :1:12 
+`Vui  1 LATD11 2 0 :1:11 
+`Vui  1 LATD10 2 0 :1:10 
+`Vui  1 LATD9 2 0 :1:9 
+`Vui  1 LATD8 2 0 :1:8 
+`Vui  1 LATD7 2 0 :1:7 
+`Vui  1 LATD6 2 0 :1:6 
+`Vui  1 LATD5 2 0 :1:5 
+`Vui  1 LATD4 2 0 :1:4 
+`Vui  1 LATD3 2 0 :1:3 
+`Vui  1 LATD2 2 0 :1:2 
+`Vui  1 LATD1 2 0 :1:1 
+`Vui  1 LATD0 2 0 :1:0 
+]
+"4085
+[u S305 . 2 `S306  1 . 2 0 
+]
+[v _LATDbits `VS305  1 s 2 @726 ]
+"4087
+[v _LATD0 `Vb  1 s 0 @5808 ]
+"4088
+[v _LATD1 `Vb  1 s 0 @5809 ]
+"4089
+[v _LATD2 `Vb  1 s 0 @5810 ]
+"4090
+[v _LATD3 `Vb  1 s 0 @5811 ]
+"4091
+[v _LATD4 `Vb  1 s 0 @5812 ]
+"4092
+[v _LATD5 `Vb  1 s 0 @5813 ]
+"4093
+[v _LATD6 `Vb  1 s 0 @5814 ]
+"4094
+[v _LATD7 `Vb  1 s 0 @5815 ]
+"4095
+[v _LATD8 `Vb  1 s 0 @5816 ]
+"4096
+[v _LATD9 `Vb  1 s 0 @5817 ]
+"4097
+[v _LATD10 `Vb  1 s 0 @5818 ]
+"4098
+[v _LATD11 `Vb  1 s 0 @5819 ]
+"4099
+[v _LATD12 `Vb  1 s 0 @5820 ]
+"4100
+[v _LATD13 `Vb  1 s 0 @5821 ]
+"4101
+[v _LATD14 `Vb  1 s 0 @5822 ]
+"4102
+[v _LATD15 `Vb  1 s 0 @5823 ]
+"4105
+[v _TRISE `Vui  1 s 2 @728 ]
+"4120
+[s S308 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 TRISE9 2 0 :1:9 
+`Vui  1 TRISE8 2 0 :1:8 
+`Vui  1 TRISE7 2 0 :1:7 
+`Vui  1 TRISE6 2 0 :1:6 
+`Vui  1 TRISE5 2 0 :1:5 
+`Vui  1 TRISE4 2 0 :1:4 
+`Vui  1 TRISE3 2 0 :1:3 
+`Vui  1 TRISE2 2 0 :1:2 
+`Vui  1 TRISE1 2 0 :1:1 
+`Vui  1 TRISE0 2 0 :1:0 
+]
+"4121
+[u S307 . 2 `S308  1 . 2 0 
+]
+[v _TRISEbits `VS307  1 s 2 @728 ]
+"4123
+[v _TRISE0 `Vb  1 s 0 @5824 ]
+"4124
+[v _TRISE1 `Vb  1 s 0 @5825 ]
+"4125
+[v _TRISE2 `Vb  1 s 0 @5826 ]
+"4126
+[v _TRISE3 `Vb  1 s 0 @5827 ]
+"4127
+[v _TRISE4 `Vb  1 s 0 @5828 ]
+"4128
+[v _TRISE5 `Vb  1 s 0 @5829 ]
+"4129
+[v _TRISE6 `Vb  1 s 0 @5830 ]
+"4130
+[v _TRISE7 `Vb  1 s 0 @5831 ]
+"4131
+[v _TRISE8 `Vb  1 s 0 @5832 ]
+"4132
+[v _TRISE9 `Vb  1 s 0 @5833 ]
+"4135
+[v _PORTE `Vui  1 s 2 @730 ]
+"4150
+[s S310 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 RE9 2 0 :1:9 
+`Vui  1 RE8 2 0 :1:8 
+`Vui  1 RE7 2 0 :1:7 
+`Vui  1 RE6 2 0 :1:6 
+`Vui  1 RE5 2 0 :1:5 
+`Vui  1 RE4 2 0 :1:4 
+`Vui  1 RE3 2 0 :1:3 
+`Vui  1 RE2 2 0 :1:2 
+`Vui  1 RE1 2 0 :1:1 
+`Vui  1 RE0 2 0 :1:0 
+]
+"4151
+[u S309 . 2 `S310  1 . 2 0 
+]
+[v _PORTEbits `VS309  1 s 2 @730 ]
+"4153
+[v _RE0 `Vb  1 s 0 @5840 ]
+"4154
+[v _RE1 `Vb  1 s 0 @5841 ]
+"4155
+[v _RE2 `Vb  1 s 0 @5842 ]
+"4156
+[v _RE3 `Vb  1 s 0 @5843 ]
+"4157
+[v _RE4 `Vb  1 s 0 @5844 ]
+"4158
+[v _RE5 `Vb  1 s 0 @5845 ]
+"4159
+[v _RE6 `Vb  1 s 0 @5846 ]
+"4160
+[v _RE7 `Vb  1 s 0 @5847 ]
+"4161
+[v _RE8 `Vb  1 s 0 @5848 ]
+"4162
+[v _RE9 `Vb  1 s 0 @5849 ]
+"4165
+[v _LATE `Vui  1 s 2 @732 ]
+"4180
+[s S312 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 LATE9 2 0 :1:9 
+`Vui  1 LATE8 2 0 :1:8 
+`Vui  1 LATE7 2 0 :1:7 
+`Vui  1 LATE6 2 0 :1:6 
+`Vui  1 LATE5 2 0 :1:5 
+`Vui  1 LATE4 2 0 :1:4 
+`Vui  1 LATE3 2 0 :1:3 
+`Vui  1 LATE2 2 0 :1:2 
+`Vui  1 LATE1 2 0 :1:1 
+`Vui  1 LATE0 2 0 :1:0 
+]
+"4181
+[u S311 . 2 `S312  1 . 2 0 
+]
+[v _LATEbits `VS311  1 s 2 @732 ]
+"4183
+[v _LATE0 `Vb  1 s 0 @5856 ]
+"4184
+[v _LATE1 `Vb  1 s 0 @5857 ]
+"4185
+[v _LATE2 `Vb  1 s 0 @5858 ]
+"4186
+[v _LATE3 `Vb  1 s 0 @5859 ]
+"4187
+[v _LATE4 `Vb  1 s 0 @5860 ]
+"4188
+[v _LATE5 `Vb  1 s 0 @5861 ]
+"4189
+[v _LATE6 `Vb  1 s 0 @5862 ]
+"4190
+[v _LATE7 `Vb  1 s 0 @5863 ]
+"4191
+[v _LATE8 `Vb  1 s 0 @5864 ]
+"4192
+[v _LATE9 `Vb  1 s 0 @5865 ]
+"4195
+[v _TRISF `Vui  1 s 2 @734 ]
+"4209
+[s S314 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 TRISF8 2 0 :1:8 
+`Vui  1 TRISF7 2 0 :1:7 
+`Vui  1 TRISF6 2 0 :1:6 
+`Vui  1 TRISF5 2 0 :1:5 
+`Vui  1 TRISF4 2 0 :1:4 
+`Vui  1 TRISF3 2 0 :1:3 
+`Vui  1 TRISF2 2 0 :1:2 
+`Vui  1 TRISF1 2 0 :1:1 
+`Vui  1 TRISF0 2 0 :1:0 
+]
+"4210
+[u S313 . 2 `S314  1 . 2 0 
+]
+[v _TRISFbits `VS313  1 s 2 @734 ]
+"4212
+[v _TRISF0 `Vb  1 s 0 @5872 ]
+"4213
+[v _TRISF1 `Vb  1 s 0 @5873 ]
+"4214
+[v _TRISF2 `Vb  1 s 0 @5874 ]
+"4215
+[v _TRISF3 `Vb  1 s 0 @5875 ]
+"4216
+[v _TRISF4 `Vb  1 s 0 @5876 ]
+"4217
+[v _TRISF5 `Vb  1 s 0 @5877 ]
+"4218
+[v _TRISF6 `Vb  1 s 0 @5878 ]
+"4219
+[v _TRISF7 `Vb  1 s 0 @5879 ]
+"4220
+[v _TRISF8 `Vb  1 s 0 @5880 ]
+"4223
+[v _PORTF `Vui  1 s 2 @736 ]
+"4237
+[s S316 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 RF8 2 0 :1:8 
+`Vui  1 RF7 2 0 :1:7 
+`Vui  1 RF6 2 0 :1:6 
+`Vui  1 RF5 2 0 :1:5 
+`Vui  1 RF4 2 0 :1:4 
+`Vui  1 RF3 2 0 :1:3 
+`Vui  1 RF2 2 0 :1:2 
+`Vui  1 RF1 2 0 :1:1 
+`Vui  1 RF0 2 0 :1:0 
+]
+"4238
+[u S315 . 2 `S316  1 . 2 0 
+]
+[v _PORTFbits `VS315  1 s 2 @736 ]
+"4240
+[v _RF0 `Vb  1 s 0 @5888 ]
+"4241
+[v _RF1 `Vb  1 s 0 @5889 ]
+"4242
+[v _RF2 `Vb  1 s 0 @5890 ]
+"4243
+[v _RF3 `Vb  1 s 0 @5891 ]
+"4244
+[v _RF4 `Vb  1 s 0 @5892 ]
+"4245
+[v _RF5 `Vb  1 s 0 @5893 ]
+"4246
+[v _RF6 `Vb  1 s 0 @5894 ]
+"4247
+[v _RF7 `Vb  1 s 0 @5895 ]
+"4248
+[v _RF8 `Vb  1 s 0 @5896 ]
+"4251
+[v _LATF `Vui  1 s 2 @738 ]
+"4265
+[s S318 . 2 `Vui  1 . 2 0 :7:9 
+`Vui  1 LATF8 2 0 :1:8 
+`Vui  1 LATF7 2 0 :1:7 
+`Vui  1 LATF6 2 0 :1:6 
+`Vui  1 LATF5 2 0 :1:5 
+`Vui  1 LATF4 2 0 :1:4 
+`Vui  1 LATF3 2 0 :1:3 
+`Vui  1 LATF2 2 0 :1:2 
+`Vui  1 LATF1 2 0 :1:1 
+`Vui  1 LATF0 2 0 :1:0 
+]
+"4266
+[u S317 . 2 `S318  1 . 2 0 
+]
+[v _LATFbits `VS317  1 s 2 @738 ]
+"4268
+[v _LATF0 `Vb  1 s 0 @5904 ]
+"4269
+[v _LATF1 `Vb  1 s 0 @5905 ]
+"4270
+[v _LATF2 `Vb  1 s 0 @5906 ]
+"4271
+[v _LATF3 `Vb  1 s 0 @5907 ]
+"4272
+[v _LATF4 `Vb  1 s 0 @5908 ]
+"4273
+[v _LATF5 `Vb  1 s 0 @5909 ]
+"4274
+[v _LATF6 `Vb  1 s 0 @5910 ]
+"4275
+[v _LATF7 `Vb  1 s 0 @5911 ]
+"4276
+[v _LATF8 `Vb  1 s 0 @5912 ]
+"4279
+[v _TRISG `Vui  1 s 2 @740 ]
+"4293
+[s S320 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 TRISG9 2 0 :1:9 
+`Vui  1 TRISG8 2 0 :1:8 
+`Vui  1 TRISG7 2 0 :1:7 
+`Vui  1 TRISG6 2 0 :1:6 
+`Vui  1 . 2 0 :2:4 
+`Vui  1 TRISG3 2 0 :1:3 
+`Vui  1 TRISG2 2 0 :1:2 
+`Vui  1 TRISG1 2 0 :1:1 
+`Vui  1 TRISG0 2 0 :1:0 
+]
+"4294
+[u S319 . 2 `S320  1 . 2 0 
+]
+[v _TRISGbits `VS319  1 s 2 @740 ]
+"4296
+[v _TRISG0 `Vb  1 s 0 @5920 ]
+"4297
+[v _TRISG1 `Vb  1 s 0 @5921 ]
+"4298
+[v _TRISG2 `Vb  1 s 0 @5922 ]
+"4299
+[v _TRISG3 `Vb  1 s 0 @5923 ]
+"4300
+[v _TRISG6 `Vb  1 s 0 @5926 ]
+"4301
+[v _TRISG7 `Vb  1 s 0 @5927 ]
+"4302
+[v _TRISG8 `Vb  1 s 0 @5928 ]
+"4303
+[v _TRISG9 `Vb  1 s 0 @5929 ]
+"4306
+[v _PORTG `Vui  1 s 2 @742 ]
+"4320
+[s S322 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 RG9 2 0 :1:9 
+`Vui  1 RG8 2 0 :1:8 
+`Vui  1 RG7 2 0 :1:7 
+`Vui  1 RG6 2 0 :1:6 
+`Vui  1 . 2 0 :2:4 
+`Vui  1 RG3 2 0 :1:3 
+`Vui  1 RG2 2 0 :1:2 
+`Vui  1 RG1 2 0 :1:1 
+`Vui  1 RG0 2 0 :1:0 
+]
+"4321
+[u S321 . 2 `S322  1 . 2 0 
+]
+[v _PORTGbits `VS321  1 s 2 @742 ]
+"4323
+[v _RG0 `Vb  1 s 0 @5936 ]
+"4324
+[v _RG1 `Vb  1 s 0 @5937 ]
+"4325
+[v _RG2 `Vb  1 s 0 @5938 ]
+"4326
+[v _RG3 `Vb  1 s 0 @5939 ]
+"4327
+[v _RG6 `Vb  1 s 0 @5942 ]
+"4328
+[v _RG7 `Vb  1 s 0 @5943 ]
+"4329
+[v _RG8 `Vb  1 s 0 @5944 ]
+"4330
+[v _RG9 `Vb  1 s 0 @5945 ]
+"4333
+[v _LATG `Vui  1 s 2 @744 ]
+"4347
+[s S324 . 2 `Vui  1 . 2 0 :6:10 
+`Vui  1 LATG9 2 0 :1:9 
+`Vui  1 LATG8 2 0 :1:8 
+`Vui  1 LATG7 2 0 :1:7 
+`Vui  1 LATG6 2 0 :1:6 
+`Vui  1 . 2 0 :2:4 
+`Vui  1 LATG3 2 0 :1:3 
+`Vui  1 LATG2 2 0 :1:2 
+`Vui  1 LATG1 2 0 :1:1 
+`Vui  1 LATG0 2 0 :1:0 
+]
+"4348
+[u S323 . 2 `S324  1 . 2 0 
+]
+[v _LATGbits `VS323  1 s 2 @744 ]
+"4350
+[v _LATG0 `Vb  1 s 0 @5952 ]
+"4351
+[v _LATG1 `Vb  1 s 0 @5953 ]
+"4352
+[v _LATG2 `Vb  1 s 0 @5954 ]
+"4353
+[v _LATG3 `Vb  1 s 0 @5955 ]
+"4354
+[v _LATG6 `Vb  1 s 0 @5958 ]
+"4355
+[v _LATG7 `Vb  1 s 0 @5959 ]
+"4356
+[v _LATG8 `Vb  1 s 0 @5960 ]
+"4357
+[v _LATG9 `Vb  1 s 0 @5961 ]
+"4360
+[v _C1RXF0SID `Vui  1 s 2 @768 ]
+"4378
+[s S326 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"4379
+[u S325 . 2 `S326  1 . 2 0 
+]
+[v _C1RXF0SIDbits `VS325  1 s 2 @768 ]
+"4381
+[v _EXIDE `Vb  1 s 0 @6144 ]
+"4382
+[v _SID0 `Vb  1 s 0 @6146 ]
+"4383
+[v _SID1 `Vb  1 s 0 @6147 ]
+"4384
+[v _SID2 `Vb  1 s 0 @6148 ]
+"4385
+[v _SID3 `Vb  1 s 0 @6149 ]
+"4386
+[v _SID4 `Vb  1 s 0 @6150 ]
+"4387
+[v _SID5 `Vb  1 s 0 @6151 ]
+"4388
+[v _SID6 `Vb  1 s 0 @6152 ]
+"4389
+[v _SID7 `Vb  1 s 0 @6153 ]
+"4390
+[v _SID8 `Vb  1 s 0 @6154 ]
+"4391
+[v _SID9 `Vb  1 s 0 @6155 ]
+"4392
+[v _SID10 `Vb  1 s 0 @6156 ]
+"4395
+[v _C1RXF0EIDH `Vui  1 s 2 @770 ]
+"4412
+[s S328 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"4413
+[u S327 . 2 `S328  1 . 2 0 
+]
+[v _C1RXF0EIDHbits `VS327  1 s 2 @770 ]
+"4415
+[v _EID6 `Vb  1 s 0 @6160 ]
+"4416
+[v _EID7 `Vb  1 s 0 @6161 ]
+"4417
+[v _EID8 `Vb  1 s 0 @6162 ]
+"4418
+[v _EID9 `Vb  1 s 0 @6163 ]
+"4419
+[v _EID10 `Vb  1 s 0 @6164 ]
+"4420
+[v _EID11 `Vb  1 s 0 @6165 ]
+"4421
+[v _EID12 `Vb  1 s 0 @6166 ]
+"4422
+[v _EID13 `Vb  1 s 0 @6167 ]
+"4423
+[v _EID14 `Vb  1 s 0 @6168 ]
+"4424
+[v _EID15 `Vb  1 s 0 @6169 ]
+"4425
+[v _EID16 `Vb  1 s 0 @6170 ]
+"4426
+[v _EID17 `Vb  1 s 0 @6171 ]
+"4429
+[v _C1RXF0EIDL `Vui  1 s 2 @772 ]
+"4440
+[s S330 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"4441
+[u S329 . 2 `S330  1 . 2 0 
+]
+[v _C1RXF0EIDLbits `VS329  1 s 2 @772 ]
+"4443
+[v _EID0 `Vb  1 s 0 @6186 ]
+"4444
+[v _EID1 `Vb  1 s 0 @6187 ]
+"4445
+[v _EID2 `Vb  1 s 0 @6188 ]
+"4446
+[v _EID3 `Vb  1 s 0 @6189 ]
+"4447
+[v _EID4 `Vb  1 s 0 @6190 ]
+"4448
+[v _EID5 `Vb  1 s 0 @6191 ]
+"4451
+[v _C1RXF1SID `Vui  1 s 2 @776 ]
+"4469
+[s S332 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"4470
+[u S331 . 2 `S332  1 . 2 0 
+]
+[v _C1RXF1SIDbits `VS331  1 s 2 @776 ]
+"4498
+[v _C1RXF1EIDH `Vui  1 s 2 @778 ]
+"4515
+[s S334 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"4516
+[u S333 . 2 `S334  1 . 2 0 
+]
+[v _C1RXF1EIDHbits `VS333  1 s 2 @778 ]
+"4544
+[v _C1RXF1EIDL `Vui  1 s 2 @780 ]
+"4555
+[s S336 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"4556
+[u S335 . 2 `S336  1 . 2 0 
+]
+[v _C1RXF1EIDLbits `VS335  1 s 2 @780 ]
+"4572
+[v _C1RXF2SID `Vui  1 s 2 @784 ]
+"4590
+[s S338 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"4591
+[u S337 . 2 `S338  1 . 2 0 
+]
+[v _C1RXF2SIDbits `VS337  1 s 2 @784 ]
+"4619
+[v _C1RXF2EIDH `Vui  1 s 2 @786 ]
+"4636
+[s S340 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"4637
+[u S339 . 2 `S340  1 . 2 0 
+]
+[v _C1RXF2EIDHbits `VS339  1 s 2 @786 ]
+"4665
+[v _C1RXF2EIDL `Vui  1 s 2 @788 ]
+"4676
+[s S342 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"4677
+[u S341 . 2 `S342  1 . 2 0 
+]
+[v _C1RXF2EIDLbits `VS341  1 s 2 @788 ]
+"4693
+[v _C1RXF3SID `Vui  1 s 2 @792 ]
+"4711
+[s S344 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"4712
+[u S343 . 2 `S344  1 . 2 0 
+]
+[v _C1RXF3SIDbits `VS343  1 s 2 @792 ]
+"4740
+[v _C1RXF3EIDH `Vui  1 s 2 @794 ]
+"4757
+[s S346 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"4758
+[u S345 . 2 `S346  1 . 2 0 
+]
+[v _C1RXF3EIDHbits `VS345  1 s 2 @794 ]
+"4786
+[v _C1RXF3EIDL `Vui  1 s 2 @796 ]
+"4797
+[s S348 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"4798
+[u S347 . 2 `S348  1 . 2 0 
+]
+[v _C1RXF3EIDLbits `VS347  1 s 2 @796 ]
+"4814
+[v _C1RXF4SID `Vui  1 s 2 @800 ]
+"4832
+[s S350 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"4833
+[u S349 . 2 `S350  1 . 2 0 
+]
+[v _C1RXF4SIDbits `VS349  1 s 2 @800 ]
+"4861
+[v _C1RXF4EIDH `Vui  1 s 2 @802 ]
+"4878
+[s S352 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"4879
+[u S351 . 2 `S352  1 . 2 0 
+]
+[v _C1RXF4EIDHbits `VS351  1 s 2 @802 ]
+"4907
+[v _C1RXF4EIDL `Vui  1 s 2 @804 ]
+"4918
+[s S354 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"4919
+[u S353 . 2 `S354  1 . 2 0 
+]
+[v _C1RXF4EIDLbits `VS353  1 s 2 @804 ]
+"4935
+[v _C1RXF5SID `Vui  1 s 2 @808 ]
+"4953
+[s S356 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"4954
+[u S355 . 2 `S356  1 . 2 0 
+]
+[v _C1RXF5SIDbits `VS355  1 s 2 @808 ]
+"4982
+[v _C1RXF5EIDH `Vui  1 s 2 @810 ]
+"4999
+[s S358 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"5000
+[u S357 . 2 `S358  1 . 2 0 
+]
+[v _C1RXF5EIDHbits `VS357  1 s 2 @810 ]
+"5028
+[v _C1RXF5EIDL `Vui  1 s 2 @812 ]
+"5039
+[s S360 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"5040
+[u S359 . 2 `S360  1 . 2 0 
+]
+[v _C1RXF5EIDLbits `VS359  1 s 2 @812 ]
+"5056
+[v _C1RXM0SID `Vui  1 s 2 @816 ]
+"5074
+[s S362 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 MIDE 2 0 :1:0 
+]
+"5075
+[u S361 . 2 `S362  1 . 2 0 
+]
+[v _C1RXM0SIDbits `VS361  1 s 2 @816 ]
+"5077
+[v _MIDE `Vb  1 s 0 @6528 ]
+"5102
+[v _C1RXM0EIDH `Vui  1 s 2 @818 ]
+"5119
+[s S364 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"5120
+[u S363 . 2 `S364  1 . 2 0 
+]
+[v _C1RXM0EIDHbits `VS363  1 s 2 @818 ]
+"5148
+[v _C1RXM0EIDL `Vui  1 s 2 @820 ]
+"5159
+[s S366 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"5160
+[u S365 . 2 `S366  1 . 2 0 
+]
+[v _C1RXM0EIDLbits `VS365  1 s 2 @820 ]
+"5176
+[v _C1RXM1SID `Vui  1 s 2 @824 ]
+"5194
+[s S368 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 MIDE 2 0 :1:0 
+]
+"5195
+[u S367 . 2 `S368  1 . 2 0 
+]
+[v _C1RXM1SIDbits `VS367  1 s 2 @824 ]
+"5223
+[v _C1RXM1EIDH `Vui  1 s 2 @826 ]
+"5240
+[s S370 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"5241
+[u S369 . 2 `S370  1 . 2 0 
+]
+[v _C1RXM1EIDHbits `VS369  1 s 2 @826 ]
+"5269
+[v _C1RXM1EIDL `Vui  1 s 2 @828 ]
+"5280
+[s S372 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"5281
+[u S371 . 2 `S372  1 . 2 0 
+]
+[v _C1RXM1EIDLbits `VS371  1 s 2 @828 ]
+"5297
+[v _C1TX2SID `Vui  1 s 2 @832 ]
+"5315
+[s S374 . 2 `Vui  1 SID10 2 0 :1:15 
+`Vui  1 SID9 2 0 :1:14 
+`Vui  1 SID8 2 0 :1:13 
+`Vui  1 SID7 2 0 :1:12 
+`Vui  1 SID6 2 0 :1:11 
+`Vui  1 . 2 0 :3:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"5316
+[u S373 . 2 `S374  1 . 2 0 
+]
+[v _C1TX2SIDbits `VS373  1 s 2 @832 ]
+"5318
+[v _TXIDE `Vb  1 s 0 @6656 ]
+"5319
+[v _SRR `Vb  1 s 0 @6657 ]
+"5344
+[v _C1TX2EID `Vui  1 s 2 @834 ]
+"5361
+[s S376 . 2 `Vui  1 EID17 2 0 :1:15 
+`Vui  1 EID16 2 0 :1:14 
+`Vui  1 EID15 2 0 :1:13 
+`Vui  1 EID14 2 0 :1:12 
+`Vui  1 . 2 0 :4:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"5362
+[u S375 . 2 `S376  1 . 2 0 
+]
+[v _C1TX2EIDbits `VS375  1 s 2 @834 ]
+"5390
+[v _C1TX2DLC `Vui  1 s 2 @836 ]
+"5405
+[s S378 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 TXRTR 2 0 :1:9 
+`Vui  1 TXRB1 2 0 :1:8 
+`Vui  1 TXRB0 2 0 :1:7 
+`Vui  1 DLC 2 0 :4:3 
+`Vui  1 . 2 0 :3:0 
+]
+"5413
+[s S379 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DLC3 2 0 :1:6 
+`Vui  1 DLC2 2 0 :1:5 
+`Vui  1 DLC1 2 0 :1:4 
+`Vui  1 DLC0 2 0 :1:3 
+`Vui  1 . 2 0 :3:0 
+]
+"5414
+[u S377 . 2 `S378  1 . 2 0 
+`S379  1 . 2 0 
+]
+[v _C1TX2DLCbits `VS377  1 s 2 @836 ]
+"5416
+[v _TXRB0 `Vb  1 s 0 @6695 ]
+"5417
+[v _TXRB1 `Vb  1 s 0 @6696 ]
+"5418
+[v _TXRTR `Vb  1 s 0 @6697 ]
+"5431
+[v _DLC0 `Vb  1 s 0 @6691 ]
+"5432
+[v _DLC1 `Vb  1 s 0 @6692 ]
+"5433
+[v _DLC2 `Vb  1 s 0 @6693 ]
+"5434
+[v _DLC3 `Vb  1 s 0 @6694 ]
+"5437
+[v _C1TX2B1 `Vui  1 s 2 @838 ]
+"5443
+[s S381 . 2 `Vui  1 TXB2D1 2 0 :8:8 
+`Vui  1 TXB2D0 2 0 :8:0 
+]
+"5461
+[s S382 . 2 `Vui  1 TXB2D17 2 0 :1:15 
+`Vui  1 TXB2D16 2 0 :1:14 
+`Vui  1 TXB2D15 2 0 :1:13 
+`Vui  1 TXB2D14 2 0 :1:12 
+`Vui  1 TXB2D13 2 0 :1:11 
+`Vui  1 TXB2D12 2 0 :1:10 
+`Vui  1 TXB2D11 2 0 :1:9 
+`Vui  1 TXB2D10 2 0 :1:8 
+`Vui  1 TXB2D07 2 0 :1:7 
+`Vui  1 TXB2D06 2 0 :1:6 
+`Vui  1 TXB2D05 2 0 :1:5 
+`Vui  1 TXB2D04 2 0 :1:4 
+`Vui  1 TXB2D03 2 0 :1:3 
+`Vui  1 TXB2D02 2 0 :1:2 
+`Vui  1 TXB2D01 2 0 :1:1 
+`Vui  1 TXB2D00 2 0 :1:0 
+]
+"5462
+[u S380 . 2 `S381  1 . 2 0 
+`S382  1 . 2 0 
+]
+[v _C1TX2B1bits `VS380  1 s 2 @838 ]
+"5464
+[v _TXB2D00 `Vb  1 s 0 @6704 ]
+"5465
+[v _TXB2D01 `Vb  1 s 0 @6705 ]
+"5466
+[v _TXB2D02 `Vb  1 s 0 @6706 ]
+"5467
+[v _TXB2D03 `Vb  1 s 0 @6707 ]
+"5468
+[v _TXB2D04 `Vb  1 s 0 @6708 ]
+"5469
+[v _TXB2D05 `Vb  1 s 0 @6709 ]
+"5470
+[v _TXB2D06 `Vb  1 s 0 @6710 ]
+"5471
+[v _TXB2D07 `Vb  1 s 0 @6711 ]
+"5472
+[v _TXB2D10 `Vb  1 s 0 @6712 ]
+"5473
+[v _TXB2D11 `Vb  1 s 0 @6713 ]
+"5474
+[v _TXB2D12 `Vb  1 s 0 @6714 ]
+"5475
+[v _TXB2D13 `Vb  1 s 0 @6715 ]
+"5476
+[v _TXB2D14 `Vb  1 s 0 @6716 ]
+"5477
+[v _TXB2D15 `Vb  1 s 0 @6717 ]
+"5478
+[v _TXB2D16 `Vb  1 s 0 @6718 ]
+"5479
+[v _TXB2D17 `Vb  1 s 0 @6719 ]
+"5482
+[v _C1TX2B2 `Vui  1 s 2 @840 ]
+"5488
+[s S384 . 2 `Vui  1 TXB2D3 2 0 :8:8 
+`Vui  1 TXB2D2 2 0 :8:0 
+]
+"5506
+[s S385 . 2 `Vui  1 TXB2D37 2 0 :1:15 
+`Vui  1 TXB2D36 2 0 :1:14 
+`Vui  1 TXB2D35 2 0 :1:13 
+`Vui  1 TXB2D34 2 0 :1:12 
+`Vui  1 TXB2D33 2 0 :1:11 
+`Vui  1 TXB2D32 2 0 :1:10 
+`Vui  1 TXB2D31 2 0 :1:9 
+`Vui  1 TXB2D30 2 0 :1:8 
+`Vui  1 TXB2D27 2 0 :1:7 
+`Vui  1 TXB2D26 2 0 :1:6 
+`Vui  1 TXB2D25 2 0 :1:5 
+`Vui  1 TXB2D24 2 0 :1:4 
+`Vui  1 TXB2D23 2 0 :1:3 
+`Vui  1 TXB2D22 2 0 :1:2 
+`Vui  1 TXB2D21 2 0 :1:1 
+`Vui  1 TXB2D20 2 0 :1:0 
+]
+"5507
+[u S383 . 2 `S384  1 . 2 0 
+`S385  1 . 2 0 
+]
+[v _C1TX2B2bits `VS383  1 s 2 @840 ]
+"5509
+[v _TXB2D20 `Vb  1 s 0 @6720 ]
+"5510
+[v _TXB2D21 `Vb  1 s 0 @6721 ]
+"5511
+[v _TXB2D22 `Vb  1 s 0 @6722 ]
+"5512
+[v _TXB2D23 `Vb  1 s 0 @6723 ]
+"5513
+[v _TXB2D24 `Vb  1 s 0 @6724 ]
+"5514
+[v _TXB2D25 `Vb  1 s 0 @6725 ]
+"5515
+[v _TXB2D26 `Vb  1 s 0 @6726 ]
+"5516
+[v _TXB2D27 `Vb  1 s 0 @6727 ]
+"5517
+[v _TXB2D30 `Vb  1 s 0 @6728 ]
+"5518
+[v _TXB2D31 `Vb  1 s 0 @6729 ]
+"5519
+[v _TXB2D32 `Vb  1 s 0 @6730 ]
+"5520
+[v _TXB2D33 `Vb  1 s 0 @6731 ]
+"5521
+[v _TXB2D34 `Vb  1 s 0 @6732 ]
+"5522
+[v _TXB2D35 `Vb  1 s 0 @6733 ]
+"5523
+[v _TXB2D36 `Vb  1 s 0 @6734 ]
+"5524
+[v _TXB2D37 `Vb  1 s 0 @6735 ]
+"5527
+[v _C1TX2B3 `Vui  1 s 2 @842 ]
+"5533
+[s S387 . 2 `Vui  1 TXB2D5 2 0 :8:8 
+`Vui  1 TXB2D4 2 0 :8:0 
+]
+"5551
+[s S388 . 2 `Vui  1 TXB2D57 2 0 :1:15 
+`Vui  1 TXB2D56 2 0 :1:14 
+`Vui  1 TXB2D55 2 0 :1:13 
+`Vui  1 TXB2D54 2 0 :1:12 
+`Vui  1 TXB2D53 2 0 :1:11 
+`Vui  1 TXB2D52 2 0 :1:10 
+`Vui  1 TXB2D51 2 0 :1:9 
+`Vui  1 TXB2D50 2 0 :1:8 
+`Vui  1 TX2B2D47 2 0 :1:7 
+`Vui  1 TX2B2D46 2 0 :1:6 
+`Vui  1 TX2B2D45 2 0 :1:5 
+`Vui  1 TX2B2D44 2 0 :1:4 
+`Vui  1 TX2B2D43 2 0 :1:3 
+`Vui  1 TX2B2D42 2 0 :1:2 
+`Vui  1 TX2B2D41 2 0 :1:1 
+`Vui  1 TX2B2D40 2 0 :1:0 
+]
+"5552
+[u S386 . 2 `S387  1 . 2 0 
+`S388  1 . 2 0 
+]
+[v _C1TX2B3bits `VS386  1 s 2 @842 ]
+"5554
+[v _TX2B2D40 `Vb  1 s 0 @6736 ]
+"5555
+[v _TX2B2D41 `Vb  1 s 0 @6737 ]
+"5556
+[v _TX2B2D42 `Vb  1 s 0 @6738 ]
+"5557
+[v _TX2B2D43 `Vb  1 s 0 @6739 ]
+"5558
+[v _TX2B2D44 `Vb  1 s 0 @6740 ]
+"5559
+[v _TX2B2D45 `Vb  1 s 0 @6741 ]
+"5560
+[v _TX2B2D46 `Vb  1 s 0 @6742 ]
+"5561
+[v _TX2B2D47 `Vb  1 s 0 @6743 ]
+"5562
+[v _TXB2D50 `Vb  1 s 0 @6744 ]
+"5563
+[v _TXB2D51 `Vb  1 s 0 @6745 ]
+"5564
+[v _TXB2D52 `Vb  1 s 0 @6746 ]
+"5565
+[v _TXB2D53 `Vb  1 s 0 @6747 ]
+"5566
+[v _TXB2D54 `Vb  1 s 0 @6748 ]
+"5567
+[v _TXB2D55 `Vb  1 s 0 @6749 ]
+"5568
+[v _TXB2D56 `Vb  1 s 0 @6750 ]
+"5569
+[v _TXB2D57 `Vb  1 s 0 @6751 ]
+"5572
+[v _C1TX2B4 `Vui  1 s 2 @844 ]
+"5578
+[s S390 . 2 `Vui  1 TXB2D7 2 0 :8:8 
+`Vui  1 TXB2D6 2 0 :8:0 
+]
+"5596
+[s S391 . 2 `Vui  1 TX2B2D77 2 0 :1:15 
+`Vui  1 TX2B2D76 2 0 :1:14 
+`Vui  1 TX2B2D75 2 0 :1:13 
+`Vui  1 TX2B2D74 2 0 :1:12 
+`Vui  1 TX2B2D73 2 0 :1:11 
+`Vui  1 TX2B2D72 2 0 :1:10 
+`Vui  1 TX2B2D71 2 0 :1:9 
+`Vui  1 TX2B2D70 2 0 :1:8 
+`Vui  1 TX2B2D67 2 0 :1:7 
+`Vui  1 TX2B2D66 2 0 :1:6 
+`Vui  1 TX2B2D65 2 0 :1:5 
+`Vui  1 TX2B2D64 2 0 :1:4 
+`Vui  1 TX2B2D63 2 0 :1:3 
+`Vui  1 TX2B2D62 2 0 :1:2 
+`Vui  1 TX2B2D61 2 0 :1:1 
+`Vui  1 TX2B2D60 2 0 :1:0 
+]
+"5597
+[u S389 . 2 `S390  1 . 2 0 
+`S391  1 . 2 0 
+]
+[v _C1TX2B4bits `VS389  1 s 2 @844 ]
+"5599
+[v _TX2B2D60 `Vb  1 s 0 @6752 ]
+"5600
+[v _TX2B2D61 `Vb  1 s 0 @6753 ]
+"5601
+[v _TX2B2D62 `Vb  1 s 0 @6754 ]
+"5602
+[v _TX2B2D63 `Vb  1 s 0 @6755 ]
+"5603
+[v _TX2B2D64 `Vb  1 s 0 @6756 ]
+"5604
+[v _TX2B2D65 `Vb  1 s 0 @6757 ]
+"5605
+[v _TX2B2D66 `Vb  1 s 0 @6758 ]
+"5606
+[v _TX2B2D67 `Vb  1 s 0 @6759 ]
+"5607
+[v _TX2B2D70 `Vb  1 s 0 @6760 ]
+"5608
+[v _TX2B2D71 `Vb  1 s 0 @6761 ]
+"5609
+[v _TX2B2D72 `Vb  1 s 0 @6762 ]
+"5610
+[v _TX2B2D73 `Vb  1 s 0 @6763 ]
+"5611
+[v _TX2B2D74 `Vb  1 s 0 @6764 ]
+"5612
+[v _TX2B2D75 `Vb  1 s 0 @6765 ]
+"5613
+[v _TX2B2D76 `Vb  1 s 0 @6766 ]
+"5614
+[v _TX2B2D77 `Vb  1 s 0 @6767 ]
+"5617
+[v _C1TX2CON `Vui  1 s 2 @846 ]
+"5628
+[s S393 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 TXABT 2 0 :1:6 
+`Vui  1 TXLARB 2 0 :1:5 
+`Vui  1 TXERR 2 0 :1:4 
+`Vui  1 TXREQ 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TXPRI 2 0 :2:0 
+]
+"5633
+[s S394 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 TXPRI1 2 0 :1:1 
+`Vui  1 TXPRI0 2 0 :1:0 
+]
+"5634
+[u S392 . 2 `S393  1 . 2 0 
+`S394  1 . 2 0 
+]
+[v _C1TX2CONbits `VS392  1 s 2 @846 ]
+"5636
+[v _TXREQ `Vb  1 s 0 @6771 ]
+"5637
+[v _TXERR `Vb  1 s 0 @6772 ]
+"5638
+[v _TXLARB `Vb  1 s 0 @6773 ]
+"5639
+[v _TXABT `Vb  1 s 0 @6774 ]
+"5640
+[v _TXPRI0 `Vb  1 s 0 @6768 ]
+"5641
+[v _TXPRI1 `Vb  1 s 0 @6769 ]
+"5644
+[v _C1TX1SID `Vui  1 s 2 @848 ]
+"5662
+[s S396 . 2 `Vui  1 SID10 2 0 :1:15 
+`Vui  1 SID9 2 0 :1:14 
+`Vui  1 SID8 2 0 :1:13 
+`Vui  1 SID7 2 0 :1:12 
+`Vui  1 SID6 2 0 :1:11 
+`Vui  1 . 2 0 :3:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"5663
+[u S395 . 2 `S396  1 . 2 0 
+]
+[v _C1TX1SIDbits `VS395  1 s 2 @848 ]
+"5693
+[v _C1TX1EID `Vui  1 s 2 @850 ]
+"5710
+[s S398 . 2 `Vui  1 EID17 2 0 :1:15 
+`Vui  1 EID16 2 0 :1:14 
+`Vui  1 EID15 2 0 :1:13 
+`Vui  1 EID14 2 0 :1:12 
+`Vui  1 . 2 0 :4:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"5711
+[u S397 . 2 `S398  1 . 2 0 
+]
+[v _C1TX1EIDbits `VS397  1 s 2 @850 ]
+"5739
+[v _C1TX1DLC `Vui  1 s 2 @852 ]
+"5754
+[s S400 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 TXRTR 2 0 :1:9 
+`Vui  1 TXRB1 2 0 :1:8 
+`Vui  1 TXRB0 2 0 :1:7 
+`Vui  1 DLC 2 0 :4:3 
+`Vui  1 . 2 0 :3:0 
+]
+"5762
+[s S401 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DLC3 2 0 :1:6 
+`Vui  1 DLC2 2 0 :1:5 
+`Vui  1 DLC1 2 0 :1:4 
+`Vui  1 DLC0 2 0 :1:3 
+`Vui  1 . 2 0 :3:0 
+]
+"5763
+[u S399 . 2 `S400  1 . 2 0 
+`S401  1 . 2 0 
+]
+[v _C1TX1DLCbits `VS399  1 s 2 @852 ]
+"5793
+[v _C1TX1B1 `Vui  1 s 2 @854 ]
+"5799
+[s S403 . 2 `Vui  1 TXB1D1 2 0 :8:8 
+`Vui  1 TXB1D0 2 0 :8:0 
+]
+"5817
+[s S404 . 2 `Vui  1 TXB1D17 2 0 :1:15 
+`Vui  1 TXB1D16 2 0 :1:14 
+`Vui  1 TXB1D15 2 0 :1:13 
+`Vui  1 TXB1D14 2 0 :1:12 
+`Vui  1 TXB1D13 2 0 :1:11 
+`Vui  1 TXB1D12 2 0 :1:10 
+`Vui  1 TXB1D11 2 0 :1:9 
+`Vui  1 TXB1D10 2 0 :1:8 
+`Vui  1 TXB1D07 2 0 :1:7 
+`Vui  1 TXB1D06 2 0 :1:6 
+`Vui  1 TXB1D05 2 0 :1:5 
+`Vui  1 TXB1D04 2 0 :1:4 
+`Vui  1 TXB1D03 2 0 :1:3 
+`Vui  1 TXB1D02 2 0 :1:2 
+`Vui  1 TXB1D01 2 0 :1:1 
+`Vui  1 TXB1D00 2 0 :1:0 
+]
+"5818
+[u S402 . 2 `S403  1 . 2 0 
+`S404  1 . 2 0 
+]
+[v _C1TX1B1bits `VS402  1 s 2 @854 ]
+"5820
+[v _TXB1D00 `Vb  1 s 0 @6832 ]
+"5821
+[v _TXB1D01 `Vb  1 s 0 @6833 ]
+"5822
+[v _TXB1D02 `Vb  1 s 0 @6834 ]
+"5823
+[v _TXB1D03 `Vb  1 s 0 @6835 ]
+"5824
+[v _TXB1D04 `Vb  1 s 0 @6836 ]
+"5825
+[v _TXB1D05 `Vb  1 s 0 @6837 ]
+"5826
+[v _TXB1D06 `Vb  1 s 0 @6838 ]
+"5827
+[v _TXB1D07 `Vb  1 s 0 @6839 ]
+"5828
+[v _TXB1D10 `Vb  1 s 0 @6840 ]
+"5829
+[v _TXB1D11 `Vb  1 s 0 @6841 ]
+"5830
+[v _TXB1D12 `Vb  1 s 0 @6842 ]
+"5831
+[v _TXB1D13 `Vb  1 s 0 @6843 ]
+"5832
+[v _TXB1D14 `Vb  1 s 0 @6844 ]
+"5833
+[v _TXB1D15 `Vb  1 s 0 @6845 ]
+"5834
+[v _TXB1D16 `Vb  1 s 0 @6846 ]
+"5835
+[v _TXB1D17 `Vb  1 s 0 @6847 ]
+"5838
+[v _C1TX1B2 `Vui  1 s 2 @856 ]
+"5844
+[s S406 . 2 `Vui  1 TXB1D3 2 0 :8:8 
+`Vui  1 TXB1D2 2 0 :8:0 
+]
+"5862
+[s S407 . 2 `Vui  1 TXB1D37 2 0 :1:15 
+`Vui  1 TXB1D36 2 0 :1:14 
+`Vui  1 TXB1D35 2 0 :1:13 
+`Vui  1 TXB1D34 2 0 :1:12 
+`Vui  1 TXB1D33 2 0 :1:11 
+`Vui  1 TXB1D32 2 0 :1:10 
+`Vui  1 TXB1D31 2 0 :1:9 
+`Vui  1 TXB1D30 2 0 :1:8 
+`Vui  1 TXB1D27 2 0 :1:7 
+`Vui  1 TXB1D26 2 0 :1:6 
+`Vui  1 TXB1D25 2 0 :1:5 
+`Vui  1 TXB1D24 2 0 :1:4 
+`Vui  1 TXB1D23 2 0 :1:3 
+`Vui  1 TXB1D22 2 0 :1:2 
+`Vui  1 TXB1D21 2 0 :1:1 
+`Vui  1 TXB1D20 2 0 :1:0 
+]
+"5863
+[u S405 . 2 `S406  1 . 2 0 
+`S407  1 . 2 0 
+]
+[v _C1TX1B2bits `VS405  1 s 2 @856 ]
+"5865
+[v _TXB1D20 `Vb  1 s 0 @6848 ]
+"5866
+[v _TXB1D21 `Vb  1 s 0 @6849 ]
+"5867
+[v _TXB1D22 `Vb  1 s 0 @6850 ]
+"5868
+[v _TXB1D23 `Vb  1 s 0 @6851 ]
+"5869
+[v _TXB1D24 `Vb  1 s 0 @6852 ]
+"5870
+[v _TXB1D25 `Vb  1 s 0 @6853 ]
+"5871
+[v _TXB1D26 `Vb  1 s 0 @6854 ]
+"5872
+[v _TXB1D27 `Vb  1 s 0 @6855 ]
+"5873
+[v _TXB1D30 `Vb  1 s 0 @6856 ]
+"5874
+[v _TXB1D31 `Vb  1 s 0 @6857 ]
+"5875
+[v _TXB1D32 `Vb  1 s 0 @6858 ]
+"5876
+[v _TXB1D33 `Vb  1 s 0 @6859 ]
+"5877
+[v _TXB1D34 `Vb  1 s 0 @6860 ]
+"5878
+[v _TXB1D35 `Vb  1 s 0 @6861 ]
+"5879
+[v _TXB1D36 `Vb  1 s 0 @6862 ]
+"5880
+[v _TXB1D37 `Vb  1 s 0 @6863 ]
+"5883
+[v _C1TX1B3 `Vui  1 s 2 @858 ]
+"5889
+[s S409 . 2 `Vui  1 TXB1D5 2 0 :8:8 
+`Vui  1 TXB1D4 2 0 :8:0 
+]
+"5907
+[s S410 . 2 `Vui  1 TXB1D57 2 0 :1:15 
+`Vui  1 TXB1D56 2 0 :1:14 
+`Vui  1 TXB1D55 2 0 :1:13 
+`Vui  1 TXB1D54 2 0 :1:12 
+`Vui  1 TXB1D53 2 0 :1:11 
+`Vui  1 TXB1D52 2 0 :1:10 
+`Vui  1 TXB1D51 2 0 :1:9 
+`Vui  1 TXB1D50 2 0 :1:8 
+`Vui  1 TXB1D47 2 0 :1:7 
+`Vui  1 TXB1D46 2 0 :1:6 
+`Vui  1 TXB1D45 2 0 :1:5 
+`Vui  1 TXB1D44 2 0 :1:4 
+`Vui  1 TXB1D43 2 0 :1:3 
+`Vui  1 TXB1D42 2 0 :1:2 
+`Vui  1 TXB1D41 2 0 :1:1 
+`Vui  1 TXB1D40 2 0 :1:0 
+]
+"5908
+[u S408 . 2 `S409  1 . 2 0 
+`S410  1 . 2 0 
+]
+[v _C1TX1B3bits `VS408  1 s 2 @858 ]
+"5910
+[v _TXB1D40 `Vb  1 s 0 @6864 ]
+"5911
+[v _TXB1D41 `Vb  1 s 0 @6865 ]
+"5912
+[v _TXB1D42 `Vb  1 s 0 @6866 ]
+"5913
+[v _TXB1D43 `Vb  1 s 0 @6867 ]
+"5914
+[v _TXB1D44 `Vb  1 s 0 @6868 ]
+"5915
+[v _TXB1D45 `Vb  1 s 0 @6869 ]
+"5916
+[v _TXB1D46 `Vb  1 s 0 @6870 ]
+"5917
+[v _TXB1D47 `Vb  1 s 0 @6871 ]
+"5918
+[v _TXB1D50 `Vb  1 s 0 @6872 ]
+"5919
+[v _TXB1D51 `Vb  1 s 0 @6873 ]
+"5920
+[v _TXB1D52 `Vb  1 s 0 @6874 ]
+"5921
+[v _TXB1D53 `Vb  1 s 0 @6875 ]
+"5922
+[v _TXB1D54 `Vb  1 s 0 @6876 ]
+"5923
+[v _TXB1D55 `Vb  1 s 0 @6877 ]
+"5924
+[v _TXB1D56 `Vb  1 s 0 @6878 ]
+"5925
+[v _TXB1D57 `Vb  1 s 0 @6879 ]
+"5928
+[v _C1TX1B4 `Vui  1 s 2 @860 ]
+"5934
+[s S412 . 2 `Vui  1 TXB1D7 2 0 :8:8 
+`Vui  1 TXB1D6 2 0 :8:0 
+]
+"5952
+[s S413 . 2 `Vui  1 TXB1D77 2 0 :1:15 
+`Vui  1 TXB1D76 2 0 :1:14 
+`Vui  1 TXB1D75 2 0 :1:13 
+`Vui  1 TXB1D74 2 0 :1:12 
+`Vui  1 TXB1D73 2 0 :1:11 
+`Vui  1 TXB1D72 2 0 :1:10 
+`Vui  1 TXB1D71 2 0 :1:9 
+`Vui  1 TXB1D70 2 0 :1:8 
+`Vui  1 TXB1D67 2 0 :1:7 
+`Vui  1 TXB1D66 2 0 :1:6 
+`Vui  1 TXB1D65 2 0 :1:5 
+`Vui  1 TXB1D64 2 0 :1:4 
+`Vui  1 TXB1D63 2 0 :1:3 
+`Vui  1 TXB1D62 2 0 :1:2 
+`Vui  1 TXB1D61 2 0 :1:1 
+`Vui  1 TXB1D60 2 0 :1:0 
+]
+"5953
+[u S411 . 2 `S412  1 . 2 0 
+`S413  1 . 2 0 
+]
+[v _C1TX1B4bits `VS411  1 s 2 @860 ]
+"5955
+[v _TXB1D60 `Vb  1 s 0 @6880 ]
+"5956
+[v _TXB1D61 `Vb  1 s 0 @6881 ]
+"5957
+[v _TXB1D62 `Vb  1 s 0 @6882 ]
+"5958
+[v _TXB1D63 `Vb  1 s 0 @6883 ]
+"5959
+[v _TXB1D64 `Vb  1 s 0 @6884 ]
+"5960
+[v _TXB1D65 `Vb  1 s 0 @6885 ]
+"5961
+[v _TXB1D66 `Vb  1 s 0 @6886 ]
+"5962
+[v _TXB1D67 `Vb  1 s 0 @6887 ]
+"5963
+[v _TXB1D70 `Vb  1 s 0 @6888 ]
+"5964
+[v _TXB1D71 `Vb  1 s 0 @6889 ]
+"5965
+[v _TXB1D72 `Vb  1 s 0 @6890 ]
+"5966
+[v _TXB1D73 `Vb  1 s 0 @6891 ]
+"5967
+[v _TXB1D74 `Vb  1 s 0 @6892 ]
+"5968
+[v _TXB1D75 `Vb  1 s 0 @6893 ]
+"5969
+[v _TXB1D76 `Vb  1 s 0 @6894 ]
+"5970
+[v _TXB1D77 `Vb  1 s 0 @6895 ]
+"5973
+[v _C1TX1CON `Vui  1 s 2 @862 ]
+"5984
+[s S415 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 TXABT 2 0 :1:6 
+`Vui  1 TXLARB 2 0 :1:5 
+`Vui  1 TXERR 2 0 :1:4 
+`Vui  1 TXREQ 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TXPRI 2 0 :2:0 
+]
+"5989
+[s S416 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 TXPRI1 2 0 :1:1 
+`Vui  1 TXPRI0 2 0 :1:0 
+]
+"5990
+[u S414 . 2 `S415  1 . 2 0 
+`S416  1 . 2 0 
+]
+[v _C1TX1CONbits `VS414  1 s 2 @862 ]
+"6006
+[v _C1TX0SID `Vui  1 s 2 @864 ]
+"6024
+[s S418 . 2 `Vui  1 SID10 2 0 :1:15 
+`Vui  1 SID9 2 0 :1:14 
+`Vui  1 SID8 2 0 :1:13 
+`Vui  1 SID7 2 0 :1:12 
+`Vui  1 SID6 2 0 :1:11 
+`Vui  1 . 2 0 :3:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"6025
+[u S417 . 2 `S418  1 . 2 0 
+]
+[v _C1TX0SIDbits `VS417  1 s 2 @864 ]
+"6055
+[v _C1TX0EID `Vui  1 s 2 @866 ]
+"6072
+[s S420 . 2 `Vui  1 EID17 2 0 :1:15 
+`Vui  1 EID16 2 0 :1:14 
+`Vui  1 EID15 2 0 :1:13 
+`Vui  1 EID14 2 0 :1:12 
+`Vui  1 . 2 0 :4:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"6073
+[u S419 . 2 `S420  1 . 2 0 
+]
+[v _C1TX0EIDbits `VS419  1 s 2 @866 ]
+"6101
+[v _C1TX0DLC `Vui  1 s 2 @868 ]
+"6116
+[s S422 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 TXRTR 2 0 :1:9 
+`Vui  1 TXRB1 2 0 :1:8 
+`Vui  1 TXRB0 2 0 :1:7 
+`Vui  1 DLC 2 0 :4:3 
+`Vui  1 . 2 0 :3:0 
+]
+"6124
+[s S423 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DLC3 2 0 :1:6 
+`Vui  1 DLC2 2 0 :1:5 
+`Vui  1 DLC1 2 0 :1:4 
+`Vui  1 DLC0 2 0 :1:3 
+`Vui  1 . 2 0 :3:0 
+]
+"6125
+[u S421 . 2 `S422  1 . 2 0 
+`S423  1 . 2 0 
+]
+[v _C1TX0DLCbits `VS421  1 s 2 @868 ]
+"6155
+[v _C1TX0B1 `Vui  1 s 2 @870 ]
+"6161
+[s S425 . 2 `Vui  1 TXB0D1 2 0 :8:8 
+`Vui  1 TXB0D0 2 0 :8:0 
+]
+"6179
+[s S426 . 2 `Vui  1 TXB0D17 2 0 :1:15 
+`Vui  1 TXB0D16 2 0 :1:14 
+`Vui  1 TXB0D15 2 0 :1:13 
+`Vui  1 TXB0D14 2 0 :1:12 
+`Vui  1 TXB0D13 2 0 :1:11 
+`Vui  1 TXB0D12 2 0 :1:10 
+`Vui  1 TXB0D11 2 0 :1:9 
+`Vui  1 TXB0D10 2 0 :1:8 
+`Vui  1 TXB0D07 2 0 :1:7 
+`Vui  1 TXB0D06 2 0 :1:6 
+`Vui  1 TXB0D05 2 0 :1:5 
+`Vui  1 TXB0D04 2 0 :1:4 
+`Vui  1 TXB0D03 2 0 :1:3 
+`Vui  1 TXB0D02 2 0 :1:2 
+`Vui  1 TXB0D01 2 0 :1:1 
+`Vui  1 TXB0D00 2 0 :1:0 
+]
+"6180
+[u S424 . 2 `S425  1 . 2 0 
+`S426  1 . 2 0 
+]
+[v _C1TX0B1bits `VS424  1 s 2 @870 ]
+"6182
+[v _TXB0D00 `Vb  1 s 0 @6960 ]
+"6183
+[v _TXB0D01 `Vb  1 s 0 @6961 ]
+"6184
+[v _TXB0D02 `Vb  1 s 0 @6962 ]
+"6185
+[v _TXB0D03 `Vb  1 s 0 @6963 ]
+"6186
+[v _TXB0D04 `Vb  1 s 0 @6964 ]
+"6187
+[v _TXB0D05 `Vb  1 s 0 @6965 ]
+"6188
+[v _TXB0D06 `Vb  1 s 0 @6966 ]
+"6189
+[v _TXB0D07 `Vb  1 s 0 @6967 ]
+"6190
+[v _TXB0D10 `Vb  1 s 0 @6968 ]
+"6191
+[v _TXB0D11 `Vb  1 s 0 @6969 ]
+"6192
+[v _TXB0D12 `Vb  1 s 0 @6970 ]
+"6193
+[v _TXB0D13 `Vb  1 s 0 @6971 ]
+"6194
+[v _TXB0D14 `Vb  1 s 0 @6972 ]
+"6195
+[v _TXB0D15 `Vb  1 s 0 @6973 ]
+"6196
+[v _TXB0D16 `Vb  1 s 0 @6974 ]
+"6197
+[v _TXB0D17 `Vb  1 s 0 @6975 ]
+"6200
+[v _C1TX0B2 `Vui  1 s 2 @872 ]
+"6206
+[s S428 . 2 `Vui  1 TXB0D3 2 0 :8:8 
+`Vui  1 TXB0D2 2 0 :8:0 
+]
+"6224
+[s S429 . 2 `Vui  1 TXB0D37 2 0 :1:15 
+`Vui  1 TXB0D36 2 0 :1:14 
+`Vui  1 TXB0D35 2 0 :1:13 
+`Vui  1 TXB0D34 2 0 :1:12 
+`Vui  1 TXB0D33 2 0 :1:11 
+`Vui  1 TXB0D32 2 0 :1:10 
+`Vui  1 TXB0D31 2 0 :1:9 
+`Vui  1 TXB0D30 2 0 :1:8 
+`Vui  1 TXB0D27 2 0 :1:7 
+`Vui  1 TXB0D26 2 0 :1:6 
+`Vui  1 TXB0D25 2 0 :1:5 
+`Vui  1 TXB0D24 2 0 :1:4 
+`Vui  1 TXB0D23 2 0 :1:3 
+`Vui  1 TXB0D22 2 0 :1:2 
+`Vui  1 TXB0D21 2 0 :1:1 
+`Vui  1 TXB0D20 2 0 :1:0 
+]
+"6225
+[u S427 . 2 `S428  1 . 2 0 
+`S429  1 . 2 0 
+]
+[v _C1TX0B2bits `VS427  1 s 2 @872 ]
+"6227
+[v _TXB0D20 `Vb  1 s 0 @6976 ]
+"6228
+[v _TXB0D21 `Vb  1 s 0 @6977 ]
+"6229
+[v _TXB0D22 `Vb  1 s 0 @6978 ]
+"6230
+[v _TXB0D23 `Vb  1 s 0 @6979 ]
+"6231
+[v _TXB0D24 `Vb  1 s 0 @6980 ]
+"6232
+[v _TXB0D25 `Vb  1 s 0 @6981 ]
+"6233
+[v _TXB0D26 `Vb  1 s 0 @6982 ]
+"6234
+[v _TXB0D27 `Vb  1 s 0 @6983 ]
+"6235
+[v _TXB0D30 `Vb  1 s 0 @6984 ]
+"6236
+[v _TXB0D31 `Vb  1 s 0 @6985 ]
+"6237
+[v _TXB0D32 `Vb  1 s 0 @6986 ]
+"6238
+[v _TXB0D33 `Vb  1 s 0 @6987 ]
+"6239
+[v _TXB0D34 `Vb  1 s 0 @6988 ]
+"6240
+[v _TXB0D35 `Vb  1 s 0 @6989 ]
+"6241
+[v _TXB0D36 `Vb  1 s 0 @6990 ]
+"6242
+[v _TXB0D37 `Vb  1 s 0 @6991 ]
+"6245
+[v _C1TX0B3 `Vui  1 s 2 @874 ]
+"6251
+[s S431 . 2 `Vui  1 TXB0D5 2 0 :8:8 
+`Vui  1 TXB0D4 2 0 :8:0 
+]
+"6269
+[s S432 . 2 `Vui  1 TXB0D57 2 0 :1:15 
+`Vui  1 TXB0D56 2 0 :1:14 
+`Vui  1 TXB0D55 2 0 :1:13 
+`Vui  1 TXB0D54 2 0 :1:12 
+`Vui  1 TXB0D53 2 0 :1:11 
+`Vui  1 TXB0D52 2 0 :1:10 
+`Vui  1 TXB0D51 2 0 :1:9 
+`Vui  1 TXB0D50 2 0 :1:8 
+`Vui  1 TXB0D47 2 0 :1:7 
+`Vui  1 TXB0D46 2 0 :1:6 
+`Vui  1 TXB0D45 2 0 :1:5 
+`Vui  1 TXB0D44 2 0 :1:4 
+`Vui  1 TXB0D43 2 0 :1:3 
+`Vui  1 TXB0D42 2 0 :1:2 
+`Vui  1 TXB0D41 2 0 :1:1 
+`Vui  1 TXB0D40 2 0 :1:0 
+]
+"6270
+[u S430 . 2 `S431  1 . 2 0 
+`S432  1 . 2 0 
+]
+[v _C1TX0B3bits `VS430  1 s 2 @874 ]
+"6272
+[v _TXB0D40 `Vb  1 s 0 @6992 ]
+"6273
+[v _TXB0D41 `Vb  1 s 0 @6993 ]
+"6274
+[v _TXB0D42 `Vb  1 s 0 @6994 ]
+"6275
+[v _TXB0D43 `Vb  1 s 0 @6995 ]
+"6276
+[v _TXB0D44 `Vb  1 s 0 @6996 ]
+"6277
+[v _TXB0D45 `Vb  1 s 0 @6997 ]
+"6278
+[v _TXB0D46 `Vb  1 s 0 @6998 ]
+"6279
+[v _TXB0D47 `Vb  1 s 0 @6999 ]
+"6280
+[v _TXB0D50 `Vb  1 s 0 @7000 ]
+"6281
+[v _TXB0D51 `Vb  1 s 0 @7001 ]
+"6282
+[v _TXB0D52 `Vb  1 s 0 @7002 ]
+"6283
+[v _TXB0D53 `Vb  1 s 0 @7003 ]
+"6284
+[v _TXB0D54 `Vb  1 s 0 @7004 ]
+"6285
+[v _TXB0D55 `Vb  1 s 0 @7005 ]
+"6286
+[v _TXB0D56 `Vb  1 s 0 @7006 ]
+"6287
+[v _TXB0D57 `Vb  1 s 0 @7007 ]
+"6290
+[v _C1TX0B4 `Vui  1 s 2 @876 ]
+"6296
+[s S434 . 2 `Vui  1 TXB0D7 2 0 :8:8 
+`Vui  1 TXB0D6 2 0 :8:0 
+]
+"6314
+[s S435 . 2 `Vui  1 TXB0D77 2 0 :1:15 
+`Vui  1 TXB0D76 2 0 :1:14 
+`Vui  1 TXB0D75 2 0 :1:13 
+`Vui  1 TXB0D74 2 0 :1:12 
+`Vui  1 TXB0D73 2 0 :1:11 
+`Vui  1 TXB0D72 2 0 :1:10 
+`Vui  1 TXB0D71 2 0 :1:9 
+`Vui  1 TXB0D70 2 0 :1:8 
+`Vui  1 TXB0D67 2 0 :1:7 
+`Vui  1 TXB0D66 2 0 :1:6 
+`Vui  1 TXB0D65 2 0 :1:5 
+`Vui  1 TXB0D64 2 0 :1:4 
+`Vui  1 TXB0D63 2 0 :1:3 
+`Vui  1 TXB0D62 2 0 :1:2 
+`Vui  1 TXB0D61 2 0 :1:1 
+`Vui  1 TXB0D60 2 0 :1:0 
+]
+"6315
+[u S433 . 2 `S434  1 . 2 0 
+`S435  1 . 2 0 
+]
+[v _C1TX0B4bits `VS433  1 s 2 @876 ]
+"6317
+[v _TXB0D60 `Vb  1 s 0 @7008 ]
+"6318
+[v _TXB0D61 `Vb  1 s 0 @7009 ]
+"6319
+[v _TXB0D62 `Vb  1 s 0 @7010 ]
+"6320
+[v _TXB0D63 `Vb  1 s 0 @7011 ]
+"6321
+[v _TXB0D64 `Vb  1 s 0 @7012 ]
+"6322
+[v _TXB0D65 `Vb  1 s 0 @7013 ]
+"6323
+[v _TXB0D66 `Vb  1 s 0 @7014 ]
+"6324
+[v _TXB0D67 `Vb  1 s 0 @7015 ]
+"6325
+[v _TXB0D70 `Vb  1 s 0 @7016 ]
+"6326
+[v _TXB0D71 `Vb  1 s 0 @7017 ]
+"6327
+[v _TXB0D72 `Vb  1 s 0 @7018 ]
+"6328
+[v _TXB0D73 `Vb  1 s 0 @7019 ]
+"6329
+[v _TXB0D74 `Vb  1 s 0 @7020 ]
+"6330
+[v _TXB0D75 `Vb  1 s 0 @7021 ]
+"6331
+[v _TXB0D76 `Vb  1 s 0 @7022 ]
+"6332
+[v _TXB0D77 `Vb  1 s 0 @7023 ]
+"6335
+[v _C1TX0CON `Vui  1 s 2 @878 ]
+"6346
+[s S437 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 TXABT 2 0 :1:6 
+`Vui  1 TXLARB 2 0 :1:5 
+`Vui  1 TXERR 2 0 :1:4 
+`Vui  1 TXREQ 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TXPRI 2 0 :2:0 
+]
+"6351
+[s S438 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 TXPRI1 2 0 :1:1 
+`Vui  1 TXPRI0 2 0 :1:0 
+]
+"6352
+[u S436 . 2 `S437  1 . 2 0 
+`S438  1 . 2 0 
+]
+[v _C1TX0CONbits `VS436  1 s 2 @878 ]
+"6368
+[v _C1RX1SID `Vui  1 s 2 @880 ]
+"6386
+[s S440 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"6387
+[u S439 . 2 `S440  1 . 2 0 
+]
+[v _C1RX1SIDbits `VS439  1 s 2 @880 ]
+"6417
+[v _C1RX1EID `Vui  1 s 2 @882 ]
+"6434
+[s S442 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"6435
+[u S441 . 2 `S442  1 . 2 0 
+]
+[v _C1RX1EIDbits `VS441  1 s 2 @882 ]
+"6463
+[v _C1RX1DLC `Vui  1 s 2 @884 ]
+"6478
+[s S444 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 RXRTR 2 0 :1:9 
+`Vui  1 RXRB1 2 0 :1:8 
+`Vui  1 . 2 0 :3:5 
+`Vui  1 RXRB0 2 0 :1:4 
+`Vui  1 DLC 2 0 :4:0 
+]
+"6485
+[s S445 . 2 `Vui  1 . 2 0 :12:4 
+`Vui  1 DLC3 2 0 :1:3 
+`Vui  1 DLC2 2 0 :1:2 
+`Vui  1 DLC1 2 0 :1:1 
+`Vui  1 DLC0 2 0 :1:0 
+]
+"6486
+[u S443 . 2 `S444  1 . 2 0 
+`S445  1 . 2 0 
+]
+[v _C1RX1DLCbits `VS443  1 s 2 @884 ]
+"6488
+[v _RXRB0 `Vb  1 s 0 @7076 ]
+"6489
+[v _RXRB1 `Vb  1 s 0 @7080 ]
+"6490
+[v _RXRTR `Vb  1 s 0 @7081 ]
+"6513
+[v _C1RX1B1 `Vui  1 s 2 @886 ]
+"6519
+[s S447 . 2 `Vui  1 TXB1D1 2 0 :8:8 
+`Vui  1 TXB1D0 2 0 :8:0 
+]
+"6537
+[s S448 . 2 `Vui  1 TXB1D17 2 0 :1:15 
+`Vui  1 TXB1D16 2 0 :1:14 
+`Vui  1 TXB1D15 2 0 :1:13 
+`Vui  1 TXB1D14 2 0 :1:12 
+`Vui  1 TXB1D13 2 0 :1:11 
+`Vui  1 TXB1D12 2 0 :1:10 
+`Vui  1 TXB1D11 2 0 :1:9 
+`Vui  1 TXB1D10 2 0 :1:8 
+`Vui  1 TXB1D07 2 0 :1:7 
+`Vui  1 TXB1D06 2 0 :1:6 
+`Vui  1 TXB1D05 2 0 :1:5 
+`Vui  1 TXB1D04 2 0 :1:4 
+`Vui  1 TXB1D03 2 0 :1:3 
+`Vui  1 TXB1D02 2 0 :1:2 
+`Vui  1 TXB1D01 2 0 :1:1 
+`Vui  1 TXB1D00 2 0 :1:0 
+]
+"6538
+[u S446 . 2 `S447  1 . 2 0 
+`S448  1 . 2 0 
+]
+[v _C1RX1B1bits `VS446  1 s 2 @886 ]
+"6574
+[v _C1RX1B2 `Vui  1 s 2 @888 ]
+"6580
+[s S450 . 2 `Vui  1 TXB1D3 2 0 :8:8 
+`Vui  1 TXB1D2 2 0 :8:0 
+]
+"6598
+[s S451 . 2 `Vui  1 TXB1D37 2 0 :1:15 
+`Vui  1 TXB1D36 2 0 :1:14 
+`Vui  1 TXB1D35 2 0 :1:13 
+`Vui  1 TXB1D34 2 0 :1:12 
+`Vui  1 TXB1D33 2 0 :1:11 
+`Vui  1 TXB1D32 2 0 :1:10 
+`Vui  1 TXB1D31 2 0 :1:9 
+`Vui  1 TXB1D30 2 0 :1:8 
+`Vui  1 TXB1D27 2 0 :1:7 
+`Vui  1 TXB1D26 2 0 :1:6 
+`Vui  1 TXB1D25 2 0 :1:5 
+`Vui  1 TXB1D24 2 0 :1:4 
+`Vui  1 TXB1D23 2 0 :1:3 
+`Vui  1 TXB1D22 2 0 :1:2 
+`Vui  1 TXB1D21 2 0 :1:1 
+`Vui  1 TXB1D20 2 0 :1:0 
+]
+"6599
+[u S449 . 2 `S450  1 . 2 0 
+`S451  1 . 2 0 
+]
+[v _C1RX1B2bits `VS449  1 s 2 @888 ]
+"6635
+[v _C1RX1B3 `Vui  1 s 2 @890 ]
+"6641
+[s S453 . 2 `Vui  1 TXB1D5 2 0 :8:8 
+`Vui  1 TXB1D4 2 0 :8:0 
+]
+"6659
+[s S454 . 2 `Vui  1 TXB1D57 2 0 :1:15 
+`Vui  1 TXB1D56 2 0 :1:14 
+`Vui  1 TXB1D55 2 0 :1:13 
+`Vui  1 TXB1D54 2 0 :1:12 
+`Vui  1 TXB1D53 2 0 :1:11 
+`Vui  1 TXB1D52 2 0 :1:10 
+`Vui  1 TXB1D51 2 0 :1:9 
+`Vui  1 TXB1D50 2 0 :1:8 
+`Vui  1 TXB1D47 2 0 :1:7 
+`Vui  1 TXB1D46 2 0 :1:6 
+`Vui  1 TXB1D45 2 0 :1:5 
+`Vui  1 TXB1D44 2 0 :1:4 
+`Vui  1 TXB1D43 2 0 :1:3 
+`Vui  1 TXB1D42 2 0 :1:2 
+`Vui  1 TXB1D41 2 0 :1:1 
+`Vui  1 TXB1D40 2 0 :1:0 
+]
+"6660
+[u S452 . 2 `S453  1 . 2 0 
+`S454  1 . 2 0 
+]
+[v _C1RX1B3bits `VS452  1 s 2 @890 ]
+"6696
+[v _C1RX1B4 `Vui  1 s 2 @892 ]
+"6702
+[s S456 . 2 `Vui  1 TXB1D7 2 0 :8:8 
+`Vui  1 TXB1D6 2 0 :8:0 
+]
+"6720
+[s S457 . 2 `Vui  1 TXB1D77 2 0 :1:15 
+`Vui  1 TXB1D76 2 0 :1:14 
+`Vui  1 TXB1D75 2 0 :1:13 
+`Vui  1 TXB1D74 2 0 :1:12 
+`Vui  1 TXB1D73 2 0 :1:11 
+`Vui  1 TXB1D72 2 0 :1:10 
+`Vui  1 TXB1D71 2 0 :1:9 
+`Vui  1 TXB1D70 2 0 :1:8 
+`Vui  1 TXB1D67 2 0 :1:7 
+`Vui  1 TXB1D66 2 0 :1:6 
+`Vui  1 TXB1D65 2 0 :1:5 
+`Vui  1 TXB1D64 2 0 :1:4 
+`Vui  1 TXB1D63 2 0 :1:3 
+`Vui  1 TXB1D62 2 0 :1:2 
+`Vui  1 TXB1D61 2 0 :1:1 
+`Vui  1 TXB1D60 2 0 :1:0 
+]
+"6721
+[u S455 . 2 `S456  1 . 2 0 
+`S457  1 . 2 0 
+]
+[v _C1RX1B4bits `VS455  1 s 2 @892 ]
+"6757
+[v _C1RX1CON `Vui  1 s 2 @894 ]
+"6766
+[s S459 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 RXFUL 2 0 :1:7 
+`Vui  1 . 2 0 :3:4 
+`Vui  1 RXRTRRO 2 0 :1:3 
+`Vui  1 FILHIT 2 0 :3:0 
+]
+"6772
+[s S460 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 FILHIT2 2 0 :1:2 
+`Vui  1 FILHIT1 2 0 :1:1 
+`Vui  1 FILHIT0 2 0 :1:0 
+]
+"6773
+[u S458 . 2 `S459  1 . 2 0 
+`S460  1 . 2 0 
+]
+[v _C1RX1CONbits `VS458  1 s 2 @894 ]
+"6775
+[v _RXRTRRO `Vb  1 s 0 @7155 ]
+"6776
+[v _RXFUL `Vb  1 s 0 @7159 ]
+"6777
+[v _FILHIT0 `Vb  1 s 0 @7152 ]
+"6778
+[v _FILHIT1 `Vb  1 s 0 @7153 ]
+"6779
+[v _FILHIT2 `Vb  1 s 0 @7154 ]
+"6782
+[v _C1RX0SID `Vui  1 s 2 @896 ]
+"6800
+[s S462 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"6801
+[u S461 . 2 `S462  1 . 2 0 
+]
+[v _C1RX0SIDbits `VS461  1 s 2 @896 ]
+"6831
+[v _C1RX0EID `Vui  1 s 2 @898 ]
+"6848
+[s S464 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"6849
+[u S463 . 2 `S464  1 . 2 0 
+]
+[v _C1RX0EIDbits `VS463  1 s 2 @898 ]
+"6877
+[v _C1RX0DLC `Vui  1 s 2 @900 ]
+"6892
+[s S466 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 RXRTR 2 0 :1:9 
+`Vui  1 RXRB1 2 0 :1:8 
+`Vui  1 . 2 0 :3:5 
+`Vui  1 RXRB0 2 0 :1:4 
+`Vui  1 DLC 2 0 :4:0 
+]
+"6899
+[s S467 . 2 `Vui  1 . 2 0 :12:4 
+`Vui  1 DLC3 2 0 :1:3 
+`Vui  1 DLC2 2 0 :1:2 
+`Vui  1 DLC1 2 0 :1:1 
+`Vui  1 DLC0 2 0 :1:0 
+]
+"6900
+[u S465 . 2 `S466  1 . 2 0 
+`S467  1 . 2 0 
+]
+[v _C1RX0DLCbits `VS465  1 s 2 @900 ]
+"6930
+[v _C1RX0B1 `Vui  1 s 2 @902 ]
+"6936
+[s S469 . 2 `Vui  1 TXB0D1 2 0 :8:8 
+`Vui  1 TXB0D0 2 0 :8:0 
+]
+"6954
+[s S470 . 2 `Vui  1 TXB0D17 2 0 :1:15 
+`Vui  1 TXB0D16 2 0 :1:14 
+`Vui  1 TXB0D15 2 0 :1:13 
+`Vui  1 TXB0D14 2 0 :1:12 
+`Vui  1 TXB0D13 2 0 :1:11 
+`Vui  1 TXB0D12 2 0 :1:10 
+`Vui  1 TXB0D11 2 0 :1:9 
+`Vui  1 TXB0D10 2 0 :1:8 
+`Vui  1 TXB0D07 2 0 :1:7 
+`Vui  1 TXB0D06 2 0 :1:6 
+`Vui  1 TXB0D05 2 0 :1:5 
+`Vui  1 TXB0D04 2 0 :1:4 
+`Vui  1 TXB0D03 2 0 :1:3 
+`Vui  1 TXB0D02 2 0 :1:2 
+`Vui  1 TXB0D01 2 0 :1:1 
+`Vui  1 TXB0D00 2 0 :1:0 
+]
+"6955
+[u S468 . 2 `S469  1 . 2 0 
+`S470  1 . 2 0 
+]
+[v _C1RX0B1bits `VS468  1 s 2 @902 ]
+"6991
+[v _C1RX0B2 `Vui  1 s 2 @904 ]
+"6997
+[s S472 . 2 `Vui  1 TXB0D3 2 0 :8:8 
+`Vui  1 TXB0D2 2 0 :8:0 
+]
+"7015
+[s S473 . 2 `Vui  1 TXB0D37 2 0 :1:15 
+`Vui  1 TXB0D36 2 0 :1:14 
+`Vui  1 TXB0D35 2 0 :1:13 
+`Vui  1 TXB0D34 2 0 :1:12 
+`Vui  1 TXB0D33 2 0 :1:11 
+`Vui  1 TXB0D32 2 0 :1:10 
+`Vui  1 TXB0D31 2 0 :1:9 
+`Vui  1 TXB0D30 2 0 :1:8 
+`Vui  1 TXB0D27 2 0 :1:7 
+`Vui  1 TXB0D26 2 0 :1:6 
+`Vui  1 TXB0D25 2 0 :1:5 
+`Vui  1 TXB0D24 2 0 :1:4 
+`Vui  1 TXB0D23 2 0 :1:3 
+`Vui  1 TXB0D22 2 0 :1:2 
+`Vui  1 TXB0D21 2 0 :1:1 
+`Vui  1 TXB0D20 2 0 :1:0 
+]
+"7016
+[u S471 . 2 `S472  1 . 2 0 
+`S473  1 . 2 0 
+]
+[v _C1RX0B2bits `VS471  1 s 2 @904 ]
+"7052
+[v _C1RX0B3 `Vui  1 s 2 @906 ]
+"7058
+[s S475 . 2 `Vui  1 TXB0D5 2 0 :8:8 
+`Vui  1 TXB0D4 2 0 :8:0 
+]
+"7076
+[s S476 . 2 `Vui  1 TXB0D57 2 0 :1:15 
+`Vui  1 TXB0D56 2 0 :1:14 
+`Vui  1 TXB0D55 2 0 :1:13 
+`Vui  1 TXB0D54 2 0 :1:12 
+`Vui  1 TXB0D53 2 0 :1:11 
+`Vui  1 TXB0D52 2 0 :1:10 
+`Vui  1 TXB0D51 2 0 :1:9 
+`Vui  1 TXB0D50 2 0 :1:8 
+`Vui  1 TXB0D47 2 0 :1:7 
+`Vui  1 TXB0D46 2 0 :1:6 
+`Vui  1 TXB0D45 2 0 :1:5 
+`Vui  1 TXB0D44 2 0 :1:4 
+`Vui  1 TXB0D43 2 0 :1:3 
+`Vui  1 TXB0D42 2 0 :1:2 
+`Vui  1 TXB0D41 2 0 :1:1 
+`Vui  1 TXB0D40 2 0 :1:0 
+]
+"7077
+[u S474 . 2 `S475  1 . 2 0 
+`S476  1 . 2 0 
+]
+[v _C1RX0B3bits `VS474  1 s 2 @906 ]
+"7113
+[v _C1RX0B4 `Vui  1 s 2 @908 ]
+"7119
+[s S478 . 2 `Vui  1 TXB0D7 2 0 :8:8 
+`Vui  1 TXB0D6 2 0 :8:0 
+]
+"7137
+[s S479 . 2 `Vui  1 TXB0D77 2 0 :1:15 
+`Vui  1 TXB0D76 2 0 :1:14 
+`Vui  1 TXB0D75 2 0 :1:13 
+`Vui  1 TXB0D74 2 0 :1:12 
+`Vui  1 TXB0D73 2 0 :1:11 
+`Vui  1 TXB0D72 2 0 :1:10 
+`Vui  1 TXB0D71 2 0 :1:9 
+`Vui  1 TXB0D70 2 0 :1:8 
+`Vui  1 TXB0D67 2 0 :1:7 
+`Vui  1 TXB0D66 2 0 :1:6 
+`Vui  1 TXB0D65 2 0 :1:5 
+`Vui  1 TXB0D64 2 0 :1:4 
+`Vui  1 TXB0D63 2 0 :1:3 
+`Vui  1 TXB0D62 2 0 :1:2 
+`Vui  1 TXB0D61 2 0 :1:1 
+`Vui  1 TXB0D60 2 0 :1:0 
+]
+"7138
+[u S477 . 2 `S478  1 . 2 0 
+`S479  1 . 2 0 
+]
+[v _C1RX0B4bits `VS477  1 s 2 @908 ]
+"7174
+[v _C1RX0CON `Vui  1 s 2 @910 ]
+"7185
+[s S481 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 RXFUL 2 0 :1:7 
+`Vui  1 . 2 0 :3:4 
+`Vui  1 RXRTRRO 2 0 :1:3 
+`Vui  1 RXB0DBEN 2 0 :1:2 
+`Vui  1 JTOFF 2 0 :1:1 
+`Vui  1 FILHIT 2 0 :1:0 
+]
+"7186
+[u S480 . 2 `S481  1 . 2 0 
+]
+[v _C1RX0CONbits `VS480  1 s 2 @910 ]
+"7188
+[v _FILHIT `Vb  1 s 0 @7280 ]
+"7189
+[v _JTOFF `Vb  1 s 0 @7281 ]
+"7190
+[v _RXB0DBEN `Vb  1 s 0 @7282 ]
+"7197
+[v _C1CTRL `Vui  1 s 2 @912 ]
+"7211
+[s S483 . 2 `Vui  1 CANCAP 2 0 :1:15 
+`Vui  1 CANFRZ 2 0 :1:14 
+`Vui  1 CANSIDL 2 0 :1:13 
+`Vui  1 ABAT 2 0 :1:12 
+`Vui  1 CANCKS 2 0 :1:11 
+`Vui  1 REQOP 2 0 :3:8 
+`Vui  1 OPMODE 2 0 :3:5 
+`Vui  1 . 2 0 :1:4 
+`Vui  1 ICOD 2 0 :3:1 
+`Vui  1 . 2 0 :1:0 
+]
+"7226
+[s S484 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 REQOP2 2 0 :1:10 
+`Vui  1 REQOP1 2 0 :1:9 
+`Vui  1 REQOP0 2 0 :1:8 
+`Vui  1 OPMODE2 2 0 :1:7 
+`Vui  1 OPMODE1 2 0 :1:6 
+`Vui  1 OPMODE0 2 0 :1:5 
+`Vui  1 . 2 0 :1:4 
+`Vui  1 ICOD2 2 0 :1:3 
+`Vui  1 ICOD1 2 0 :1:2 
+`Vui  1 ICOD0 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"7227
+[u S482 . 2 `S483  1 . 2 0 
+`S484  1 . 2 0 
+]
+[v _C1CTRLbits `VS482  1 s 2 @912 ]
+"7229
+[v _CANCKS `Vb  1 s 0 @7307 ]
+"7230
+[v _ABAT `Vb  1 s 0 @7308 ]
+"7231
+[v _CANSIDL `Vb  1 s 0 @7309 ]
+"7232
+[v _CANFRZ `Vb  1 s 0 @7310 ]
+"7233
+[v _CANCAP `Vb  1 s 0 @7311 ]
+"7234
+[v _ICOD0 `Vb  1 s 0 @7297 ]
+"7235
+[v _ICOD1 `Vb  1 s 0 @7298 ]
+"7236
+[v _ICOD2 `Vb  1 s 0 @7299 ]
+"7237
+[v _OPMODE0 `Vb  1 s 0 @7301 ]
+"7238
+[v _OPMODE1 `Vb  1 s 0 @7302 ]
+"7239
+[v _OPMODE2 `Vb  1 s 0 @7303 ]
+"7240
+[v _REQOP0 `Vb  1 s 0 @7304 ]
+"7241
+[v _REQOP1 `Vb  1 s 0 @7305 ]
+"7242
+[v _REQOP2 `Vb  1 s 0 @7306 ]
+"7245
+[v _C1CFG1 `Vui  1 s 2 @914 ]
+"7252
+[s S486 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 SJW 2 0 :2:6 
+`Vui  1 BRP 2 0 :6:0 
+]
+"7263
+[s S487 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 SJW1 2 0 :1:7 
+`Vui  1 SJW0 2 0 :1:6 
+`Vui  1 BRP5 2 0 :1:5 
+`Vui  1 BRP4 2 0 :1:4 
+`Vui  1 BRP3 2 0 :1:3 
+`Vui  1 BRP2 2 0 :1:2 
+`Vui  1 BRP1 2 0 :1:1 
+`Vui  1 BRP0 2 0 :1:0 
+]
+"7264
+[u S485 . 2 `S486  1 . 2 0 
+`S487  1 . 2 0 
+]
+[v _C1CFG1bits `VS485  1 s 2 @914 ]
+"7266
+[v _BRP0 `Vb  1 s 0 @7312 ]
+"7267
+[v _BRP1 `Vb  1 s 0 @7313 ]
+"7268
+[v _BRP2 `Vb  1 s 0 @7314 ]
+"7269
+[v _BRP3 `Vb  1 s 0 @7315 ]
+"7270
+[v _BRP4 `Vb  1 s 0 @7316 ]
+"7271
+[v _BRP5 `Vb  1 s 0 @7317 ]
+"7272
+[v _SJW0 `Vb  1 s 0 @7318 ]
+"7273
+[v _SJW1 `Vb  1 s 0 @7319 ]
+"7276
+[v _C1CFG2 `Vui  1 s 2 @916 ]
+"7288
+[s S489 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 WAKFIL 2 0 :1:14 
+`Vui  1 . 2 0 :3:11 
+`Vui  1 SEG2PH 2 0 :3:8 
+`Vui  1 SEG2PHTS 2 0 :1:7 
+`Vui  1 SAM 2 0 :1:6 
+`Vui  1 SEG1PH 2 0 :3:3 
+`Vui  1 PRSEG 2 0 :3:0 
+]
+"7301
+[s S490 . 2 `Vui  1 . 2 0 :5:11 
+`Vui  1 SEG2PH2 2 0 :1:10 
+`Vui  1 SEG2PH1 2 0 :1:9 
+`Vui  1 SEG2PH0 2 0 :1:8 
+`Vui  1 . 2 0 :2:6 
+`Vui  1 SEG1PH2 2 0 :1:5 
+`Vui  1 SEG1PH1 2 0 :1:4 
+`Vui  1 SEG1PH0 2 0 :1:3 
+`Vui  1 PRSEG2 2 0 :1:2 
+`Vui  1 PRSEG1 2 0 :1:1 
+`Vui  1 PRSEG0 2 0 :1:0 
+]
+"7302
+[u S488 . 2 `S489  1 . 2 0 
+`S490  1 . 2 0 
+]
+[v _C1CFG2bits `VS488  1 s 2 @916 ]
+"7304
+[v _SAM `Vb  1 s 0 @7334 ]
+"7305
+[v _SEG2PHTS `Vb  1 s 0 @7335 ]
+"7306
+[v _WAKFIL `Vb  1 s 0 @7342 ]
+"7307
+[v _PRSEG0 `Vb  1 s 0 @7328 ]
+"7308
+[v _PRSEG1 `Vb  1 s 0 @7329 ]
+"7309
+[v _PRSEG2 `Vb  1 s 0 @7330 ]
+"7310
+[v _SEG1PH0 `Vb  1 s 0 @7331 ]
+"7311
+[v _SEG1PH1 `Vb  1 s 0 @7332 ]
+"7312
+[v _SEG1PH2 `Vb  1 s 0 @7333 ]
+"7313
+[v _SEG2PH0 `Vb  1 s 0 @7336 ]
+"7314
+[v _SEG2PH1 `Vb  1 s 0 @7337 ]
+"7315
+[v _SEG2PH2 `Vb  1 s 0 @7338 ]
+"7318
+[v _C1INTF `Vui  1 s 2 @918 ]
+"7338
+[s S492 . 2 `Vui  1 RXB0OVFL 2 0 :1:15 
+`Vui  1 RXB1OVFL 2 0 :1:14 
+`Vui  1 TXBO 2 0 :1:13 
+`Vui  1 TXBP 2 0 :1:12 
+`Vui  1 RXBP 2 0 :1:11 
+`Vui  1 TXWARN 2 0 :1:10 
+`Vui  1 RXWARN 2 0 :1:9 
+`Vui  1 EWARN 2 0 :1:8 
+`Vui  1 IRXIF 2 0 :1:7 
+`Vui  1 WAKIF 2 0 :1:6 
+`Vui  1 ERRIF 2 0 :1:5 
+`Vui  1 TXB2IF 2 0 :1:4 
+`Vui  1 TXB1IF 2 0 :1:3 
+`Vui  1 TXB0IF 2 0 :1:2 
+`Vui  1 RXB1IF 2 0 :1:1 
+`Vui  1 RXB0IF 2 0 :1:0 
+]
+"7339
+[u S491 . 2 `S492  1 . 2 0 
+]
+[v _C1INTFbits `VS491  1 s 2 @918 ]
+"7341
+[v _RXB0IF `Vb  1 s 0 @7344 ]
+"7342
+[v _RXB1IF `Vb  1 s 0 @7345 ]
+"7343
+[v _TXB0IF `Vb  1 s 0 @7346 ]
+"7344
+[v _TXB1IF `Vb  1 s 0 @7347 ]
+"7345
+[v _TXB2IF `Vb  1 s 0 @7348 ]
+"7346
+[v _ERRIF `Vb  1 s 0 @7349 ]
+"7347
+[v _WAKIF `Vb  1 s 0 @7350 ]
+"7348
+[v _IRXIF `Vb  1 s 0 @7351 ]
+"7349
+[v _EWARN `Vb  1 s 0 @7352 ]
+"7350
+[v _RXWARN `Vb  1 s 0 @7353 ]
+"7351
+[v _TXWARN `Vb  1 s 0 @7354 ]
+"7352
+[v _RXBP `Vb  1 s 0 @7355 ]
+"7353
+[v _TXBP `Vb  1 s 0 @7356 ]
+"7354
+[v _TXBO `Vb  1 s 0 @7357 ]
+"7355
+[v _RXB1OVFL `Vb  1 s 0 @7358 ]
+"7356
+[v _RXB0OVFL `Vb  1 s 0 @7359 ]
+"7359
+[v _C1INTE `Vui  1 s 2 @920 ]
+"7372
+[s S494 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 IRXIE 2 0 :1:7 
+`Vui  1 WAKIE 2 0 :1:6 
+`Vui  1 ERRIE 2 0 :1:5 
+`Vui  1 TXB2IE 2 0 :1:4 
+`Vui  1 TXB1IE 2 0 :1:3 
+`Vui  1 TXB0IE 2 0 :1:2 
+`Vui  1 RXB1IE 2 0 :1:1 
+`Vui  1 RXB0IE 2 0 :1:0 
+]
+"7373
+[u S493 . 2 `S494  1 . 2 0 
+]
+[v _C1INTEbits `VS493  1 s 2 @920 ]
+"7375
+[v _RXB0IE `Vb  1 s 0 @7360 ]
+"7376
+[v _RXB1IE `Vb  1 s 0 @7361 ]
+"7377
+[v _TXB0IE `Vb  1 s 0 @7362 ]
+"7378
+[v _TXB1IE `Vb  1 s 0 @7363 ]
+"7379
+[v _TXB2IE `Vb  1 s 0 @7364 ]
+"7380
+[v _ERRIE `Vb  1 s 0 @7365 ]
+"7381
+[v _WAKIE `Vb  1 s 0 @7366 ]
+"7382
+[v _IRXIE `Vb  1 s 0 @7367 ]
+"7385
+[v _C1EC `Vui  1 s 2 @922 ]
+"7391
+[s S496 . 2 `Vui  1 TEC 2 0 :8:8 
+`Vui  1 REC 2 0 :8:0 
+]
+"7409
+[s S497 . 2 `Vui  1 TEC7 2 0 :1:15 
+`Vui  1 TEC6 2 0 :1:14 
+`Vui  1 TEC5 2 0 :1:13 
+`Vui  1 TEC4 2 0 :1:12 
+`Vui  1 TEC3 2 0 :1:11 
+`Vui  1 TEC2 2 0 :1:10 
+`Vui  1 TEC1 2 0 :1:9 
+`Vui  1 TEC0 2 0 :1:8 
+`Vui  1 REC7 2 0 :1:7 
+`Vui  1 REC6 2 0 :1:6 
+`Vui  1 REC5 2 0 :1:5 
+`Vui  1 REC4 2 0 :1:4 
+`Vui  1 REC3 2 0 :1:3 
+`Vui  1 REC2 2 0 :1:2 
+`Vui  1 REC1 2 0 :1:1 
+`Vui  1 REC0 2 0 :1:0 
+]
+"7410
+[u S495 . 2 `S496  1 . 2 0 
+`S497  1 . 2 0 
+]
+[v _C1ECbits `VS495  1 s 2 @922 ]
+"7412
+[v _REC0 `Vb  1 s 0 @7376 ]
+"7413
+[v _REC1 `Vb  1 s 0 @7377 ]
+"7414
+[v _REC2 `Vb  1 s 0 @7378 ]
+"7415
+[v _REC3 `Vb  1 s 0 @7379 ]
+"7416
+[v _REC4 `Vb  1 s 0 @7380 ]
+"7417
+[v _REC5 `Vb  1 s 0 @7381 ]
+"7418
+[v _REC6 `Vb  1 s 0 @7382 ]
+"7419
+[v _REC7 `Vb  1 s 0 @7383 ]
+"7420
+[v _TEC0 `Vb  1 s 0 @7384 ]
+"7421
+[v _TEC1 `Vb  1 s 0 @7385 ]
+"7422
+[v _TEC2 `Vb  1 s 0 @7386 ]
+"7423
+[v _TEC3 `Vb  1 s 0 @7387 ]
+"7424
+[v _TEC4 `Vb  1 s 0 @7388 ]
+"7425
+[v _TEC5 `Vb  1 s 0 @7389 ]
+"7426
+[v _TEC6 `Vb  1 s 0 @7390 ]
+"7427
+[v _TEC7 `Vb  1 s 0 @7391 ]
+"7430
+[v _C2RXF0SID `Vui  1 s 2 @960 ]
+"7448
+[s S499 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"7449
+[u S498 . 2 `S499  1 . 2 0 
+]
+[v _C2RXF0SIDbits `VS498  1 s 2 @960 ]
+"7477
+[v _C2RXF0EIDH `Vui  1 s 2 @962 ]
+"7494
+[s S501 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"7495
+[u S500 . 2 `S501  1 . 2 0 
+]
+[v _C2RXF0EIDHbits `VS500  1 s 2 @962 ]
+"7523
+[v _C2RXF0EIDL `Vui  1 s 2 @964 ]
+"7534
+[s S503 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"7535
+[u S502 . 2 `S503  1 . 2 0 
+]
+[v _C2RXF0EIDLbits `VS502  1 s 2 @964 ]
+"7551
+[v _C2RXF1SID `Vui  1 s 2 @968 ]
+"7569
+[s S505 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"7570
+[u S504 . 2 `S505  1 . 2 0 
+]
+[v _C2RXF1SIDbits `VS504  1 s 2 @968 ]
+"7598
+[v _C2RXF1EIDH `Vui  1 s 2 @970 ]
+"7615
+[s S507 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"7616
+[u S506 . 2 `S507  1 . 2 0 
+]
+[v _C2RXF1EIDHbits `VS506  1 s 2 @970 ]
+"7644
+[v _C2RXF1EIDL `Vui  1 s 2 @972 ]
+"7655
+[s S509 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"7656
+[u S508 . 2 `S509  1 . 2 0 
+]
+[v _C2RXF1EIDLbits `VS508  1 s 2 @972 ]
+"7672
+[v _C2RXF2SID `Vui  1 s 2 @976 ]
+"7690
+[s S511 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"7691
+[u S510 . 2 `S511  1 . 2 0 
+]
+[v _C2RXF2SIDbits `VS510  1 s 2 @976 ]
+"7719
+[v _C2RXF2EIDH `Vui  1 s 2 @978 ]
+"7736
+[s S513 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"7737
+[u S512 . 2 `S513  1 . 2 0 
+]
+[v _C2RXF2EIDHbits `VS512  1 s 2 @978 ]
+"7765
+[v _C2RXF2EIDL `Vui  1 s 2 @980 ]
+"7776
+[s S515 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"7777
+[u S514 . 2 `S515  1 . 2 0 
+]
+[v _C2RXF2EIDLbits `VS514  1 s 2 @980 ]
+"7793
+[v _C2RXF3SID `Vui  1 s 2 @984 ]
+"7811
+[s S517 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"7812
+[u S516 . 2 `S517  1 . 2 0 
+]
+[v _C2RXF3SIDbits `VS516  1 s 2 @984 ]
+"7840
+[v _C2RXF3EIDH `Vui  1 s 2 @986 ]
+"7857
+[s S519 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"7858
+[u S518 . 2 `S519  1 . 2 0 
+]
+[v _C2RXF3EIDHbits `VS518  1 s 2 @986 ]
+"7886
+[v _C2RXF3EIDL `Vui  1 s 2 @988 ]
+"7897
+[s S521 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"7898
+[u S520 . 2 `S521  1 . 2 0 
+]
+[v _C2RXF3EIDLbits `VS520  1 s 2 @988 ]
+"7914
+[v _C2RXF4SID `Vui  1 s 2 @992 ]
+"7932
+[s S523 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"7933
+[u S522 . 2 `S523  1 . 2 0 
+]
+[v _C2RXF4SIDbits `VS522  1 s 2 @992 ]
+"7961
+[v _C2RXF4EIDH `Vui  1 s 2 @994 ]
+"7978
+[s S525 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"7979
+[u S524 . 2 `S525  1 . 2 0 
+]
+[v _C2RXF4EIDHbits `VS524  1 s 2 @994 ]
+"8007
+[v _C2RXF4EIDL `Vui  1 s 2 @996 ]
+"8018
+[s S527 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"8019
+[u S526 . 2 `S527  1 . 2 0 
+]
+[v _C2RXF4EIDLbits `VS526  1 s 2 @996 ]
+"8035
+[v _C2RXF5SID `Vui  1 s 2 @1000 ]
+"8053
+[s S529 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 EXIDE 2 0 :1:0 
+]
+"8054
+[u S528 . 2 `S529  1 . 2 0 
+]
+[v _C2RXF5SIDbits `VS528  1 s 2 @1000 ]
+"8082
+[v _C2RXF5EIDH `Vui  1 s 2 @1002 ]
+"8099
+[s S531 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"8100
+[u S530 . 2 `S531  1 . 2 0 
+]
+[v _C2RXF5EIDHbits `VS530  1 s 2 @1002 ]
+"8128
+[v _C2RXF5EIDL `Vui  1 s 2 @1004 ]
+"8139
+[s S533 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"8140
+[u S532 . 2 `S533  1 . 2 0 
+]
+[v _C2RXF5EIDLbits `VS532  1 s 2 @1004 ]
+"8156
+[v _C2RXM0SID `Vui  1 s 2 @1008 ]
+"8174
+[s S535 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 MIDE 2 0 :1:0 
+]
+"8175
+[u S534 . 2 `S535  1 . 2 0 
+]
+[v _C2RXM0SIDbits `VS534  1 s 2 @1008 ]
+"8203
+[v _C2RXM0EIDH `Vui  1 s 2 @1010 ]
+"8220
+[s S537 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"8221
+[u S536 . 2 `S537  1 . 2 0 
+]
+[v _C2RXM0EIDHbits `VS536  1 s 2 @1010 ]
+"8249
+[v _C2RXM0EIDL `Vui  1 s 2 @1012 ]
+"8260
+[s S539 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"8261
+[u S538 . 2 `S539  1 . 2 0 
+]
+[v _C2RXM0EIDLbits `VS538  1 s 2 @1012 ]
+"8277
+[v _C2RXM1SID `Vui  1 s 2 @1016 ]
+"8295
+[s S541 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 . 2 0 :1:1 
+`Vui  1 MIDE 2 0 :1:0 
+]
+"8296
+[u S540 . 2 `S541  1 . 2 0 
+]
+[v _C2RXM1SIDbits `VS540  1 s 2 @1016 ]
+"8324
+[v _C2RXM1EIDH `Vui  1 s 2 @1018 ]
+"8341
+[s S543 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"8342
+[u S542 . 2 `S543  1 . 2 0 
+]
+[v _C2RXM1EIDHbits `VS542  1 s 2 @1018 ]
+"8370
+[v _C2RXM1EIDL `Vui  1 s 2 @1020 ]
+"8381
+[s S545 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 . 2 0 :10:0 
+]
+"8382
+[u S544 . 2 `S545  1 . 2 0 
+]
+[v _C2RXM1EIDLbits `VS544  1 s 2 @1020 ]
+"8398
+[v _C2TX2SID `Vui  1 s 2 @1024 ]
+"8416
+[s S547 . 2 `Vui  1 SID10 2 0 :1:15 
+`Vui  1 SID9 2 0 :1:14 
+`Vui  1 SID8 2 0 :1:13 
+`Vui  1 SID7 2 0 :1:12 
+`Vui  1 SID6 2 0 :1:11 
+`Vui  1 . 2 0 :3:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"8417
+[u S546 . 2 `S547  1 . 2 0 
+]
+[v _C2TX2SIDbits `VS546  1 s 2 @1024 ]
+"8447
+[v _C2TX2EID `Vui  1 s 2 @1026 ]
+"8464
+[s S549 . 2 `Vui  1 EID17 2 0 :1:15 
+`Vui  1 EID16 2 0 :1:14 
+`Vui  1 EID15 2 0 :1:13 
+`Vui  1 EID14 2 0 :1:12 
+`Vui  1 . 2 0 :4:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"8465
+[u S548 . 2 `S549  1 . 2 0 
+]
+[v _C2TX2EIDbits `VS548  1 s 2 @1026 ]
+"8493
+[v _C2TX2DLC `Vui  1 s 2 @1028 ]
+"8508
+[s S551 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 TXRTR 2 0 :1:9 
+`Vui  1 TXRB1 2 0 :1:8 
+`Vui  1 TXRB0 2 0 :1:7 
+`Vui  1 DLC 2 0 :4:3 
+`Vui  1 . 2 0 :3:0 
+]
+"8516
+[s S552 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DLC3 2 0 :1:6 
+`Vui  1 DLC2 2 0 :1:5 
+`Vui  1 DLC1 2 0 :1:4 
+`Vui  1 DLC0 2 0 :1:3 
+`Vui  1 . 2 0 :3:0 
+]
+"8517
+[u S550 . 2 `S551  1 . 2 0 
+`S552  1 . 2 0 
+]
+[v _C2TX2DLCbits `VS550  1 s 2 @1028 ]
+"8547
+[v _C2TX2B1 `Vui  1 s 2 @1030 ]
+"8553
+[s S554 . 2 `Vui  1 TXB2D1 2 0 :8:8 
+`Vui  1 TXB2D0 2 0 :8:0 
+]
+"8571
+[s S555 . 2 `Vui  1 TXB2D17 2 0 :1:15 
+`Vui  1 TXB2D16 2 0 :1:14 
+`Vui  1 TXB2D15 2 0 :1:13 
+`Vui  1 TXB2D14 2 0 :1:12 
+`Vui  1 TXB2D13 2 0 :1:11 
+`Vui  1 TXB2D12 2 0 :1:10 
+`Vui  1 TXB2D11 2 0 :1:9 
+`Vui  1 TXB2D10 2 0 :1:8 
+`Vui  1 TXB2D07 2 0 :1:7 
+`Vui  1 TXB2D06 2 0 :1:6 
+`Vui  1 TXB2D05 2 0 :1:5 
+`Vui  1 TXB2D04 2 0 :1:4 
+`Vui  1 TXB2D03 2 0 :1:3 
+`Vui  1 TXB2D02 2 0 :1:2 
+`Vui  1 TXB2D01 2 0 :1:1 
+`Vui  1 TXB2D00 2 0 :1:0 
+]
+"8572
+[u S553 . 2 `S554  1 . 2 0 
+`S555  1 . 2 0 
+]
+[v _C2TX2B1bits `VS553  1 s 2 @1030 ]
+"8608
+[v _C2TX2B2 `Vui  1 s 2 @1032 ]
+"8614
+[s S557 . 2 `Vui  1 TXB2D3 2 0 :8:8 
+`Vui  1 TXB2D2 2 0 :8:0 
+]
+"8632
+[s S558 . 2 `Vui  1 TXB2D37 2 0 :1:15 
+`Vui  1 TXB2D36 2 0 :1:14 
+`Vui  1 TXB2D35 2 0 :1:13 
+`Vui  1 TXB2D34 2 0 :1:12 
+`Vui  1 TXB2D33 2 0 :1:11 
+`Vui  1 TXB2D32 2 0 :1:10 
+`Vui  1 TXB2D31 2 0 :1:9 
+`Vui  1 TXB2D30 2 0 :1:8 
+`Vui  1 TXB2D27 2 0 :1:7 
+`Vui  1 TXB2D26 2 0 :1:6 
+`Vui  1 TXB2D25 2 0 :1:5 
+`Vui  1 TXB2D24 2 0 :1:4 
+`Vui  1 TXB2D23 2 0 :1:3 
+`Vui  1 TXB2D22 2 0 :1:2 
+`Vui  1 TXB2D21 2 0 :1:1 
+`Vui  1 TXB2D20 2 0 :1:0 
+]
+"8633
+[u S556 . 2 `S557  1 . 2 0 
+`S558  1 . 2 0 
+]
+[v _C2TX2B2bits `VS556  1 s 2 @1032 ]
+"8669
+[v _C2TX2B3 `Vui  1 s 2 @1034 ]
+"8675
+[s S560 . 2 `Vui  1 TXB2D5 2 0 :8:8 
+`Vui  1 TXB2D4 2 0 :8:0 
+]
+"8693
+[s S561 . 2 `Vui  1 TXB2D57 2 0 :1:15 
+`Vui  1 TXB2D56 2 0 :1:14 
+`Vui  1 TXB2D55 2 0 :1:13 
+`Vui  1 TXB2D54 2 0 :1:12 
+`Vui  1 TXB2D53 2 0 :1:11 
+`Vui  1 TXB2D52 2 0 :1:10 
+`Vui  1 TXB2D51 2 0 :1:9 
+`Vui  1 TXB2D50 2 0 :1:8 
+`Vui  1 TXB2D47 2 0 :1:7 
+`Vui  1 TXB2D46 2 0 :1:6 
+`Vui  1 TXB2D45 2 0 :1:5 
+`Vui  1 TXB2D44 2 0 :1:4 
+`Vui  1 TXB2D43 2 0 :1:3 
+`Vui  1 TXB2D42 2 0 :1:2 
+`Vui  1 TXB2D41 2 0 :1:1 
+`Vui  1 TXB2D40 2 0 :1:0 
+]
+"8694
+[u S559 . 2 `S560  1 . 2 0 
+`S561  1 . 2 0 
+]
+[v _C2TX2B3bits `VS559  1 s 2 @1034 ]
+"8696
+[v _TXB2D40 `Vb  1 s 0 @8272 ]
+"8697
+[v _TXB2D41 `Vb  1 s 0 @8273 ]
+"8698
+[v _TXB2D42 `Vb  1 s 0 @8274 ]
+"8699
+[v _TXB2D43 `Vb  1 s 0 @8275 ]
+"8700
+[v _TXB2D44 `Vb  1 s 0 @8276 ]
+"8701
+[v _TXB2D45 `Vb  1 s 0 @8277 ]
+"8702
+[v _TXB2D46 `Vb  1 s 0 @8278 ]
+"8703
+[v _TXB2D47 `Vb  1 s 0 @8279 ]
+"8722
+[v _C2TX2B4 `Vui  1 s 2 @1036 ]
+"8728
+[s S563 . 2 `Vui  1 TXB2D7 2 0 :8:8 
+`Vui  1 TXB2D6 2 0 :8:0 
+]
+"8746
+[s S564 . 2 `Vui  1 TXB2D77 2 0 :1:15 
+`Vui  1 TXB2D76 2 0 :1:14 
+`Vui  1 TXB2D75 2 0 :1:13 
+`Vui  1 TXB2D74 2 0 :1:12 
+`Vui  1 TXB2D73 2 0 :1:11 
+`Vui  1 TXB2D72 2 0 :1:10 
+`Vui  1 TXB2D71 2 0 :1:9 
+`Vui  1 TXB2D70 2 0 :1:8 
+`Vui  1 TXB2D67 2 0 :1:7 
+`Vui  1 TXB2D66 2 0 :1:6 
+`Vui  1 TXB2D65 2 0 :1:5 
+`Vui  1 TXB2D64 2 0 :1:4 
+`Vui  1 TXB2D63 2 0 :1:3 
+`Vui  1 TXB2D62 2 0 :1:2 
+`Vui  1 TXB2D61 2 0 :1:1 
+`Vui  1 TXB2D60 2 0 :1:0 
+]
+"8747
+[u S562 . 2 `S563  1 . 2 0 
+`S564  1 . 2 0 
+]
+[v _C2TX2B4bits `VS562  1 s 2 @1036 ]
+"8749
+[v _TXB2D60 `Vb  1 s 0 @8288 ]
+"8750
+[v _TXB2D61 `Vb  1 s 0 @8289 ]
+"8751
+[v _TXB2D62 `Vb  1 s 0 @8290 ]
+"8752
+[v _TXB2D63 `Vb  1 s 0 @8291 ]
+"8753
+[v _TXB2D64 `Vb  1 s 0 @8292 ]
+"8754
+[v _TXB2D65 `Vb  1 s 0 @8293 ]
+"8755
+[v _TXB2D66 `Vb  1 s 0 @8294 ]
+"8756
+[v _TXB2D67 `Vb  1 s 0 @8295 ]
+"8757
+[v _TXB2D70 `Vb  1 s 0 @8296 ]
+"8758
+[v _TXB2D71 `Vb  1 s 0 @8297 ]
+"8759
+[v _TXB2D72 `Vb  1 s 0 @8298 ]
+"8760
+[v _TXB2D73 `Vb  1 s 0 @8299 ]
+"8761
+[v _TXB2D74 `Vb  1 s 0 @8300 ]
+"8762
+[v _TXB2D75 `Vb  1 s 0 @8301 ]
+"8763
+[v _TXB2D76 `Vb  1 s 0 @8302 ]
+"8764
+[v _TXB2D77 `Vb  1 s 0 @8303 ]
+"8767
+[v _C2TX2CON `Vui  1 s 2 @1038 ]
+"8778
+[s S566 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 TXABT 2 0 :1:6 
+`Vui  1 TXLARB 2 0 :1:5 
+`Vui  1 TXERR 2 0 :1:4 
+`Vui  1 TXREQ 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TXPRI 2 0 :2:0 
+]
+"8783
+[s S567 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 TXPRI1 2 0 :1:1 
+`Vui  1 TXPRI0 2 0 :1:0 
+]
+"8784
+[u S565 . 2 `S566  1 . 2 0 
+`S567  1 . 2 0 
+]
+[v _C2TX2CONbits `VS565  1 s 2 @1038 ]
+"8800
+[v _C2TX1SID `Vui  1 s 2 @1040 ]
+"8818
+[s S569 . 2 `Vui  1 SID10 2 0 :1:15 
+`Vui  1 SID9 2 0 :1:14 
+`Vui  1 SID8 2 0 :1:13 
+`Vui  1 SID7 2 0 :1:12 
+`Vui  1 SID6 2 0 :1:11 
+`Vui  1 . 2 0 :3:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"8819
+[u S568 . 2 `S569  1 . 2 0 
+]
+[v _C2TX1SIDbits `VS568  1 s 2 @1040 ]
+"8849
+[v _C2TX1EID `Vui  1 s 2 @1042 ]
+"8866
+[s S571 . 2 `Vui  1 EID17 2 0 :1:15 
+`Vui  1 EID16 2 0 :1:14 
+`Vui  1 EID15 2 0 :1:13 
+`Vui  1 EID14 2 0 :1:12 
+`Vui  1 . 2 0 :4:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"8867
+[u S570 . 2 `S571  1 . 2 0 
+]
+[v _C2TX1EIDbits `VS570  1 s 2 @1042 ]
+"8895
+[v _C2TX1DLC `Vui  1 s 2 @1044 ]
+"8910
+[s S573 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 TXRTR 2 0 :1:9 
+`Vui  1 TXRB1 2 0 :1:8 
+`Vui  1 TXRB0 2 0 :1:7 
+`Vui  1 DLC 2 0 :4:3 
+`Vui  1 . 2 0 :3:0 
+]
+"8918
+[s S574 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 DLC3 2 0 :1:6 
+`Vui  1 DLC2 2 0 :1:5 
+`Vui  1 DLC1 2 0 :1:4 
+`Vui  1 DLC0 2 0 :1:3 
+`Vui  1 . 2 0 :3:0 
+]
+"8919
+[u S572 . 2 `S573  1 . 2 0 
+`S574  1 . 2 0 
+]
+[v _C2TX1DLCbits `VS572  1 s 2 @1044 ]
+"8949
+[v _C2TX1B1 `Vui  1 s 2 @1046 ]
+"8955
+[s S576 . 2 `Vui  1 TXB1D1 2 0 :8:8 
+`Vui  1 TXB1D0 2 0 :8:0 
+]
+"8973
+[s S577 . 2 `Vui  1 TXB1D17 2 0 :1:15 
+`Vui  1 TXB1D16 2 0 :1:14 
+`Vui  1 TXB1D15 2 0 :1:13 
+`Vui  1 TXB1D14 2 0 :1:12 
+`Vui  1 TXB1D13 2 0 :1:11 
+`Vui  1 TXB1D12 2 0 :1:10 
+`Vui  1 TXB1D11 2 0 :1:9 
+`Vui  1 TXB1D10 2 0 :1:8 
+`Vui  1 TXB1D07 2 0 :1:7 
+`Vui  1 TXB1D06 2 0 :1:6 
+`Vui  1 TXB1D05 2 0 :1:5 
+`Vui  1 TXB1D04 2 0 :1:4 
+`Vui  1 TXB1D03 2 0 :1:3 
+`Vui  1 TXB1D02 2 0 :1:2 
+`Vui  1 TXB1D01 2 0 :1:1 
+`Vui  1 TXB1D00 2 0 :1:0 
+]
+"8974
+[u S575 . 2 `S576  1 . 2 0 
+`S577  1 . 2 0 
+]
+[v _C2TX1B1bits `VS575  1 s 2 @1046 ]
+"9010
+[v _C2TX1B2 `Vui  1 s 2 @1048 ]
+"9016
+[s S579 . 2 `Vui  1 TXB1D3 2 0 :8:8 
+`Vui  1 TXB1D2 2 0 :8:0 
+]
+"9034
+[s S580 . 2 `Vui  1 TXB1D37 2 0 :1:15 
+`Vui  1 TXB1D36 2 0 :1:14 
+`Vui  1 TXB1D35 2 0 :1:13 
+`Vui  1 TXB1D34 2 0 :1:12 
+`Vui  1 TXB1D33 2 0 :1:11 
+`Vui  1 TXB1D32 2 0 :1:10 
+`Vui  1 TXB1D31 2 0 :1:9 
+`Vui  1 TXB1D30 2 0 :1:8 
+`Vui  1 TXB1D27 2 0 :1:7 
+`Vui  1 TXB1D26 2 0 :1:6 
+`Vui  1 TXB1D25 2 0 :1:5 
+`Vui  1 TXB1D24 2 0 :1:4 
+`Vui  1 TXB1D23 2 0 :1:3 
+`Vui  1 TXB1D22 2 0 :1:2 
+`Vui  1 TXB1D21 2 0 :1:1 
+`Vui  1 TXB1D20 2 0 :1:0 
+]
+"9035
+[u S578 . 2 `S579  1 . 2 0 
+`S580  1 . 2 0 
+]
+[v _C2TX1B2bits `VS578  1 s 2 @1048 ]
+"9071
+[v _C2TX1B3 `Vui  1 s 2 @1050 ]
+"9077
+[s S582 . 2 `Vui  1 TXB1D5 2 0 :8:8 
+`Vui  1 TXB1D4 2 0 :8:0 
+]
+"9095
+[s S583 . 2 `Vui  1 TXB1D57 2 0 :1:15 
+`Vui  1 TXB1D56 2 0 :1:14 
+`Vui  1 TXB1D55 2 0 :1:13 
+`Vui  1 TXB1D54 2 0 :1:12 
+`Vui  1 TXB1D53 2 0 :1:11 
+`Vui  1 TXB1D52 2 0 :1:10 
+`Vui  1 TXB1D51 2 0 :1:9 
+`Vui  1 TXB1D50 2 0 :1:8 
+`Vui  1 TXB1D47 2 0 :1:7 
+`Vui  1 TXB1D46 2 0 :1:6 
+`Vui  1 TXB1D45 2 0 :1:5 
+`Vui  1 TXB1D44 2 0 :1:4 
+`Vui  1 TXB1D43 2 0 :1:3 
+`Vui  1 TXB1D42 2 0 :1:2 
+`Vui  1 TXB1D41 2 0 :1:1 
+`Vui  1 TXB1D40 2 0 :1:0 
+]
+"9096
+[u S581 . 2 `S582  1 . 2 0 
+`S583  1 . 2 0 
+]
+[v _C2TX1B3bits `VS581  1 s 2 @1050 ]
+"9132
+[v _C2TX1B4 `Vui  1 s 2 @1052 ]
+"9138
+[s S585 . 2 `Vui  1 TXB1D7 2 0 :8:8 
+`Vui  1 TXB1D6 2 0 :8:0 
+]
+"9156
+[s S586 . 2 `Vui  1 TXB1D77 2 0 :1:15 
+`Vui  1 TXB1D76 2 0 :1:14 
+`Vui  1 TXB1D75 2 0 :1:13 
+`Vui  1 TXB1D74 2 0 :1:12 
+`Vui  1 TXB1D73 2 0 :1:11 
+`Vui  1 TXB1D72 2 0 :1:10 
+`Vui  1 TXB1D71 2 0 :1:9 
+`Vui  1 TXB1D70 2 0 :1:8 
+`Vui  1 TXB1D67 2 0 :1:7 
+`Vui  1 TXB1D66 2 0 :1:6 
+`Vui  1 TXB1D65 2 0 :1:5 
+`Vui  1 TXB1D64 2 0 :1:4 
+`Vui  1 TXB1D63 2 0 :1:3 
+`Vui  1 TXB1D62 2 0 :1:2 
+`Vui  1 TXB1D61 2 0 :1:1 
+`Vui  1 TXB1D60 2 0 :1:0 
+]
+"9157
+[u S584 . 2 `S585  1 . 2 0 
+`S586  1 . 2 0 
+]
+[v _C2TX1B4bits `VS584  1 s 2 @1052 ]
+"9193
+[v _C2TX1CON `Vui  1 s 2 @1054 ]
+"9204
+[s S588 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 TXABT 2 0 :1:6 
+`Vui  1 TXLARB 2 0 :1:5 
+`Vui  1 TXERR 2 0 :1:4 
+`Vui  1 TXREQ 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TXPRI 2 0 :2:0 
+]
+"9209
+[s S589 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 TXPRI1 2 0 :1:1 
+`Vui  1 TXPRI0 2 0 :1:0 
+]
+"9210
+[u S587 . 2 `S588  1 . 2 0 
+`S589  1 . 2 0 
+]
+[v _C2TX1CONbits `VS587  1 s 2 @1054 ]
+"9226
+[v _C2TX0SID `Vui  1 s 2 @1056 ]
+"9244
+[s S591 . 2 `Vui  1 SID10 2 0 :1:15 
+`Vui  1 SID9 2 0 :1:14 
+`Vui  1 SID8 2 0 :1:13 
+`Vui  1 SID7 2 0 :1:12 
+`Vui  1 SID6 2 0 :1:11 
+`Vui  1 . 2 0 :3:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"9245
+[u S590 . 2 `S591  1 . 2 0 
+]
+[v _C2TX0SIDbits `VS590  1 s 2 @1056 ]
+"9275
+[v _C2TX0EID `Vui  1 s 2 @1058 ]
+"9292
+[s S593 . 2 `Vui  1 EID17 2 0 :1:15 
+`Vui  1 EID16 2 0 :1:14 
+`Vui  1 EID15 2 0 :1:13 
+`Vui  1 EID14 2 0 :1:12 
+`Vui  1 . 2 0 :4:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"9293
+[u S592 . 2 `S593  1 . 2 0 
+]
+[v _C2TX0EIDbits `VS592  1 s 2 @1058 ]
+"9321
+[v _C2TX0DLC `Vui  1 s 2 @1060 ]
+"9336
+[s S595 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 TXRTR 2 0 :1:9 
+`Vui  1 TXRB1 2 0 :1:8 
+`Vui  1 TXRB0 2 0 :1:7 
+`Vui  1 DLC 2 0 :4:3 
+`Vui  1 . 2 0 :3:0 
+]
+"9337
+[u S594 . 2 `S595  1 . 2 0 
+]
+[v _C2TX0DLCbits `VS594  1 s 2 @1060 ]
+"9359
+[v _C2TX0B1 `Vui  1 s 2 @1062 ]
+"9365
+[s S597 . 2 `Vui  1 TXB0D1 2 0 :8:8 
+`Vui  1 TXB0D0 2 0 :8:0 
+]
+"9383
+[s S598 . 2 `Vui  1 TXB0D17 2 0 :1:15 
+`Vui  1 TXB0D16 2 0 :1:14 
+`Vui  1 TXB0D15 2 0 :1:13 
+`Vui  1 TXB0D14 2 0 :1:12 
+`Vui  1 TXB0D13 2 0 :1:11 
+`Vui  1 TXB0D12 2 0 :1:10 
+`Vui  1 TXB0D11 2 0 :1:9 
+`Vui  1 TXB0D10 2 0 :1:8 
+`Vui  1 TXB0D07 2 0 :1:7 
+`Vui  1 TXB0D06 2 0 :1:6 
+`Vui  1 TXB0D05 2 0 :1:5 
+`Vui  1 TXB0D04 2 0 :1:4 
+`Vui  1 TXB0D03 2 0 :1:3 
+`Vui  1 TXB0D02 2 0 :1:2 
+`Vui  1 TXB0D01 2 0 :1:1 
+`Vui  1 TXB0D00 2 0 :1:0 
+]
+"9384
+[u S596 . 2 `S597  1 . 2 0 
+`S598  1 . 2 0 
+]
+[v _C2TX0B1bits `VS596  1 s 2 @1062 ]
+"9420
+[v _C2TX0B2 `Vui  1 s 2 @1064 ]
+"9426
+[s S600 . 2 `Vui  1 TXB0D3 2 0 :8:8 
+`Vui  1 TXB0D2 2 0 :8:0 
+]
+"9444
+[s S601 . 2 `Vui  1 TXB0D37 2 0 :1:15 
+`Vui  1 TXB0D36 2 0 :1:14 
+`Vui  1 TXB0D35 2 0 :1:13 
+`Vui  1 TXB0D34 2 0 :1:12 
+`Vui  1 TXB0D33 2 0 :1:11 
+`Vui  1 TXB0D32 2 0 :1:10 
+`Vui  1 TXB0D31 2 0 :1:9 
+`Vui  1 TXB0D30 2 0 :1:8 
+`Vui  1 TXB0D27 2 0 :1:7 
+`Vui  1 TXB0D26 2 0 :1:6 
+`Vui  1 TXB0D25 2 0 :1:5 
+`Vui  1 TXB0D24 2 0 :1:4 
+`Vui  1 TXB0D23 2 0 :1:3 
+`Vui  1 TXB0D22 2 0 :1:2 
+`Vui  1 TXB0D21 2 0 :1:1 
+`Vui  1 TXB0D20 2 0 :1:0 
+]
+"9445
+[u S599 . 2 `S600  1 . 2 0 
+`S601  1 . 2 0 
+]
+[v _C2TX0B2bits `VS599  1 s 2 @1064 ]
+"9481
+[v _C2TX0B3 `Vui  1 s 2 @1066 ]
+"9487
+[s S603 . 2 `Vui  1 TXB0D5 2 0 :8:8 
+`Vui  1 TXB0D4 2 0 :8:0 
+]
+"9505
+[s S604 . 2 `Vui  1 TXB0D57 2 0 :1:15 
+`Vui  1 TXB0D56 2 0 :1:14 
+`Vui  1 TXB0D55 2 0 :1:13 
+`Vui  1 TXB0D54 2 0 :1:12 
+`Vui  1 TXB0D53 2 0 :1:11 
+`Vui  1 TXB0D52 2 0 :1:10 
+`Vui  1 TXB0D51 2 0 :1:9 
+`Vui  1 TXB0D50 2 0 :1:8 
+`Vui  1 TXB0D47 2 0 :1:7 
+`Vui  1 TXB0D46 2 0 :1:6 
+`Vui  1 TXB0D45 2 0 :1:5 
+`Vui  1 TXB0D44 2 0 :1:4 
+`Vui  1 TXB0D43 2 0 :1:3 
+`Vui  1 TXB0D42 2 0 :1:2 
+`Vui  1 TXB0D41 2 0 :1:1 
+`Vui  1 TXB0D40 2 0 :1:0 
+]
+"9506
+[u S602 . 2 `S603  1 . 2 0 
+`S604  1 . 2 0 
+]
+[v _C2TX0B3bits `VS602  1 s 2 @1066 ]
+"9542
+[v _C2TX0B4 `Vui  1 s 2 @1068 ]
+"9548
+[s S606 . 2 `Vui  1 TXB0D7 2 0 :8:8 
+`Vui  1 TXB0D6 2 0 :8:0 
+]
+"9566
+[s S607 . 2 `Vui  1 TXB0D77 2 0 :1:15 
+`Vui  1 TXB0D76 2 0 :1:14 
+`Vui  1 TXB0D75 2 0 :1:13 
+`Vui  1 TXB0D74 2 0 :1:12 
+`Vui  1 TXB0D73 2 0 :1:11 
+`Vui  1 TXB0D72 2 0 :1:10 
+`Vui  1 TXB0D71 2 0 :1:9 
+`Vui  1 TXB0D70 2 0 :1:8 
+`Vui  1 TXB0D67 2 0 :1:7 
+`Vui  1 TXB0D66 2 0 :1:6 
+`Vui  1 TXB0D65 2 0 :1:5 
+`Vui  1 TXB0D64 2 0 :1:4 
+`Vui  1 TXB0D63 2 0 :1:3 
+`Vui  1 TXB0D62 2 0 :1:2 
+`Vui  1 TXB0D61 2 0 :1:1 
+`Vui  1 TXB0D60 2 0 :1:0 
+]
+"9567
+[u S605 . 2 `S606  1 . 2 0 
+`S607  1 . 2 0 
+]
+[v _C2TX0B4bits `VS605  1 s 2 @1068 ]
+"9603
+[v _C2TX0CON `Vui  1 s 2 @1070 ]
+"9614
+[s S609 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 TXABT 2 0 :1:6 
+`Vui  1 TXLARB 2 0 :1:5 
+`Vui  1 TXERR 2 0 :1:4 
+`Vui  1 TXREQ 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 TXPRI 2 0 :2:0 
+]
+"9619
+[s S610 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 TXPRI1 2 0 :1:1 
+`Vui  1 TXPRI0 2 0 :1:0 
+]
+"9620
+[u S608 . 2 `S609  1 . 2 0 
+`S610  1 . 2 0 
+]
+[v _C2TX0CONbits `VS608  1 s 2 @1070 ]
+"9636
+[v _C2RX1SID `Vui  1 s 2 @1072 ]
+"9654
+[s S612 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"9655
+[u S611 . 2 `S612  1 . 2 0 
+]
+[v _C2RX1SIDbits `VS611  1 s 2 @1072 ]
+"9685
+[v _C2RX1EID `Vui  1 s 2 @1074 ]
+"9702
+[s S614 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"9703
+[u S613 . 2 `S614  1 . 2 0 
+]
+[v _C2RX1EIDbits `VS613  1 s 2 @1074 ]
+"9731
+[v _C2RX1DLC `Vui  1 s 2 @1076 ]
+"9746
+[s S616 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 RXRTR 2 0 :1:9 
+`Vui  1 RXRB1 2 0 :1:8 
+`Vui  1 . 2 0 :3:5 
+`Vui  1 RXRB0 2 0 :1:4 
+`Vui  1 DLC 2 0 :4:0 
+]
+"9753
+[s S617 . 2 `Vui  1 . 2 0 :12:4 
+`Vui  1 DLC3 2 0 :1:3 
+`Vui  1 DLC2 2 0 :1:2 
+`Vui  1 DLC1 2 0 :1:1 
+`Vui  1 DLC0 2 0 :1:0 
+]
+"9754
+[u S615 . 2 `S616  1 . 2 0 
+`S617  1 . 2 0 
+]
+[v _C2RX1DLCbits `VS615  1 s 2 @1076 ]
+"9784
+[v _C2RX1B1 `Vui  1 s 2 @1078 ]
+"9790
+[s S619 . 2 `Vui  1 TXB1D1 2 0 :8:8 
+`Vui  1 TXB1D0 2 0 :8:0 
+]
+"9808
+[s S620 . 2 `Vui  1 TXB1D17 2 0 :1:15 
+`Vui  1 TXB1D16 2 0 :1:14 
+`Vui  1 TXB1D15 2 0 :1:13 
+`Vui  1 TXB1D14 2 0 :1:12 
+`Vui  1 TXB1D13 2 0 :1:11 
+`Vui  1 TXB1D12 2 0 :1:10 
+`Vui  1 TXB1D11 2 0 :1:9 
+`Vui  1 TXB1D10 2 0 :1:8 
+`Vui  1 TXB1D07 2 0 :1:7 
+`Vui  1 TXB1D06 2 0 :1:6 
+`Vui  1 TXB1D05 2 0 :1:5 
+`Vui  1 TXB1D04 2 0 :1:4 
+`Vui  1 TXB1D03 2 0 :1:3 
+`Vui  1 TXB1D02 2 0 :1:2 
+`Vui  1 TXB1D01 2 0 :1:1 
+`Vui  1 TXB1D00 2 0 :1:0 
+]
+"9809
+[u S618 . 2 `S619  1 . 2 0 
+`S620  1 . 2 0 
+]
+[v _C2RX1B1bits `VS618  1 s 2 @1078 ]
+"9845
+[v _C2RX1B2 `Vui  1 s 2 @1080 ]
+"9851
+[s S622 . 2 `Vui  1 TXB1D3 2 0 :8:8 
+`Vui  1 TXB1D2 2 0 :8:0 
+]
+"9869
+[s S623 . 2 `Vui  1 TXB1D37 2 0 :1:15 
+`Vui  1 TXB1D36 2 0 :1:14 
+`Vui  1 TXB1D35 2 0 :1:13 
+`Vui  1 TXB1D34 2 0 :1:12 
+`Vui  1 TXB1D33 2 0 :1:11 
+`Vui  1 TXB1D32 2 0 :1:10 
+`Vui  1 TXB1D31 2 0 :1:9 
+`Vui  1 TXB1D30 2 0 :1:8 
+`Vui  1 TXB1D27 2 0 :1:7 
+`Vui  1 TXB1D26 2 0 :1:6 
+`Vui  1 TXB1D25 2 0 :1:5 
+`Vui  1 TXB1D24 2 0 :1:4 
+`Vui  1 TXB1D23 2 0 :1:3 
+`Vui  1 TXB1D22 2 0 :1:2 
+`Vui  1 TXB1D21 2 0 :1:1 
+`Vui  1 TXB1D20 2 0 :1:0 
+]
+"9870
+[u S621 . 2 `S622  1 . 2 0 
+`S623  1 . 2 0 
+]
+[v _C2RX1B2bits `VS621  1 s 2 @1080 ]
+"9906
+[v _C2RX1B3 `Vui  1 s 2 @1082 ]
+"9912
+[s S625 . 2 `Vui  1 TXB1D5 2 0 :8:8 
+`Vui  1 TXB1D4 2 0 :8:0 
+]
+"9930
+[s S626 . 2 `Vui  1 TXB1D57 2 0 :1:15 
+`Vui  1 TXB1D56 2 0 :1:14 
+`Vui  1 TXB1D55 2 0 :1:13 
+`Vui  1 TXB1D54 2 0 :1:12 
+`Vui  1 TXB1D53 2 0 :1:11 
+`Vui  1 TXB1D52 2 0 :1:10 
+`Vui  1 TXB1D51 2 0 :1:9 
+`Vui  1 TXB1D50 2 0 :1:8 
+`Vui  1 TXB1D47 2 0 :1:7 
+`Vui  1 TXB1D46 2 0 :1:6 
+`Vui  1 TXB1D45 2 0 :1:5 
+`Vui  1 TXB1D44 2 0 :1:4 
+`Vui  1 TXB1D43 2 0 :1:3 
+`Vui  1 TXB1D42 2 0 :1:2 
+`Vui  1 TXB1D41 2 0 :1:1 
+`Vui  1 TXB1D40 2 0 :1:0 
+]
+"9931
+[u S624 . 2 `S625  1 . 2 0 
+`S626  1 . 2 0 
+]
+[v _C2RX1B3bits `VS624  1 s 2 @1082 ]
+"9967
+[v _C2RX1B4 `Vui  1 s 2 @1084 ]
+"9973
+[s S628 . 2 `Vui  1 TXB1D7 2 0 :8:8 
+`Vui  1 TXB1D6 2 0 :8:0 
+]
+"9991
+[s S629 . 2 `Vui  1 TXB1D77 2 0 :1:15 
+`Vui  1 TXB1D76 2 0 :1:14 
+`Vui  1 TXB1D75 2 0 :1:13 
+`Vui  1 TXB1D74 2 0 :1:12 
+`Vui  1 TXB1D73 2 0 :1:11 
+`Vui  1 TXB1D72 2 0 :1:10 
+`Vui  1 TXB1D71 2 0 :1:9 
+`Vui  1 TXB1D70 2 0 :1:8 
+`Vui  1 TXB1D67 2 0 :1:7 
+`Vui  1 TXB1D66 2 0 :1:6 
+`Vui  1 TXB1D65 2 0 :1:5 
+`Vui  1 TXB1D64 2 0 :1:4 
+`Vui  1 TXB1D63 2 0 :1:3 
+`Vui  1 TXB1D62 2 0 :1:2 
+`Vui  1 TXB1D61 2 0 :1:1 
+`Vui  1 TXB1D60 2 0 :1:0 
+]
+"9992
+[u S627 . 2 `S628  1 . 2 0 
+`S629  1 . 2 0 
+]
+[v _C2RX1B4bits `VS627  1 s 2 @1084 ]
+"10028
+[v _C2RX1CON `Vui  1 s 2 @1086 ]
+"10037
+[s S631 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 RXFUL 2 0 :1:7 
+`Vui  1 . 2 0 :3:4 
+`Vui  1 RXRTRRO 2 0 :1:3 
+`Vui  1 FILHIT 2 0 :3:0 
+]
+"10043
+[s S632 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 FILHIT2 2 0 :1:2 
+`Vui  1 FILHIT1 2 0 :1:1 
+`Vui  1 FILHIT0 2 0 :1:0 
+]
+"10044
+[u S630 . 2 `S631  1 . 2 0 
+`S632  1 . 2 0 
+]
+[v _C2RX1CONbits `VS630  1 s 2 @1086 ]
+"10058
+[v _C2RX0SID `Vui  1 s 2 @1088 ]
+"10076
+[s S634 . 2 `Vui  1 . 2 0 :3:13 
+`Vui  1 SID10 2 0 :1:12 
+`Vui  1 SID9 2 0 :1:11 
+`Vui  1 SID8 2 0 :1:10 
+`Vui  1 SID7 2 0 :1:9 
+`Vui  1 SID6 2 0 :1:8 
+`Vui  1 SID5 2 0 :1:7 
+`Vui  1 SID4 2 0 :1:6 
+`Vui  1 SID3 2 0 :1:5 
+`Vui  1 SID2 2 0 :1:4 
+`Vui  1 SID1 2 0 :1:3 
+`Vui  1 SID0 2 0 :1:2 
+`Vui  1 SRR 2 0 :1:1 
+`Vui  1 TXIDE 2 0 :1:0 
+]
+"10077
+[u S633 . 2 `S634  1 . 2 0 
+]
+[v _C2RX0SIDbits `VS633  1 s 2 @1088 ]
+"10107
+[v _C2RX0EID `Vui  1 s 2 @1090 ]
+"10124
+[s S636 . 2 `Vui  1 . 2 0 :4:12 
+`Vui  1 EID17 2 0 :1:11 
+`Vui  1 EID16 2 0 :1:10 
+`Vui  1 EID15 2 0 :1:9 
+`Vui  1 EID14 2 0 :1:8 
+`Vui  1 EID13 2 0 :1:7 
+`Vui  1 EID12 2 0 :1:6 
+`Vui  1 EID11 2 0 :1:5 
+`Vui  1 EID10 2 0 :1:4 
+`Vui  1 EID9 2 0 :1:3 
+`Vui  1 EID8 2 0 :1:2 
+`Vui  1 EID7 2 0 :1:1 
+`Vui  1 EID6 2 0 :1:0 
+]
+"10125
+[u S635 . 2 `S636  1 . 2 0 
+]
+[v _C2RX0EIDbits `VS635  1 s 2 @1090 ]
+"10153
+[v _C2RX0DLC `Vui  1 s 2 @1092 ]
+"10168
+[s S638 . 2 `Vui  1 EID5 2 0 :1:15 
+`Vui  1 EID4 2 0 :1:14 
+`Vui  1 EID3 2 0 :1:13 
+`Vui  1 EID2 2 0 :1:12 
+`Vui  1 EID1 2 0 :1:11 
+`Vui  1 EID0 2 0 :1:10 
+`Vui  1 RXRTR 2 0 :1:9 
+`Vui  1 RXRB1 2 0 :1:8 
+`Vui  1 . 2 0 :3:5 
+`Vui  1 RXRB0 2 0 :1:4 
+`Vui  1 DLC 2 0 :4:0 
+]
+"10175
+[s S639 . 2 `Vui  1 . 2 0 :12:4 
+`Vui  1 DLC3 2 0 :1:3 
+`Vui  1 DLC2 2 0 :1:2 
+`Vui  1 DLC1 2 0 :1:1 
+`Vui  1 DLC0 2 0 :1:0 
+]
+"10176
+[u S637 . 2 `S638  1 . 2 0 
+`S639  1 . 2 0 
+]
+[v _C2RX0DLCbits `VS637  1 s 2 @1092 ]
+"10206
+[v _C2RX0B1 `Vui  1 s 2 @1094 ]
+"10212
+[s S641 . 2 `Vui  1 TXB0D1 2 0 :8:8 
+`Vui  1 TXB0D0 2 0 :8:0 
+]
+"10230
+[s S642 . 2 `Vui  1 TXB0D17 2 0 :1:15 
+`Vui  1 TXB0D16 2 0 :1:14 
+`Vui  1 TXB0D15 2 0 :1:13 
+`Vui  1 TXB0D14 2 0 :1:12 
+`Vui  1 TXB0D13 2 0 :1:11 
+`Vui  1 TXB0D12 2 0 :1:10 
+`Vui  1 TXB0D11 2 0 :1:9 
+`Vui  1 TXB0D10 2 0 :1:8 
+`Vui  1 TXB0D07 2 0 :1:7 
+`Vui  1 TXB0D06 2 0 :1:6 
+`Vui  1 TXB0D05 2 0 :1:5 
+`Vui  1 TXB0D04 2 0 :1:4 
+`Vui  1 TXB0D03 2 0 :1:3 
+`Vui  1 TXB0D02 2 0 :1:2 
+`Vui  1 TXB0D01 2 0 :1:1 
+`Vui  1 TXB0D00 2 0 :1:0 
+]
+"10231
+[u S640 . 2 `S641  1 . 2 0 
+`S642  1 . 2 0 
+]
+[v _C2RX0B1bits `VS640  1 s 2 @1094 ]
+"10267
+[v _C2RX0B2 `Vui  1 s 2 @1096 ]
+"10273
+[s S644 . 2 `Vui  1 TXB0D3 2 0 :8:8 
+`Vui  1 TXB0D2 2 0 :8:0 
+]
+"10291
+[s S645 . 2 `Vui  1 TXB0D37 2 0 :1:15 
+`Vui  1 TXB0D36 2 0 :1:14 
+`Vui  1 TXB0D35 2 0 :1:13 
+`Vui  1 TXB0D34 2 0 :1:12 
+`Vui  1 TXB0D33 2 0 :1:11 
+`Vui  1 TXB0D32 2 0 :1:10 
+`Vui  1 TXB0D31 2 0 :1:9 
+`Vui  1 TXB0D30 2 0 :1:8 
+`Vui  1 TXB0D27 2 0 :1:7 
+`Vui  1 TXB0D26 2 0 :1:6 
+`Vui  1 TXB0D25 2 0 :1:5 
+`Vui  1 TXB0D24 2 0 :1:4 
+`Vui  1 TXB0D23 2 0 :1:3 
+`Vui  1 TXB0D22 2 0 :1:2 
+`Vui  1 TXB0D21 2 0 :1:1 
+`Vui  1 TXB0D20 2 0 :1:0 
+]
+"10292
+[u S643 . 2 `S644  1 . 2 0 
+`S645  1 . 2 0 
+]
+[v _C2RX0B2bits `VS643  1 s 2 @1096 ]
+"10328
+[v _C2RX0B3 `Vui  1 s 2 @1098 ]
+"10334
+[s S647 . 2 `Vui  1 TXB0D5 2 0 :8:8 
+`Vui  1 TXB0D4 2 0 :8:0 
+]
+"10352
+[s S648 . 2 `Vui  1 TXB0D57 2 0 :1:15 
+`Vui  1 TXB0D56 2 0 :1:14 
+`Vui  1 TXB0D55 2 0 :1:13 
+`Vui  1 TXB0D54 2 0 :1:12 
+`Vui  1 TXB0D53 2 0 :1:11 
+`Vui  1 TXB0D52 2 0 :1:10 
+`Vui  1 TXB0D51 2 0 :1:9 
+`Vui  1 TXB0D50 2 0 :1:8 
+`Vui  1 TXB0D47 2 0 :1:7 
+`Vui  1 TXB0D46 2 0 :1:6 
+`Vui  1 TXB0D45 2 0 :1:5 
+`Vui  1 TXB0D44 2 0 :1:4 
+`Vui  1 TXB0D43 2 0 :1:3 
+`Vui  1 TXB0D42 2 0 :1:2 
+`Vui  1 TXB0D41 2 0 :1:1 
+`Vui  1 TXB0D40 2 0 :1:0 
+]
+"10353
+[u S646 . 2 `S647  1 . 2 0 
+`S648  1 . 2 0 
+]
+[v _C2RX0B3bits `VS646  1 s 2 @1098 ]
+"10389
+[v _C2RX0B4 `Vui  1 s 2 @1100 ]
+"10395
+[s S650 . 2 `Vui  1 TXB0D7 2 0 :8:8 
+`Vui  1 TXB0D6 2 0 :8:0 
+]
+"10413
+[s S651 . 2 `Vui  1 TXB0D77 2 0 :1:15 
+`Vui  1 TXB0D76 2 0 :1:14 
+`Vui  1 TXB0D75 2 0 :1:13 
+`Vui  1 TXB0D74 2 0 :1:12 
+`Vui  1 TXB0D73 2 0 :1:11 
+`Vui  1 TXB0D72 2 0 :1:10 
+`Vui  1 TXB0D71 2 0 :1:9 
+`Vui  1 TXB0D70 2 0 :1:8 
+`Vui  1 TXB0D67 2 0 :1:7 
+`Vui  1 TXB0D66 2 0 :1:6 
+`Vui  1 TXB0D65 2 0 :1:5 
+`Vui  1 TXB0D64 2 0 :1:4 
+`Vui  1 TXB0D63 2 0 :1:3 
+`Vui  1 TXB0D62 2 0 :1:2 
+`Vui  1 TXB0D61 2 0 :1:1 
+`Vui  1 TXB0D60 2 0 :1:0 
+]
+"10414
+[u S649 . 2 `S650  1 . 2 0 
+`S651  1 . 2 0 
+]
+[v _C2RX0B4bits `VS649  1 s 2 @1100 ]
+"10450
+[v _C2RX0CON `Vui  1 s 2 @1102 ]
+"10461
+[s S653 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 RXFUL 2 0 :1:7 
+`Vui  1 . 2 0 :3:4 
+`Vui  1 RXRTRRO 2 0 :1:3 
+`Vui  1 RXB0DBEN 2 0 :1:2 
+`Vui  1 JTOFF 2 0 :1:1 
+`Vui  1 FILHIT 2 0 :1:0 
+]
+"10462
+[u S652 . 2 `S653  1 . 2 0 
+]
+[v _C2RX0CONbits `VS652  1 s 2 @1102 ]
+"10476
+[v _C2CTRL `Vui  1 s 2 @1104 ]
+"10490
+[s S655 . 2 `Vui  1 CANCAP 2 0 :1:15 
+`Vui  1 CANFRZ 2 0 :1:14 
+`Vui  1 CANSIDL 2 0 :1:13 
+`Vui  1 ABAT 2 0 :1:12 
+`Vui  1 CANCKS 2 0 :1:11 
+`Vui  1 REQOP 2 0 :3:8 
+`Vui  1 OPMODE 2 0 :3:5 
+`Vui  1 . 2 0 :1:4 
+`Vui  1 ICOD 2 0 :3:1 
+`Vui  1 . 2 0 :1:0 
+]
+"10504
+[s S656 . 2 `Vui  1 . 2 0 :5:11 
+`Vui  1 REQOP2 2 0 :1:10 
+`Vui  1 REQOP1 2 0 :1:9 
+`Vui  1 REQOP0 2 0 :1:8 
+`Vui  1 OPMODE2 2 0 :1:7 
+`Vui  1 OPMODE1 2 0 :1:6 
+`Vui  1 OPMODE0 2 0 :1:5 
+`Vui  1 . 2 0 :1:4 
+`Vui  1 ICOD2 2 0 :1:3 
+`Vui  1 ICOD1 2 0 :1:2 
+`Vui  1 ICOD0 2 0 :1:1 
+`Vui  1 . 2 0 :1:0 
+]
+"10505
+[u S654 . 2 `S655  1 . 2 0 
+`S656  1 . 2 0 
+]
+[v _C2CTRLbits `VS654  1 s 2 @1104 ]
+"10537
+[v _C2CFG1 `Vui  1 s 2 @1106 ]
+"10544
+[s S658 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 SJW 2 0 :2:6 
+`Vui  1 BRP 2 0 :6:0 
+]
+"10555
+[s S659 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 SJW1 2 0 :1:7 
+`Vui  1 SJW0 2 0 :1:6 
+`Vui  1 BRP5 2 0 :1:5 
+`Vui  1 BRP4 2 0 :1:4 
+`Vui  1 BRP3 2 0 :1:3 
+`Vui  1 BRP2 2 0 :1:2 
+`Vui  1 BRP1 2 0 :1:1 
+`Vui  1 BRP0 2 0 :1:0 
+]
+"10556
+[u S657 . 2 `S658  1 . 2 0 
+`S659  1 . 2 0 
+]
+[v _C2CFG1bits `VS657  1 s 2 @1106 ]
+"10576
+[v _C2CFG2 `Vui  1 s 2 @1108 ]
+"10588
+[s S661 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 WAKFIL 2 0 :1:14 
+`Vui  1 . 2 0 :3:11 
+`Vui  1 SEG2PH 2 0 :3:8 
+`Vui  1 SEG2PHTS 2 0 :1:7 
+`Vui  1 SAM 2 0 :1:6 
+`Vui  1 SEG1PH 2 0 :3:3 
+`Vui  1 PRSEG 2 0 :3:0 
+]
+"10601
+[s S662 . 2 `Vui  1 . 2 0 :5:11 
+`Vui  1 SEG2PH2 2 0 :1:10 
+`Vui  1 SEG2PH1 2 0 :1:9 
+`Vui  1 SEG2PH0 2 0 :1:8 
+`Vui  1 . 2 0 :2:6 
+`Vui  1 SEG1PH2 2 0 :1:5 
+`Vui  1 SEG1PH1 2 0 :1:4 
+`Vui  1 SEG1PH0 2 0 :1:3 
+`Vui  1 PRSEG2 2 0 :1:2 
+`Vui  1 PRSEG1 2 0 :1:1 
+`Vui  1 PRSEG0 2 0 :1:0 
+]
+"10602
+[u S660 . 2 `S661  1 . 2 0 
+`S662  1 . 2 0 
+]
+[v _C2CFG2bits `VS660  1 s 2 @1108 ]
+"10630
+[v _C2INTF `Vui  1 s 2 @1110 ]
+"10650
+[s S664 . 2 `Vui  1 RXB0OVFL 2 0 :1:15 
+`Vui  1 RXB1OVFL 2 0 :1:14 
+`Vui  1 TXBO 2 0 :1:13 
+`Vui  1 TXBP 2 0 :1:12 
+`Vui  1 RXBP 2 0 :1:11 
+`Vui  1 TXWARN 2 0 :1:10 
+`Vui  1 RXWARN 2 0 :1:9 
+`Vui  1 EWARN 2 0 :1:8 
+`Vui  1 IRXIF 2 0 :1:7 
+`Vui  1 WAKIF 2 0 :1:6 
+`Vui  1 ERRIF 2 0 :1:5 
+`Vui  1 TXB2IF 2 0 :1:4 
+`Vui  1 TXB1IF 2 0 :1:3 
+`Vui  1 TXB0IF 2 0 :1:2 
+`Vui  1 RXB1IF 2 0 :1:1 
+`Vui  1 RXB0IF 2 0 :1:0 
+]
+"10651
+[u S663 . 2 `S664  1 . 2 0 
+]
+[v _C2INTFbits `VS663  1 s 2 @1110 ]
+"10687
+[v _C2INTE `Vui  1 s 2 @1112 ]
+"10700
+[s S666 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 IRXIE 2 0 :1:7 
+`Vui  1 WAKIE 2 0 :1:6 
+`Vui  1 ERRIE 2 0 :1:5 
+`Vui  1 TXB2IE 2 0 :1:4 
+`Vui  1 TXB1IE 2 0 :1:3 
+`Vui  1 TXB0IE 2 0 :1:2 
+`Vui  1 RXB1IE 2 0 :1:1 
+`Vui  1 RXB0IE 2 0 :1:0 
+]
+"10701
+[u S665 . 2 `S666  1 . 2 0 
+]
+[v _C2INTEbits `VS665  1 s 2 @1112 ]
+"10721
+[v _C2EC `Vui  1 s 2 @1114 ]
+"10727
+[s S668 . 2 `Vui  1 TEC 2 0 :8:8 
+`Vui  1 REC 2 0 :8:0 
+]
+"10745
+[s S669 . 2 `Vui  1 TEC7 2 0 :1:15 
+`Vui  1 TEC6 2 0 :1:14 
+`Vui  1 TEC5 2 0 :1:13 
+`Vui  1 TEC4 2 0 :1:12 
+`Vui  1 TEC3 2 0 :1:11 
+`Vui  1 TEC2 2 0 :1:10 
+`Vui  1 TEC1 2 0 :1:9 
+`Vui  1 TEC0 2 0 :1:8 
+`Vui  1 REC7 2 0 :1:7 
+`Vui  1 REC6 2 0 :1:6 
+`Vui  1 REC5 2 0 :1:5 
+`Vui  1 REC4 2 0 :1:4 
+`Vui  1 REC3 2 0 :1:3 
+`Vui  1 REC2 2 0 :1:2 
+`Vui  1 REC1 2 0 :1:1 
+`Vui  1 REC0 2 0 :1:0 
+]
+"10746
+[u S667 . 2 `S668  1 . 2 0 
+`S669  1 . 2 0 
+]
+[v _C2ECbits `VS667  1 s 2 @1114 ]
+"10782
+[v _RCON `Vui  1 s 2 @1856 ]
+"10798
+[s S671 . 2 `Vui  1 TRAPR 2 0 :1:15 
+`Vui  1 IOPUWR 2 0 :1:14 
+`Vui  1 BGST 2 0 :1:13 
+`Vui  1 . 2 0 :5:8 
+`Vui  1 EXTR 2 0 :1:7 
+`Vui  1 SWR 2 0 :1:6 
+`Vui  1 SWDTEN 2 0 :1:5 
+`Vui  1 WDTO 2 0 :1:4 
+`Vui  1 SLEEP 2 0 :1:3 
+`Vui  1 IDLE 2 0 :1:2 
+`Vui  1 BOR 2 0 :1:1 
+`Vui  1 POR 2 0 :1:0 
+]
+"10799
+[u S670 . 2 `S671  1 . 2 0 
+]
+[v _RCONbits `VS670  1 s 2 @1856 ]
+"10801
+[v _POR `Vb  1 s 0 @14848 ]
+"10802
+[v _BOR `Vb  1 s 0 @14849 ]
+"10803
+[v _IDLE `Vb  1 s 0 @14850 ]
+"10804
+[v _SLEEP `Vb  1 s 0 @14851 ]
+"10805
+[v _WDTO `Vb  1 s 0 @14852 ]
+"10806
+[v _SWDTEN `Vb  1 s 0 @14853 ]
+"10807
+[v _SWR `Vb  1 s 0 @14854 ]
+"10808
+[v _EXTR `Vb  1 s 0 @14855 ]
+"10809
+[v _BGST `Vb  1 s 0 @14861 ]
+"10810
+[v _IOPUWR `Vb  1 s 0 @14862 ]
+"10811
+[v _TRAPR `Vb  1 s 0 @14863 ]
+"10814
+[v _OSCCON `Vui  1 s 2 @1858 ]
+"10829
+[s S673 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 COSC 2 0 :3:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 NOSC 2 0 :3:8 
+`Vui  1 POST 2 0 :2:6 
+`Vui  1 LOCK 2 0 :1:5 
+`Vui  1 . 2 0 :1:4 
+`Vui  1 CF 2 0 :1:3 
+`Vui  1 . 2 0 :1:2 
+`Vui  1 LPOSCEN 2 0 :1:1 
+`Vui  1 OSWEN 2 0 :1:0 
+]
+"10842
+[s S674 . 2 `Vui  1 . 2 0 :1:15 
+`Vui  1 COSC2 2 0 :1:14 
+`Vui  1 COSC1 2 0 :1:13 
+`Vui  1 COSC0 2 0 :1:12 
+`Vui  1 . 2 0 :1:11 
+`Vui  1 NOSC2 2 0 :1:10 
+`Vui  1 NOSC1 2 0 :1:9 
+`Vui  1 NOSC0 2 0 :1:8 
+`Vui  1 POST1 2 0 :1:7 
+`Vui  1 POST0 2 0 :1:6 
+`Vui  1 . 2 0 :6:0 
+]
+"10843
+[u S672 . 2 `S673  1 . 2 0 
+`S674  1 . 2 0 
+]
+[v _OSCCONbits `VS672  1 s 2 @1858 ]
+"10845
+[v _OSWEN `Vb  1 s 0 @14864 ]
+"10846
+[v _LPOSCEN `Vb  1 s 0 @14865 ]
+"10847
+[v _CF `Vb  1 s 0 @14867 ]
+"10848
+[v _LOCK `Vb  1 s 0 @14869 ]
+"10849
+[v _POST0 `Vb  1 s 0 @14870 ]
+"10850
+[v _POST1 `Vb  1 s 0 @14871 ]
+"10851
+[v _NOSC0 `Vb  1 s 0 @14872 ]
+"10852
+[v _NOSC1 `Vb  1 s 0 @14873 ]
+"10853
+[v _NOSC2 `Vb  1 s 0 @14874 ]
+"10854
+[v _COSC0 `Vb  1 s 0 @14876 ]
+"10855
+[v _COSC1 `Vb  1 s 0 @14877 ]
+"10856
+[v _COSC2 `Vb  1 s 0 @14878 ]
+"10859
+[v _OSCTUN `Vui  1 s 2 @1860 ]
+"10865
+[s S676 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TUN 2 0 :6:0 
+]
+"10874
+[s S677 . 2 `Vui  1 . 2 0 :10:6 
+`Vui  1 TUN5 2 0 :1:5 
+`Vui  1 TUN4 2 0 :1:4 
+`Vui  1 TUN3 2 0 :1:3 
+`Vui  1 TUN2 2 0 :1:2 
+`Vui  1 TUN1 2 0 :1:1 
+`Vui  1 TUN0 2 0 :1:0 
+]
+"10875
+[u S675 . 2 `S676  1 . 2 0 
+`S677  1 . 2 0 
+]
+[v _OSCTUNbits `VS675  1 s 2 @1860 ]
+"10877
+[v _TUN0 `Vb  1 s 0 @14880 ]
+"10878
+[v _TUN1 `Vb  1 s 0 @14881 ]
+"10879
+[v _TUN2 `Vb  1 s 0 @14882 ]
+"10880
+[v _TUN3 `Vb  1 s 0 @14883 ]
+"10881
+[v _TUN4 `Vb  1 s 0 @14884 ]
+"10882
+[v _TUN5 `Vb  1 s 0 @14885 ]
+"10885
+[v _BSRAM `Vui  1 s 2 @1872 ]
+"10893
+[s S679 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 IW_BSR 2 0 :1:2 
+`Vui  1 IR_BSR 2 0 :1:1 
+`Vui  1 RL_BSR 2 0 :1:0 
+]
+"10894
+[u S678 . 2 `S679  1 . 2 0 
+]
+[v _BSRAMbits `VS678  1 s 2 @1872 ]
+"10896
+[v _RL_BSR `Vb  1 s 0 @14976 ]
+"10897
+[v _IR_BSR `Vb  1 s 0 @14977 ]
+"10898
+[v _IW_BSR `Vb  1 s 0 @14978 ]
+"10901
+[v _SSRAM `Vui  1 s 2 @1874 ]
+"10909
+[s S681 . 2 `Vui  1 . 2 0 :13:3 
+`Vui  1 IW_SSR 2 0 :1:2 
+`Vui  1 IR_SSR 2 0 :1:1 
+`Vui  1 RL_SSR 2 0 :1:0 
+]
+"10910
+[u S680 . 2 `S681  1 . 2 0 
+]
+[v _SSRAMbits `VS680  1 s 2 @1874 ]
+"10912
+[v _RL_SSR `Vb  1 s 0 @14992 ]
+"10913
+[v _IR_SSR `Vb  1 s 0 @14993 ]
+"10914
+[v _IW_SSR `Vb  1 s 0 @14994 ]
+"10917
+[v _NVMCON `Vui  1 s 2 @1888 ]
+"10928
+[s S683 . 2 `Vui  1 WR 2 0 :1:15 
+`Vui  1 WREN 2 0 :1:14 
+`Vui  1 WRERR 2 0 :1:13 
+`Vui  1 . 2 0 :4:9 
+`Vui  1 TWRI 2 0 :1:8 
+`Vui  1 . 2 0 :1:7 
+`Vui  1 PROGOP 2 0 :7:0 
+]
+"10938
+[s S684 . 2 `Vui  1 . 2 0 :9:7 
+`Vui  1 PROGOP6 2 0 :1:6 
+`Vui  1 PROGOP5 2 0 :1:5 
+`Vui  1 PROGOP4 2 0 :1:4 
+`Vui  1 PROGOP3 2 0 :1:3 
+`Vui  1 PROGOP2 2 0 :1:2 
+`Vui  1 PROGOP1 2 0 :1:1 
+`Vui  1 PROGOP0 2 0 :1:0 
+]
+"10939
+[u S682 . 2 `S683  1 . 2 0 
+`S684  1 . 2 0 
+]
+[v _NVMCONbits `VS682  1 s 2 @1888 ]
+"10941
+[v _TWRI `Vb  1 s 0 @15112 ]
+"10942
+[v _WRERR `Vb  1 s 0 @15117 ]
+"10943
+[v _WREN `Vb  1 s 0 @15118 ]
+"10944
+[v _WR `Vb  1 s 0 @15119 ]
+"10945
+[v _PROGOP0 `Vb  1 s 0 @15104 ]
+"10946
+[v _PROGOP1 `Vb  1 s 0 @15105 ]
+"10947
+[v _PROGOP2 `Vb  1 s 0 @15106 ]
+"10948
+[v _PROGOP3 `Vb  1 s 0 @15107 ]
+"10949
+[v _PROGOP4 `Vb  1 s 0 @15108 ]
+"10950
+[v _PROGOP5 `Vb  1 s 0 @15109 ]
+"10951
+[v _PROGOP6 `Vb  1 s 0 @15110 ]
+"10954
+[v _NVMADR `Vui  1 s 2 @1890 ]
+"10957
+[v _NVMADRU `Vui  1 s 2 @1892 ]
+"10963
+[s S686 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 NVMADR 2 0 :8:0 
+]
+"10964
+[u S685 . 2 `S686  1 . 2 0 
+]
+[v _NVMADRUbits `VS685  1 s 2 @1892 ]
+"10967
+[v _NVMKEY `Vui  1 s 2 @1894 ]
+"10973
+[s S688 . 2 `Vui  1 . 2 0 :8:8 
+`Vui  1 KEY 2 0 :8:0 
+]
+"10974
+[u S687 . 2 `S688  1 . 2 0 
+]
+[v _NVMKEYbits `VS687  1 s 2 @1894 ]
+"10977
+[v _PMD1 `Vui  1 s 2 @1904 ]
+"10997
+[s S690 . 2 `Vui  1 T5MD 2 0 :1:15 
+`Vui  1 T4MD 2 0 :1:14 
+`Vui  1 T3MD 2 0 :1:13 
+`Vui  1 T2MD 2 0 :1:12 
+`Vui  1 T1MD 2 0 :1:11 
+`Vui  1 QEIMD 2 0 :1:10 
+`Vui  1 PWMMD 2 0 :1:9 
+`Vui  1 . 2 0 :1:8 
+`Vui  1 I2CMD 2 0 :1:7 
+`Vui  1 U2MD 2 0 :1:6 
+`Vui  1 U1MD 2 0 :1:5 
+`Vui  1 SPI2MD 2 0 :1:4 
+`Vui  1 SPI1MD 2 0 :1:3 
+`Vui  1 C2MD 2 0 :1:2 
+`Vui  1 C1MD 2 0 :1:1 
+`Vui  1 ADCMD 2 0 :1:0 
+]
+"10998
+[u S689 . 2 `S690  1 . 2 0 
+]
+[v _PMD1bits `VS689  1 s 2 @1904 ]
+"11000
+[v _ADCMD `Vb  1 s 0 @15232 ]
+"11001
+[v _C1MD `Vb  1 s 0 @15233 ]
+"11002
+[v _C2MD `Vb  1 s 0 @15234 ]
+"11003
+[v _SPI1MD `Vb  1 s 0 @15235 ]
+"11004
+[v _SPI2MD `Vb  1 s 0 @15236 ]
+"11005
+[v _U1MD `Vb  1 s 0 @15237 ]
+"11006
+[v _U2MD `Vb  1 s 0 @15238 ]
+"11007
+[v _I2CMD `Vb  1 s 0 @15239 ]
+"11008
+[v _PWMMD `Vb  1 s 0 @15241 ]
+"11009
+[v _QEIMD `Vb  1 s 0 @15242 ]
+"11010
+[v _T1MD `Vb  1 s 0 @15243 ]
+"11011
+[v _T2MD `Vb  1 s 0 @15244 ]
+"11012
+[v _T3MD `Vb  1 s 0 @15245 ]
+"11013
+[v _T4MD `Vb  1 s 0 @15246 ]
+"11014
+[v _T5MD `Vb  1 s 0 @15247 ]
+"11017
+[v _PMD2 `Vui  1 s 2 @1906 ]
+"11037
+[s S692 . 2 `Vui  1 IC8MD 2 0 :1:15 
+`Vui  1 IC7MD 2 0 :1:14 
+`Vui  1 IC6MD 2 0 :1:13 
+`Vui  1 IC5MD 2 0 :1:12 
+`Vui  1 IC4MD 2 0 :1:11 
+`Vui  1 IC3MD 2 0 :1:10 
+`Vui  1 IC2MD 2 0 :1:9 
+`Vui  1 IC1MD 2 0 :1:8 
+`Vui  1 OC8MD 2 0 :1:7 
+`Vui  1 OC7MD 2 0 :1:6 
+`Vui  1 OC6MD 2 0 :1:5 
+`Vui  1 OC5MD 2 0 :1:4 
+`Vui  1 OC4MD 2 0 :1:3 
+`Vui  1 OC3MD 2 0 :1:2 
+`Vui  1 OC2MD 2 0 :1:1 
+`Vui  1 OC1MD 2 0 :1:0 
+]
+"11042
+[s S693 . 2 `Vui  1 . 2 0 :14:2 
+`Vui  1 IDLE_MODE 2 0 :1:1 
+`Vui  1 SLEEP_MODE 2 0 :1:0 
+]
+"11043
+[u S691 . 2 `S692  1 . 2 0 
+`S693  1 . 2 0 
+]
+[v _PMD2bits `VS691  1 s 2 @1906 ]
+"11045
+[v _OC1MD `Vb  1 s 0 @15248 ]
+"11046
+[v _OC2MD `Vb  1 s 0 @15249 ]
+"11047
+[v _OC3MD `Vb  1 s 0 @15250 ]
+"11048
+[v _OC4MD `Vb  1 s 0 @15251 ]
+"11049
+[v _OC5MD `Vb  1 s 0 @15252 ]
+"11050
+[v _OC6MD `Vb  1 s 0 @15253 ]
+"11051
+[v _OC7MD `Vb  1 s 0 @15254 ]
+"11052
+[v _OC8MD `Vb  1 s 0 @15255 ]
+"11053
+[v _IC1MD `Vb  1 s 0 @15256 ]
+"11054
+[v _IC2MD `Vb  1 s 0 @15257 ]
+"11055
+[v _IC3MD `Vb  1 s 0 @15258 ]
+"11056
+[v _IC4MD `Vb  1 s 0 @15259 ]
+"11057
+[v _IC5MD `Vb  1 s 0 @15260 ]
+"11058
+[v _IC6MD `Vb  1 s 0 @15261 ]
+"11059
+[v _IC7MD `Vb  1 s 0 @15262 ]
+"11060
+[v _IC8MD `Vb  1 s 0 @15263 ]
+"11061
+[v _SLEEP_MODE `Vb  1 s 0 @15248 ]
+"11062
+[v _IDLE_MODE `Vb  1 s 0 @15249 ]
+"512 C:\Program Files (x86)\HI-TECH Software\DSPICC\STD\9.62\include\nvm_interface.h
+[s S694 devid_s 4 `ui  1 device 2 0 :10:6 
+`ui  1 variant 2 0 :6:0 
+`ui  1 process 2 2 :4:12 
+`ui  1 revision 2 2 :6:6 
+`ui  1 subrev 2 2 :6:0 
+]
+"82 C:\Microchip\Dev\Aspirobot\FreeRTOS\Sources\IsrTrapManager.c
+[v F8127 `(v  1 t 2 ]
+"83
+[v __OscillatorFail `IF8127  1 e 2 @6 ]
+{
+"98
+} 0 0 0 -4
+"103
+[v F8130 `(v  1 t 2 ]
+"104
+[v __AddressError `IF8130  1 e 2 @8 ]
+{
+"113
+} 0 0 0 -4
+"118
+[v F8133 `(v  1 t 2 ]
+"119
+[v __StackError `IF8133  1 e 2 @10 ]
+{
+"128
+} 0 0 0 -4
+"133
+[v F8136 `(v  1 t 2 ]
+"134
+[v __MathError `IF8136  1 e 2 @12 ]
+{
+"142
+} 0 0 0 -4
+"152
+[v F8139 `(v  1 t 2 ]
+"153
+[v __AltOscillatorFail `IF8139  1 e 2 @134 ]
+{
+"162
+} 0 0 0 -4
+"167
+[v F8142 `(v  1 t 2 ]
+"168
+[v __AltAddressError `IF8142  1 e 2 @136 ]
+{
+"176
+} 0 0 0 -4
+"182
+[v F8145 `(v  1 t 2 ]
+"183
+[v __AltStackError `IF8145  1 e 2 @138 ]
+{
+"191
+} 0 0 0 -4
+"196
+[v F8148 `(v  1 t 2 ]
+"197
+[v __AltMathError `IF8148  1 e 2 @140 ]
+{
+"206
+} 0 0 0 -4

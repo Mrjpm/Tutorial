@@ -1,0 +1,2327 @@
+
+
+HI-TECH Software dsPIC Macro Assembler V9.62 build 7866                    Page 1
+                                                       Tue Jan 05 21:22:02 2016
+
+HI-TECH Software Standard Code Generator build 7866
+     1  000000                     opt subtitle "HI-TECH Software Standard Code Gen
+                                 erator build 7866"
+     2                           
+     3  000000                     pcl	equ	46
+     4  000000                     pch	equ	48
+     5  000000                     sr	equ	66
+     6  000000                     carry	equ	0
+     7  000000                     zerobit	equ	1
+     8                           	global	_main
+     9                           	signat	_main,26
+    10                           	psect	text,class=CODE,delta=2,reloc=4
+    11                           	psect	text
+    12                           	file	"C:\Microchip\Dev\Aspirobot\Sources\main.c
+                                 "
+    13                           	line	142
+    14  00C538                     _main:
+    15  00C538  0004C574           	goto	f19721
+              00000000           
+    16  00C53C                     f19720:
+    17                           
+    18                           ;main.c: 141: int main( void )
+    19                           
+    20                           ;main.c: 142: {
+    21                           
+    22                           ;main.c: 144: prvSetupHardware();
+    23                           
+    24                           	signat	_prvSetupHardware,26
+    25                           	line	144
+    26  00C53C  0002C578           	call	(_prvSetupHardware)
+              00000000           
+    27                           ;main.c: 147: xTaskGenericCreate( ( vCheckTask )
+                                 , ( "TST" ), ( ( ( 105 ) * 2 ) ), ( (0) ), ( ( (
+                                  ( UBaseType_t ) 0U ) + 3 ) ), ( (0) ), ( (0) ),
+                                  ( (0) ) );
+    28                           
+    29                           	global	_xTaskGenericCreate
+    30                           	signat	_xTaskGenericCreate,32826
+    31                           	signat	_vCheckTask,4154
+    32                           	line	147
+    33  00C540  00200006           	mov.w	#0,w6
+    34  00C542  00781F86           	push	w6
+    35  00C544  00200006           	mov.w	#0,w6
+    36  00C546  00781F86           	push	w6
+    37  00C548  00200006           	mov.w	#0,w6
+    38  00C54A  00781F86           	push	w6
+    39  00C54C  00200036           	mov.w	#03h,w6
+    40  00C54E  00781F86           	push	w6
+    41  00C550  00200006           	mov.w	#0,w6
+    42  00C552  00200D24           	mov.w	#0D2h,w4
+    43  00C554  00281002           	mov.w	#u19,w2
+    44  00C556  002C5967           	mov.w	#_vCheckTask,w7
+    45  00C558  00780007           	mov.w	w7,w0
+    46  00C55A  0002E670           	call	(_xTaskGenericCreate)	;8 bytes adjustment
+              00000000           
+    47                           ;main.c: 150: vTaskStartScheduler();
+    48                           
+    49                           	global	_vTaskStartScheduler
+    50                           	signat	_vTaskStartScheduler,26
+    51                           	line	150
+    52  00C55E  0002EE8A           	call	(_vTaskStartScheduler)
+              00000000           
+    53                           ;main.c: 154: while (1)
+    54                           
+    55                           	line	154
+    56  00C562                     lab705:
+    57                           ;main.c: 155: {
+    58                           
+    59                           ;main.c: 156: asm("NOP");
+    60                           
+    61                           	line	156
+    62                           # 156 "C:\Microchip\Dev\Aspirobot\Sources\main.c
+                                 "
+    63  00C562  00000000           NOP ;#
+    64                           
+    65                           #
+    66                           	psect	text
+    67                           	line	157
+    68  00C564                     lab704:
+    69                           	line	154
+    70  00C564  0004C562           	goto	lab705
+              00000000           
+    71  00C568                     lab706:
+    72                           ;main.c: 157: }
+    73                           
+    74                           ;main.c: 158: return 0;
+    75                           
+    76                           	line	158
+    77  00C568  00200000           	mov.w	#0,w0	;return #0 in w0
+    78  00C56A  0004C56E           	goto	lab703
+              00000000           
+    79                           ;main.c: 159: }
+    80                           
+    81                           	line	159
+    82  00C56E                     lab703:
+    83                           	global	_main
+    84                           	global	start
+    85  00C56E  0004FFDC           	goto	start
+              00000000           
+    86  00C572  00060000           	return
+    87                           	line	142
+    88                           
+    89  00C574                     f19721:
+    90  00C574  0004C53C           	goto	f19720
+              00000000           
+    91  000000                     f19726	equ	0		;stack offset for auto's
+    92  000000                     f19723	equ	-4		;stack offset for parameters
+    93                           	line	0
+    94                           	global	 __end_of_main
+    95  00C578                     __end_of_main:
+    96                           	line	163
+    97  00C578                     _prvSetupHardware:
+    98  00C578  0004C592           	goto	f19751
+              00000000           
+    99  00C57C                     f19750:
+   100                           
+   101                           ;main.c: 162: static void prvSetupHardware( void
+                                  )
+   102                           
+   103                           ;main.c: 163: {
+   104                           
+   105                           ;main.c: 179: TRISA=0x0000;
+   106                           
+   107                           	line	179
+   108  00C57C  00EF22C0           	clr.w	02C0h
+   109                           ;main.c: 180: TRISB=0xFFFC;
+   110                           
+   111                           	line	180
+   112  00C57E  002FFFC6           	mov.w	#-4,w6
+   113  00C580  00881636           	mov	w6,02C6h
+   114                           ;main.c: 181: TRISC=0xFFF5;
+   115                           
+   116                           	line	181
+   117  00C582  002FFF56           	mov.w	#-11,w6
+   118  00C584  00881666           	mov	w6,02CCh
+   119                           ;main.c: 182: TRISD=0x0000;
+   120                           
+   121                           	line	182
+   122  00C586  00EF22D2           	clr.w	02D2h
+   123                           ;main.c: 183: TRISE=0x0000;
+   124                           
+   125                           	line	183
+   126  00C588  00EF22D8           	clr.w	02D8h
+   127                           ;main.c: 184: TRISF=0xFFEF;
+   128                           
+   129                           	line	184
+   130  00C58A  002FFEF6           	mov.w	#-17,w6
+   131  00C58C  008816F6           	mov	w6,02DEh
+   132                           ;main.c: 185: TRISG=0x0000;
+   133                           
+   134                           	line	185
+   135  00C58E  00EF22E4           	clr.w	02E4h
+   136                           ;main.c: 186: }
+   137                           
+   138                           	line	186
+   139  00C590                     lab707:
+   140                           	local	_prvSetupHardware
+   141  00C590  00060000           	return
+   142                           	line	163
+   143                           
+   144  00C592                     f19751:
+   145  00C592  0004C57C           	goto	f19750
+              00000000           
+   146  000000                     f19756	equ	0		;stack offset for auto's
+   147  000000                     f19753	equ	-4		;stack offset for parameters
+   148                           	line	0
+   149                           	local	 __end_of_prvSetupHardware
+   150  00C596                     __end_of_prvSetupHardware:
+   151                           	line	190
+   152  00C596                     _vCheckTask:
+   153  00C596  0004C5DA           	goto	f19761
+              00000000           
+   154  00C59A                     f19760:
+   155                           
+   156                           ;main.c: 189: static void vCheckTask( void *pvPa
+                                 rameters )
+   157                           
+   158                           ;main.c: 190: {
+   159                           
+   160                           ;main.c: 192: TickType_t xLastExecutionTime;
+   161                           
+   162                           ;main.c: 197: xLastExecutionTime = xTaskGetTickC
+                                 ount();
+   163                           
+   164                           	global	_xTaskGetTickCount
+   165                           	signat	_xTaskGetTickCount,26
+   166                           ;_pvParameters stored from w0
+   167                           	line	197
+   168  00C59A  002FFFC6           	mov.w	#((0+f19766+2)-0),w6
+   169  00C59C  00478306           	add.w	sp,w6,w6
+   170  00C59E  00780B00           	mov.w	w0,[w6]
+   171  00C5A0  0002F032           	call	(_xTaskGetTickCount)
+              00000000           
+   172  00C5A4  002FFFA6           	mov.w	#((0+f19766+0)-0),w6
+   173  00C5A6  00478306           	add.w	sp,w6,w6
+   174  00C5A8  00780B00           	mov.w	w0,[w6]
+   175                           ;main.c: 199: for( ;; )
+   176                           
+   177                           	line	200
+   178  00C5AA                     lab709:
+   179                           ;main.c: 200: {
+   180                           
+   181                           ;main.c: 202: vTaskDelayUntil( &xLastExecutionTi
+                                 me, ( ( TickType_t ) 3000 / ( ( TickType_t ) 100
+                                 0 / ( ( TickType_t ) 1000 ) ) ) );
+   182                           
+   183                           	global	_vTaskDelayUntil
+   184                           	signat	_vTaskDelayUntil,8250
+   185                           	line	202
+   186  00C5AA  0020BB82           	mov.w	#0BB8h,w2
+   187  00C5AC  002FFFA0           	mov.w	#(0+f19766+0)-0,w0
+   188  00C5AE  00478000           	add.w	sp,w0,w0
+   189  00C5B0  0002E822           	call	(_vTaskDelayUntil)	;0 bytes adjustment
+              00000000           
+   190                           ;main.c: 204: if ((PORTA & (1<<9)))
+   191                           
+   192                           	line	204
+   193  00C5B4  00202C26           	mov.w	#02C2h,w6
+   194  00C5B6  00780316           	mov.w	[w6],w6
+   195  00C5B8  00B22006           	and.w	#512,w6
+   196  00C5BA  00E00006           	cp0.w	w6
+   197  00C5BC  00320002           	bra	z,u11
+   198  00C5BE  0004C5C6           	goto	u10
+              00000000           
+   199  00C5C2                     u11:
+   200  00C5C2  0004C5CE           	goto	lab712
+              00000000           
+   201  00C5C6                     u10:
+   202                           ;main.c: 205: {
+   203                           
+   204                           ;main.c: 206: PORTA = PORTA & ~(1<<9);
+   205                           
+   206                           	line	206
+   207  00C5C6  002FDFF0           	mov.w	#-513,w0
+   208  00C5C8  00B622C2           	and.w	02C2h	;and 02C2h with w0
+   209                           ;main.c: 207: }
+   210                           
+   211                           	line	207
+   212  00C5CA  0004C5D2           	goto	lab713
+              00000000           
+   213                           	line	208
+   214  00C5CE                     lab712:
+   215                           ;main.c: 208: else
+   216                           
+   217                           ;main.c: 209: {
+   218                           
+   219                           ;main.c: 210: PORTA = PORTA | (1<<9);
+   220                           
+   221                           	line	210
+   222  00C5CE  00202000           	mov.w	#0200h,w0
+   223  00C5D0  00B722C2           	ior.w	02C2h	;ior 02C2h with w0
+   224                           	line	211
+   225  00C5D2                     lab713:
+   226                           ;main.c: 211: }
+   227                           
+   228                           ;main.c: 212: }
+   229                           
+   230                           	line	212
+   231  00C5D2  0004C5AA           	goto	lab709
+              00000000           
+   232  00C5D6                     lab710:
+   233                           ;main.c: 213: }
+   234                           
+   235                           	line	213
+   236  00C5D6                     lab708:
+   237                           	local	_vCheckTask
+   238                           
+   239  00C5D6  00B1006F           	sub.w	#6,sp
+   240  00C5D8  00060000           	return
+   241                           	line	190
+   242                           
+   243  00C5DA                     f19761:
+   244                           
+   245  00C5DA  00B0006F           	add.w	#6,sp
+   246  00C5DC  0004C59A           	goto	f19760
+              00000000           
+   247  000000                     f19766	equ	-6		;stack offset for auto's
+   248  000000                     f19763	equ	-10		;stack offset for parameters
+   249                           	line	0
+   250                           	local	 __end_of_vCheckTask
+   251  00C5E0                     __end_of_vCheckTask:
+   252                           	global	_vApplicationIdleHook
+   253                           	signat	_vApplicationIdleHook,26
+   254                           	line	216
+   255  00C5E0                     _vApplicationIdleHook:
+   256  00C5E0  0004C5EA           	goto	f19791
+              00000000           
+   257  00C5E4                     f19790:
+   258                           
+   259                           ;main.c: 215: void vApplicationIdleHook( void )
+   260                           
+   261                           ;main.c: 216: {
+   262                           
+   263                           ;main.c: 218: vCoRoutineSchedule();
+   264                           
+   265                           	global	_vCoRoutineSchedule
+   266                           	signat	_vCoRoutineSchedule,26
+   267                           	line	218
+   268  00C5E4  0002CDCE           	call	(_vCoRoutineSchedule)
+              00000000           
+   269                           ;main.c: 219: }
+   270                           
+   271                           	line	219
+   272  00C5E8                     lab714:
+   273                           	global	_vApplicationIdleHook
+   274  00C5E8  00060000           	return
+   275                           	line	216
+   276                           
+   277  00C5EA                     f19791:
+   278  00C5EA  0004C5E4           	goto	f19790
+              00000000           
+   279  000000                     f19796	equ	0		;stack offset for auto's
+   280  000000                     f19793	equ	-4		;stack offset for parameters
+   281                           	line	0
+   282                           	global	 __end_of_vApplicationIdleHook
+   283  00C5EE                     __end_of_vApplicationIdleHook:
+   284                           	psect	mconst,class=MCONST,space=1,reloc=2,pad=2
+   285                           	psect	mconst
+   286  008100                     u19:
+   287                           ; strings
+   288  008100                     	ds	4
+   289                           	psect	const,class=CONST,delta=1,reloc=4,width=2
+                                 ,pad=4
+   290                           	psect	const
+   291                           ; strings
+   292  000200  54                 	db	84	;'T'
+   293  000201  53 00 00           	db	83	;'S'
+   294  000204  54                 	db	84	;'T'
+   295  000205  00 00 00           	db	0
+   296  000000                     _ACCAH	equ	36
+   297  000000                     _ACCAL	equ	34
+   298  000000                     _ACCAU	equ	38
+   299  000000                     _ACCAUbits	equ	38
+   300  000000                     _ACCBH	equ	42
+   301  000000                     _ACCBL	equ	40
+   302  000000                     _ACCBU	equ	44
+   303  000000                     _ACCBUbits	equ	44
+   304  000000                     _ADCBUF0	equ	640
+   305  000000                     _ADCBUF0bits	equ	640
+   306  000000                     _ADCBUF1	equ	642
+   307  000000                     _ADCBUF1bits	equ	642
+   308  000000                     _ADCBUF2	equ	644
+   309  000000                     _ADCBUF2bits	equ	644
+   310  000000                     _ADCBUF3	equ	646
+   311  000000                     _ADCBUF3bits	equ	646
+   312  000000                     _ADCBUF4	equ	648
+   313  000000                     _ADCBUF4bits	equ	648
+   314  000000                     _ADCBUF5	equ	650
+   315  000000                     _ADCBUF5bits	equ	650
+   316  000000                     _ADCBUF6	equ	652
+   317  000000                     _ADCBUF6bits	equ	652
+   318  000000                     _ADCBUF7	equ	654
+   319  000000                     _ADCBUF7bits	equ	654
+   320  000000                     _ADCBUF8	equ	656
+   321  000000                     _ADCBUF8bits	equ	656
+   322  000000                     _ADCBUF9	equ	658
+   323  000000                     _ADCBUF9bits	equ	658
+   324  000000                     _ADCBUFA	equ	660
+   325  000000                     _ADCBUFAbits	equ	660
+   326  000000                     _ADCBUFB	equ	662
+   327  000000                     _ADCBUFBbits	equ	662
+   328  000000                     _ADCBUFC	equ	664
+   329  000000                     _ADCBUFCbits	equ	664
+   330  000000                     _ADCBUFD	equ	666
+   331  000000                     _ADCBUFDbits	equ	666
+   332  000000                     _ADCBUFE	equ	668
+   333  000000                     _ADCBUFEbits	equ	668
+   334  000000                     _ADCBUFF	equ	670
+   335  000000                     _ADCBUFFbits	equ	670
+   336  000000                     _ADCHS	equ	678
+   337  000000                     _ADCHSbits	equ	678
+   338  000000                     _ADCON1	equ	672
+   339  000000                     _ADCON1bits	equ	672
+   340  000000                     _ADCON2	equ	674
+   341  000000                     _ADCON2bits	equ	674
+   342  000000                     _ADCON3	equ	676
+   343  000000                     _ADCON3bits	equ	676
+   344  000000                     _ADCSSL	equ	682
+   345  000000                     _ADCSSLbits	equ	682
+   346  000000                     _ADPCFG	equ	680
+   347  000000                     _ADPCFGbits	equ	680
+   348  000000                     _BSRAM	equ	1872
+   349  000000                     _BSRAMbits	equ	1872
+   350  000000                     _C1CFG1	equ	914
+   351  000000                     _C1CFG1bits	equ	914
+   352  000000                     _C1CFG2	equ	916
+   353  000000                     _C1CFG2bits	equ	916
+   354  000000                     _C1CTRL	equ	912
+   355  000000                     _C1CTRLbits	equ	912
+   356  000000                     _C1EC	equ	922
+   357  000000                     _C1ECbits	equ	922
+   358  000000                     _C1INTE	equ	920
+   359  000000                     _C1INTEbits	equ	920
+   360  000000                     _C1INTF	equ	918
+   361  000000                     _C1INTFbits	equ	918
+   362  000000                     _C1RX0B1	equ	902
+   363  000000                     _C1RX0B1bits	equ	902
+   364  000000                     _C1RX0B2	equ	904
+   365  000000                     _C1RX0B2bits	equ	904
+   366  000000                     _C1RX0B3	equ	906
+   367  000000                     _C1RX0B3bits	equ	906
+   368  000000                     _C1RX0B4	equ	908
+   369  000000                     _C1RX0B4bits	equ	908
+   370  000000                     _C1RX0CON	equ	910
+   371  000000                     _C1RX0CONbits	equ	910
+   372  000000                     _C1RX0DLC	equ	900
+   373  000000                     _C1RX0DLCbits	equ	900
+   374  000000                     _C1RX0EID	equ	898
+   375  000000                     _C1RX0EIDbits	equ	898
+   376  000000                     _C1RX0SID	equ	896
+   377  000000                     _C1RX0SIDbits	equ	896
+   378  000000                     _C1RX1B1	equ	886
+   379  000000                     _C1RX1B1bits	equ	886
+   380  000000                     _C1RX1B2	equ	888
+   381  000000                     _C1RX1B2bits	equ	888
+   382  000000                     _C1RX1B3	equ	890
+   383  000000                     _C1RX1B3bits	equ	890
+   384  000000                     _C1RX1B4	equ	892
+   385  000000                     _C1RX1B4bits	equ	892
+   386  000000                     _C1RX1CON	equ	894
+   387  000000                     _C1RX1CONbits	equ	894
+   388  000000                     _C1RX1DLC	equ	884
+   389  000000                     _C1RX1DLCbits	equ	884
+   390  000000                     _C1RX1EID	equ	882
+   391  000000                     _C1RX1EIDbits	equ	882
+   392  000000                     _C1RX1SID	equ	880
+   393  000000                     _C1RX1SIDbits	equ	880
+   394  000000                     _C1RXF0EIDH	equ	770
+   395  000000                     _C1RXF0EIDHbits	equ	770
+   396  000000                     _C1RXF0EIDL	equ	772
+   397  000000                     _C1RXF0EIDLbits	equ	772
+   398  000000                     _C1RXF0SID	equ	768
+   399  000000                     _C1RXF0SIDbits	equ	768
+   400  000000                     _C1RXF1EIDH	equ	778
+   401  000000                     _C1RXF1EIDHbits	equ	778
+   402  000000                     _C1RXF1EIDL	equ	780
+   403  000000                     _C1RXF1EIDLbits	equ	780
+   404  000000                     _C1RXF1SID	equ	776
+   405  000000                     _C1RXF1SIDbits	equ	776
+   406  000000                     _C1RXF2EIDH	equ	786
+   407  000000                     _C1RXF2EIDHbits	equ	786
+   408  000000                     _C1RXF2EIDL	equ	788
+   409  000000                     _C1RXF2EIDLbits	equ	788
+   410  000000                     _C1RXF2SID	equ	784
+   411  000000                     _C1RXF2SIDbits	equ	784
+   412  000000                     _C1RXF3EIDH	equ	794
+   413  000000                     _C1RXF3EIDHbits	equ	794
+   414  000000                     _C1RXF3EIDL	equ	796
+   415  000000                     _C1RXF3EIDLbits	equ	796
+   416  000000                     _C1RXF3SID	equ	792
+   417  000000                     _C1RXF3SIDbits	equ	792
+   418  000000                     _C1RXF4EIDH	equ	802
+   419  000000                     _C1RXF4EIDHbits	equ	802
+   420  000000                     _C1RXF4EIDL	equ	804
+   421  000000                     _C1RXF4EIDLbits	equ	804
+   422  000000                     _C1RXF4SID	equ	800
+   423  000000                     _C1RXF4SIDbits	equ	800
+   424  000000                     _C1RXF5EIDH	equ	810
+   425  000000                     _C1RXF5EIDHbits	equ	810
+   426  000000                     _C1RXF5EIDL	equ	812
+   427  000000                     _C1RXF5EIDLbits	equ	812
+   428  000000                     _C1RXF5SID	equ	808
+   429  000000                     _C1RXF5SIDbits	equ	808
+   430  000000                     _C1RXM0EIDH	equ	818
+   431  000000                     _C1RXM0EIDHbits	equ	818
+   432  000000                     _C1RXM0EIDL	equ	820
+   433  000000                     _C1RXM0EIDLbits	equ	820
+   434  000000                     _C1RXM0SID	equ	816
+   435  000000                     _C1RXM0SIDbits	equ	816
+   436  000000                     _C1RXM1EIDH	equ	826
+   437  000000                     _C1RXM1EIDHbits	equ	826
+   438  000000                     _C1RXM1EIDL	equ	828
+   439  000000                     _C1RXM1EIDLbits	equ	828
+   440  000000                     _C1RXM1SID	equ	824
+   441  000000                     _C1RXM1SIDbits	equ	824
+   442  000000                     _C1TX0B1	equ	870
+   443  000000                     _C1TX0B1bits	equ	870
+   444  000000                     _C1TX0B2	equ	872
+   445  000000                     _C1TX0B2bits	equ	872
+   446  000000                     _C1TX0B3	equ	874
+   447  000000                     _C1TX0B3bits	equ	874
+   448  000000                     _C1TX0B4	equ	876
+   449  000000                     _C1TX0B4bits	equ	876
+   450  000000                     _C1TX0CON	equ	878
+   451  000000                     _C1TX0CONbits	equ	878
+   452  000000                     _C1TX0DLC	equ	868
+   453  000000                     _C1TX0DLCbits	equ	868
+   454  000000                     _C1TX0EID	equ	866
+   455  000000                     _C1TX0EIDbits	equ	866
+   456  000000                     _C1TX0SID	equ	864
+   457  000000                     _C1TX0SIDbits	equ	864
+   458  000000                     _C1TX1B1	equ	854
+   459  000000                     _C1TX1B1bits	equ	854
+   460  000000                     _C1TX1B2	equ	856
+   461  000000                     _C1TX1B2bits	equ	856
+   462  000000                     _C1TX1B3	equ	858
+   463  000000                     _C1TX1B3bits	equ	858
+   464  000000                     _C1TX1B4	equ	860
+   465  000000                     _C1TX1B4bits	equ	860
+   466  000000                     _C1TX1CON	equ	862
+   467  000000                     _C1TX1CONbits	equ	862
+   468  000000                     _C1TX1DLC	equ	852
+   469  000000                     _C1TX1DLCbits	equ	852
+   470  000000                     _C1TX1EID	equ	850
+   471  000000                     _C1TX1EIDbits	equ	850
+   472  000000                     _C1TX1SID	equ	848
+   473  000000                     _C1TX1SIDbits	equ	848
+   474  000000                     _C1TX2B1	equ	838
+   475  000000                     _C1TX2B1bits	equ	838
+   476  000000                     _C1TX2B2	equ	840
+   477  000000                     _C1TX2B2bits	equ	840
+   478  000000                     _C1TX2B3	equ	842
+   479  000000                     _C1TX2B3bits	equ	842
+   480  000000                     _C1TX2B4	equ	844
+   481  000000                     _C1TX2B4bits	equ	844
+   482  000000                     _C1TX2CON	equ	846
+   483  000000                     _C1TX2CONbits	equ	846
+   484  000000                     _C1TX2DLC	equ	836
+   485  000000                     _C1TX2DLCbits	equ	836
+   486  000000                     _C1TX2EID	equ	834
+   487  000000                     _C1TX2EIDbits	equ	834
+   488  000000                     _C1TX2SID	equ	832
+   489  000000                     _C1TX2SIDbits	equ	832
+   490  000000                     _C2CFG1	equ	1106
+   491  000000                     _C2CFG1bits	equ	1106
+   492  000000                     _C2CFG2	equ	1108
+   493  000000                     _C2CFG2bits	equ	1108
+   494  000000                     _C2CTRL	equ	1104
+   495  000000                     _C2CTRLbits	equ	1104
+   496  000000                     _C2EC	equ	1114
+   497  000000                     _C2ECbits	equ	1114
+   498  000000                     _C2INTE	equ	1112
+   499  000000                     _C2INTEbits	equ	1112
+   500  000000                     _C2INTF	equ	1110
+   501  000000                     _C2INTFbits	equ	1110
+   502  000000                     _C2RX0B1	equ	1094
+   503  000000                     _C2RX0B1bits	equ	1094
+   504  000000                     _C2RX0B2	equ	1096
+   505  000000                     _C2RX0B2bits	equ	1096
+   506  000000                     _C2RX0B3	equ	1098
+   507  000000                     _C2RX0B3bits	equ	1098
+   508  000000                     _C2RX0B4	equ	1100
+   509  000000                     _C2RX0B4bits	equ	1100
+   510  000000                     _C2RX0CON	equ	1102
+   511  000000                     _C2RX0CONbits	equ	1102
+   512  000000                     _C2RX0DLC	equ	1092
+   513  000000                     _C2RX0DLCbits	equ	1092
+   514  000000                     _C2RX0EID	equ	1090
+   515  000000                     _C2RX0EIDbits	equ	1090
+   516  000000                     _C2RX0SID	equ	1088
+   517  000000                     _C2RX0SIDbits	equ	1088
+   518  000000                     _C2RX1B1	equ	1078
+   519  000000                     _C2RX1B1bits	equ	1078
+   520  000000                     _C2RX1B2	equ	1080
+   521  000000                     _C2RX1B2bits	equ	1080
+   522  000000                     _C2RX1B3	equ	1082
+   523  000000                     _C2RX1B3bits	equ	1082
+   524  000000                     _C2RX1B4	equ	1084
+   525  000000                     _C2RX1B4bits	equ	1084
+   526  000000                     _C2RX1CON	equ	1086
+   527  000000                     _C2RX1CONbits	equ	1086
+   528  000000                     _C2RX1DLC	equ	1076
+   529  000000                     _C2RX1DLCbits	equ	1076
+   530  000000                     _C2RX1EID	equ	1074
+   531  000000                     _C2RX1EIDbits	equ	1074
+   532  000000                     _C2RX1SID	equ	1072
+   533  000000                     _C2RX1SIDbits	equ	1072
+   534  000000                     _C2RXF0EIDH	equ	962
+   535  000000                     _C2RXF0EIDHbits	equ	962
+   536  000000                     _C2RXF0EIDL	equ	964
+   537  000000                     _C2RXF0EIDLbits	equ	964
+   538  000000                     _C2RXF0SID	equ	960
+   539  000000                     _C2RXF0SIDbits	equ	960
+   540  000000                     _C2RXF1EIDH	equ	970
+   541  000000                     _C2RXF1EIDHbits	equ	970
+   542  000000                     _C2RXF1EIDL	equ	972
+   543  000000                     _C2RXF1EIDLbits	equ	972
+   544  000000                     _C2RXF1SID	equ	968
+   545  000000                     _C2RXF1SIDbits	equ	968
+   546  000000                     _C2RXF2EIDH	equ	978
+   547  000000                     _C2RXF2EIDHbits	equ	978
+   548  000000                     _C2RXF2EIDL	equ	980
+   549  000000                     _C2RXF2EIDLbits	equ	980
+   550  000000                     _C2RXF2SID	equ	976
+   551  000000                     _C2RXF2SIDbits	equ	976
+   552  000000                     _C2RXF3EIDH	equ	986
+   553  000000                     _C2RXF3EIDHbits	equ	986
+   554  000000                     _C2RXF3EIDL	equ	988
+   555  000000                     _C2RXF3EIDLbits	equ	988
+   556  000000                     _C2RXF3SID	equ	984
+   557  000000                     _C2RXF3SIDbits	equ	984
+   558  000000                     _C2RXF4EIDH	equ	994
+   559  000000                     _C2RXF4EIDHbits	equ	994
+   560  000000                     _C2RXF4EIDL	equ	996
+   561  000000                     _C2RXF4EIDLbits	equ	996
+   562  000000                     _C2RXF4SID	equ	992
+   563  000000                     _C2RXF4SIDbits	equ	992
+   564  000000                     _C2RXF5EIDH	equ	1002
+   565  000000                     _C2RXF5EIDHbits	equ	1002
+   566  000000                     _C2RXF5EIDL	equ	1004
+   567  000000                     _C2RXF5EIDLbits	equ	1004
+   568  000000                     _C2RXF5SID	equ	1000
+   569  000000                     _C2RXF5SIDbits	equ	1000
+   570  000000                     _C2RXM0EIDH	equ	1010
+   571  000000                     _C2RXM0EIDHbits	equ	1010
+   572  000000                     _C2RXM0EIDL	equ	1012
+   573  000000                     _C2RXM0EIDLbits	equ	1012
+   574  000000                     _C2RXM0SID	equ	1008
+   575  000000                     _C2RXM0SIDbits	equ	1008
+   576  000000                     _C2RXM1EIDH	equ	1018
+   577  000000                     _C2RXM1EIDHbits	equ	1018
+   578  000000                     _C2RXM1EIDL	equ	1020
+   579  000000                     _C2RXM1EIDLbits	equ	1020
+   580  000000                     _C2RXM1SID	equ	1016
+   581  000000                     _C2RXM1SIDbits	equ	1016
+   582  000000                     _C2TX0B1	equ	1062
+   583  000000                     _C2TX0B1bits	equ	1062
+   584  000000                     _C2TX0B2	equ	1064
+   585  000000                     _C2TX0B2bits	equ	1064
+   586  000000                     _C2TX0B3	equ	1066
+   587  000000                     _C2TX0B3bits	equ	1066
+   588  000000                     _C2TX0B4	equ	1068
+   589  000000                     _C2TX0B4bits	equ	1068
+   590  000000                     _C2TX0CON	equ	1070
+   591  000000                     _C2TX0CONbits	equ	1070
+   592  000000                     _C2TX0DLC	equ	1060
+   593  000000                     _C2TX0DLCbits	equ	1060
+   594  000000                     _C2TX0EID	equ	1058
+   595  000000                     _C2TX0EIDbits	equ	1058
+   596  000000                     _C2TX0SID	equ	1056
+   597  000000                     _C2TX0SIDbits	equ	1056
+   598  000000                     _C2TX1B1	equ	1046
+   599  000000                     _C2TX1B1bits	equ	1046
+   600  000000                     _C2TX1B2	equ	1048
+   601  000000                     _C2TX1B2bits	equ	1048
+   602  000000                     _C2TX1B3	equ	1050
+   603  000000                     _C2TX1B3bits	equ	1050
+   604  000000                     _C2TX1B4	equ	1052
+   605  000000                     _C2TX1B4bits	equ	1052
+   606  000000                     _C2TX1CON	equ	1054
+   607  000000                     _C2TX1CONbits	equ	1054
+   608  000000                     _C2TX1DLC	equ	1044
+   609  000000                     _C2TX1DLCbits	equ	1044
+   610  000000                     _C2TX1EID	equ	1042
+   611  000000                     _C2TX1EIDbits	equ	1042
+   612  000000                     _C2TX1SID	equ	1040
+   613  000000                     _C2TX1SIDbits	equ	1040
+   614  000000                     _C2TX2B1	equ	1030
+   615  000000                     _C2TX2B1bits	equ	1030
+   616  000000                     _C2TX2B2	equ	1032
+   617  000000                     _C2TX2B2bits	equ	1032
+   618  000000                     _C2TX2B3	equ	1034
+   619  000000                     _C2TX2B3bits	equ	1034
+   620  000000                     _C2TX2B4	equ	1036
+   621  000000                     _C2TX2B4bits	equ	1036
+   622  000000                     _C2TX2CON	equ	1038
+   623  000000                     _C2TX2CONbits	equ	1038
+   624  000000                     _C2TX2DLC	equ	1028
+   625  000000                     _C2TX2DLCbits	equ	1028
+   626  000000                     _C2TX2EID	equ	1026
+   627  000000                     _C2TX2EIDbits	equ	1026
+   628  000000                     _C2TX2SID	equ	1024
+   629  000000                     _C2TX2SIDbits	equ	1024
+   630  000000                     _CNEN1	equ	192
+   631  000000                     _CNEN1bits	equ	192
+   632  000000                     _CNEN2	equ	194
+   633  000000                     _CNEN2bits	equ	194
+   634  000000                     _CNPU1	equ	196
+   635  000000                     _CNPU1bits	equ	196
+   636  000000                     _CNPU2	equ	198
+   637  000000                     _CNPU2bits	equ	198
+   638  000000                     _CORCON	equ	68
+   639  000000                     _CORCONbits	equ	68
+   640  000000                     _DCOUNT	equ	56
+   641  000000                     _DCOUNTbits	equ	56
+   642  000000                     _DFLTCON	equ	292
+   643  000000                     _DFLTCONbits	equ	292
+   644  000000                     _DISICNT	equ	82
+   645  000000                     _DISICNTbits	equ	82
+   646  000000                     _DOENDH	equ	64
+   647  000000                     _DOENDHbits	equ	64
+   648  000000                     _DOENDL	equ	62
+   649  000000                     _DOSTARTH	equ	60
+   650  000000                     _DOSTARTHbits	equ	60
+   651  000000                     _DOSTARTL	equ	58
+   652  000000                     _DTCON1	equ	460
+   653  000000                     _DTCON1bits	equ	460
+   654  000000                     _DTCON2	equ	462
+   655  000000                     _DTCON2bits	equ	462
+   656  000000                     _FLTACON	equ	464
+   657  000000                     _FLTACONbits	equ	464
+   658  000000                     _FLTBCON	equ	466
+   659  000000                     _FLTBCONbits	equ	466
+   660  000000                     _I2CADD	equ	522
+   661  000000                     _I2CADDbits	equ	522
+   662  000000                     _I2CBRG	equ	516
+   663  000000                     _I2CBRGbits	equ	516
+   664  000000                     _I2CCON	equ	518
+   665  000000                     _I2CCONbits	equ	518
+   666  000000                     _I2CRCV	equ	512
+   667  000000                     _I2CRCVbits	equ	512
+   668  000000                     _I2CSTAT	equ	520
+   669  000000                     _I2CSTATbits	equ	520
+   670  000000                     _I2CTRN	equ	514
+   671  000000                     _I2CTRNbits	equ	514
+   672  000000                     _IC1BUF	equ	320
+   673  000000                     _IC1CON	equ	322
+   674  000000                     _IC1CONbits	equ	322
+   675  000000                     _IC2BUF	equ	324
+   676  000000                     _IC2CON	equ	326
+   677  000000                     _IC2CONbits	equ	326
+   678  000000                     _IC3BUF	equ	328
+   679  000000                     _IC3CON	equ	330
+   680  000000                     _IC3CONbits	equ	330
+   681  000000                     _IC4BUF	equ	332
+   682  000000                     _IC4CON	equ	334
+   683  000000                     _IC4CONbits	equ	334
+   684  000000                     _IC5BUF	equ	336
+   685  000000                     _IC5CON	equ	338
+   686  000000                     _IC5CONbits	equ	338
+   687  000000                     _IC6BUF	equ	340
+   688  000000                     _IC6CON	equ	342
+   689  000000                     _IC6CONbits	equ	342
+   690  000000                     _IC7BUF	equ	344
+   691  000000                     _IC7CON	equ	346
+   692  000000                     _IC7CONbits	equ	346
+   693  000000                     _IC8BUF	equ	348
+   694  000000                     _IC8CON	equ	350
+   695  000000                     _IC8CONbits	equ	350
+   696  000000                     _IEC0	equ	140
+   697  000000                     _IEC0bits	equ	140
+   698  000000                     _IEC1	equ	142
+   699  000000                     _IEC1bits	equ	142
+   700  000000                     _IEC2	equ	144
+   701  000000                     _IEC2bits	equ	144
+   702  000000                     _IFS0	equ	132
+   703  000000                     _IFS0bits	equ	132
+   704  000000                     _IFS1	equ	134
+   705  000000                     _IFS1bits	equ	134
+   706  000000                     _IFS2	equ	136
+   707  000000                     _IFS2bits	equ	136
+   708  000000                     _INTCON1	equ	128
+   709  000000                     _INTCON1bits	equ	128
+   710  000000                     _INTCON2	equ	130
+   711  000000                     _INTCON2bits	equ	130
+   712  000000                     _INTTREG	equ	176
+   713  000000                     _INTTREGbits	equ	176
+   714  000000                     _IPC0	equ	148
+   715  000000                     _IPC0bits	equ	148
+   716  000000                     _IPC1	equ	150
+   717  000000                     _IPC10	equ	168
+   718  000000                     _IPC10bits	equ	168
+   719  000000                     _IPC11	equ	170
+   720  000000                     _IPC11bits	equ	170
+   721  000000                     _IPC1bits	equ	150
+   722  000000                     _IPC2	equ	152
+   723  000000                     _IPC2bits	equ	152
+   724  000000                     _IPC3	equ	154
+   725  000000                     _IPC3bits	equ	154
+   726  000000                     _IPC4	equ	156
+   727  000000                     _IPC4bits	equ	156
+   728  000000                     _IPC5	equ	158
+   729  000000                     _IPC5bits	equ	158
+   730  000000                     _IPC6	equ	160
+   731  000000                     _IPC6bits	equ	160
+   732  000000                     _IPC7	equ	162
+   733  000000                     _IPC7bits	equ	162
+   734  000000                     _IPC8	equ	164
+   735  000000                     _IPC8bits	equ	164
+   736  000000                     _IPC9	equ	166
+   737  000000                     _IPC9bits	equ	166
+   738  000000                     _LATA	equ	708
+   739  000000                     _LATAbits	equ	708
+   740  000000                     _LATB	equ	714
+   741  000000                     _LATBbits	equ	714
+   742  000000                     _LATC	equ	720
+   743  000000                     _LATCbits	equ	720
+   744  000000                     _LATD	equ	726
+   745  000000                     _LATDbits	equ	726
+   746  000000                     _LATE	equ	732
+   747  000000                     _LATEbits	equ	732
+   748  000000                     _LATF	equ	738
+   749  000000                     _LATFbits	equ	738
+   750  000000                     _LATG	equ	744
+   751  000000                     _LATGbits	equ	744
+   752  000000                     _MAXCNT	equ	296
+   753  000000                     _MODCON	equ	70
+   754  000000                     _MODCONbits	equ	70
+   755  000000                     _NVMADR	equ	1890
+   756  000000                     _NVMADRU	equ	1892
+   757  000000                     _NVMADRUbits	equ	1892
+   758  000000                     _NVMCON	equ	1888
+   759  000000                     _NVMCONbits	equ	1888
+   760  000000                     _NVMKEY	equ	1894
+   761  000000                     _NVMKEYbits	equ	1894
+   762  000000                     _OC1CON	equ	388
+   763  000000                     _OC1CONbits	equ	388
+   764  000000                     _OC1R	equ	386
+   765  000000                     _OC1RS	equ	384
+   766  000000                     _OC2CON	equ	394
+   767  000000                     _OC2CONbits	equ	394
+   768  000000                     _OC2R	equ	392
+   769  000000                     _OC2RS	equ	390
+   770  000000                     _OC3CON	equ	400
+   771  000000                     _OC3CONbits	equ	400
+   772  000000                     _OC3R	equ	398
+   773  000000                     _OC3RS	equ	396
+   774  000000                     _OC4CON	equ	406
+   775  000000                     _OC4CONbits	equ	406
+   776  000000                     _OC4R	equ	404
+   777  000000                     _OC4RS	equ	402
+   778  000000                     _OC5CON	equ	412
+   779  000000                     _OC5CONbits	equ	412
+   780  000000                     _OC5R	equ	410
+   781  000000                     _OC5RS	equ	408
+   782  000000                     _OC6CON	equ	418
+   783  000000                     _OC6CONbits	equ	418
+   784  000000                     _OC6R	equ	416
+   785  000000                     _OC6RS	equ	414
+   786  000000                     _OC7CON	equ	424
+   787  000000                     _OC7CONbits	equ	424
+   788  000000                     _OC7R	equ	422
+   789  000000                     _OC7RS	equ	420
+   790  000000                     _OC8CON	equ	430
+   791  000000                     _OC8CONbits	equ	430
+   792  000000                     _OC8R	equ	428
+   793  000000                     _OC8RS	equ	426
+   794  000000                     _OSCCON	equ	1858
+   795  000000                     _OSCCONbits	equ	1858
+   796  000000                     _OSCTUN	equ	1860
+   797  000000                     _OSCTUNbits	equ	1860
+   798  000000                     _OVDCON	equ	468
+   799  000000                     _OVDCONbits	equ	468
+   800  000000                     _PCH	equ	48
+   801  000000                     _PCHbits	equ	48
+   802  000000                     _PCL	equ	46
+   803  000000                     _PDC1	equ	470
+   804  000000                     _PDC2	equ	472
+   805  000000                     _PDC3	equ	474
+   806  000000                     _PDC4	equ	476
+   807  000000                     _PMD1	equ	1904
+   808  000000                     _PMD1bits	equ	1904
+   809  000000                     _PMD2	equ	1906
+   810  000000                     _PMD2bits	equ	1906
+   811  000000                     _PORTA	equ	706
+   812  000000                     _PORTAbits	equ	706
+   813  000000                     _PORTB	equ	712
+   814  000000                     _PORTBbits	equ	712
+   815  000000                     _PORTC	equ	718
+   816  000000                     _PORTCbits	equ	718
+   817  000000                     _PORTD	equ	724
+   818  000000                     _PORTDbits	equ	724
+   819  000000                     _PORTE	equ	730
+   820  000000                     _PORTEbits	equ	730
+   821  000000                     _PORTF	equ	736
+   822  000000                     _PORTFbits	equ	736
+   823  000000                     _PORTG	equ	742
+   824  000000                     _PORTGbits	equ	742
+   825  000000                     _POSCNT	equ	294
+   826  000000                     _PR1	equ	258
+   827  000000                     _PR2	equ	268
+   828  000000                     _PR3	equ	270
+   829  000000                     _PR4	equ	282
+   830  000000                     _PR5	equ	284
+   831  000000                     _PSVPAG	equ	52
+   832  000000                     _PSVPAGbits	equ	52
+   833  000000                     _PTCON	equ	448
+   834  000000                     _PTCONbits	equ	448
+   835  000000                     _PTMR	equ	450
+   836  000000                     _PTMRbits	equ	450
+   837  000000                     _PTPER	equ	452
+   838  000000                     _PTPERbits	equ	452
+   839  000000                     _PWMCON1	equ	456
+   840  000000                     _PWMCON1bits	equ	456
+   841  000000                     _PWMCON2	equ	458
+   842  000000                     _PWMCON2bits	equ	458
+   843  000000                     _QEICON	equ	290
+   844  000000                     _QEICONbits	equ	290
+   845  000000                     _RCON	equ	1856
+   846  000000                     _RCONbits	equ	1856
+   847  000000                     _RCOUNT	equ	54
+   848  000000                     _RCOUNTbits	equ	54
+   849  000000                     _SEVTCMP	equ	454
+   850  000000                     _SEVTCMPbits	equ	454
+   851  000000                     _SPI1BUF	equ	548
+   852  000000                     _SPI1CON	equ	546
+   853  000000                     _SPI1CONbits	equ	546
+   854  000000                     _SPI1STAT	equ	544
+   855  000000                     _SPI1STATbits	equ	544
+   856  000000                     _SPI2BUF	equ	554
+   857  000000                     _SPI2CON	equ	552
+   858  000000                     _SPI2CONbits	equ	552
+   859  000000                     _SPI2STAT	equ	550
+   860  000000                     _SPI2STATbits	equ	550
+   861  000000                     _SPLIM	equ	32
+   862  000000                     _SR	equ	66
+   863  000000                     _SRbits	equ	66
+   864  000000                     _SSRAM	equ	1874
+   865  000000                     _SSRAMbits	equ	1874
+   866  000000                     _T1CON	equ	260
+   867  000000                     _T1CONbits	equ	260
+   868  000000                     _T2CON	equ	272
+   869  000000                     _T2CONbits	equ	272
+   870  000000                     _T3CON	equ	274
+   871  000000                     _T3CONbits	equ	274
+   872  000000                     _T4CON	equ	286
+   873  000000                     _T4CONbits	equ	286
+   874  000000                     _T5CON	equ	288
+   875  000000                     _T5CONbits	equ	288
+   876  000000                     _TBLPAG	equ	50
+   877  000000                     _TBLPAGbits	equ	50
+   878  000000                     _TMR1	equ	256
+   879  000000                     _TMR2	equ	262
+   880  000000                     _TMR3	equ	266
+   881  000000                     _TMR3HLD	equ	264
+   882  000000                     _TMR4	equ	276
+   883  000000                     _TMR5	equ	280
+   884  000000                     _TMR5HLD	equ	278
+   885  000000                     _TRISA	equ	704
+   886  000000                     _TRISAbits	equ	704
+   887  000000                     _TRISB	equ	710
+   888  000000                     _TRISBbits	equ	710
+   889  000000                     _TRISC	equ	716
+   890  000000                     _TRISCbits	equ	716
+   891  000000                     _TRISD	equ	722
+   892  000000                     _TRISDbits	equ	722
+   893  000000                     _TRISE	equ	728
+   894  000000                     _TRISEbits	equ	728
+   895  000000                     _TRISF	equ	734
+   896  000000                     _TRISFbits	equ	734
+   897  000000                     _TRISG	equ	740
+   898  000000                     _TRISGbits	equ	740
+   899  000000                     _U1BRG	equ	532
+   900  000000                     _U1MODE	equ	524
+   901  000000                     _U1MODEbits	equ	524
+   902  000000                     _U1RXREG	equ	530
+   903  000000                     _U1RXREGbits	equ	530
+   904  000000                     _U1STA	equ	526
+   905  000000                     _U1STAbits	equ	526
+   906  000000                     _U1TXREG	equ	528
+   907  000000                     _U1TXREGbits	equ	528
+   908  000000                     _U2BRG	equ	542
+   909  000000                     _U2MODE	equ	534
+   910  000000                     _U2MODEbits	equ	534
+   911  000000                     _U2RXREG	equ	540
+   912  000000                     _U2RXREGbits	equ	540
+   913  000000                     _U2STA	equ	536
+   914  000000                     _U2STAbits	equ	536
+   915  000000                     _U2TXREG	equ	538
+   916  000000                     _U2TXREGbits	equ	538
+   917  000000                     _WREG0	equ	0
+   918  000000                     _WREG1	equ	2
+   919  000000                     _WREG10	equ	20
+   920  000000                     _WREG11	equ	22
+   921  000000                     _WREG12	equ	24
+   922  000000                     _WREG13	equ	26
+   923  000000                     _WREG14	equ	28
+   924  000000                     _WREG15	equ	30
+   925  000000                     _WREG2	equ	4
+   926  000000                     _WREG3	equ	6
+   927  000000                     _WREG4	equ	8
+   928  000000                     _WREG5	equ	10
+   929  000000                     _WREG6	equ	12
+   930  000000                     _WREG7	equ	14
+   931  000000                     _WREG8	equ	16
+   932  000000                     _WREG9	equ	18
+   933  000000                     _XBREV	equ	80
+   934  000000                     _XBREVbits	equ	80
+   935  000000                     _XMODEND	equ	74
+   936  000000                     _XMODSRT	equ	72
+   937  000000                     _YMODEND	equ	78
+   938  000000                     _YMODSRT	equ	76
+   939  000000                     _A10M	equ	4154
+   940  000000                     _ABAT	equ	7308
+   941  000000                     _ABAUD	equ	4197
+   942  000000                     _ACCSAT	equ	548
+   943  000000                     _ACKDT	equ	4149
+   944  000000                     _ACKEN	equ	4148
+   945  000000                     _ACKSTAT	equ	4175
+   946  000000                     _ADCMD	equ	15232
+   947  000000                     _ADCS0	equ	5408
+   948  000000                     _ADCS1	equ	5409
+   949  000000                     _ADCS2	equ	5410
+   950  000000                     _ADCS3	equ	5411
+   951  000000                     _ADCS4	equ	5412
+   952  000000                     _ADCS5	equ	5413
+   953  000000                     _ADD10	equ	4168
+   954  000000                     _ADDEN	equ	4213
+   955  000000                     _ADDRERR	equ	1027
+   956  000000                     _ADIE	equ	1131
+   957  000000                     _ADIF	equ	1067
+   958  000000                     _ADIP0	equ	1228
+   959  000000                     _ADIP1	equ	1229
+   960  000000                     _ADIP2	equ	1230
+   961  000000                     _ADON	equ	5391
+   962  000000                     _ADRC	equ	5415
+   963  000000                     _ADSIDL	equ	5389
+   964  000000                     _ALTIO	equ	4202
+   965  000000                     _ALTIVT	equ	1055
+   966  000000                     _ALTS	equ	5392
+   967  000000                     _ASAM	equ	5378
+   968  000000                     _BCL	equ	4170
+   969  000000                     _BGST	equ	14861
+   970  000000                     _BOR	equ	14849
+   971  000000                     _BREN	equ	655
+   972  000000                     _BRP0	equ	7312
+   973  000000                     _BRP1	equ	7313
+   974  000000                     _BRP2	equ	7314
+   975  000000                     _BRP3	equ	7315
+   976  000000                     _BRP4	equ	7316
+   977  000000                     _BRP5	equ	7317
+   978  000000                     _BUFM	equ	5393
+   979  000000                     _BUFS	equ	5399
+   980  000000                     _BWM0	equ	568
+   981  000000                     _BWM1	equ	569
+   982  000000                     _BWM2	equ	570
+   983  000000                     _BWM3	equ	571
+   984  000000                     _C	equ	528
+   985  000000                     _C1IE	equ	1147
+   986  000000                     _C1IF	equ	1083
+   987  000000                     _C1IP0	equ	1292
+   988  000000                     _C1IP1	equ	1293
+   989  000000                     _C1IP2	equ	1294
+   990  000000                     _C1MD	equ	15233
+   991  000000                     _C2IE	equ	1158
+   992  000000                     _C2IF	equ	1094
+   993  000000                     _C2IP0	equ	1336
+   994  000000                     _C2IP1	equ	1337
+   995  000000                     _C2IP2	equ	1338
+   996  000000                     _C2MD	equ	15234
+   997  000000                     _CANCAP	equ	7311
+   998  000000                     _CANCKS	equ	7307
+   999  000000                     _CANFRZ	equ	7310
+  1000  000000                     _CANSIDL	equ	7309
+  1001  000000                     _CEID	equ	2344
+  1002  000000                     _CF	equ	14867
+  1003  000000                     _CH0NA	equ	5428
+  1004  000000                     _CH0NB	equ	5436
+  1005  000000                     _CH0SA0	equ	5424
+  1006  000000                     _CH0SA1	equ	5425
+  1007  000000                     _CH0SA2	equ	5426
+  1008  000000                     _CH0SA3	equ	5427
+  1009  000000                     _CH0SB0	equ	5432
+  1010  000000                     _CH0SB1	equ	5433
+  1011  000000                     _CH0SB2	equ	5434
+  1012  000000                     _CH0SB3	equ	5435
+  1013  000000                     _CH123NA0	equ	5430
+  1014  000000                     _CH123NA1	equ	5431
+  1015  000000                     _CH123NB0	equ	5438
+  1016  000000                     _CH123NB1	equ	5439
+  1017  000000                     _CH123SA	equ	5429
+  1018  000000                     _CH123SB	equ	5437
+  1019  000000                     _CHPS0	equ	5400
+  1020  000000                     _CHPS1	equ	5401
+  1021  000000                     _CKE	equ	4376
+  1022  000000                     _CKP	equ	4374
+  1023  000000                     _CN0IE	equ	1536
+  1024  000000                     _CN0PUE	equ	1568
+  1025  000000                     _CN10IE	equ	1546
+  1026  000000                     _CN10PUE	equ	1578
+  1027  000000                     _CN11IE	equ	1547
+  1028  000000                     _CN11PUE	equ	1579
+  1029  000000                     _CN12IE	equ	1548
+  1030  000000                     _CN12PUE	equ	1580
+  1031  000000                     _CN13IE	equ	1549
+  1032  000000                     _CN13PUE	equ	1581
+  1033  000000                     _CN14IE	equ	1550
+  1034  000000                     _CN14PUE	equ	1582
+  1035  000000                     _CN15IE	equ	1551
+  1036  000000                     _CN15PUE	equ	1583
+  1037  000000                     _CN16IE	equ	1552
+  1038  000000                     _CN16PUE	equ	1584
+  1039  000000                     _CN17IE	equ	1553
+  1040  000000                     _CN17PUE	equ	1585
+  1041  000000                     _CN18IE	equ	1554
+  1042  000000                     _CN18PUE	equ	1586
+  1043  000000                     _CN19IE	equ	1555
+  1044  000000                     _CN19PUE	equ	1587
+  1045  000000                     _CN1IE	equ	1537
+  1046  000000                     _CN1PUE	equ	1569
+  1047  000000                     _CN20IE	equ	1556
+  1048  000000                     _CN20PUE	equ	1588
+  1049  000000                     _CN21IE	equ	1557
+  1050  000000                     _CN21PUE	equ	1589
+  1051  000000                     _CN2IE	equ	1538
+  1052  000000                     _CN2PUE	equ	1570
+  1053  000000                     _CN3IE	equ	1539
+  1054  000000                     _CN3PUE	equ	1571
+  1055  000000                     _CN4IE	equ	1540
+  1056  000000                     _CN4PUE	equ	1572
+  1057  000000                     _CN5IE	equ	1541
+  1058  000000                     _CN5PUE	equ	1573
+  1059  000000                     _CN6IE	equ	1542
+  1060  000000                     _CN6PUE	equ	1574
+  1061  000000                     _CN7IE	equ	1543
+  1062  000000                     _CN7PUE	equ	1575
+  1063  000000                     _CN8IE	equ	1544
+  1064  000000                     _CN8PUE	equ	1576
+  1065  000000                     _CN9IE	equ	1545
+  1066  000000                     _CN9PUE	equ	1577
+  1067  000000                     _CNIE	equ	1135
+  1068  000000                     _CNIF	equ	1071
+  1069  000000                     _CNIP0	equ	1244
+  1070  000000                     _CNIP1	equ	1245
+  1071  000000                     _CNIP2	equ	1246
+  1072  000000                     _CNTERR	equ	2335
+  1073  000000                     _COSC0	equ	14876
+  1074  000000                     _COSC1	equ	14877
+  1075  000000                     _COSC2	equ	14878
+  1076  000000                     _COVTE	equ	1032
+  1077  000000                     _CSCNA	equ	5402
+  1078  000000                     _CSSL0	equ	5456
+  1079  000000                     _CSSL1	equ	5457
+  1080  000000                     _CSSL10	equ	5466
+  1081  000000                     _CSSL11	equ	5467
+  1082  000000                     _CSSL12	equ	5468
+  1083  000000                     _CSSL13	equ	5469
+  1084  000000                     _CSSL14	equ	5470
+  1085  000000                     _CSSL15	equ	5471
+  1086  000000                     _CSSL2	equ	5458
+  1087  000000                     _CSSL3	equ	5459
+  1088  000000                     _CSSL4	equ	5460
+  1089  000000                     _CSSL5	equ	5461
+  1090  000000                     _CSSL6	equ	5462
+  1091  000000                     _CSSL7	equ	5463
+  1092  000000                     _CSSL8	equ	5464
+  1093  000000                     _CSSL9	equ	5465
+  1094  000000                     _DA	equ	537
+  1095  000000                     _DC	equ	536
+  1096  000000                     _DISI	equ	1054
+  1097  000000                     _DISSDO	equ	4379
+  1098  000000                     _DISSLW	equ	4153
+  1099  000000                     _DL0	equ	552
+  1100  000000                     _DL1	equ	553
+  1101  000000                     _DL2	equ	554
+  1102  000000                     _DLC0	equ	6691
+  1103  000000                     _DLC1	equ	6692
+  1104  000000                     _DLC2	equ	6693
+  1105  000000                     _DLC3	equ	6694
+  1106  000000                     _DONE	equ	5376
+  1107  000000                     _DTA0	equ	3680
+  1108  000000                     _DTA1	equ	3681
+  1109  000000                     _DTA2	equ	3682
+  1110  000000                     _DTA3	equ	3683
+  1111  000000                     _DTA4	equ	3684
+  1112  000000                     _DTA5	equ	3685
+  1113  000000                     _DTAPS0	equ	3686
+  1114  000000                     _DTAPS1	equ	3687
+  1115  000000                     _DTB0	equ	3688
+  1116  000000                     _DTB1	equ	3689
+  1117  000000                     _DTB2	equ	3690
+  1118  000000                     _DTB3	equ	3691
+  1119  000000                     _DTB4	equ	3692
+  1120  000000                     _DTB5	equ	3693
+  1121  000000                     _DTBPS0	equ	3694
+  1122  000000                     _DTBPS1	equ	3695
+  1123  000000                     _DTS1A	equ	3697
+  1124  000000                     _DTS1I	equ	3696
+  1125  000000                     _DTS2A	equ	3699
+  1126  000000                     _DTS2I	equ	3698
+  1127  000000                     _DTS3A	equ	3701
+  1128  000000                     _DTS3I	equ	3700
+  1129  000000                     _DTS4A	equ	3703
+  1130  000000                     _DTS4I	equ	3702
+  1131  000000                     _D_A	equ	4165
+  1132  000000                     _D_nA	equ	4165
+  1133  000000                     _EDT	equ	555
+  1134  000000                     _EID0	equ	6186
+  1135  000000                     _EID1	equ	6187
+  1136  000000                     _EID10	equ	6164
+  1137  000000                     _EID11	equ	6165
+  1138  000000                     _EID12	equ	6166
+  1139  000000                     _EID13	equ	6167
+  1140  000000                     _EID14	equ	6168
+  1141  000000                     _EID15	equ	6169
+  1142  000000                     _EID16	equ	6170
+  1143  000000                     _EID17	equ	6171
+  1144  000000                     _EID2	equ	6188
+  1145  000000                     _EID3	equ	6189
+  1146  000000                     _EID4	equ	6190
+  1147  000000                     _EID5	equ	6191
+  1148  000000                     _EID6	equ	6160
+  1149  000000                     _EID7	equ	6161
+  1150  000000                     _EID8	equ	6162
+  1151  000000                     _EID9	equ	6163
+  1152  000000                     _ERRIE	equ	7365
+  1153  000000                     _ERRIF	equ	7349
+  1154  000000                     _EWARN	equ	7352
+  1155  000000                     _EXIDE	equ	6144
+  1156  000000                     _EXTR	equ	14855
+  1157  000000                     _FAEN1	equ	3712
+  1158  000000                     _FAEN2	equ	3713
+  1159  000000                     _FAEN3	equ	3714
+  1160  000000                     _FAEN4	equ	3715
+  1161  000000                     _FAOV1H	equ	3721
+  1162  000000                     _FAOV1L	equ	3720
+  1163  000000                     _FAOV2H	equ	3723
+  1164  000000                     _FAOV2L	equ	3722
+  1165  000000                     _FAOV3H	equ	3725
+  1166  000000                     _FAOV3L	equ	3724
+  1167  000000                     _FAOV4H	equ	3727
+  1168  000000                     _FAOV4L	equ	3726
+  1169  000000                     _FBEN1	equ	3728
+  1170  000000                     _FBEN2	equ	3729
+  1171  000000                     _FBEN3	equ	3730
+  1172  000000                     _FBEN4	equ	3731
+  1173  000000                     _FBOV1H	equ	3737
+  1174  000000                     _FBOV1L	equ	3736
+  1175  000000                     _FBOV2H	equ	3739
+  1176  000000                     _FBOV2L	equ	3738
+  1177  000000                     _FBOV3H	equ	3741
+  1178  000000                     _FBOV3L	equ	3740
+  1179  000000                     _FBOV4H	equ	3743
+  1180  000000                     _FBOV4L	equ	3742
+  1181  000000                     _FERR	equ	4210
+  1182  000000                     _FILHIT	equ	7280
+  1183  000000                     _FILHIT0	equ	7152
+  1184  000000                     _FILHIT1	equ	7153
+  1185  000000                     _FILHIT2	equ	7154
+  1186  000000                     _FLTAIE	equ	1163
+  1187  000000                     _FLTAIF	equ	1099
+  1188  000000                     _FLTAIP0	equ	1356
+  1189  000000                     _FLTAIP1	equ	1357
+  1190  000000                     _FLTAIP2	equ	1358
+  1191  000000                     _FLTAM	equ	3719
+  1192  000000                     _FLTBIE	equ	1164
+  1193  000000                     _FLTBIF	equ	1100
+  1194  000000                     _FLTBIP0	equ	1360
+  1195  000000                     _FLTBIP1	equ	1361
+  1196  000000                     _FLTBIP2	equ	1362
+  1197  000000                     _FLTBM	equ	3735
+  1198  000000                     _FORM0	equ	5384
+  1199  000000                     _FORM1	equ	5385
+  1200  000000                     _FRMEN	equ	4382
+  1201  000000                     _GCEN	equ	4151
+  1202  000000                     _GCSTAT	equ	4169
+  1203  000000                     _I2CEN	equ	4159
+  1204  000000                     _I2CMD	equ	15239
+  1205  000000                     _I2COV	equ	4166
+  1206  000000                     _I2CSIDL	equ	4157
+  1207  000000                     _IC1IE	equ	1121
+  1208  000000                     _IC1IF	equ	1057
+  1209  000000                     _IC1IP0	equ	1188
+  1210  000000                     _IC1IP1	equ	1189
+  1211  000000                     _IC1IP2	equ	1190
+  1212  000000                     _IC1MD	equ	15256
+  1213  000000                     _IC2IE	equ	1124
+  1214  000000                     _IC2IF	equ	1060
+  1215  000000                     _IC2IP0	equ	1200
+  1216  000000                     _IC2IP1	equ	1201
+  1217  000000                     _IC2IP2	equ	1202
+  1218  000000                     _IC2MD	equ	15257
+  1219  000000                     _IC3IE	equ	1148
+  1220  000000                     _IC3IF	equ	1084
+  1221  000000                     _IC3IP0	equ	1296
+  1222  000000                     _IC3IP1	equ	1297
+  1223  000000                     _IC3IP2	equ	1298
+  1224  000000                     _IC3MD	equ	15258
+  1225  000000                     _IC4IE	equ	1149
+  1226  000000                     _IC4IF	equ	1085
+  1227  000000                     _IC4IP0	equ	1300
+  1228  000000                     _IC4IP1	equ	1301
+  1229  000000                     _IC4IP2	equ	1302
+  1230  000000                     _IC4MD	equ	15259
+  1231  000000                     _IC5IE	equ	1150
+  1232  000000                     _IC5IF	equ	1086
+  1233  000000                     _IC5IP0	equ	1304
+  1234  000000                     _IC5IP1	equ	1305
+  1235  000000                     _IC5IP2	equ	1306
+  1236  000000                     _IC5MD	equ	15260
+  1237  000000                     _IC6IE	equ	1151
+  1238  000000                     _IC6IF	equ	1087
+  1239  000000                     _IC6IP0	equ	1308
+  1240  000000                     _IC6IP1	equ	1309
+  1241  000000                     _IC6IP2	equ	1310
+  1242  000000                     _IC6MD	equ	15261
+  1243  000000                     _IC7IE	equ	1137
+  1244  000000                     _IC7IF	equ	1073
+  1245  000000                     _IC7IP0	equ	1252
+  1246  000000                     _IC7IP1	equ	1253
+  1247  000000                     _IC7IP2	equ	1254
+  1248  000000                     _IC7MD	equ	15262
+  1249  000000                     _IC8IE	equ	1138
+  1250  000000                     _IC8IF	equ	1074
+  1251  000000                     _IC8IP0	equ	1256
+  1252  000000                     _IC8IP1	equ	1257
+  1253  000000                     _IC8IP2	equ	1258
+  1254  000000                     _IC8MD	equ	15263
+  1255  000000                     _ICBNE	equ	2579
+  1256  000000                     _ICI0	equ	2581
+  1257  000000                     _ICI1	equ	2582
+  1258  000000                     _ICM0	equ	2576
+  1259  000000                     _ICM1	equ	2577
+  1260  000000                     _ICM2	equ	2578
+  1261  000000                     _ICOD0	equ	7297
+  1262  000000                     _ICOD1	equ	7298
+  1263  000000                     _ICOD2	equ	7299
+  1264  000000                     _ICOV	equ	2580
+  1265  000000                     _ICSIDL	equ	2589
+  1266  000000                     _ICTMR	equ	2583
+  1267  000000                     _IDLE	equ	14850
+  1268  000000                     _IDLE_MODE	equ	15249
+  1269  000000                     _IF	equ	544
+  1270  000000                     _ILR0	equ	1416
+  1271  000000                     _ILR1	equ	1417
+  1272  000000                     _ILR2	equ	1418
+  1273  000000                     _ILR3	equ	1419
+  1274  000000                     _IMV0	equ	2345
+  1275  000000                     _IMV1	equ	2346
+  1276  000000                     _INDCK0	equ	2336
+  1277  000000                     _INDCK1	equ	2337
+  1278  000000                     _INDCK2	equ	2338
+  1279  000000                     _INDOUT	equ	2339
+  1280  000000                     _INDX	equ	2332
+  1281  000000                     _INT0EP	equ	1040
+  1282  000000                     _INT0IE	equ	1120
+  1283  000000                     _INT0IF	equ	1056
+  1284  000000                     _INT0IP0	equ	1184
+  1285  000000                     _INT0IP1	equ	1185
+  1286  000000                     _INT0IP2	equ	1186
+  1287  000000                     _INT1EP	equ	1041
+  1288  000000                     _INT1IE	equ	1136
+  1289  000000                     _INT1IF	equ	1072
+  1290  000000                     _INT1IP0	equ	1248
+  1291  000000                     _INT1IP1	equ	1249
+  1292  000000                     _INT1IP2	equ	1250
+  1293  000000                     _INT2EP	equ	1042
+  1294  000000                     _INT2IE	equ	1143
+  1295  000000                     _INT2IF	equ	1079
+  1296  000000                     _INT2IP0	equ	1276
+  1297  000000                     _INT2IP1	equ	1277
+  1298  000000                     _INT2IP2	equ	1278
+  1299  000000                     _INT3EP	equ	1043
+  1300  000000                     _INT3IE	equ	1156
+  1301  000000                     _INT3IF	equ	1092
+  1302  000000                     _INT3IP0	equ	1328
+  1303  000000                     _INT3IP1	equ	1329
+  1304  000000                     _INT3IP2	equ	1330
+  1305  000000                     _INT4EP	equ	1044
+  1306  000000                     _INT4IE	equ	1157
+  1307  000000                     _INT4IF	equ	1093
+  1308  000000                     _INT4IP0	equ	1332
+  1309  000000                     _INT4IP1	equ	1333
+  1310  000000                     _INT4IP2	equ	1334
+  1311  000000                     _IOPUWR	equ	14862
+  1312  000000                     _IPL0	equ	533
+  1313  000000                     _IPL1	equ	534
+  1314  000000                     _IPL2	equ	535
+  1315  000000                     _IPL3	equ	547
+  1316  000000                     _IPMIEN	equ	4155
+  1317  000000                     _IRQtoCPU	equ	1423
+  1318  000000                     _IRXIE	equ	7367
+  1319  000000                     _IRXIF	equ	7351
+  1320  000000                     _IR_BSR	equ	14977
+  1321  000000                     _IR_SSR	equ	14993
+  1322  000000                     _IUE	equ	3666
+  1323  000000                     _IWCOL	equ	4167
+  1324  000000                     _IW_BSR	equ	14978
+  1325  000000                     _IW_SSR	equ	14994
+  1326  000000                     _JTOFF	equ	7281
+  1327  000000                     _LATA10	equ	5674
+  1328  000000                     _LATA14	equ	5678
+  1329  000000                     _LATA15	equ	5679
+  1330  000000                     _LATA9	equ	5673
+  1331  000000                     _LATB0	equ	5712
+  1332  000000                     _LATB1	equ	5713
+  1333  000000                     _LATB10	equ	5722
+  1334  000000                     _LATB11	equ	5723
+  1335  000000                     _LATB12	equ	5724
+  1336  000000                     _LATB13	equ	5725
+  1337  000000                     _LATB14	equ	5726
+  1338  000000                     _LATB15	equ	5727
+  1339  000000                     _LATB2	equ	5714
+  1340  000000                     _LATB3	equ	5715
+  1341  000000                     _LATB4	equ	5716
+  1342  000000                     _LATB5	equ	5717
+  1343  000000                     _LATB6	equ	5718
+  1344  000000                     _LATB7	equ	5719
+  1345  000000                     _LATB8	equ	5720
+  1346  000000                     _LATB9	equ	5721
+  1347  000000                     _LATC1	equ	5761
+  1348  000000                     _LATC13	equ	5773
+  1349  000000                     _LATC14	equ	5774
+  1350  000000                     _LATC15	equ	5775
+  1351  000000                     _LATC3	equ	5763
+  1352  000000                     _LATD0	equ	5808
+  1353  000000                     _LATD1	equ	5809
+  1354  000000                     _LATD10	equ	5818
+  1355  000000                     _LATD11	equ	5819
+  1356  000000                     _LATD12	equ	5820
+  1357  000000                     _LATD13	equ	5821
+  1358  000000                     _LATD14	equ	5822
+  1359  000000                     _LATD15	equ	5823
+  1360  000000                     _LATD2	equ	5810
+  1361  000000                     _LATD3	equ	5811
+  1362  000000                     _LATD4	equ	5812
+  1363  000000                     _LATD5	equ	5813
+  1364  000000                     _LATD6	equ	5814
+  1365  000000                     _LATD7	equ	5815
+  1366  000000                     _LATD8	equ	5816
+  1367  000000                     _LATD9	equ	5817
+  1368  000000                     _LATE0	equ	5856
+  1369  000000                     _LATE1	equ	5857
+  1370  000000                     _LATE2	equ	5858
+  1371  000000                     _LATE3	equ	5859
+  1372  000000                     _LATE4	equ	5860
+  1373  000000                     _LATE5	equ	5861
+  1374  000000                     _LATE6	equ	5862
+  1375  000000                     _LATE7	equ	5863
+  1376  000000                     _LATE8	equ	5864
+  1377  000000                     _LATE9	equ	5865
+  1378  000000                     _LATF0	equ	5904
+  1379  000000                     _LATF1	equ	5905
+  1380  000000                     _LATF2	equ	5906
+  1381  000000                     _LATF3	equ	5907
+  1382  000000                     _LATF4	equ	5908
+  1383  000000                     _LATF5	equ	5909
+  1384  000000                     _LATF6	equ	5910
+  1385  000000                     _LATF7	equ	5911
+  1386  000000                     _LATF8	equ	5912
+  1387  000000                     _LATG0	equ	5952
+  1388  000000                     _LATG1	equ	5953
+  1389  000000                     _LATG2	equ	5954
+  1390  000000                     _LATG3	equ	5955
+  1391  000000                     _LATG6	equ	5958
+  1392  000000                     _LATG7	equ	5959
+  1393  000000                     _LATG8	equ	5960
+  1394  000000                     _LATG9	equ	5961
+  1395  000000                     _LOCK	equ	14869
+  1396  000000                     _LPBACK	equ	4198
+  1397  000000                     _LPOSCEN	equ	14865
+  1398  000000                     _MATHERR	equ	1028
+  1399  000000                     _MI2CIE	equ	1134
+  1400  000000                     _MI2CIF	equ	1070
+  1401  000000                     _MI2CIP0	equ	1240
+  1402  000000                     _MI2CIP1	equ	1241
+  1403  000000                     _MI2CIP2	equ	1242
+  1404  000000                     _MIDE	equ	6528
+  1405  000000                     _MODE16	equ	4378
+  1406  000000                     _MSTEN	equ	4373
+  1407  000000                     _N	equ	531
+  1408  000000                     _NOSC0	equ	14872
+  1409  000000                     _NOSC1	equ	14873
+  1410  000000                     _NOSC2	equ	14874
+  1411  000000                     _NSTDIS	equ	1039
+  1412  000000                     _NVMIE	equ	1132
+  1413  000000                     _NVMIF	equ	1068
+  1414  000000                     _NVMIP0	equ	1232
+  1415  000000                     _NVMIP1	equ	1233
+  1416  000000                     _NVMIP2	equ	1234
+  1417  000000                     _OA	equ	543
+  1418  000000                     _OAB	equ	539
+  1419  000000                     _OB	equ	542
+  1420  000000                     _OC1IE	equ	1122
+  1421  000000                     _OC1IF	equ	1058
+  1422  000000                     _OC1IP0	equ	1192
+  1423  000000                     _OC1IP1	equ	1193
+  1424  000000                     _OC1IP2	equ	1194
+  1425  000000                     _OC1MD	equ	15248
+  1426  000000                     _OC2IE	equ	1125
+  1427  000000                     _OC2IF	equ	1061
+  1428  000000                     _OC2IP0	equ	1204
+  1429  000000                     _OC2IP1	equ	1205
+  1430  000000                     _OC2IP2	equ	1206
+  1431  000000                     _OC2MD	equ	15249
+  1432  000000                     _OC3IE	equ	1139
+  1433  000000                     _OC3IF	equ	1075
+  1434  000000                     _OC3IP0	equ	1260
+  1435  000000                     _OC3IP1	equ	1261
+  1436  000000                     _OC3IP2	equ	1262
+  1437  000000                     _OC3MD	equ	15250
+  1438  000000                     _OC4IE	equ	1140
+  1439  000000                     _OC4IF	equ	1076
+  1440  000000                     _OC4IP0	equ	1264
+  1441  000000                     _OC4IP1	equ	1265
+  1442  000000                     _OC4IP2	equ	1266
+  1443  000000                     _OC4MD	equ	15251
+  1444  000000                     _OC5IE	equ	1152
+  1445  000000                     _OC5IF	equ	1088
+  1446  000000                     _OC5IP0	equ	1312
+  1447  000000                     _OC5IP1	equ	1313
+  1448  000000                     _OC5IP2	equ	1314
+  1449  000000                     _OC5MD	equ	15252
+  1450  000000                     _OC6IE	equ	1153
+  1451  000000                     _OC6IF	equ	1089
+  1452  000000                     _OC6IP0	equ	1316
+  1453  000000                     _OC6IP1	equ	1317
+  1454  000000                     _OC6IP2	equ	1318
+  1455  000000                     _OC6MD	equ	15253
+  1456  000000                     _OC7IE	equ	1154
+  1457  000000                     _OC7IF	equ	1090
+  1458  000000                     _OC7IP0	equ	1320
+  1459  000000                     _OC7IP1	equ	1321
+  1460  000000                     _OC7IP2	equ	1322
+  1461  000000                     _OC7MD	equ	15254
+  1462  000000                     _OC8IE	equ	1155
+  1463  000000                     _OC8IF	equ	1091
+  1464  000000                     _OC8IP0	equ	1324
+  1465  000000                     _OC8IP1	equ	1325
+  1466  000000                     _OC8IP2	equ	1326
+  1467  000000                     _OC8MD	equ	15255
+  1468  000000                     _OCFLT	equ	3108
+  1469  000000                     _OCM0	equ	3104
+  1470  000000                     _OCM1	equ	3105
+  1471  000000                     _OCM2	equ	3106
+  1472  000000                     _OCSIDL	equ	3117
+  1473  000000                     _OCTSEL	equ	3107
+  1474  000000                     _OERR	equ	4209
+  1475  000000                     _OFFCAL	equ	5404
+  1476  000000                     _OPMODE0	equ	7301
+  1477  000000                     _OPMODE1	equ	7302
+  1478  000000                     _OPMODE2	equ	7303
+  1479  000000                     _OSCFAIL	equ	1025
+  1480  000000                     _OSWEN	equ	14864
+  1481  000000                     _OSYNC	equ	3665
+  1482  000000                     _OV	equ	530
+  1483  000000                     _OVATE	equ	1034
+  1484  000000                     _OVBTE	equ	1033
+  1485  000000                     _P	equ	4164
+  1486  000000                     _PCDOUT	equ	2326
+  1487  000000                     _PCFG0	equ	5440
+  1488  000000                     _PCFG1	equ	5441
+  1489  000000                     _PCFG10	equ	5450
+  1490  000000                     _PCFG11	equ	5451
+  1491  000000                     _PCFG12	equ	5452
+  1492  000000                     _PCFG13	equ	5453
+  1493  000000                     _PCFG14	equ	5454
+  1494  000000                     _PCFG15	equ	5455
+  1495  000000                     _PCFG2	equ	5442
+  1496  000000                     _PCFG3	equ	5443
+  1497  000000                     _PCFG4	equ	5444
+  1498  000000                     _PCFG5	equ	5445
+  1499  000000                     _PCFG6	equ	5446
+  1500  000000                     _PCFG7	equ	5447
+  1501  000000                     _PCFG8	equ	5448
+  1502  000000                     _PCFG9	equ	5449
+  1503  000000                     _PDSEL0	equ	4193
+  1504  000000                     _PDSEL1	equ	4194
+  1505  000000                     _PEN	equ	4146
+  1506  000000                     _PEN1H	equ	3652
+  1507  000000                     _PEN1L	equ	3648
+  1508  000000                     _PEN2H	equ	3653
+  1509  000000                     _PEN2L	equ	3649
+  1510  000000                     _PEN3H	equ	3654
+  1511  000000                     _PEN3L	equ	3650
+  1512  000000                     _PEN4H	equ	3655
+  1513  000000                     _PEN4L	equ	3651
+  1514  000000                     _PERR	equ	4211
+  1515  000000                     _POR	equ	14848
+  1516  000000                     _POSRES	equ	2322
+  1517  000000                     _POST0	equ	14870
+  1518  000000                     _POST1	equ	14871
+  1519  000000                     _POUT1H	equ	3745
+  1520  000000                     _POUT1L	equ	3744
+  1521  000000                     _POUT2H	equ	3747
+  1522  000000                     _POUT2L	equ	3746
+  1523  000000                     _POUT3H	equ	3749
+  1524  000000                     _POUT3L	equ	3748
+  1525  000000                     _POUT4H	equ	3751
+  1526  000000                     _POUT4L	equ	3750
+  1527  000000                     _POVD1H	equ	3753
+  1528  000000                     _POVD1L	equ	3752
+  1529  000000                     _POVD2H	equ	3755
+  1530  000000                     _POVD2L	equ	3754
+  1531  000000                     _POVD3H	equ	3757
+  1532  000000                     _POVD3L	equ	3756
+  1533  000000                     _POVD4H	equ	3759
+  1534  000000                     _POVD4L	equ	3758
+  1535  000000                     _PPRE0	equ	4368
+  1536  000000                     _PPRE1	equ	4369
+  1537  000000                     _PROGOP0	equ	15104
+  1538  000000                     _PROGOP1	equ	15105
+  1539  000000                     _PROGOP2	equ	15106
+  1540  000000                     _PROGOP3	equ	15107
+  1541  000000                     _PROGOP4	equ	15108
+  1542  000000                     _PROGOP5	equ	15109
+  1543  000000                     _PROGOP6	equ	15110
+  1544  000000                     _PRSEG0	equ	7328
+  1545  000000                     _PRSEG1	equ	7329
+  1546  000000                     _PRSEG2	equ	7330
+  1547  000000                     _PSV	equ	546
+  1548  000000                     _PTCKPS0	equ	3586
+  1549  000000                     _PTCKPS1	equ	3587
+  1550  000000                     _PTDIR	equ	3615
+  1551  000000                     _PTEN	equ	3599
+  1552  000000                     _PTMOD0	equ	3584
+  1553  000000                     _PTMOD1	equ	3585
+  1554  000000                     _PTMOD2	equ	3657
+  1555  000000                     _PTMOD3	equ	3658
+  1556  000000                     _PTMOD4	equ	3659
+  1557  000000                     _PTMR0	equ	3600
+  1558  000000                     _PTMR1	equ	3601
+  1559  000000                     _PTMR10	equ	3610
+  1560  000000                     _PTMR11	equ	3611
+  1561  000000                     _PTMR12	equ	3612
+  1562  000000                     _PTMR13	equ	3613
+  1563  000000                     _PTMR14	equ	3614
+  1564  000000                     _PTMR2	equ	3602
+  1565  000000                     _PTMR3	equ	3603
+  1566  000000                     _PTMR4	equ	3604
+  1567  000000                     _PTMR5	equ	3605
+  1568  000000                     _PTMR6	equ	3606
+  1569  000000                     _PTMR7	equ	3607
+  1570  000000                     _PTMR8	equ	3608
+  1571  000000                     _PTMR9	equ	3609
+  1572  000000                     _PTOPS0	equ	3588
+  1573  000000                     _PTOPS1	equ	3589
+  1574  000000                     _PTOPS2	equ	3590
+  1575  000000                     _PTOPS3	equ	3591
+  1576  000000                     _PTSIDL	equ	3597
+  1577  000000                     _PWMIE	equ	1159
+  1578  000000                     _PWMIF	equ	1095
+  1579  000000                     _PWMIP0	equ	1340
+  1580  000000                     _PWMIP1	equ	1341
+  1581  000000                     _PWMIP2	equ	1342
+  1582  000000                     _PWMMD	equ	15241
+  1583  000000                     _QECK0	equ	2340
+  1584  000000                     _QECK1	equ	2341
+  1585  000000                     _QECK2	equ	2342
+  1586  000000                     _QEIIE	equ	1160
+  1587  000000                     _QEIIF	equ	1096
+  1588  000000                     _QEIIP0	equ	1344
+  1589  000000                     _QEIIP1	equ	1345
+  1590  000000                     _QEIIP2	equ	1346
+  1591  000000                     _QEIM0	equ	2328
+  1592  000000                     _QEIM1	equ	2329
+  1593  000000                     _QEIM2	equ	2330
+  1594  000000                     _QEIMD	equ	15242
+  1595  000000                     _QEISIDL	equ	2333
+  1596  000000                     _QEOUT	equ	2343
+  1597  000000                     _RA	equ	532
+  1598  000000                     _RA10	equ	5658
+  1599  000000                     _RA14	equ	5662
+  1600  000000                     _RA15	equ	5663
+  1601  000000                     _RA9	equ	5657
+  1602  000000                     _RB0	equ	5696
+  1603  000000                     _RB1	equ	5697
+  1604  000000                     _RB10	equ	5706
+  1605  000000                     _RB11	equ	5707
+  1606  000000                     _RB12	equ	5708
+  1607  000000                     _RB13	equ	5709
+  1608  000000                     _RB14	equ	5710
+  1609  000000                     _RB15	equ	5711
+  1610  000000                     _RB2	equ	5698
+  1611  000000                     _RB3	equ	5699
+  1612  000000                     _RB4	equ	5700
+  1613  000000                     _RB5	equ	5701
+  1614  000000                     _RB6	equ	5702
+  1615  000000                     _RB7	equ	5703
+  1616  000000                     _RB8	equ	5704
+  1617  000000                     _RB9	equ	5705
+  1618  000000                     _RBF	equ	4161
+  1619  000000                     _RC1	equ	5745
+  1620  000000                     _RC13	equ	5757
+  1621  000000                     _RC14	equ	5758
+  1622  000000                     _RC15	equ	5759
+  1623  000000                     _RC3	equ	5747
+  1624  000000                     _RCEN	equ	4147
+  1625  000000                     _RD0	equ	5792
+  1626  000000                     _RD1	equ	5793
+  1627  000000                     _RD10	equ	5802
+  1628  000000                     _RD11	equ	5803
+  1629  000000                     _RD12	equ	5804
+  1630  000000                     _RD13	equ	5805
+  1631  000000                     _RD14	equ	5806
+  1632  000000                     _RD15	equ	5807
+  1633  000000                     _RD2	equ	5794
+  1634  000000                     _RD3	equ	5795
+  1635  000000                     _RD4	equ	5796
+  1636  000000                     _RD5	equ	5797
+  1637  000000                     _RD6	equ	5798
+  1638  000000                     _RD7	equ	5799
+  1639  000000                     _RD8	equ	5800
+  1640  000000                     _RD9	equ	5801
+  1641  000000                     _RE0	equ	5840
+  1642  000000                     _RE1	equ	5841
+  1643  000000                     _RE2	equ	5842
+  1644  000000                     _RE3	equ	5843
+  1645  000000                     _RE4	equ	5844
+  1646  000000                     _RE5	equ	5845
+  1647  000000                     _RE6	equ	5846
+  1648  000000                     _RE7	equ	5847
+  1649  000000                     _RE8	equ	5848
+  1650  000000                     _RE9	equ	5849
+  1651  000000                     _REC0	equ	7376
+  1652  000000                     _REC1	equ	7377
+  1653  000000                     _REC2	equ	7378
+  1654  000000                     _REC3	equ	7379
+  1655  000000                     _REC4	equ	7380
+  1656  000000                     _REC5	equ	7381
+  1657  000000                     _REC6	equ	7382
+  1658  000000                     _REC7	equ	7383
+  1659  000000                     _REQOP0	equ	7304
+  1660  000000                     _REQOP1	equ	7305
+  1661  000000                     _REQOP2	equ	7306
+  1662  000000                     _RF0	equ	5888
+  1663  000000                     _RF1	equ	5889
+  1664  000000                     _RF2	equ	5890
+  1665  000000                     _RF3	equ	5891
+  1666  000000                     _RF4	equ	5892
+  1667  000000                     _RF5	equ	5893
+  1668  000000                     _RF6	equ	5894
+  1669  000000                     _RF7	equ	5895
+  1670  000000                     _RF8	equ	5896
+  1671  000000                     _RG0	equ	5936
+  1672  000000                     _RG1	equ	5937
+  1673  000000                     _RG2	equ	5938
+  1674  000000                     _RG3	equ	5939
+  1675  000000                     _RG6	equ	5942
+  1676  000000                     _RG7	equ	5943
+  1677  000000                     _RG8	equ	5944
+  1678  000000                     _RG9	equ	5945
+  1679  000000                     _RIDLE	equ	4212
+  1680  000000                     _RL_BSR	equ	14976
+  1681  000000                     _RL_SSR	equ	14992
+  1682  000000                     _RND	equ	545
+  1683  000000                     _RSEN	equ	4145
+  1684  000000                     _RXB0DBEN	equ	7282
+  1685  000000                     _RXB0IE	equ	7360
+  1686  000000                     _RXB0IF	equ	7344
+  1687  000000                     _RXB0OVFL	equ	7359
+  1688  000000                     _RXB1IE	equ	7361
+  1689  000000                     _RXB1IF	equ	7345
+  1690  000000                     _RXB1OVFL	equ	7358
+  1691  000000                     _RXBP	equ	7355
+  1692  000000                     _RXFUL	equ	7159
+  1693  000000                     _RXRB0	equ	7076
+  1694  000000                     _RXRB1	equ	7080
+  1695  000000                     _RXRTR	equ	7081
+  1696  000000                     _RXRTRRO	equ	7155
+  1697  000000                     _RXWARN	equ	7353
+  1698  000000                     _R_W	equ	4162
+  1699  000000                     _R_nW	equ	4162
+  1700  000000                     _S	equ	4163
+  1701  000000                     _SA	equ	541
+  1702  000000                     _SAB	equ	538
+  1703  000000                     _SAM	equ	7334
+  1704  000000                     _SAMC0	equ	5416
+  1705  000000                     _SAMC1	equ	5417
+  1706  000000                     _SAMC2	equ	5418
+  1707  000000                     _SAMC3	equ	5419
+  1708  000000                     _SAMC4	equ	5420
+  1709  000000                     _SAMP	equ	5377
+  1710  000000                     _SATA	equ	551
+  1711  000000                     _SATB	equ	550
+  1712  000000                     _SATDW	equ	549
+  1713  000000                     _SB	equ	540
+  1714  000000                     _SCLREL	equ	4156
+  1715  000000                     _SEG1PH0	equ	7331
+  1716  000000                     _SEG1PH1	equ	7332
+  1717  000000                     _SEG1PH2	equ	7333
+  1718  000000                     _SEG2PH0	equ	7336
+  1719  000000                     _SEG2PH1	equ	7337
+  1720  000000                     _SEG2PH2	equ	7338
+  1721  000000                     _SEG2PHTS	equ	7335
+  1722  000000                     _SEN	equ	4144
+  1723  000000                     _SEVOPS0	equ	3672
+  1724  000000                     _SEVOPS1	equ	3673
+  1725  000000                     _SEVOPS2	equ	3674
+  1726  000000                     _SEVOPS3	equ	3675
+  1727  000000                     _SEVTCMP0	equ	3632
+  1728  000000                     _SEVTCMP1	equ	3633
+  1729  000000                     _SEVTCMP10	equ	3642
+  1730  000000                     _SEVTCMP11	equ	3643
+  1731  000000                     _SEVTCMP12	equ	3644
+  1732  000000                     _SEVTCMP13	equ	3645
+  1733  000000                     _SEVTCMP14	equ	3646
+  1734  000000                     _SEVTCMP2	equ	3634
+  1735  000000                     _SEVTCMP3	equ	3635
+  1736  000000                     _SEVTCMP4	equ	3636
+  1737  000000                     _SEVTCMP5	equ	3637
+  1738  000000                     _SEVTCMP6	equ	3638
+  1739  000000                     _SEVTCMP7	equ	3639
+  1740  000000                     _SEVTCMP8	equ	3640
+  1741  000000                     _SEVTCMP9	equ	3641
+  1742  000000                     _SEVTDIR	equ	3647
+  1743  000000                     _SI2CIE	equ	1133
+  1744  000000                     _SI2CIF	equ	1069
+  1745  000000                     _SI2CIP0	equ	1236
+  1746  000000                     _SI2CIP1	equ	1237
+  1747  000000                     _SI2CIP2	equ	1238
+  1748  000000                     _SID0	equ	6146
+  1749  000000                     _SID1	equ	6147
+  1750  000000                     _SID10	equ	6156
+  1751  000000                     _SID2	equ	6148
+  1752  000000                     _SID3	equ	6149
+  1753  000000                     _SID4	equ	6150
+  1754  000000                     _SID5	equ	6151
+  1755  000000                     _SID6	equ	6152
+  1756  000000                     _SID7	equ	6153
+  1757  000000                     _SID8	equ	6154
+  1758  000000                     _SID9	equ	6155
+  1759  000000                     _SIMSAM	equ	5379
+  1760  000000                     _SJW0	equ	7318
+  1761  000000                     _SJW1	equ	7319
+  1762  000000                     _SLEEP	equ	14851
+  1763  000000                     _SLEEP_MODE	equ	15248
+  1764  000000                     _SMEN	equ	4152
+  1765  000000                     _SMP	equ	4377
+  1766  000000                     _SMPI0	equ	5394
+  1767  000000                     _SMPI1	equ	5395
+  1768  000000                     _SMPI2	equ	5396
+  1769  000000                     _SMPI3	equ	5397
+  1770  000000                     _SPI1IE	equ	1128
+  1771  000000                     _SPI1IF	equ	1064
+  1772  000000                     _SPI1IP0	equ	1216
+  1773  000000                     _SPI1IP1	equ	1217
+  1774  000000                     _SPI1IP2	equ	1218
+  1775  000000                     _SPI1MD	equ	15235
+  1776  000000                     _SPI2IE	equ	1146
+  1777  000000                     _SPI2IF	equ	1082
+  1778  000000                     _SPI2IP0	equ	1288
+  1779  000000                     _SPI2IP1	equ	1289
+  1780  000000                     _SPI2IP2	equ	1290
+  1781  000000                     _SPI2MD	equ	15236
+  1782  000000                     _SPIEN	equ	4367
+  1783  000000                     _SPIFSD	equ	4381
+  1784  000000                     _SPIRBF	equ	4352
+  1785  000000                     _SPIROV	equ	4358
+  1786  000000                     _SPISIDL	equ	4365
+  1787  000000                     _SPITBF	equ	4353
+  1788  000000                     _SPRE0	equ	4370
+  1789  000000                     _SPRE1	equ	4371
+  1790  000000                     _SPRE2	equ	4372
+  1791  000000                     _SRR	equ	6657
+  1792  000000                     _SSEN	equ	4375
+  1793  000000                     _SSRC0	equ	5381
+  1794  000000                     _SSRC1	equ	5382
+  1795  000000                     _SSRC2	equ	5383
+  1796  000000                     _STKERR	equ	1026
+  1797  000000                     _STREN	equ	4150
+  1798  000000                     _STSEL	equ	4192
+  1799  000000                     _SWDTEN	equ	14853
+  1800  000000                     _SWPAB	equ	2327
+  1801  000000                     _SWR	equ	14854
+  1802  000000                     _T1IE	equ	1123
+  1803  000000                     _T1IF	equ	1059
+  1804  000000                     _T1IP0	equ	1196
+  1805  000000                     _T1IP1	equ	1197
+  1806  000000                     _T1IP2	equ	1198
+  1807  000000                     _T1MD	equ	15243
+  1808  000000                     _T2IE	equ	1126
+  1809  000000                     _T2IF	equ	1062
+  1810  000000                     _T2IP0	equ	1208
+  1811  000000                     _T2IP1	equ	1209
+  1812  000000                     _T2IP2	equ	1210
+  1813  000000                     _T2MD	equ	15244
+  1814  000000                     _T32	equ	2179
+  1815  000000                     _T3IE	equ	1127
+  1816  000000                     _T3IF	equ	1063
+  1817  000000                     _T3IP0	equ	1212
+  1818  000000                     _T3IP1	equ	1213
+  1819  000000                     _T3IP2	equ	1214
+  1820  000000                     _T3MD	equ	15245
+  1821  000000                     _T4IE	equ	1141
+  1822  000000                     _T4IF	equ	1077
+  1823  000000                     _T4IP0	equ	1268
+  1824  000000                     _T4IP1	equ	1269
+  1825  000000                     _T4IP2	equ	1270
+  1826  000000                     _T4MD	equ	15246
+  1827  000000                     _T5IE	equ	1142
+  1828  000000                     _T5IF	equ	1078
+  1829  000000                     _T5IP0	equ	1272
+  1830  000000                     _T5IP1	equ	1273
+  1831  000000                     _T5IP2	equ	1274
+  1832  000000                     _T5MD	equ	15247
+  1833  000000                     _TBF	equ	4160
+  1834  000000                     _TCKPS0	equ	2084
+  1835  000000                     _TCKPS1	equ	2085
+  1836  000000                     _TCS	equ	2081
+  1837  000000                     _TEC0	equ	7384
+  1838  000000                     _TEC1	equ	7385
+  1839  000000                     _TEC2	equ	7386
+  1840  000000                     _TEC3	equ	7387
+  1841  000000                     _TEC4	equ	7388
+  1842  000000                     _TEC5	equ	7389
+  1843  000000                     _TEC6	equ	7390
+  1844  000000                     _TEC7	equ	7391
+  1845  000000                     _TGATE	equ	2086
+  1846  000000                     _TMODE	equ	1422
+  1847  000000                     _TON	equ	2095
+  1848  000000                     _TQCKPS0	equ	2323
+  1849  000000                     _TQCKPS1	equ	2324
+  1850  000000                     _TQCS	equ	2321
+  1851  000000                     _TQGATE	equ	2325
+  1852  000000                     _TRAPR	equ	14863
+  1853  000000                     _TRISA10	equ	5642
+  1854  000000                     _TRISA14	equ	5646
+  1855  000000                     _TRISA15	equ	5647
+  1856  000000                     _TRISA9	equ	5641
+  1857  000000                     _TRISB0	equ	5680
+  1858  000000                     _TRISB1	equ	5681
+  1859  000000                     _TRISB10	equ	5690
+  1860  000000                     _TRISB11	equ	5691
+  1861  000000                     _TRISB12	equ	5692
+  1862  000000                     _TRISB13	equ	5693
+  1863  000000                     _TRISB14	equ	5694
+  1864  000000                     _TRISB15	equ	5695
+  1865  000000                     _TRISB2	equ	5682
+  1866  000000                     _TRISB3	equ	5683
+  1867  000000                     _TRISB4	equ	5684
+  1868  000000                     _TRISB5	equ	5685
+  1869  000000                     _TRISB6	equ	5686
+  1870  000000                     _TRISB7	equ	5687
+  1871  000000                     _TRISB8	equ	5688
+  1872  000000                     _TRISB9	equ	5689
+  1873  000000                     _TRISC1	equ	5729
+  1874  000000                     _TRISC13	equ	5741
+  1875  000000                     _TRISC14	equ	5742
+  1876  000000                     _TRISC15	equ	5743
+  1877  000000                     _TRISC3	equ	5731
+  1878  000000                     _TRISD0	equ	5776
+  1879  000000                     _TRISD1	equ	5777
+  1880  000000                     _TRISD10	equ	5786
+  1881  000000                     _TRISD11	equ	5787
+  1882  000000                     _TRISD12	equ	5788
+  1883  000000                     _TRISD13	equ	5789
+  1884  000000                     _TRISD14	equ	5790
+  1885  000000                     _TRISD15	equ	5791
+  1886  000000                     _TRISD2	equ	5778
+  1887  000000                     _TRISD3	equ	5779
+  1888  000000                     _TRISD4	equ	5780
+  1889  000000                     _TRISD5	equ	5781
+  1890  000000                     _TRISD6	equ	5782
+  1891  000000                     _TRISD7	equ	5783
+  1892  000000                     _TRISD8	equ	5784
+  1893  000000                     _TRISD9	equ	5785
+  1894  000000                     _TRISE0	equ	5824
+  1895  000000                     _TRISE1	equ	5825
+  1896  000000                     _TRISE2	equ	5826
+  1897  000000                     _TRISE3	equ	5827
+  1898  000000                     _TRISE4	equ	5828
+  1899  000000                     _TRISE5	equ	5829
+  1900  000000                     _TRISE6	equ	5830
+  1901  000000                     _TRISE7	equ	5831
+  1902  000000                     _TRISE8	equ	5832
+  1903  000000                     _TRISE9	equ	5833
+  1904  000000                     _TRISF0	equ	5872
+  1905  000000                     _TRISF1	equ	5873
+  1906  000000                     _TRISF2	equ	5874
+  1907  000000                     _TRISF3	equ	5875
+  1908  000000                     _TRISF4	equ	5876
+  1909  000000                     _TRISF5	equ	5877
+  1910  000000                     _TRISF6	equ	5878
+  1911  000000                     _TRISF7	equ	5879
+  1912  000000                     _TRISF8	equ	5880
+  1913  000000                     _TRISG0	equ	5920
+  1914  000000                     _TRISG1	equ	5921
+  1915  000000                     _TRISG2	equ	5922
+  1916  000000                     _TRISG3	equ	5923
+  1917  000000                     _TRISG6	equ	5926
+  1918  000000                     _TRISG7	equ	5927
+  1919  000000                     _TRISG8	equ	5928
+  1920  000000                     _TRISG9	equ	5929
+  1921  000000                     _TRMT	equ	4216
+  1922  000000                     _TRSTAT	equ	4174
+  1923  000000                     _TSIDL	equ	2093
+  1924  000000                     _TSYNC	equ	2082
+  1925  000000                     _TUN0	equ	14880
+  1926  000000                     _TUN1	equ	14881
+  1927  000000                     _TUN2	equ	14882
+  1928  000000                     _TUN3	equ	14883
+  1929  000000                     _TUN4	equ	14884
+  1930  000000                     _TUN5	equ	14885
+  1931  000000                     _TWRI	equ	15112
+  1932  000000                     _TX2B2D40	equ	6736
+  1933  000000                     _TX2B2D41	equ	6737
+  1934  000000                     _TX2B2D42	equ	6738
+  1935  000000                     _TX2B2D43	equ	6739
+  1936  000000                     _TX2B2D44	equ	6740
+  1937  000000                     _TX2B2D45	equ	6741
+  1938  000000                     _TX2B2D46	equ	6742
+  1939  000000                     _TX2B2D47	equ	6743
+  1940  000000                     _TX2B2D60	equ	6752
+  1941  000000                     _TX2B2D61	equ	6753
+  1942  000000                     _TX2B2D62	equ	6754
+  1943  000000                     _TX2B2D63	equ	6755
+  1944  000000                     _TX2B2D64	equ	6756
+  1945  000000                     _TX2B2D65	equ	6757
+  1946  000000                     _TX2B2D66	equ	6758
+  1947  000000                     _TX2B2D67	equ	6759
+  1948  000000                     _TX2B2D70	equ	6760
+  1949  000000                     _TX2B2D71	equ	6761
+  1950  000000                     _TX2B2D72	equ	6762
+  1951  000000                     _TX2B2D73	equ	6763
+  1952  000000                     _TX2B2D74	equ	6764
+  1953  000000                     _TX2B2D75	equ	6765
+  1954  000000                     _TX2B2D76	equ	6766
+  1955  000000                     _TX2B2D77	equ	6767
+  1956  000000                     _TXABT	equ	6774
+  1957  000000                     _TXB0D00	equ	6960
+  1958  000000                     _TXB0D01	equ	6961
+  1959  000000                     _TXB0D02	equ	6962
+  1960  000000                     _TXB0D03	equ	6963
+  1961  000000                     _TXB0D04	equ	6964
+  1962  000000                     _TXB0D05	equ	6965
+  1963  000000                     _TXB0D06	equ	6966
+  1964  000000                     _TXB0D07	equ	6967
+  1965  000000                     _TXB0D10	equ	6968
+  1966  000000                     _TXB0D11	equ	6969
+  1967  000000                     _TXB0D12	equ	6970
+  1968  000000                     _TXB0D13	equ	6971
+  1969  000000                     _TXB0D14	equ	6972
+  1970  000000                     _TXB0D15	equ	6973
+  1971  000000                     _TXB0D16	equ	6974
+  1972  000000                     _TXB0D17	equ	6975
+  1973  000000                     _TXB0D20	equ	6976
+  1974  000000                     _TXB0D21	equ	6977
+  1975  000000                     _TXB0D22	equ	6978
+  1976  000000                     _TXB0D23	equ	6979
+  1977  000000                     _TXB0D24	equ	6980
+  1978  000000                     _TXB0D25	equ	6981
+  1979  000000                     _TXB0D26	equ	6982
+  1980  000000                     _TXB0D27	equ	6983
+  1981  000000                     _TXB0D30	equ	6984
+  1982  000000                     _TXB0D31	equ	6985
+  1983  000000                     _TXB0D32	equ	6986
+  1984  000000                     _TXB0D33	equ	6987
+  1985  000000                     _TXB0D34	equ	6988
+  1986  000000                     _TXB0D35	equ	6989
+  1987  000000                     _TXB0D36	equ	6990
+  1988  000000                     _TXB0D37	equ	6991
+  1989  000000                     _TXB0D40	equ	6992
+  1990  000000                     _TXB0D41	equ	6993
+  1991  000000                     _TXB0D42	equ	6994
+  1992  000000                     _TXB0D43	equ	6995
+  1993  000000                     _TXB0D44	equ	6996
+  1994  000000                     _TXB0D45	equ	6997
+  1995  000000                     _TXB0D46	equ	6998
+  1996  000000                     _TXB0D47	equ	6999
+  1997  000000                     _TXB0D50	equ	7000
+  1998  000000                     _TXB0D51	equ	7001
+  1999  000000                     _TXB0D52	equ	7002
+  2000  000000                     _TXB0D53	equ	7003
+  2001  000000                     _TXB0D54	equ	7004
+  2002  000000                     _TXB0D55	equ	7005
+  2003  000000                     _TXB0D56	equ	7006
+  2004  000000                     _TXB0D57	equ	7007
+  2005  000000                     _TXB0D60	equ	7008
+  2006  000000                     _TXB0D61	equ	7009
+  2007  000000                     _TXB0D62	equ	7010
+  2008  000000                     _TXB0D63	equ	7011
+  2009  000000                     _TXB0D64	equ	7012
+  2010  000000                     _TXB0D65	equ	7013
+  2011  000000                     _TXB0D66	equ	7014
+  2012  000000                     _TXB0D67	equ	7015
+  2013  000000                     _TXB0D70	equ	7016
+  2014  000000                     _TXB0D71	equ	7017
+  2015  000000                     _TXB0D72	equ	7018
+  2016  000000                     _TXB0D73	equ	7019
+  2017  000000                     _TXB0D74	equ	7020
+  2018  000000                     _TXB0D75	equ	7021
+  2019  000000                     _TXB0D76	equ	7022
+  2020  000000                     _TXB0D77	equ	7023
+  2021  000000                     _TXB0IE	equ	7362
+  2022  000000                     _TXB0IF	equ	7346
+  2023  000000                     _TXB1D00	equ	6832
+  2024  000000                     _TXB1D01	equ	6833
+  2025  000000                     _TXB1D02	equ	6834
+  2026  000000                     _TXB1D03	equ	6835
+  2027  000000                     _TXB1D04	equ	6836
+  2028  000000                     _TXB1D05	equ	6837
+  2029  000000                     _TXB1D06	equ	6838
+  2030  000000                     _TXB1D07	equ	6839
+  2031  000000                     _TXB1D10	equ	6840
+  2032  000000                     _TXB1D11	equ	6841
+  2033  000000                     _TXB1D12	equ	6842
+  2034  000000                     _TXB1D13	equ	6843
+  2035  000000                     _TXB1D14	equ	6844
+  2036  000000                     _TXB1D15	equ	6845
+  2037  000000                     _TXB1D16	equ	6846
+  2038  000000                     _TXB1D17	equ	6847
+  2039  000000                     _TXB1D20	equ	6848
+  2040  000000                     _TXB1D21	equ	6849
+  2041  000000                     _TXB1D22	equ	6850
+  2042  000000                     _TXB1D23	equ	6851
+  2043  000000                     _TXB1D24	equ	6852
+  2044  000000                     _TXB1D25	equ	6853
+  2045  000000                     _TXB1D26	equ	6854
+  2046  000000                     _TXB1D27	equ	6855
+  2047  000000                     _TXB1D30	equ	6856
+  2048  000000                     _TXB1D31	equ	6857
+  2049  000000                     _TXB1D32	equ	6858
+  2050  000000                     _TXB1D33	equ	6859
+  2051  000000                     _TXB1D34	equ	6860
+  2052  000000                     _TXB1D35	equ	6861
+  2053  000000                     _TXB1D36	equ	6862
+  2054  000000                     _TXB1D37	equ	6863
+  2055  000000                     _TXB1D40	equ	6864
+  2056  000000                     _TXB1D41	equ	6865
+  2057  000000                     _TXB1D42	equ	6866
+  2058  000000                     _TXB1D43	equ	6867
+  2059  000000                     _TXB1D44	equ	6868
+  2060  000000                     _TXB1D45	equ	6869
+  2061  000000                     _TXB1D46	equ	6870
+  2062  000000                     _TXB1D47	equ	6871
+  2063  000000                     _TXB1D50	equ	6872
+  2064  000000                     _TXB1D51	equ	6873
+  2065  000000                     _TXB1D52	equ	6874
+  2066  000000                     _TXB1D53	equ	6875
+  2067  000000                     _TXB1D54	equ	6876
+  2068  000000                     _TXB1D55	equ	6877
+  2069  000000                     _TXB1D56	equ	6878
+  2070  000000                     _TXB1D57	equ	6879
+  2071  000000                     _TXB1D60	equ	6880
+  2072  000000                     _TXB1D61	equ	6881
+  2073  000000                     _TXB1D62	equ	6882
+  2074  000000                     _TXB1D63	equ	6883
+  2075  000000                     _TXB1D64	equ	6884
+  2076  000000                     _TXB1D65	equ	6885
+  2077  000000                     _TXB1D66	equ	6886
+  2078  000000                     _TXB1D67	equ	6887
+  2079  000000                     _TXB1D70	equ	6888
+  2080  000000                     _TXB1D71	equ	6889
+  2081  000000                     _TXB1D72	equ	6890
+  2082  000000                     _TXB1D73	equ	6891
+  2083  000000                     _TXB1D74	equ	6892
+  2084  000000                     _TXB1D75	equ	6893
+  2085  000000                     _TXB1D76	equ	6894
+  2086  000000                     _TXB1D77	equ	6895
+  2087  000000                     _TXB1IE	equ	7363
+  2088  000000                     _TXB1IF	equ	7347
+  2089  000000                     _TXB2D00	equ	6704
+  2090  000000                     _TXB2D01	equ	6705
+  2091  000000                     _TXB2D02	equ	6706
+  2092  000000                     _TXB2D03	equ	6707
+  2093  000000                     _TXB2D04	equ	6708
+  2094  000000                     _TXB2D05	equ	6709
+  2095  000000                     _TXB2D06	equ	6710
+  2096  000000                     _TXB2D07	equ	6711
+  2097  000000                     _TXB2D10	equ	6712
+  2098  000000                     _TXB2D11	equ	6713
+  2099  000000                     _TXB2D12	equ	6714
+  2100  000000                     _TXB2D13	equ	6715
+  2101  000000                     _TXB2D14	equ	6716
+  2102  000000                     _TXB2D15	equ	6717
+  2103  000000                     _TXB2D16	equ	6718
+  2104  000000                     _TXB2D17	equ	6719
+  2105  000000                     _TXB2D20	equ	6720
+  2106  000000                     _TXB2D21	equ	6721
+  2107  000000                     _TXB2D22	equ	6722
+  2108  000000                     _TXB2D23	equ	6723
+  2109  000000                     _TXB2D24	equ	6724
+  2110  000000                     _TXB2D25	equ	6725
+  2111  000000                     _TXB2D26	equ	6726
+  2112  000000                     _TXB2D27	equ	6727
+  2113  000000                     _TXB2D30	equ	6728
+  2114  000000                     _TXB2D31	equ	6729
+  2115  000000                     _TXB2D32	equ	6730
+  2116  000000                     _TXB2D33	equ	6731
+  2117  000000                     _TXB2D34	equ	6732
+  2118  000000                     _TXB2D35	equ	6733
+  2119  000000                     _TXB2D36	equ	6734
+  2120  000000                     _TXB2D37	equ	6735
+  2121  000000                     _TXB2D40	equ	8272
+  2122  000000                     _TXB2D41	equ	8273
+  2123  000000                     _TXB2D42	equ	8274
+  2124  000000                     _TXB2D43	equ	8275
+  2125  000000                     _TXB2D44	equ	8276
+  2126  000000                     _TXB2D45	equ	8277
+  2127  000000                     _TXB2D46	equ	8278
+  2128  000000                     _TXB2D47	equ	8279
+  2129  000000                     _TXB2D50	equ	6744
+  2130  000000                     _TXB2D51	equ	6745
+  2131  000000                     _TXB2D52	equ	6746
+  2132  000000                     _TXB2D53	equ	6747
+  2133  000000                     _TXB2D54	equ	6748
+  2134  000000                     _TXB2D55	equ	6749
+  2135  000000                     _TXB2D56	equ	6750
+  2136  000000                     _TXB2D57	equ	6751
+  2137  000000                     _TXB2D60	equ	8288
+  2138  000000                     _TXB2D61	equ	8289
+  2139  000000                     _TXB2D62	equ	8290
+  2140  000000                     _TXB2D63	equ	8291
+  2141  000000                     _TXB2D64	equ	8292
+  2142  000000                     _TXB2D65	equ	8293
+  2143  000000                     _TXB2D66	equ	8294
+  2144  000000                     _TXB2D67	equ	8295
+  2145  000000                     _TXB2D70	equ	8296
+  2146  000000                     _TXB2D71	equ	8297
+  2147  000000                     _TXB2D72	equ	8298
+  2148  000000                     _TXB2D73	equ	8299
+  2149  000000                     _TXB2D74	equ	8300
+  2150  000000                     _TXB2D75	equ	8301
+  2151  000000                     _TXB2D76	equ	8302
+  2152  000000                     _TXB2D77	equ	8303
+  2153  000000                     _TXB2IE	equ	7364
+  2154  000000                     _TXB2IF	equ	7348
+  2155  000000                     _TXBO	equ	7357
+  2156  000000                     _TXBP	equ	7356
+  2157  000000                     _TXERR	equ	6772
+  2158  000000                     _TXIDE	equ	6656
+  2159  000000                     _TXLARB	equ	6773
+  2160  000000                     _TXPRI0	equ	6768
+  2161  000000                     _TXPRI1	equ	6769
+  2162  000000                     _TXRB0	equ	6695
+  2163  000000                     _TXRB1	equ	6696
+  2164  000000                     _TXREQ	equ	6771
+  2165  000000                     _TXRTR	equ	6697
+  2166  000000                     _TXWARN	equ	7354
+  2167  000000                     _U1MD	equ	15237
+  2168  000000                     _U1RXIE	equ	1129
+  2169  000000                     _U1RXIF	equ	1065
+  2170  000000                     _U1RXIP0	equ	1220
+  2171  000000                     _U1RXIP1	equ	1221
+  2172  000000                     _U1RXIP2	equ	1222
+  2173  000000                     _U1TXIE	equ	1130
+  2174  000000                     _U1TXIF	equ	1066
+  2175  000000                     _U1TXIP0	equ	1224
+  2176  000000                     _U1TXIP1	equ	1225
+  2177  000000                     _U1TXIP2	equ	1226
+  2178  000000                     _U2MD	equ	15238
+  2179  000000                     _U2RXIE	equ	1144
+  2180  000000                     _U2RXIF	equ	1080
+  2181  000000                     _U2RXIP0	equ	1280
+  2182  000000                     _U2RXIP1	equ	1281
+  2183  000000                     _U2RXIP2	equ	1282
+  2184  000000                     _U2TXIE	equ	1145
+  2185  000000                     _U2TXIF	equ	1081
+  2186  000000                     _U2TXIP0	equ	1284
+  2187  000000                     _U2TXIP1	equ	1285
+  2188  000000                     _U2TXIP2	equ	1286
+  2189  000000                     _UARTEN	equ	4207
+  2190  000000                     _UDIS	equ	3664
+  2191  000000                     _UPDN	equ	2331
+  2192  000000                     _UPDN_SRC	equ	2320
+  2193  000000                     _URXDA	equ	4208
+  2194  000000                     _URXISEL0	equ	4214
+  2195  000000                     _URXISEL1	equ	4215
+  2196  000000                     _URXREG0	equ	4240
+  2197  000000                     _URXREG1	equ	4241
+  2198  000000                     _URXREG2	equ	4242
+  2199  000000                     _URXREG3	equ	4243
+  2200  000000                     _URXREG4	equ	4244
+  2201  000000                     _URXREG5	equ	4245
+  2202  000000                     _URXREG6	equ	4246
+  2203  000000                     _URXREG7	equ	4247
+  2204  000000                     _URXREG8	equ	4248
+  2205  000000                     _US	equ	556
+  2206  000000                     _USIDL	equ	4205
+  2207  000000                     _UTXBF	equ	4217
+  2208  000000                     _UTXBRK	equ	4219
+  2209  000000                     _UTXEN	equ	4218
+  2210  000000                     _UTXISEL	equ	4223
+  2211  000000                     _UTXREG0	equ	4224
+  2212  000000                     _UTXREG1	equ	4225
+  2213  000000                     _UTXREG2	equ	4226
+  2214  000000                     _UTXREG3	equ	4227
+  2215  000000                     _UTXREG4	equ	4228
+  2216  000000                     _UTXREG5	equ	4229
+  2217  000000                     _UTXREG6	equ	4230
+  2218  000000                     _UTXREG7	equ	4231
+  2219  000000                     _UTXREG8	equ	4232
+  2220  000000                     _VCFG0	equ	5405
+  2221  000000                     _VCFG1	equ	5406
+  2222  000000                     _VCFG2	equ	5407
+  2223  000000                     _VECNUM0	equ	1408
+  2224  000000                     _VECNUM1	equ	1409
+  2225  000000                     _VECNUM2	equ	1410
+  2226  000000                     _VECNUM3	equ	1411
+  2227  000000                     _VECNUM4	equ	1412
+  2228  000000                     _VECNUM5	equ	1413
+  2229  000000                     _VHOLD	equ	1421
+  2230  000000                     _WAKE	equ	4199
+  2231  000000                     _WAKFIL	equ	7342
+  2232  000000                     _WAKIE	equ	7366
+  2233  000000                     _WAKIF	equ	7350
+  2234  000000                     _WDTO	equ	14852
+  2235  000000                     _WR	equ	15119
+  2236  000000                     _WREN	equ	15118
+  2237  000000                     _WRERR	equ	15117
+  2238  000000                     _XB0	equ	640
+  2239  000000                     _XB1	equ	641
+  2240  000000                     _XB10	equ	650
+  2241  000000                     _XB11	equ	651
+  2242  000000                     _XB12	equ	652
+  2243  000000                     _XB13	equ	653
+  2244  000000                     _XB14	equ	654
+  2245  000000                     _XB2	equ	642
+  2246  000000                     _XB3	equ	643
+  2247  000000                     _XB4	equ	644
+  2248  000000                     _XB5	equ	645
+  2249  000000                     _XB6	equ	646
+  2250  000000                     _XB7	equ	647
+  2251  000000                     _XB8	equ	648
+  2252  000000                     _XB9	equ	649
+  2253  000000                     _XMODEN	equ	575
+  2254  000000                     _XWM0	equ	560
+  2255  000000                     _XWM1	equ	561
+  2256  000000                     _XWM2	equ	562
+  2257  000000                     _XWM3	equ	563
+  2258  000000                     _YMODEN	equ	574
+  2259  000000                     _YWM0	equ	564
+  2260  000000                     _YWM1	equ	565
+  2261  000000                     _YWM2	equ	566
+  2262  000000                     _YWM3	equ	567
+  2263  000000                     _Z	equ	529
+
+
+HI-TECH Software dsPIC Macro Assembler V9.62 build 7866                    Page 2
+Symbol Table                                           Tue Jan 05 21:22:02 2016
+
+                          u10 00C5C6                            u11 00C5C2  
+                          u19 008100              _prvSetupHardware 00C578  
+                        _main 00C538                          start 00FFDC  
+             _vTaskDelayUntil 00E822                         f19720 00C53C  
+                       f19721 00C574                         f19750 00C57C  
+                       f19751 00C592                         f19760 00C59A  
+                       f19761 00C5DA                         f19790 00C5E4  
+                       f19766 FFFFFFFA                         f19791 00C5EA  
+          _xTaskGenericCreate 00E670                         lab710 00C5D6  
+                       lab703 00C56E                         lab712 00C5CE  
+                       lab704 00C564                         lab713 00C5D2  
+                       lab705 00C562                         lab714 00C5E8  
+                       lab706 00C568                         lab707 00C590  
+                       lab708 00C5D6                         lab709 00C5AA  
+        _vApplicationIdleHook 00C5E0             _xTaskGetTickCount 00F032  
+                  _vCheckTask 00C596            __end_of_vCheckTask 00C5E0  
+          _vCoRoutineSchedule 00CDCE  __end_of_vApplicationIdleHook 00C5EE  
+                __end_of_main 00C578      __end_of_prvSetupHardware 00C596  
+         _vTaskStartScheduler 00EE8A  
+

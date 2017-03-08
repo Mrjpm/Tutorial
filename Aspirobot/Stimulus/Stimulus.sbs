@@ -1,0 +1,66 @@
+## SCL Builder Setup File: Do not edit!!
+
+## VERSION: 3.60.00.00
+## FORMAT:  v2.00.01
+## DEVICE:  dsPIC30F6010A
+
+## PINREGACTIONS
+cyc
+No Repeat
+IC1
+--
+0
+0
+--
+450000
+1
+--
+570000
+0
+--
+2500000
+1
+--
+3000000
+0
+--
+4000000
+1
+--
+5500000
+0
+--
+6000000
+1
+--
+6010000
+0
+--
+&
+## ADVPINREGACTIONS
+IC1
+--
+&
+--
+COND1
+Pin
+AN0
+=
+0
+5
+ms
+
+--
+&
+## CLOCK
+&
+## STIMULUSFILE
+&
+## RESPONSEFILE
+&
+## ASYNCH
+&
+## ADVANCEDSCL
+
+1
+&

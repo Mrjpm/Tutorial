@@ -1,0 +1,1008 @@
+
+
+HI-TECH Software dsPIC Macro Assembler V9.62 build 7866                    Page 1
+                                                       Tue Jan 05 21:22:07 2016
+
+HI-TECH Software Standard Code Generator build 7866
+     1  000000                     opt subtitle "HI-TECH Software Standard Code Gen
+                                 erator build 7866"
+     2                           
+     3  000000                     pcl	equ	46
+     4  000000                     pch	equ	48
+     5  000000                     sr	equ	66
+     6  000000                     carry	equ	0
+     7  000000                     zerobit	equ	1
+     8                           	psect	text,class=CODE,delta=2,reloc=4
+     9                           	psect	text
+    10                           # 75 "C:\Microchip\Dev\Aspirobot\FreeRTOS\Source
+                                 s\portable\PIC24_dsPIC\portasm_dsPIC.c"
+    11                            ;#
+    12                           
+    13                           ; HI-TECH Software dsPICC Assembler header file 
+                                 for the ;#
+    14                           
+    15                           # 2 "C:\Microchip\Dev\Aspirobot\FreeRTOS\include
+                                 \as30f6012a.h"
+    16                            ;#
+    17                           
+    18                           ; Microchip DSPIC30F6012A ;#
+    19                           
+    20                           # 4 "C:\Microchip\Dev\Aspirobot\FreeRTOS\include
+                                 \as30f6012a.h"
+    21                            ;#
+    22                           
+    23                           ; NOTE: dsPICC option -P is required to preproce
+                                 ss assembler sources. ;#
+    24                           
+    25                           # 6 "C:\Microchip\Dev\Aspirobot\FreeRTOS\include
+                                 \as30f6012a.h"
+    26                            ;#
+    27                           
+    28                           ; Special Function Register Definitions ;#
+    29                           
+    30                           # 8 "C:\Microchip\Dev\Aspirobot\FreeRTOS\include
+                                 \as30f6012a.h"
+    31                            ;#
+    32                           
+    33                            ;#
+    34                           
+    35                            ;#
+    36                           
+    37                            ;#
+    38                           
+    39  000000                     ACCAH equ 0x024 ;#
+    40                           
+    41  000000                     ACCAL equ 0x022 ;#
+    42                           
+    43  000000                     ACCAU equ 0x026 ;#
+    44                           
+    45  000000                     ACCBH equ 0x02A ;#
+    46                           
+    47  000000                     ACCBL equ 0x028 ;#
+    48                           
+    49  000000                     ACCBU equ 0x02C ;#
+    50                           
+    51  000000                     ADCBUF0 equ 0x280 ;#
+    52                           
+    53  000000                     ADCBUF1 equ 0x282 ;#
+    54                           
+    55  000000                     ADCBUF2 equ 0x284 ;#
+    56                           
+    57  000000                     ADCBUF3 equ 0x286 ;#
+    58                           
+    59  000000                     ADCBUF4 equ 0x288 ;#
+    60                           
+    61  000000                     ADCBUF5 equ 0x28A ;#
+    62                           
+    63  000000                     ADCBUF6 equ 0x28C ;#
+    64                           
+    65  000000                     ADCBUF7 equ 0x28E ;#
+    66                           
+    67  000000                     ADCBUF8 equ 0x290 ;#
+    68                           
+    69  000000                     ADCBUF9 equ 0x292 ;#
+    70                           
+    71  000000                     ADCBUFA equ 0x294 ;#
+    72                           
+    73  000000                     ADCBUFB equ 0x296 ;#
+    74                           
+    75  000000                     ADCBUFC equ 0x298 ;#
+    76                           
+    77  000000                     ADCBUFD equ 0x29A ;#
+    78                           
+    79  000000                     ADCBUFE equ 0x29C ;#
+    80                           
+    81  000000                     ADCBUFF equ 0x29E ;#
+    82                           
+    83  000000                     ADCHS equ 0x2A6 ;#
+    84                           
+    85  000000                     ADCON1 equ 0x2A0 ;#
+    86                           
+    87  000000                     ADCON2 equ 0x2A2 ;#
+    88                           
+    89  000000                     ADCON3 equ 0x2A4 ;#
+    90                           
+    91  000000                     ADCSSL equ 0x2AA ;#
+    92                           
+    93  000000                     ADPCFG equ 0x2A8 ;#
+    94                           
+    95  000000                     BSRAM equ 0x750 ;#
+    96                           
+    97  000000                     C1CFG1 equ 0x392 ;#
+    98                           
+    99  000000                     C1CFG2 equ 0x394 ;#
+   100                           
+   101  000000                     C1CTRL equ 0x390 ;#
+   102                           
+   103  000000                     C1EC equ 0x39A ;#
+   104                           
+   105  000000                     C1INTE equ 0x398 ;#
+   106                           
+   107  000000                     C1INTF equ 0x396 ;#
+   108                           
+   109  000000                     C1RX0B1 equ 0x386 ;#
+   110                           
+   111  000000                     C1RX0B2 equ 0x388 ;#
+   112                           
+   113  000000                     C1RX0B3 equ 0x38A ;#
+   114                           
+   115  000000                     C1RX0B4 equ 0x38C ;#
+   116                           
+   117  000000                     C1RX0CON equ 0x38E ;#
+   118                           
+   119  000000                     C1RX0DLC equ 0x384 ;#
+   120                           
+   121  000000                     C1RX0EID equ 0x382 ;#
+   122                           
+   123  000000                     C1RX0SID equ 0x380 ;#
+   124                           
+   125  000000                     C1RX1B1 equ 0x376 ;#
+   126                           
+   127  000000                     C1RX1B2 equ 0x378 ;#
+   128                           
+   129  000000                     C1RX1B3 equ 0x37A ;#
+   130                           
+   131  000000                     C1RX1B4 equ 0x37C ;#
+   132                           
+   133  000000                     C1RX1CON equ 0x37E ;#
+   134                           
+   135  000000                     C1RX1DLC equ 0x374 ;#
+   136                           
+   137  000000                     C1RX1EID equ 0x372 ;#
+   138                           
+   139  000000                     C1RX1SID equ 0x370 ;#
+   140                           
+   141  000000                     C1RXF0EIDH equ 0x302 ;#
+   142                           
+   143  000000                     C1RXF0EIDL equ 0x304 ;#
+   144                           
+   145  000000                     C1RXF0SID equ 0x300 ;#
+   146                           
+   147  000000                     C1RXF1EIDH equ 0x30A ;#
+   148                           
+   149  000000                     C1RXF1EIDL equ 0x30C ;#
+   150                           
+   151  000000                     C1RXF1SID equ 0x308 ;#
+   152                           
+   153  000000                     C1RXF2EIDH equ 0x312 ;#
+   154                           
+   155  000000                     C1RXF2EIDL equ 0x314 ;#
+   156                           
+   157  000000                     C1RXF2SID equ 0x310 ;#
+   158                           
+   159  000000                     C1RXF3EIDH equ 0x31A ;#
+   160                           
+   161  000000                     C1RXF3EIDL equ 0x31C ;#
+   162                           
+   163  000000                     C1RXF3SID equ 0x318 ;#
+   164                           
+   165  000000                     C1RXF4EIDH equ 0x322 ;#
+   166                           
+   167  000000                     C1RXF4EIDL equ 0x324 ;#
+   168                           
+   169  000000                     C1RXF4SID equ 0x320 ;#
+   170                           
+   171  000000                     C1RXF5EIDH equ 0x32A ;#
+   172                           
+   173  000000                     C1RXF5EIDL equ 0x32C ;#
+   174                           
+   175  000000                     C1RXF5SID equ 0x328 ;#
+   176                           
+   177  000000                     C1RXM0EIDH equ 0x332 ;#
+   178                           
+   179  000000                     C1RXM0EIDL equ 0x334 ;#
+   180                           
+   181  000000                     C1RXM0SID equ 0x330 ;#
+   182                           
+   183  000000                     C1RXM1EIDH equ 0x33A ;#
+   184                           
+   185  000000                     C1RXM1EIDL equ 0x33C ;#
+   186                           
+   187  000000                     C1RXM1SID equ 0x338 ;#
+   188                           
+   189  000000                     C1TX0B1 equ 0x366 ;#
+   190                           
+   191  000000                     C1TX0B2 equ 0x368 ;#
+   192                           
+   193  000000                     C1TX0B3 equ 0x36A ;#
+   194                           
+   195  000000                     C1TX0B4 equ 0x36C ;#
+   196                           
+   197  000000                     C1TX0CON equ 0x36E ;#
+   198                           
+   199  000000                     C1TX0DLC equ 0x364 ;#
+   200                           
+   201  000000                     C1TX0EID equ 0x362 ;#
+   202                           
+   203  000000                     C1TX0SID equ 0x360 ;#
+   204                           
+   205  000000                     C1TX1B1 equ 0x356 ;#
+   206                           
+   207  000000                     C1TX1B2 equ 0x358 ;#
+   208                           
+   209  000000                     C1TX1B3 equ 0x35A ;#
+   210                           
+   211  000000                     C1TX1B4 equ 0x35C ;#
+   212                           
+   213  000000                     C1TX1CON equ 0x35E ;#
+   214                           
+   215  000000                     C1TX1DLC equ 0x354 ;#
+   216                           
+   217  000000                     C1TX1EID equ 0x352 ;#
+   218                           
+   219  000000                     C1TX1SID equ 0x350 ;#
+   220                           
+   221  000000                     C1TX2B1 equ 0x346 ;#
+   222                           
+   223  000000                     C1TX2B2 equ 0x348 ;#
+   224                           
+   225  000000                     C1TX2B3 equ 0x34A ;#
+   226                           
+   227  000000                     C1TX2B4 equ 0x34C ;#
+   228                           
+   229  000000                     C1TX2CON equ 0x34E ;#
+   230                           
+   231  000000                     C1TX2DLC equ 0x344 ;#
+   232                           
+   233  000000                     C1TX2EID equ 0x342 ;#
+   234                           
+   235  000000                     C1TX2SID equ 0x340 ;#
+   236                           
+   237  000000                     C2CFG1 equ 0x452 ;#
+   238                           
+   239  000000                     C2CFG2 equ 0x454 ;#
+   240                           
+   241  000000                     C2CTRL equ 0x450 ;#
+   242                           
+   243  000000                     C2EC equ 0x45A ;#
+   244                           
+   245  000000                     C2INTE equ 0x458 ;#
+   246                           
+   247  000000                     C2INTF equ 0x456 ;#
+   248                           
+   249  000000                     C2RX0B1 equ 0x446 ;#
+   250                           
+   251  000000                     C2RX0B2 equ 0x448 ;#
+   252                           
+   253  000000                     C2RX0B3 equ 0x44A ;#
+   254                           
+   255  000000                     C2RX0B4 equ 0x44C ;#
+   256                           
+   257  000000                     C2RX0CON equ 0x44E ;#
+   258                           
+   259  000000                     C2RX0DLC equ 0x444 ;#
+   260                           
+   261  000000                     C2RX0EID equ 0x442 ;#
+   262                           
+   263  000000                     C2RX0SID equ 0x440 ;#
+   264                           
+   265  000000                     C2RX1B1 equ 0x436 ;#
+   266                           
+   267  000000                     C2RX1B2 equ 0x438 ;#
+   268                           
+   269  000000                     C2RX1B3 equ 0x43A ;#
+   270                           
+   271  000000                     C2RX1B4 equ 0x43C ;#
+   272                           
+   273  000000                     C2RX1CON equ 0x43E ;#
+   274                           
+   275  000000                     C2RX1DLC equ 0x434 ;#
+   276                           
+   277  000000                     C2RX1EID equ 0x432 ;#
+   278                           
+   279  000000                     C2RX1SID equ 0x430 ;#
+   280                           
+   281  000000                     C2RXF0EIDH equ 0x3C2 ;#
+   282                           
+   283  000000                     C2RXF0EIDL equ 0x3C4 ;#
+   284                           
+   285  000000                     C2RXF0SID equ 0x3C0 ;#
+   286                           
+   287  000000                     C2RXF1EIDH equ 0x3CA ;#
+   288                           
+   289  000000                     C2RXF1EIDL equ 0x3CC ;#
+   290                           
+   291  000000                     C2RXF1SID equ 0x3C8 ;#
+   292                           
+   293  000000                     C2RXF2EIDH equ 0x3D2 ;#
+   294                           
+   295  000000                     C2RXF2EIDL equ 0x3D4 ;#
+   296                           
+   297  000000                     C2RXF2SID equ 0x3D0 ;#
+   298                           
+   299  000000                     C2RXF3EIDH equ 0x3DA ;#
+   300                           
+   301  000000                     C2RXF3EIDL equ 0x3DC ;#
+   302                           
+   303  000000                     C2RXF3SID equ 0x3D8 ;#
+   304                           
+   305  000000                     C2RXF4EIDH equ 0x3E2 ;#
+   306                           
+   307  000000                     C2RXF4EIDL equ 0x3E4 ;#
+   308                           
+   309  000000                     C2RXF4SID equ 0x3E0 ;#
+   310                           
+   311  000000                     C2RXF5EIDH equ 0x3EA ;#
+   312                           
+   313  000000                     C2RXF5EIDL equ 0x3EC ;#
+   314                           
+   315  000000                     C2RXF5SID equ 0x3E8 ;#
+   316                           
+   317  000000                     C2RXM0EIDH equ 0x3F2 ;#
+   318                           
+   319  000000                     C2RXM0EIDL equ 0x3F4 ;#
+   320                           
+   321  000000                     C2RXM0SID equ 0x3F0 ;#
+   322                           
+   323  000000                     C2RXM1EIDH equ 0x3FA ;#
+   324                           
+   325  000000                     C2RXM1EIDL equ 0x3FC ;#
+   326                           
+   327  000000                     C2RXM1SID equ 0x3F8 ;#
+   328                           
+   329  000000                     C2TX0B1 equ 0x426 ;#
+   330                           
+   331  000000                     C2TX0B2 equ 0x428 ;#
+   332                           
+   333  000000                     C2TX0B3 equ 0x42A ;#
+   334                           
+   335  000000                     C2TX0B4 equ 0x42C ;#
+   336                           
+   337  000000                     C2TX0CON equ 0x42E ;#
+   338                           
+   339  000000                     C2TX0DLC equ 0x424 ;#
+   340                           
+   341  000000                     C2TX0EID equ 0x422 ;#
+   342                           
+   343  000000                     C2TX0SID equ 0x420 ;#
+   344                           
+   345  000000                     C2TX1B1 equ 0x416 ;#
+   346                           
+   347  000000                     C2TX1B2 equ 0x418 ;#
+   348                           
+   349  000000                     C2TX1B3 equ 0x41A ;#
+   350                           
+   351  000000                     C2TX1B4 equ 0x41C ;#
+   352                           
+   353  000000                     C2TX1CON equ 0x41E ;#
+   354                           
+   355  000000                     C2TX1DLC equ 0x414 ;#
+   356                           
+   357  000000                     C2TX1EID equ 0x412 ;#
+   358                           
+   359  000000                     C2TX1SID equ 0x410 ;#
+   360                           
+   361  000000                     C2TX2B1 equ 0x406 ;#
+   362                           
+   363  000000                     C2TX2B2 equ 0x408 ;#
+   364                           
+   365  000000                     C2TX2B3 equ 0x40A ;#
+   366                           
+   367  000000                     C2TX2B4 equ 0x40C ;#
+   368                           
+   369  000000                     C2TX2CON equ 0x40E ;#
+   370                           
+   371  000000                     C2TX2DLC equ 0x404 ;#
+   372                           
+   373  000000                     C2TX2EID equ 0x402 ;#
+   374                           
+   375  000000                     C2TX2SID equ 0x400 ;#
+   376                           
+   377  000000                     CNEN1 equ 0x0C0 ;#
+   378                           
+   379  000000                     CNEN2 equ 0x0C2 ;#
+   380                           
+   381  000000                     CNPU1 equ 0x0C4 ;#
+   382                           
+   383  000000                     CNPU2 equ 0x0C6 ;#
+   384                           
+   385  000000                     CORCON equ 0x044 ;#
+   386                           
+   387  000000                     DCICON1 equ 0x240 ;#
+   388                           
+   389  000000                     DCICON2 equ 0x242 ;#
+   390                           
+   391  000000                     DCICON3 equ 0x244 ;#
+   392                           
+   393  000000                     DCISTAT equ 0x246 ;#
+   394                           
+   395  000000                     DCOUNT equ 0x038 ;#
+   396                           
+   397  000000                     DISICNT equ 0x052 ;#
+   398                           
+   399  000000                     DOENDH equ 0x040 ;#
+   400                           
+   401  000000                     DOENDL equ 0x03E ;#
+   402                           
+   403  000000                     DOSTARTH equ 0x03C ;#
+   404                           
+   405  000000                     DOSTARTL equ 0x03A ;#
+   406                           
+   407  000000                     I2CADD equ 0x20A ;#
+   408                           
+   409  000000                     I2CBRG equ 0x204 ;#
+   410                           
+   411  000000                     I2CCON equ 0x206 ;#
+   412                           
+   413  000000                     I2CRCV equ 0x200 ;#
+   414                           
+   415  000000                     I2CSTAT equ 0x208 ;#
+   416                           
+   417  000000                     I2CTRN equ 0x202 ;#
+   418                           
+   419  000000                     IC1BUF equ 0x140 ;#
+   420                           
+   421  000000                     IC1CON equ 0x142 ;#
+   422                           
+   423  000000                     IC2BUF equ 0x144 ;#
+   424                           
+   425  000000                     IC2CON equ 0x146 ;#
+   426                           
+   427  000000                     IC3BUF equ 0x148 ;#
+   428                           
+   429  000000                     IC3CON equ 0x14A ;#
+   430                           
+   431  000000                     IC4BUF equ 0x14C ;#
+   432                           
+   433  000000                     IC4CON equ 0x14E ;#
+   434                           
+   435  000000                     IC5BUF equ 0x150 ;#
+   436                           
+   437  000000                     IC5CON equ 0x152 ;#
+   438                           
+   439  000000                     IC6BUF equ 0x154 ;#
+   440                           
+   441  000000                     IC6CON equ 0x156 ;#
+   442                           
+   443  000000                     IC7BUF equ 0x158 ;#
+   444                           
+   445  000000                     IC7CON equ 0x15A ;#
+   446                           
+   447  000000                     IC8BUF equ 0x15C ;#
+   448                           
+   449  000000                     IC8CON equ 0x15E ;#
+   450                           
+   451  000000                     IEC0 equ 0x08C ;#
+   452                           
+   453  000000                     IEC1 equ 0x08E ;#
+   454                           
+   455  000000                     IEC2 equ 0x090 ;#
+   456                           
+   457  000000                     IFS0 equ 0x084 ;#
+   458                           
+   459  000000                     IFS1 equ 0x086 ;#
+   460                           
+   461  000000                     IFS2 equ 0x088 ;#
+   462                           
+   463  000000                     INTCON1 equ 0x080 ;#
+   464                           
+   465  000000                     INTCON2 equ 0x082 ;#
+   466                           
+   467  000000                     INTTREG equ 0x0B0 ;#
+   468                           
+   469  000000                     IPC0 equ 0x094 ;#
+   470                           
+   471  000000                     IPC1 equ 0x096 ;#
+   472                           
+   473  000000                     IPC10 equ 0x0A8 ;#
+   474                           
+   475  000000                     IPC2 equ 0x098 ;#
+   476                           
+   477  000000                     IPC3 equ 0x09A ;#
+   478                           
+   479  000000                     IPC4 equ 0x09C ;#
+   480                           
+   481  000000                     IPC5 equ 0x09E ;#
+   482                           
+   483  000000                     IPC6 equ 0x0A0 ;#
+   484                           
+   485  000000                     IPC7 equ 0x0A2 ;#
+   486                           
+   487  000000                     IPC8 equ 0x0A4 ;#
+   488                           
+   489  000000                     IPC9 equ 0x0A6 ;#
+   490                           
+   491  000000                     LATB equ 0x2CA ;#
+   492                           
+   493  000000                     LATC equ 0x2D0 ;#
+   494                           
+   495  000000                     LATD equ 0x2D6 ;#
+   496                           
+   497  000000                     LATF equ 0x2E2 ;#
+   498                           
+   499  000000                     LATG equ 0x2E8 ;#
+   500                           
+   501  000000                     MODCON equ 0x046 ;#
+   502                           
+   503  000000                     NVMADR equ 0x762 ;#
+   504                           
+   505  000000                     NVMADRU equ 0x764 ;#
+   506                           
+   507  000000                     NVMCON equ 0x760 ;#
+   508                           
+   509  000000                     NVMKEY equ 0x766 ;#
+   510                           
+   511  000000                     OC1CON equ 0x184 ;#
+   512                           
+   513  000000                     OC1R equ 0x182 ;#
+   514                           
+   515  000000                     OC1RS equ 0x180 ;#
+   516                           
+   517  000000                     OC2CON equ 0x18A ;#
+   518                           
+   519  000000                     OC2R equ 0x188 ;#
+   520                           
+   521  000000                     OC2RS equ 0x186 ;#
+   522                           
+   523  000000                     OC3CON equ 0x190 ;#
+   524                           
+   525  000000                     OC3R equ 0x18E ;#
+   526                           
+   527  000000                     OC3RS equ 0x18C ;#
+   528                           
+   529  000000                     OC4CON equ 0x196 ;#
+   530                           
+   531  000000                     OC4R equ 0x194 ;#
+   532                           
+   533  000000                     OC4RS equ 0x192 ;#
+   534                           
+   535  000000                     OC5CON equ 0x19C ;#
+   536                           
+   537  000000                     OC5R equ 0x19A ;#
+   538                           
+   539  000000                     OC5RS equ 0x198 ;#
+   540                           
+   541  000000                     OC6CON equ 0x1A2 ;#
+   542                           
+   543  000000                     OC6R equ 0x1A0 ;#
+   544                           
+   545  000000                     OC6RS equ 0x19E ;#
+   546                           
+   547  000000                     OC7CON equ 0x1A8 ;#
+   548                           
+   549  000000                     OC7R equ 0x1A6 ;#
+   550                           
+   551  000000                     OC7RS equ 0x1A4 ;#
+   552                           
+   553  000000                     OC8CON equ 0x1AE ;#
+   554                           
+   555  000000                     OC8R equ 0x1AC ;#
+   556                           
+   557  000000                     OC8RS equ 0x1AA ;#
+   558                           
+   559  000000                     OSCCON equ 0x742 ;#
+   560                           
+   561  000000                     OSCTUN equ 0x744 ;#
+   562                           
+   563  000000                     PCH equ 0x030 ;#
+   564                           
+   565  000000                     PCL equ 0x02E ;#
+   566                           
+   567  000000                     PMD1 equ 0x770 ;#
+   568                           
+   569  000000                     PMD2 equ 0x772 ;#
+   570                           
+   571  000000                     PORTB equ 0x2C8 ;#
+   572                           
+   573  000000                     PORTC equ 0x2CE ;#
+   574                           
+   575  000000                     PORTD equ 0x2D4 ;#
+   576                           
+   577  000000                     PORTF equ 0x2E0 ;#
+   578                           
+   579  000000                     PORTG equ 0x2E6 ;#
+   580                           
+   581  000000                     PR1 equ 0x102 ;#
+   582                           
+   583  000000                     PR2 equ 0x10C ;#
+   584                           
+   585  000000                     PR3 equ 0x10E ;#
+   586                           
+   587  000000                     PR4 equ 0x11A ;#
+   588                           
+   589  000000                     PR5 equ 0x11C ;#
+   590                           
+   591  000000                     PSVPAG equ 0x034 ;#
+   592                           
+   593  000000                     RCON equ 0x740 ;#
+   594                           
+   595  000000                     RCOUNT equ 0x036 ;#
+   596                           
+   597  000000                     RSCON equ 0x24C ;#
+   598                           
+   599  000000                     RXBUF0 equ 0x250 ;#
+   600                           
+   601  000000                     RXBUF1 equ 0x252 ;#
+   602                           
+   603  000000                     RXBUF2 equ 0x254 ;#
+   604                           
+   605  000000                     RXBUF3 equ 0x256 ;#
+   606                           
+   607  000000                     SPI1BUF equ 0x224 ;#
+   608                           
+   609  000000                     SPI1CON equ 0x222 ;#
+   610                           
+   611  000000                     SPI1STAT equ 0x220 ;#
+   612                           
+   613  000000                     SPI2BUF equ 0x22A ;#
+   614                           
+   615  000000                     SPI2CON equ 0x228 ;#
+   616                           
+   617  000000                     SPI2STAT equ 0x226 ;#
+   618                           
+   619  000000                     SPLIM equ 0x020 ;#
+   620                           
+   621  000000                     SR equ 0x042 ;#
+   622                           
+   623  000000                     SSRAM equ 0x752 ;#
+   624                           
+   625  000000                     T1CON equ 0x104 ;#
+   626                           
+   627  000000                     T2CON equ 0x110 ;#
+   628                           
+   629  000000                     T3CON equ 0x112 ;#
+   630                           
+   631  000000                     T4CON equ 0x11E ;#
+   632                           
+   633  000000                     T5CON equ 0x120 ;#
+   634                           
+   635  000000                     TBLPAG equ 0x032 ;#
+   636                           
+   637  000000                     TMR1 equ 0x100 ;#
+   638                           
+   639  000000                     TMR2 equ 0x106 ;#
+   640                           
+   641  000000                     TMR3 equ 0x10A ;#
+   642                           
+   643  000000                     TMR3HLD equ 0x108 ;#
+   644                           
+   645  000000                     TMR4 equ 0x114 ;#
+   646                           
+   647  000000                     TMR5 equ 0x118 ;#
+   648                           
+   649  000000                     TMR5HLD equ 0x116 ;#
+   650                           
+   651  000000                     TRISB equ 0x2C6 ;#
+   652                           
+   653  000000                     TRISC equ 0x2CC ;#
+   654                           
+   655  000000                     TRISD equ 0x2D2 ;#
+   656                           
+   657  000000                     TRISF equ 0x2DE ;#
+   658                           
+   659  000000                     TRISG equ 0x2E4 ;#
+   660                           
+   661  000000                     TSCON equ 0x248 ;#
+   662                           
+   663  000000                     TXBUF0 equ 0x258 ;#
+   664                           
+   665  000000                     TXBUF1 equ 0x25A ;#
+   666                           
+   667  000000                     TXBUF2 equ 0x25C ;#
+   668                           
+   669  000000                     TXBUF3 equ 0x25E ;#
+   670                           
+   671  000000                     U1BRG equ 0x214 ;#
+   672                           
+   673  000000                     U1MODE equ 0x20C ;#
+   674                           
+   675  000000                     U1RXREG equ 0x212 ;#
+   676                           
+   677  000000                     U1STA equ 0x20E ;#
+   678                           
+   679  000000                     U1TXREG equ 0x210 ;#
+   680                           
+   681  000000                     U2BRG equ 0x21E ;#
+   682                           
+   683  000000                     U2MODE equ 0x216 ;#
+   684                           
+   685  000000                     U2RXREG equ 0x21C ;#
+   686                           
+   687  000000                     U2STA equ 0x218 ;#
+   688                           
+   689  000000                     U2TXREG equ 0x21A ;#
+   690                           
+   691  000000                     WREG0 equ 0x000 ;#
+   692                           
+   693  000000                     WREG1 equ 0x002 ;#
+   694                           
+   695  000000                     WREG10 equ 0x014 ;#
+   696                           
+   697  000000                     WREG11 equ 0x016 ;#
+   698                           
+   699  000000                     WREG12 equ 0x018 ;#
+   700                           
+   701  000000                     WREG13 equ 0x01A ;#
+   702                           
+   703  000000                     WREG14 equ 0x01C ;#
+   704                           
+   705  000000                     WREG15 equ 0x01E ;#
+   706                           
+   707  000000                     WREG2 equ 0x004 ;#
+   708                           
+   709  000000                     WREG3 equ 0x006 ;#
+   710                           
+   711  000000                     WREG4 equ 0x008 ;#
+   712                           
+   713  000000                     WREG5 equ 0x00A ;#
+   714                           
+   715  000000                     WREG6 equ 0x00C ;#
+   716                           
+   717  000000                     WREG7 equ 0x00E ;#
+   718                           
+   719  000000                     WREG8 equ 0x010 ;#
+   720                           
+   721  000000                     WREG9 equ 0x012 ;#
+   722                           
+   723  000000                     XBREV equ 0x050 ;#
+   724                           
+   725  000000                     XMODEND equ 0x04A ;#
+   726                           
+   727  000000                     XMODSRT equ 0x048 ;#
+   728                           
+   729  000000                     YMODEND equ 0x04E ;#
+   730                           
+   731  000000                     YMODSRT equ 0x04C ;#
+   732                           
+   733                            ;#
+   734                           
+   735                           # 80 "C:\Microchip\Dev\Aspirobot\FreeRTOS\Source
+                                 s\portable\PIC24_dsPIC\portasm_dsPIC.c"
+   736                            global _vTaskSwitchContext ;#
+   737                           
+   738                            global _uxCriticalNesting ;#
+   739                           
+   740                            global _pxCurrentTCB ;#
+   741                           
+   742                            ;#
+   743                           
+   744                           #
+   745                           	global	_vPortYield
+   746                           	signat	_vPortYield,26
+   747                           	psect	text
+   748                           	file	"C:\Microchip\Dev\Aspirobot\FreeRTOS\Sourc
+                                 es\portable\PIC24_dsPIC\portasm_dsPIC.c"
+   749                           	line	87
+   750  00C410                     _vPortYield:
+   751  00C410  0004C492           	goto	f11
+              00000000           
+   752  00C414                     f10:
+   753                           
+   754                           ;portasm_dsPIC.c: 86: void vPortYield(void)
+   755                           
+   756                           ;portasm_dsPIC.c: 87: {
+   757                           
+   758                           	line	89
+   759                           # 89 "C:\Microchip\Dev\Aspirobot\FreeRTOS\Source
+                                 s\portable\PIC24_dsPIC\portasm_dsPIC.c"
+   760  00C414  00F80042                   PUSH SR ;#
+   761                           
+   762                           	line	90
+   763  00C416  00781F80                   PUSH W0 ;#
+   764                           
+   765                           	line	91
+   766  00C418  00200200                   MOV #32, W0 ;#
+   767                           
+   768                           	line	92
+   769  00C41A  00880210                   MOV W0, SR ;#
+   770                           
+   771                           	line	93
+   772  00C41C  00781F81                   PUSH W1 ;#
+   773                           
+   774                           	line	94
+   775  00C41E  00BE9F82                   PUSH.D W2 ;#
+   776                           
+   777                           	line	95
+   778  00C420  00BE9F84                   PUSH.D W4 ;#
+   779                           
+   780                           	line	96
+   781  00C422  00BE9F86                   PUSH.D W6 ;#
+   782                           
+   783                           	line	97
+   784  00C424  00BE9F88                   PUSH.D W8 ;#
+   785                           
+   786                           	line	98
+   787  00C426  00BE9F8A                   PUSH.D W10 ;#
+   788                           
+   789                           	line	99
+   790  00C428  00BE9F8C                   PUSH.D W12 ;#
+   791                           
+   792                           	line	100
+   793  00C42A  00781F8E                   PUSH W14 ;#
+   794                           
+   795                           	line	101
+   796  00C42C  00F80036                   PUSH RCOUNT ;#
+   797                           
+   798                           	line	102
+   799  00C42E  00F80032                   PUSH TBLPAG ;#
+   800                           
+   801                           	line	103
+   802  00C430  00F80022                   PUSH ACCAL ;#
+   803                           
+   804                           	line	104
+   805  00C432  00F80024                   PUSH ACCAH ;#
+   806                           
+   807                           	line	105
+   808  00C434  00F80026                   PUSH ACCAU ;#
+   809                           
+   810                           	line	106
+   811  00C436  00F80028                   PUSH ACCBL ;#
+   812                           
+   813                           	line	107
+   814  00C438  00F8002A                   PUSH ACCBH ;#
+   815                           
+   816                           	line	108
+   817  00C43A  00F8002C                   PUSH ACCBU ;#
+   818                           
+   819                           	line	109
+   820  00C43C  00F80038                   PUSH DCOUNT ;#
+   821                           
+   822                           	line	110
+   823  00C43E  00F8003A                   PUSH DOSTARTL ;#
+   824                           
+   825                           	line	111
+   826  00C440  00F8003C                   PUSH DOSTARTH ;#
+   827                           
+   828                           	line	112
+   829  00C442  00F8003E                   PUSH DOENDL ;#
+   830                           
+   831                           	line	113
+   832  00C444  00F80040                   PUSH DOENDH ;#
+   833                           
+   834                           	line	114
+   835                            ;#
+   836                           
+   837                           	line	115
+   838                            ;#
+   839                           
+   840                           	line	116
+   841  00C446  00F80044                                   PUSH CORCON ;#
+   842                           
+   843                           	line	117
+   844  00C448  00F80034                   PUSH PSVPAG ;#
+   845                           
+   846                           	line	118
+   847  00C44A  00806570                   MOV _uxCriticalNesting, W0 ;#
+   848                           
+   849                           	line	119
+   850  00C44C  00781F80                   PUSH W0 ;#
+   851                           
+   852                           	line	120
+   853  00C44E  00804000                   MOV _pxCurrentTCB, W0 ;#
+   854                           
+   855                           	line	121
+   856  00C450  0078080F                   MOV W15, [W0] ;#
+   857                           
+   858                           	line	122
+   859                            ;#
+   860                           
+   861                           	line	123
+   862  00C452  0002F230                           call _vTaskSwitchContext ;#
+              00000000           
+   863                           
+   864                           	line	124
+   865                            ;#
+   866                           
+   867                           	line	125
+   868  00C456  00804000             MOV _pxCurrentTCB, W0 ;#
+   869                           
+   870                           	line	126
+   871  00C458  00780790             MOV [W0], W15 ;#
+   872                           
+   873                           	line	127
+   874  00C45A  0078004F             POP W0 ;#
+   875                           
+   876                           	line	128
+   877  00C45C  00886570             MOV W0, _uxCriticalNesting ;#
+   878                           
+   879                           	line	129
+   880  00C45E  00F90034             POP PSVPAG ;#
+   881                           
+   882                           	line	130
+   883  00C460  00F90044             POP CORCON ;#
+   884                           
+   885                           	line	131
+   886  00C462  00F90040             POP DOENDH ;#
+   887                           
+   888                           	line	132
+   889  00C464  00F9003E             POP DOENDL ;#
+   890                           
+   891                           	line	133
+   892  00C466  00F9003C             POP DOSTARTH ;#
+   893                           
+   894                           	line	134
+   895  00C468  00F9003A             POP DOSTARTL ;#
+   896                           
+   897                           	line	135
+   898  00C46A  00F90038             POP DCOUNT ;#
+   899                           
+   900                           	line	136
+   901  00C46C  00F9002C             POP ACCBU ;#
+   902                           
+   903                           	line	137
+   904  00C46E  00F9002A             POP ACCBH ;#
+   905                           
+   906                           	line	138
+   907  00C470  00F90028             POP ACCBL ;#
+   908                           
+   909                           	line	139
+   910  00C472  00F90026             POP ACCAU ;#
+   911                           
+   912                           	line	140
+   913  00C474  00F90024             POP ACCAH ;#
+   914                           
+   915                           	line	141
+   916  00C476  00F90022             POP ACCAL ;#
+   917                           
+   918                           	line	142
+   919  00C478  00F90032             POP TBLPAG ;#
+   920                           
+   921                           	line	143
+   922  00C47A  00F90036             POP RCOUNT ;#
+   923                           
+   924                           	line	144
+   925  00C47C  0078074F             POP W14 ;#
+   926                           
+   927                           	line	145
+   928  00C47E  00BE064F             POP.D W12 ;#
+   929                           
+   930                           	line	146
+   931  00C480  00BE054F             POP.D W10 ;#
+   932                           
+   933                           	line	147
+   934  00C482  00BE044F             POP.D W8 ;#
+   935                           
+   936                           	line	148
+   937  00C484  00BE034F             POP.D W6 ;#
+   938                           
+   939                           	line	149
+   940  00C486  00BE024F             POP.D W4 ;#
+   941                           
+   942                           	line	150
+   943  00C488  00BE014F             POP.D W2 ;#
+   944                           
+   945                           	line	151
+   946  00C48A  00BE004F             POP.D W0 ;#
+   947                           
+   948                           	line	152
+   949  00C48C  00F90042             POP SR ;#
+   950                           
+   951                           	line	153
+   952  00C48E  00060000                   return; ;#
+   953                           
+   954                           ;portasm_dsPIC.c: 155: }
+   955                           
+   956                           #
+   957                           	psect	text
+   958                           	line	155
+   959  00C490                     lab1:
+   960                           	global	_vPortYield
+   961  00C490  00060000           	return
+   962                           	line	87
+   963                           
+   964  00C492                     f11:
+   965  00C492  0004C414           	goto	f10
+              00000000           
+   966  000000                     f16	equ	0		;stack offset for auto's
+   967+ 000000                     f13	equ	-4		;stack offset for parameters
+   968+                          	line	0
+   969+                          	global	 __end_of_vPortYield
+   970+ 00C496                     __end_of_vPortYield:
+
+
+HI-TECH Software dsPIC Macro Assembler V9.62 build 7866                    Page 2
+Symbol Table                                           Tue Jan 05 21:22:07 2016
+
+                 SR 000042                  f10 00C414  
+                f11 00C492                 lab1 00C490  
+      _pxCurrentTCB 000800                ACCAH 000024  
+              ACCBH 00002A                ACCAL 000022  
+              ACCBL 000028                ACCAU 000026  
+              ACCBU 00002C             DOSTARTH 00003C  
+           DOSTARTL 00003A  _vTaskSwitchContext 00F230  
+             DCOUNT 000038               DOENDH 000040  
+             DOENDL 00003E               CORCON 000044  
+             TBLPAG 000032               RCOUNT 000036  
+             PSVPAG 000034   _uxCriticalNesting 000CAE  
+        _vPortYield 00C410  __end_of_vPortYield 00C496  
+

@@ -1,0 +1,7 @@
+HI-TECH for dsPIC/PIC24  V9.62
+Copyright (C) 2011 Microchip Technology Inc.
+Serial number: HCDSPIC-962000
+cpp.exe -W9 "--edf=C:\Program Files (x86)\HI-TECH Software\DSPICC\STD\9.62\dat\en_msgs.txt" -DHI_TECH_C -D__DSPICC__ -S1,2,2,4,4,4 -SP2,2,2,2,2,2,2 -D__DEBUG=1 -IC:\Microchip\Dev\Aspirobot\FreeRTOS\Config -IC:\Microchip\Dev\Aspirobot\Include -IC:\Microchip\Dev\Aspirobot\FreeRTOS\include "-IC:\Program Files (x86)\HI-TECH Software\DSPICC\STD\9.62\include" -IC:\Microchip\Dev\Aspirobot\FreeRTOS\Config -IC:\Microchip\Dev\Aspirobot\Include -IC:\Microchip\Dev\Aspirobot\FreeRTOS\include "-IC:\Program Files (x86)\HI-TECH Software\DSPICC\STD\9.62\include" -E1 -L -D_HTC_VER_MAJOR_=9 -D_HTC_VER_MINOR_=62 -D_HTC_VER_PATCH_=0 -D_HTC_EDITION_=1 -D_MPC_ -D__dsPIC30F6010A__ -D__dsPIC__ -D__HAS_DSP__ -D__dsPIC30F__ -D__SMALL_MODEL__ -D__EEPROM_SIZE__=4096 -D__HAS_EEDATA__ -D__CFGWORDS__=7 -D__UIDWORDS__=50 -D__OSCVER__=3 C:\Microchip\Dev\Aspirobot\FreeRTOS\Sources\list.c list.dep
+del C:\Users\user\AppData\Local\Temp\s4lc.
+del C:\Users\user\AppData\Local\Temp\s4lc.1
+del C:\Users\user\AppData\Local\Temp\s4lc.2
